@@ -1,0 +1,44 @@
+[
+  {
+    "image": "live-rpm-level.png",
+    "source_release": "0.6.2-sticks3-qre1113-rotation",
+    "source_file": "rotation-demo-return-live.png",
+    "description": "Device framebuffer; idle live screen; v0.6.2. Layout unchanged in v0.7.0.",
+    "sha256": "56a7ceaa3ca264039bcc029f6de5ac2a031a1d13e6edec86332b01efd56658ff"
+  },
+  {
+    "image": "launch-recap.png",
+    "source_release": "0.6.2-sticks3-qre1113-rotation",
+    "source_file": "rotation-demo-middle.png",
+    "description": "Device framebuffer; RAM-only DEMO; v0.6.2. Recap UI unchanged in v0.7.0.",
+    "sha256": "ee69d690bdfb04387b4c6a2e4d7b7f348f665e8c5f6e1f4182b43f460bc8f5c2"
+  },
+  {
+    "image": "launch-history.png",
+    "source_release": "0.3.0-sticks3-qre1113",
+    "source_file": "demo-recent.png",
+    "description": "Device framebuffer; synthetic DEMO history; v0.3.0 baseline.",
+    "sha256": "d927e5016ce71c421e2123e28bcde2879185c6cfb04ea96e33878990b94610a0"
+  },
+  {
+    "image": "pull-trend.png",
+    "source_release": "0.3.0-sticks3-qre1113",
+    "source_file": "demo-pulls.png",
+    "description": "Device framebuffer; synthetic DEMO pulls; v0.3.0 baseline.",
+    "sha256": "845000feed016b79de45062022b5539d3331caf7cea619ed12e8e2dab59242fd"
+  },
+  {
+    "image": "session-trend.png",
+    "source_release": "0.3.0-sticks3-qre1113",
+    "source_file": "demo-sessions.png",
+    "description": "Device framebuffer; synthetic DEMO sessions; v0.3.0 baseline.",
+    "sha256": "7115282df54d00e8ce2e831290776e194d9de444bb3ab85ea9ec4d16bb09da56"
+  },
+  {
+    "image": "battery.png",
+    "source_release": "0.3.1-sticks3-qre1113-power",
+    "source_file": "battery.png",
+    "description": "Device framebuffer; battery/status snapshot; v0.3.1.",
+    "sha256": "fa303c5c82abed3e98d0884347303dddd1a1ae8190c18ab3c95a7e77d9c47fb9"
+  }
+]

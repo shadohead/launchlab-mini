@@ -1,0 +1,179 @@
+{
+  "description": "Exploded translations are illustrative; all meshes are frozen release STL data. Independent M5 and QRE assemblies, not an inferred complete launcher pose.",
+  "renders": [
+    {
+      "scene": "qre exploded",
+      "part": "01_QRE_minimal_port",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/01_QRE_minimal_port.stl",
+      "sha256": "be8fd0c82e3f43e1eb3eb2f7cabefcd97d4b2780a5445b306c93e8e4362cb0d6"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "02_QRE_clip_keeper",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/02_QRE_clip_keeper.stl",
+      "sha256": "91541a7187678c3c00a07b807818e8b8eda6b43083006b278b37ff005f969a19"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "03_QRE_pressure_bar",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/03_QRE_pressure_bar.stl",
+      "sha256": "e82e2bc22c8123e8659a039ff0c032d1ac1c49e727733c4c790e188de2cd1f41"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "08_QRE_latch_LEFT",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/08_QRE_latch_LEFT.stl",
+      "sha256": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "09_QRE_latch_RIGHT",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/09_QRE_latch_RIGHT.stl",
+      "sha256": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_QRE_red_PCB",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_QRE_red_PCB.stl",
+      "sha256": "4129eb717f995e357edf5ec17bdb2a2b0ea4617cb37bcf5243429c4b40552bb9"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_QRE_downward_optics",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_QRE_downward_optics.stl",
+      "sha256": "0328c81029755ea8d4aa03b43afc7c503427049788f31a96e30be04cd507b288"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_Underside_resistor_-1.524",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_Underside_resistor_-1.524.stl",
+      "sha256": "315da10ada7820c6ec60127bba640805c671de6ba6f9d2fc518f8106c208e0ec"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_Underside_resistor_1.524",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_Underside_resistor_1.524.stl",
+      "sha256": "1f1dfb9900551a2344d272fb7a29cf88eb6298208d11d3b4f7b79e065d991341"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_QRE_existing_upright_plug_0",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_QRE_existing_upright_plug_0.stl",
+      "sha256": "a6d092f7fe3cf5033d1f79703be77ce1d4283f5a3c3470b338b394cf460b6f5d"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_QRE_existing_upright_plug_1",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_QRE_existing_upright_plug_1.stl",
+      "sha256": "923f3d570a4f63ca39546006fd3c801694ac453ee241347a61a77ec3c2eedf0b"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_QRE_existing_upright_plug_2",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_QRE_existing_upright_plug_2.stl",
+      "sha256": "8c72dd99217ef794956413f73e039bde623ea0205cdc763128456dbc603f0e7b"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_M2x5_CLIP_1",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_M2x5_CLIP_1.stl",
+      "sha256": "9c5b354c02a1ed1bacfdab2c951e54fcb2e908a9087509757a74a2e28563d826"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_M2x5_CLIP_2",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_M2x5_CLIP_2.stl",
+      "sha256": "20137ac634e72acdea4493b3f64705cf42d3a815d818536e91e40ea689b9aa42"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_M2x4_SENSOR_1",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_M2x4_SENSOR_1.stl",
+      "sha256": "59ed0a0db3a2c315268d80463f6a92a3a09d4128d92bff5dcbcf740d16ab35b7"
+    },
+    {
+      "scene": "qre exploded",
+      "part": "REF_M2x4_SENSOR_2",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/REF_M2x4_SENSOR_2.stl",
+      "sha256": "3241d1a13f8ff6204cfa98d1f5193d02df88a887c5bccbc3584dee5b3e3b9b05"
+    },
+    {
+      "scene": "m5 exploded",
+      "part": "01_M5_stepped_platform",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/01_M5_stepped_platform.stl",
+      "sha256": "cc55a28cb9984345dff05e0f1aff2244d13cbbd1650f356d8a75ebad40200f8a"
+    },
+    {
+      "scene": "m5 exploded",
+      "part": "REF_M5Stick_factory_geometry",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/REF_M5Stick_factory_geometry.stl",
+      "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+    },
+    {
+      "scene": "m5 exploded",
+      "part": "REF_Display_visual",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/REF_Display_visual.stl",
+      "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+    },
+    {
+      "scene": "m5 exploded",
+      "part": "REF_M2x6_1",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/REF_M2x6_1.stl",
+      "sha256": "0bcfb2c49c8712ecc3da12167a8fb7af92fbf4bf2c9b567fbb348d295b509080"
+    },
+    {
+      "scene": "m5 exploded",
+      "part": "REF_M2x6_2",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/REF_M2x6_2.stl",
+      "sha256": "0ab78b67488b9bcd0b026ecaeea927525d135108e63adcbfdce2fa2b6945ae28"
+    },
+    {
+      "scene": "m5 exploded",
+      "part": "REF_soft_liner_1",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/REF_soft_liner_1.stl",
+      "sha256": "027f7a4f6970d8e795b68f654f1cfdba4a8029cc08bec0ab059a951e07f66fa2"
+    },
+    {
+      "scene": "m5 exploded",
+      "part": "REF_soft_liner_2",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/REF_soft_liner_2.stl",
+      "sha256": "18f454ab285a8ce87d06e2a5671ae3003eda725beecaf7d015211edfdadcfa2e"
+    },
+    {
+      "scene": "part 1",
+      "part": "01_M5_stepped_platform",
+      "source": "hardware/LaunchLab_v040_right_block_print/preview/01_M5_stepped_platform.stl",
+      "sha256": "cc55a28cb9984345dff05e0f1aff2244d13cbbd1650f356d8a75ebad40200f8a"
+    },
+    {
+      "scene": "part 2",
+      "part": "01_QRE_minimal_port",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/01_QRE_minimal_port.stl",
+      "sha256": "be8fd0c82e3f43e1eb3eb2f7cabefcd97d4b2780a5445b306c93e8e4362cb0d6"
+    },
+    {
+      "scene": "part 3",
+      "part": "02_QRE_clip_keeper",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/02_QRE_clip_keeper.stl",
+      "sha256": "91541a7187678c3c00a07b807818e8b8eda6b43083006b278b37ff005f969a19"
+    },
+    {
+      "scene": "part 4",
+      "part": "03_QRE_pressure_bar",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/03_QRE_pressure_bar.stl",
+      "sha256": "e82e2bc22c8123e8659a039ff0c032d1ac1c49e727733c4c790e188de2cd1f41"
+    },
+    {
+      "scene": "part 5",
+      "part": "08_QRE_latch_LEFT",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/08_QRE_latch_LEFT.stl",
+      "sha256": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84"
+    },
+    {
+      "scene": "part 6",
+      "part": "09_QRE_latch_RIGHT",
+      "source": "hardware/LaunchLab_v033_flush_QRE/preview/09_QRE_latch_RIGHT.stl",
+      "sha256": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624"
+    }
+  ]
+}
