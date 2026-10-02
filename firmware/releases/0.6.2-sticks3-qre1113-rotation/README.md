@@ -1,0 +1,7 @@
+# M5StickS3 + QRE1113: front-edge neutral orientation
+
+Runtime `0.6.2-sticks3-rotation`. The neutral rectangle faces the viewer midway between the two front cube walls, aligned with the nearest vertical edge. A fixed 45-degree display-heading offset replaces the left-wall alignment. The rectangle stays centered in the cube. Measured inclination, relative rotation, Start/End dots and Recreate comparisons are unchanged.
+
+Continuous VQF 6D estimates orientation only. Position, travel, height, velocity and compass heading are omitted. The white short-edge mark identifies USB-C. A recalls the five-second recap; B opens history. There is no per-launch hold-still requirement. RPM, sessions, battery page and ten-minute auto-off are unchanged.
+
+The 0.6.1 fused post-roll fix remains in place. The user confirmed that both fresh recaps and dots displayed and rotation looked good, then requested this neutral-view adjustment. See `manifest.json` and `evidence/` for build, tests, installation and history checks. All 96 pre-update launches and 14 sessions were retained with identical full exports. The installed version, flash hash, replay frames, frozen dots and return to the live page were verified. The new neutral view awaits the user's physical check. Software tests do not establish physical angle accuracy. Prior QRE releases and the separate old TCRT5000 release remain saved. Flash only the application at `0x10000` on an existing LaunchLab installation.

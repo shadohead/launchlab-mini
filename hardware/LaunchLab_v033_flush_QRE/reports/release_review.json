@@ -1,0 +1,73 @@
+{
+  "version": "0.33",
+  "status": "DIGITAL_CHECKS_PASS_PHYSICAL_FIT_UNVERIFIED",
+  "requested_changes": {
+    "trim_per_side_mm": 0.5,
+    "center_platform_and_sensor_drop_mm": 1,
+    "side_clips_fixed": true
+  },
+  "confirmed_interpretation": "User confirmed: lower center platform and sensor; keep side clips fixed",
+  "new_center_width_at_Y0_mm": 18.202018889938802,
+  "PCB_slot_width_mm": 9.24,
+  "PCB_seat_z_mm": 5.4,
+  "optical_face_z_mm": 3.1,
+  "replacement_parts": [
+    "01_QRE_minimal_port"
+  ],
+  "reuse": [
+    "v032 centered pressure plate",
+    "v032 thicker latch crossbar",
+    "original latches",
+    "existing separate v024 M5 platform",
+    "two M2x4 sensor screws",
+    "two M2x5 clip screws"
+  ],
+  "valid_single_solid_CAD": true,
+  "watertight_STLs": true,
+  "Blender_saved_and_reopened": true,
+  "GLB_vertex_deltas_mm": {
+    "01_QRE_minimal_port": 1.9947009853111273e-06,
+    "02_QRE_clip_keeper": 1.5614883933830771e-06,
+    "03_QRE_pressure_bar": 9.89020725690819e-07,
+    "08_QRE_latch_LEFT": 1.9184485496837347e-06,
+    "09_QRE_latch_RIGHT": 2.044773804296783e-06,
+    "REF_QRE_red_PCB": 6.991745672793485e-07,
+    "REF_QRE_downward_optics": 7.477615572356193e-07,
+    "REF_Underside_resistor_-1.524": 8.59226719673052e-07,
+    "REF_Underside_resistor_1.524": 8.554328394241131e-07,
+    "REF_QRE_existing_upright_plug_0": 2.207548849943721e-06,
+    "REF_QRE_existing_upright_plug_1": 2.205258781476347e-06,
+    "REF_QRE_existing_upright_plug_2": 2.2070279900627536e-06,
+    "REF_M2x5_CLIP_1": 1.5419731104674706e-06,
+    "REF_M2x5_CLIP_2": 1.5422048215831102e-06,
+    "REF_M2x4_SENSOR_1": 1.2532764666569974e-06,
+    "REF_M2x4_SENSOR_2": 1.2612019684286375e-06
+  },
+  "protected_release_checks": {
+    "LaunchLab_v032_balanced_QRE": {
+      "all_frozen_files_unchanged": true,
+      "files": 83
+    },
+    "LaunchLab_v024_stepped_platform": {
+      "all_frozen_files_unchanged": true,
+      "files": 62
+    }
+  },
+  "actual_model_layers": 216,
+  "actual_join_paths": "PASS",
+  "local_slice": {
+    "time": "40m 1s",
+    "PLA_g": 5.59,
+    "support_g": 1.9626379933045424,
+    "supports": "Tree Slim"
+  },
+  "printer_dispatch": "None",
+  "limits": [
+    "Digital checks cover modeled parts; installed launcher clearance, retention and optical response need a physical fit check.",
+    "The new central step and sensor seat intentionally change the original optical datum by minus 1 mm; the prior launcher-top reference is not a measured collision model.",
+    "Side clips, hinge beds, crossbar and separate M5 platform retain their prior poses.",
+    "Nominal board and plugs retain v032 clearances; solder tails, wire routing and purchased screw envelopes remain provisional.",
+    "Center-to-side wall connection is 0.62 mm high at the flat shoulder; printed strength needs inspection.",
+    "No printer dispatch."
+  ]
+}

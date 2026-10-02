@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "source_v039_sha256": "5013ff246079445326abbeb3dc78ca069e6dcfe73fba8099056bf735adaea7b2",
+  "volume_original_mm3": 7548.629129073669,
+  "volume_sharp_trim_mm3": 7308.910379073669,
+  "volume_new_mm3": 7307.879129073669,
+  "bevel_material_removed_mm3": 1.03125,
+  "preserved": {
+    "remaining_v039_geometry_outside_new_end_cap_symmetric_difference_mm3": 0.0,
+    "entire_lower_attachment_foot_symmetric_difference_mm3": 0.0,
+    "M5_deck_and_screw_posts_symmetric_difference_mm3": 0.0,
+    "both_curved_receiver_regions_symmetric_difference_mm3": 0.0
+  },
+  "copied_native_end_cap_symmetric_difference_mm3": 0.0,
+  "M5_overlap_mm3": 4.561091902137282e-06,
+  "new_right_block_edge_y_mm": -15.5,
+  "print_bounds_mm": [
+    [
+      -9.599999904632568,
+      -24.5,
+      0.0
+    ],
+    [
+      9.599999904632568,
+      24.5,
+      34.54999923706055
+    ]
+  ],
+  "limits": [
+    "Digital model and native edge matching do not establish printed thumb reach or mechanical strength."
+  ]
+}

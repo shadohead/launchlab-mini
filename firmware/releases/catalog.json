@@ -1,0 +1,268 @@
+[
+  {
+    "runtime_version": "0.2.0-sticks3-acquisition",
+    "sensor": {
+      "role": "old sensor",
+      "type": "TCRT5000/LM393 analog module",
+      "input": "AO",
+      "supply_v": 3.3,
+      "gpio": 1
+    },
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30",
+      "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc,USBMode=hwcdc,FlashSize=8M,PartitionScheme=default_8MB,PSRAM=opi"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration.",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 619408,
+    "sha256": "8f60898d0a4fd3e9e6cf16c741ada3ac50949d21f52ab84574b8c54e09a5dec6",
+    "application_offset": "0x10000"
+  },
+  {
+    "release": "0.2.1-sticks3-level",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 628592,
+    "sha256": "d14b70fad4f1a379b8e93c84a6f4812e6da4f428b527cae539b6547471c88c94",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.2.2-sticks3-portrait",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 628720,
+    "sha256": "dd972cbe6aab9d2ab206e335022d435e7bb92b68e796ecb302a1a0fbf857bf58",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.2.3-sticks3-portrait",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 628672,
+    "sha256": "e4c4e9098c06a10d69f9bcfa82b33ab081e9e2c8e27dbfdf85620626d46560db",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.3.0-sticks3-practice",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 646000,
+    "sha256": "5871bedad295a1f309a397f2b5a0ceffe3606294702d1b6389089a000697d7da",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.3.0-sticks3-qre1113",
+    "runtime_version": "0.3.0-sticks3-practice",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": {
+      "type": "SparkFun QRE1113 analog breakout",
+      "output": "analog OUT/AO",
+      "supply_v": 3.3,
+      "wiring": {
+        "VCC": "3V3_L2 / 3V3",
+        "GND": "GND",
+        "OUT": "G1 / GPIO1"
+      }
+    },
+    "status": "user-confirmed-working",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 646000,
+    "sha256": "5871bedad295a1f309a397f2b5a0ceffe3606294702d1b6389089a000697d7da",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.3.1-sticks3-qre1113-power",
+    "runtime_version": "0.3.1-sticks3-power",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "installed-software-validated",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 658672,
+    "sha256": "259e0fe643aff48c9a022ed4d2a62a5e554578e642e51be08b144cd7b6ba849a",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30",
+      "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc,USBMode=hwcdc,FlashSize=8M,PartitionScheme=default_8MB,PSRAM=opi"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.4.2-sticks3-qre1113-feedback",
+    "runtime_version": "0.4.2-sticks3-feedback",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "installed-software-validated",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 685632,
+    "sha256": "1768aa22453304e2a749de181a2e148a3db1144c5d6b3c1a8fd5df7485bdfce6",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.4.3-sticks3-qre1113-recap",
+    "runtime_version": "0.4.3-sticks3-recap",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "installed-software-validated",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 685920,
+    "sha256": "ecc47fc2e52a3a446709bc895bb11e747297b85f18b2ddaeb48c3e1fd1f1063e",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.5.0-sticks3-qre1113-cube",
+    "runtime_version": "0.5.0-sticks3-cube",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "installed-software-validated",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 693632,
+    "sha256": "3a303e7999362984fbee0377fa301c30c066c9c5d3edb4732967b92647863ca3",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.5.1-sticks3-qre1113-front",
+    "runtime_version": "0.5.1-sticks3-front",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "installed-software-validated",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 693760,
+    "sha256": "647581f686209cac53eb6fd95b9eec1cb98c7a68013ef1e6af2936b73fa048d4",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30"
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.6.0-sticks3-qre1113-rotation",
+    "runtime_version": "0.6.0-sticks3-rotation",
+    "status": "superseded-development-build",
+    "binary_bytes": 706096,
+    "sha256": "4eb9866344791728e9f9eb9d8219d9fc9947d9b58d3c590d9be6c7600c0f2bd3",
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration.",
+    "binary": "LaunchLabMini.ino.bin",
+    "application_offset": "0x10000"
+  },
+  {
+    "release": "0.6.1-sticks3-qre1113-rotation",
+    "runtime_version": "0.6.1-sticks3-rotation",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "superseded-user-checked",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 708416,
+    "sha256": "bc43661f7799aa029fc3f85168b4886c38a25f3eecddd2829cf367d4992c8234",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30",
+      "vqf_single_precision": true
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.6.2-sticks3-qre1113-rotation",
+    "runtime_version": "0.6.2-sticks3-rotation",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "superseded-single-turn-peak",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 708432,
+    "sha256": "8a8b9c6c215213f9250ce6c0846856f198827f32578632a40ad0e35431510ae0",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30",
+      "vqf_single_precision": true
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  },
+  {
+    "release": "0.7.0-sticks3-qre1113-singlepeak",
+    "runtime_version": "0.7.0-sticks3-singlepeak",
+    "date": "2026-10-01",
+    "board": "M5StickS3 K150",
+    "sensor": "SparkFun QRE1113 analog breakout",
+    "status": "installed-software-validated",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 709712,
+    "sha256": "6f3ad29aca0d8a97f7e23f8d4c71399c128768e729d6568520bdc138408557eb",
+    "application_offset": "0x10000",
+    "toolchain": {
+      "arduino_esp32": "3.3.0",
+      "m5unified": "0.2.23",
+      "m5gfx": "0.2.30",
+      "vqf_single_precision": true
+    },
+    "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+  }
+]

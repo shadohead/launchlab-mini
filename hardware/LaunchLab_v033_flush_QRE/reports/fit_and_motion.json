@@ -1,0 +1,259 @@
+{
+  "status": "PASS",
+  "collisions": [],
+  "checks": {
+    "all_printed_meshes": "Valid single CAD solids; watertight, consistent, single component meshes, scale and volumes preserved, on bed.",
+    "RIGHT_clip_lift_0p5mm_stop_volume_mm3": 1.049683232627216,
+    "LEFT_clip_lift_0p5mm_stop_volume_mm3": 1.0496832326272163,
+    "latch_motion": "0..90 degrees in 5-degree steps; original source pivots. Rigid samples, no physical load proof.",
+    "PCB_capture_probe_mm3": {
+      "seat_down_0p05": 0.8828033434837129,
+      "keeper_up_0p05": 4.295791582261949,
+      "left_0p2": 1.8399227053429736,
+      "right_0p2": 1.839922702534248,
+      "plug_end_0p2": 0.14959986953733964,
+      "bare_end_0p2": 1.2178402747650205
+    },
+    "PCB_capture": "Original pocket stops and lower lands; continuous flat central pressure face up to Dupont housings, with a small bare-end bevel for the upright print; central face is 0.4mm below the screw-tab undersides.",
+    "service": "Clip keeper and pressure bar can lift straight up; sensor/rigid plugs load vertically after pressure bar removal. M5 remains separate.",
+    "2mm_PCB_option": "Same lower seat, keeper lifted 0.3mm; nominal 1.5mm remaining M2x4 pilot engagement. Actual lens projection not inferred.",
+    "fasteners": "2 x M2x5 countersunk clip screws and 2 x M2x4 pan-head sensor screws; head clearance and top driver corridors pass. Pilot bite is intentional.",
+    "original_latches_byte_identical": true,
+    "all_sensor_component_envelopes_shifted_down_exactly_1mm": true,
+    "only_new_base_needs_printing": true,
+    "native_launcher_and_functional_hinge_regions": {
+      "status": "CAD_EXPORT_PASS",
+      "cad": {
+        "01_QRE_minimal_port": {
+          "volume_mm3": 3007.0111164458503,
+          "bounds_mm": [
+            [
+              -21.572998046870026,
+              -16.475000381470004,
+              -2.85032161232543e-12
+            ],
+            [
+              21.572998046875316,
+              16.475000381470185,
+              11.484
+            ]
+          ],
+          "solids": 1
+        },
+        "02_QRE_clip_keeper": {
+          "volume_mm3": 252.39871976577618,
+          "bounds_mm": [
+            [
+              -18.5,
+              -3.4000000000000004,
+              10.9
+            ],
+            [
+              18.5,
+              4.2,
+              13.884
+            ]
+          ],
+          "solids": 1
+        },
+        "03_QRE_pressure_bar": {
+          "volume_mm3": 214.51916135934437,
+          "bounds_mm": [
+            [
+              -8.5582,
+              -11.49580020904,
+              7.1
+            ],
+            [
+              8.8418,
+              1.2342,
+              9.1
+            ]
+          ],
+          "solids": 1
+        },
+        "08_QRE_latch_LEFT": {
+          "volume_mm3": 698.57068060452,
+          "bounds_mm": [
+            [
+              -29.874696350092954,
+              -5.961904525757884,
+              -3.463143730164657
+            ],
+            [
+              -16.12747344969807,
+              5.943599700928,
+              10.572524642944781
+            ]
+          ],
+          "solids": 1
+        },
+        "09_QRE_latch_RIGHT": {
+          "volume_mm3": 698.5706806049147,
+          "bounds_mm": [
+            [
+              16.155473449707,
+              -5.943599700928,
+              -3.463143730164157
+            ],
+            [
+              29.902696350101458,
+              5.961904525757517,
+              10.572524642944781
+            ]
+          ],
+          "solids": 1
+        }
+      },
+      "mesh": {
+        "01_QRE_minimal_port": {
+          "volume_mm3": 3006.973083555806,
+          "watertight": true,
+          "components": 1,
+          "bed_min_z_mm": 0.0
+        }
+      },
+      "sources": {
+        "LICENSE.txt": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb",
+        "LaunchLab_v032_BASE_CROSSBAR_TREE_SLIM_UNSLICED.3mf": "2c557f74c0a717cd964138ebf0e567aba8c9feaa4d2028c7135075bb492fddae",
+        "LaunchLab_v032_UPRIGHT_PLATE_NO_SUPPORT_UNSLICED.3mf": "d7c0c3d0e79d9d6e2f5f44a884618995ae7a128b671907fe261a09838377527a",
+        "LaunchLab_v032_balanced_QRE.blend": "5d9c8d5e0527686f817808bfaa73477269020ae98aad711168cbc060a6b5259c",
+        "LaunchLab_v032_balanced_QRE.glb": "fbcd725787f59c91d796fba780e6c12cddd6d935b9a0ba05428d07f77f257418",
+        "LaunchLab_v032_balanced_QRE_assembly.step": "d5d4ea9bf0e2391a24fe43f97597d6b2241abfb1ee069169e8b7c9f395b2da2c",
+        "README.md": "a2a459fbe7172bd7ed5150e6828e607a6cba4a92115f65a0240ffe5b864602c7",
+        "assembly_manifest.json": "e7bd84afe56064ef6ba60f397a77aebbdea256a203d0a6bc701c66ff32cdeb8b",
+        "bambu/LaunchLab_v032_P1S_PLA_BASE_CROSSBAR_TREE_SLIM.3mf": "b1fc68f242ceabd1a57147584fd9e21a5e50f07aa10d2575926f10bede8e56d2",
+        "bambu/LaunchLab_v032_P1S_PLA_UPRIGHT_PLATE_NO_SUPPORT.3mf": "df3a351968a5377626188f0241df77f69e25dce7a811e4b7aff74d28055c76c4",
+        "extras/11_QRE_POCKET_FIT.brep": "5c704262837f6348bbdf6e79adde6c716790fac4961eeef2ac21625c752c3360",
+        "extras/11_QRE_POCKET_FIT.step": "7c58030d3d91f07b46a04b8d49b1184fd1f4ab291a131b058e8d31e25b2a353d",
+        "extras/11_QRE_POCKET_FIT.stl": "7e86122178c5dec29cb557b79b1bba324006e93f62763bca3b450dc55ea7f135",
+        "parameters.json": "5d85916c0ed5c58d92be393027ad2f04fb87a94f97cf11f3d27033617e043057",
+        "preview/01_QRE_minimal_port.stl": "9cc738c3daa6d5783a5467f070e0080cc7051ce1782ab27ccbe902a3df2a14be",
+        "preview/02_QRE_clip_keeper.stl": "91541a7187678c3c00a07b807818e8b8eda6b43083006b278b37ff005f969a19",
+        "preview/03_QRE_pressure_bar.stl": "ce414b5eccd26a4ed2524080d8e5f25e3f5ac38cd0bbf6222758409c0f75b633",
+        "preview/08_QRE_latch_LEFT.stl": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84",
+        "preview/09_QRE_latch_RIGHT.stl": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624",
+        "preview/REF_M2x4_SENSOR_1.stl": "5957bf743a55b750a6afc707ba5fc4eb95558e757e32b47eb12402b81cabd47e",
+        "preview/REF_M2x4_SENSOR_2.stl": "1450fc39c833cd3510f4d6683f652948343b38b3b912daf559d167b4e1d7cfcb",
+        "preview/REF_M2x5_CLIP_1.stl": "ea12cfd286fe116d7fc0d791596bfbe3e366730c354949f8931c4a116bb9c2e8",
+        "preview/REF_M2x5_CLIP_2.stl": "11436e3c791fd2cc2274481fe0b9acb0075d03051fd08657e006ae43335ef074",
+        "preview/REF_QRE_downward_optics.stl": "7bc76829a5182f56fe1fc8ba568421313e5e83e223a46fabdadb02b4badce4c1",
+        "preview/REF_QRE_existing_upright_plug_0.stl": "07855c897018442631a1993cf64f59aefaefcd6421d5d539834b11d2dfa7befc",
+        "preview/REF_QRE_existing_upright_plug_1.stl": "89a47aa8058c5361fef61f17e425b8744d343a3495ebb0d7f5dee19fa4f3b94e",
+        "preview/REF_QRE_existing_upright_plug_2.stl": "3bdfa6e59e7b4eec853de905a5a464b07079586fb844b1f2f4b6927f755e7123",
+        "preview/REF_QRE_red_PCB.stl": "a65741fd262ded8a350fe7ad8c83d84bd5d8502fae75d71815ec14574e242d67",
+        "preview/REF_Underside_resistor_-1.524.stl": "09d4dc92b3217e0d1547df29c8d7a189f89043c8d19e539b1696e10486384228",
+        "preview/REF_Underside_resistor_1.524.stl": "b376219c72dbf4727abb198488aee1dd804c0e045b76f9cdbcfce9798580e1fe",
+        "print_inventory.json": "cbea5026920e6f8615e031031e8bc4a266db489e9d9eca2e39ffa04662bed316",
+        "print_profiles/PLA.json": "c4fecf4dfdd9a0a2d80f75b97e7575f333f19b95dd8ec7b26d80864a11bd3498",
+        "print_profiles/machine.json": "5fc0cd32fb0f4118269e503311e23d8e434d0bb49a8f832fa93e036810b75896",
+        "print_profiles/process_base.json": "c4287b45e1ef47cf75d6c2a2200b3a44cd281624d8939775d6f6410ae3088cc0",
+        "print_profiles/process_plate.json": "a6331ae4a90de3239330508ba45528c717690a15c824280f8cd7b42a475b9994",
+        "provenance/REBUILD.md": "4ed65c4e387451d1b63a2918b50df445701515a0b53e77ee4971ce77b3056127",
+        "provenance/blender_helpers_v09.py": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a",
+        "provenance/build_balanced_qre_v032.py": "68fb3896c2e8b7396e25974caec02662f350c3f85d336e5d2cdffba1e8b62898",
+        "provenance/build_compact_v010.py": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4",
+        "provenance/check_balanced_layers_v032.py": "10e89b28c3031b7bb86026b89d03725cb5db9eb4b37b907cc37b9cd6bbf7daa7",
+        "provenance/check_balanced_qre_v032.py": "5b23c5f1feea7559f3378fca0c7f12baaec973c0c6e8e83cd05a67db82d8d2c9",
+        "provenance/check_crossbar_layers_v032.py": "a2dffeeabe32a4a0471a83a8e5bf26578d008d0193169f636b7108ff717e79d6",
+        "provenance/finalize_balanced_qre_v032.py": "9702834dd483f746537cb3333b5c6d6cd3b50b750991e03fa1e1e06f36cc7c44",
+        "provenance/finalize_low_stack_v018.py": "819416b41707cb40d82f3ffbcc7c857d092351ab06752ebcb2d4d84cbc0e1a4e",
+        "provenance/prepare_balanced_qre_v032.py": "29058ff3bc132df937dc0ca1374cd1c3494a1c7f03d402fc128c8e6c145c89e3",
+        "provenance/render_balanced_qre_v032.py": "c2a8910ef7bd9b7d10e05d4f436f19027db245c8ace69c9ff52a943aef346159",
+        "provenance/render_minimal_qre_v025.py": "928277b4e68f8b18e2209744536a25bfd830d067d25d8f89b57a94b2aa428b2c",
+        "provenance/section_balanced_qre_v032.py": "a46421621e8049dbbec301068082136a140d9b0b3bc6728f991d9a57d821e3f0",
+        "provenance/slice_comparison_v05.py": "359135c13e5a06efa1e3e5937d2a821070b7d5d094b447efdba05ab5b677eb59",
+        "references/QRE_BP_port_LICENSE.txt": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb",
+        "references/REF_main_floor_fill.step": "b88c8b636782e1f3048f0e82dbb58c24baf72304e0909d0f68028a815e0b69fa",
+        "references/REF_section_PCB.stl": "55fa609414c23dabb7e1c2840bb8f602aeb88dfca2a611a74936ed555341c0d5",
+        "references/REF_section_bar.stl": "68bf483ffde05a9ecf94af32c74f199b6464e3907e11235559c72650915fa0f5",
+        "references/REF_section_base.stl": "d92c3629bdaff15e40c2d625ac96b3a6687f60392dad117eaddf858549bcfac1",
+        "renders/01_centered_assembly.png": "155faf2164618e0ed72c3d31e9291005e0f94ef786b7ca414d3ad01ea30ef71a",
+        "renders/02_exploded.png": "b8063eb32295c183363a227bee0e7e13c6d7d48c13aef4a3430c4cb6a203891c",
+        "renders/03_flat_base.png": "d924174488c740fb989a9e411c4f6b56eea1dbb29dd7faf958bb91aee41c4002",
+        "renders/04_before_after.png": "bac511196013a4d66afa2f953898d0b4b64d644b13f31402b9b58b08f5210453",
+        "renders/05_upright_plate.png": "f5b538fb1bddc31596e590e41bf95c94b66b2faee080b63f5f0de8ae245d7d21",
+        "renders/06_center_section.png": "dccce9fc0e05ccb6889dc92565d84e7bf0868b1f2668bb39032c2604f17b8a4b",
+        "reports/blender_mesh_audit.json": "000522c2440dc494fd18a857855b14e5330ca82ba46db04002dfed0fbfde2183",
+        "reports/blender_saved_readback.json": "e89de1feee26bd0781662a4b88395544c9a4a190e7cdf59e97d9565f5d39fbc1",
+        "reports/cad_validation.json": "73910b77b212daf0803fac0c112fef63a0d7b4899554d3c16fe7a2b98aa22b2c",
+        "reports/crossbar_layers.json": "fd6f5bb82a5ca24cdeb9c6b1c77283aa883bfa87d7b029bba6c2d7e77c759784",
+        "reports/fit_and_motion.json": "837067503c81f7e9fdc05952eb04dca1756fbfc247b4ffcaa79de860f3b84d1b",
+        "reports/pressure_bar_layers.json": "9c18b3ef5fd8e74dbba2f255a8a6d66ced1e1855c4b748cc14c57ab5b202cfda",
+        "reports/project_readback.json": "8789b34d55f2d2718b4e3d68f08fa849e968a20c79cdaaf9703c214a908bf5b6",
+        "reports/release_review.json": "8c9355128bcc035ee3bb60374afa85c6f647003a1d9d58b7083943e23bc0e4bb",
+        "reports/section_readback.json": "60b06cae17120df75cc19d5457bd3b46590c5a9002d48d1342b4a605de3dca14",
+        "reports/slicing_metrics.json": "7a4e4370d27ababc67d24e86bb74422b9f9f9706d671775305913f8b29b7f652",
+        "step/01_QRE_minimal_port.brep": "1de676e92edd8aa17cbac8c0a29dd4a9610cebe6348b6edc731baab7581c9401",
+        "step/01_QRE_minimal_port.step": "9bd08822e2e8a65f3e7394f0075795f19d4be23c5c68debeeaa90c2f0dc948e5",
+        "step/02_QRE_clip_keeper.brep": "aa68e2327ab0fc8bfeeffbe0fd4f9b9e565b5e67f4fff78ed6a7719a0f0ab97f",
+        "step/02_QRE_clip_keeper.step": "d94463971afbadc87cdf08b3d0e2c21bd8e6665147aa074f81cf2d86ca16ab4e",
+        "step/03_QRE_pressure_bar.brep": "722fad04f8bb0392ba8a433136212578750d9933fbb2908e1af7912b0f057ab4",
+        "step/03_QRE_pressure_bar.step": "502399a052c1d237ecba6b9a8d7ad40e66eaf36e3ec3f2de8d094fef44871e39",
+        "step/08_QRE_latch_LEFT.step": "2cedb4cae14df781bcaa7c0f0f13c9689cb293546153467c672da24adaceb22f",
+        "step/09_QRE_latch_RIGHT.step": "4a741988980f9c31825c771825897d9112b30c4e4bc75f322c935680086e034d",
+        "stl/01_QRE_minimal_port.stl": "807c4a6b599c932e735e8dcd4916dc263f0dcb6490149e6c8c19d6b738c63065",
+        "stl/02_QRE_clip_keeper.stl": "ceb068e24c6b704861fe1531dd17aa151b630d64226e8857c53de8e3f63df245",
+        "stl/03_QRE_pressure_bar.stl": "3c30eef675bb74ef50cc1886f2665e0f2e9a9602c3f486365887e6b5d56ea68f",
+        "stl/08_QRE_latch_LEFT.stl": "065e8a051beabd771ff9227a8c4c2a0d3d82297f15b5cf8fd6235b7a9d8ebdda",
+        "stl/09_QRE_latch_RIGHT.stl": "d42baa9845393cfd6ba12870b4687e51d4ad91ab8982de14579ec578bd463f57"
+      },
+      "changes": {
+        "trim_per_side_mm": 0.5,
+        "platform_and_sensor_drop_mm": 1.0,
+        "region": "Launcher-facing central underside step, not PCB slot",
+        "center_left_slope_dx_dy": -0.000949819921366036,
+        "center_left_intercept_mm": -9.479019317184802,
+        "source_edge_plane_fit_max_error_mm": 0.0004385814321210546,
+        "old_right_x_mm": 9.722999572754,
+        "new_right_x_mm": 9.222999572754,
+        "side_relief_to_z_mm": 4.78
+      },
+      "preserved": {
+        "outside_intentional_region_symmetric_difference_mm3": 0.0,
+        "hinge_LEFT_symmetric_difference_mm3": 0.0,
+        "hinge_RIGHT_symmetric_difference_mm3": 0.0
+      }
+    },
+    "flat_contact_area_mm2": 85.74226624485381,
+    "flat_pressure_face": "Continuous rectangular underside up to modeled plugs; only 0.4mm of the bare end is beveled. Exact CAD slab coverage verified; PCB through-hole excluded from contact area.",
+    "Dupont_gap_mm": 0.3000000000000007,
+    "screw_tab_thickness_mm": 1.6,
+    "central_step_down_mm": 0.4,
+    "tab_to_boss_gap_at_PCB_contact_mm": 0.6,
+    "preload_clearance_probe": "At 0.4mm additional downward rigid travel, the keeper remains clear of the base; board deformation and screw preload are untested.",
+    "upright_print_orientation": "Actual manufacturing STL rotated -90 degrees about X and placed on straight screw-end edge; all vertices independently matched to assembly STL.",
+    "continuous_flat_bed_edge": {
+      "area_mm2": 17.119999970793714,
+      "connected": true,
+      "height_mm": 12.730000495910645,
+      "screw_hole_front_wall_mm": 6.250000104522705
+    },
+    "underside_print_bevel": "45-degree ramp; central flat bearing face and screw-ring height difference retained.",
+    "center_step_dimension_readback": {
+      "trim_each_side_mm": 0.5,
+      "platform_drop_mm": 1,
+      "underside_z_mm": 2.78,
+      "PCB_seat_z_mm": 5.4,
+      "optical_face_z_mm": 3.1,
+      "new_width_at_Y0_mm": 18.202018889938802,
+      "old_width_at_Y0_mm": 19.202018889938802
+    },
+    "preserved_outer_mount_and_hinges": {
+      "outside_intentional_region_symmetric_difference_mm3": 0.0,
+      "hinge_LEFT_symmetric_difference_mm3": 0.0,
+      "hinge_RIGHT_symmetric_difference_mm3": 0.0
+    },
+    "sensor_slot_width_mm": 9.24,
+    "minimum_center_to_side_join_height_mm": 0.6200000000000001,
+    "launcher_fit_boundary": "No full measured launcher collision model; photo supports requested geometry change, installed clearance requires physical trial."
+  },
+  "limits": [
+    "Digital checks cover modeled parts; installed launcher clearance, retention and optical response need a physical fit check.",
+    "The new central step and sensor seat intentionally change the original optical datum by minus 1 mm; the prior launcher-top reference is not a measured collision model.",
+    "Side clips, hinge beds, crossbar and separate M5 platform retain their prior poses.",
+    "Nominal board and plugs retain v032 clearances; solder tails, wire routing and purchased screw envelopes remain provisional.",
+    "Center-to-side wall connection is 0.62 mm high at the flat shoulder; printed strength needs inspection.",
+    "No printer dispatch."
+  ]
+}

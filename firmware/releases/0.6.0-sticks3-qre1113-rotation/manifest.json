@@ -1,0 +1,10 @@
+{
+  "release": "0.6.0-sticks3-qre1113-rotation",
+  "runtime_version": "0.6.0-sticks3-rotation",
+  "status": "superseded-development-build",
+  "binary_bytes": 706096,
+  "sha256": "4eb9866344791728e9f9eb9d8219d9fc9947d9b58d3c590d9be6c7600c0f2bd3",
+  "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration.",
+  "binary": "LaunchLabMini.ino.bin",
+  "application_offset": "0x10000"
+}

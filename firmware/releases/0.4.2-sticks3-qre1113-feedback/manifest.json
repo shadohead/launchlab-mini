@@ -1,0 +1,18 @@
+{
+  "release": "0.4.2-sticks3-qre1113-feedback",
+  "runtime_version": "0.4.2-sticks3-feedback",
+  "date": "2026-10-01",
+  "board": "M5StickS3 K150",
+  "sensor": "SparkFun QRE1113 analog breakout",
+  "status": "installed-software-validated",
+  "binary": "LaunchLabMini.ino.bin",
+  "binary_bytes": 685632,
+  "sha256": "1768aa22453304e2a749de181a2e148a3db1144c5d6b3c1a8fd5df7485bdfce6",
+  "application_offset": "0x10000",
+  "toolchain": {
+    "arduino_esp32": "3.3.0",
+    "m5unified": "0.2.23",
+    "m5gfx": "0.2.30"
+  },
+  "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+}

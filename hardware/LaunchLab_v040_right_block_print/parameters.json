@@ -1,0 +1,109 @@
+{
+  "version": "0.40",
+  "units": "mm",
+  "architecture": "Circled right block shortened 3 mm with matching native beveled end",
+  "native_crop_x_mm": -2.0,
+  "source_scale": 1,
+  "M5_center_x_mm": 10.3,
+  "M5_back_z_mm": -5.5,
+  "M5_mount_face_z_mm": -3.5,
+  "M5_screw_seat_z_mm": -7.8,
+  "M5_axes_xy_mm": [
+    [
+      1.3000000000000007,
+      -21
+    ],
+    [
+      19.3,
+      -21
+    ]
+  ],
+  "platform_thickness_mm": 2,
+  "platform_top_z_mm": -5.8,
+  "M5_to_cliff_gap_mm": 0.3,
+  "top_alignment_z_mm": 9.5,
+  "USB_C_direction": [
+    0,
+    -1,
+    0
+  ],
+  "U_recess_opening_direction": [
+    0,
+    0,
+    -1
+  ],
+  "M5_rotation_about_z_deg": 90,
+  "print_rotation_deg": [
+    0,
+    90,
+    0
+  ],
+  "print_translation_mm": [
+    0.09999990463256836,
+    -0.0,
+    22.799999237060547
+  ],
+  "nominal_insert_engagement_mm": 1.7,
+  "fasteners": "2 x M2x6 from underneath; 0.3mm soft pads at Hat end",
+  "shortened_native_rail_tails": true,
+  "separate_lock": false,
+  "printed_replacement_parts": 1,
+  "QRE": "Reuse existing snug QRE port and clips; no sensor datum changes",
+  "physical_fit": "User-reviewed direction; printed thumb reach and strength still unverified",
+  "circled_block_trim_mm": 3,
+  "original_raised_right_edge_y_mm": -18.5,
+  "revised_raised_right_edge_y_mm": -15.5,
+  "block_floor_z_mm": 0,
+  "cut_direction_world": [
+    0,
+    1,
+    0
+  ],
+  "cut_direction_top_view": "left, along the M5 length",
+  "lower_attachment_foot_unchanged": true,
+  "M5_deck_unchanged": true,
+  "print_package_created": true,
+  "edge_finish": {
+    "type": "Factory 0.5 mm bevel copied from opposite end, including corner",
+    "width_mm": 0.5,
+    "native_source_y_mm": [
+      18,
+      18.5
+    ],
+    "revised_y_mm": [
+      -15.5,
+      -15
+    ],
+    "top_edge_z_mm": [
+      9,
+      9.5
+    ],
+    "copied_native_cap_transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "replacement_printed_parts": 1
+}

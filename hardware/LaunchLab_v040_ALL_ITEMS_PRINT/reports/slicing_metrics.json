@@ -1,0 +1,40 @@
+{
+  "support_g": 5.277665944665354,
+  "support_base_g": 4.1015882087892885,
+  "support_interface_g": 0.694669666251983,
+  "extrusion_by_feature_g": {
+    "Custom": 0.09365205510075682,
+    "Support": 4.1015882087892885,
+    "Brim": 0.28273662806701483,
+    "Inner wall": 5.427531154565474,
+    "Outer wall": 3.6730438908475733,
+    "Bottom surface": 0.03196440082173644,
+    "Support interface": 0.694669666251983,
+    "Internal solid infill": 1.438304534050534,
+    "Overhang wall": 0.1690752745350658,
+    "Bridge": 0.5965112770731452,
+    "Sparse infill": 0.5602193460173815,
+    "Support transition": 0.48140806962408184,
+    "Top surface": 0.32424044511661043,
+    "Gap infill": 0.0029787020366139126,
+    "Floating vertical shell": 0.16110306878087582
+  },
+  "total_header_g": 18.04,
+  "estimated_time": "1h 15m 59s",
+  "name": "ALL_ITEMS_FINAL",
+  "material": "PLA",
+  "source": "/Users/mingj/Projects/custom-beypass/inspection/print_v040_all_items/ALL_ITEMS_OBJECT_SETTINGS.3mf",
+  "project": "/Users/mingj/Projects/custom-beypass/inspection/print_v040_all_items/slices/ALL_ITEMS_FINAL_PLA/ALL_ITEMS_FINAL_PLA.3mf",
+  "cli_exit": 0,
+  "release_project": "bambu/LaunchLab_v040_P1S_PLA_ALL_ITEMS_ONE_PLATE.3mf",
+  "parts": [
+    "01_QRE_minimal_port",
+    "02_QRE_clip_keeper",
+    "03_QRE_pressure_bar",
+    "08_QRE_latch_LEFT",
+    "09_QRE_latch_RIGHT",
+    "01_M5_stepped_platform"
+  ],
+  "plate_count": 1,
+  "log_warnings": []
+}

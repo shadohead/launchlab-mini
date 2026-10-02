@@ -1,0 +1,226 @@
+{
+  "version": "0.33",
+  "units": "mm",
+  "assemblies": "Sensor independent of unchanged v0.24 M5 platform",
+  "parts": [
+    {
+      "name": "01_QRE_minimal_port",
+      "filename": "preview/01_QRE_minimal_port.stl",
+      "color": "#48545D",
+      "group": "QRE",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "print_translation_mm": [
+        5.742,
+        1.7763568394002505e-15,
+        21.57299804687
+      ],
+      "description": "Center underside step trimmed 0.5 mm per side; central platform, board seat and sensor screw posts 1 mm lower.",
+      "source": "v033 modified v032 native CAD"
+    },
+    {
+      "name": "02_QRE_clip_keeper",
+      "filename": "preview/02_QRE_clip_keeper.stl",
+      "color": "#398B83",
+      "group": "QRE",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        -0.0,
+        -0.40000000000000013,
+        -10.9
+      ],
+      "description": "Reuse existing v032 part; unchanged assembly pose.",
+      "source": "v032 reused manufacturing STL"
+    },
+    {
+      "name": "03_QRE_pressure_bar",
+      "filename": "preview/03_QRE_pressure_bar.stl",
+      "color": "#E5AB62",
+      "group": "QRE",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        -0.14179999999999993,
+        -8.1,
+        1.2342
+      ],
+      "description": "Reuse existing v032 part; installed 1 mm lower on the new sensor posts.",
+      "source": "v032 reused manufacturing STL"
+    },
+    {
+      "name": "08_QRE_latch_LEFT",
+      "filename": "preview/08_QRE_latch_LEFT.stl",
+      "color": "#C69259",
+      "group": "QRE",
+      "description": "Reuse existing v032 part; unchanged assembly pose.",
+      "reference": false,
+      "printable": true,
+      "source": "v032 reused manufacturing STL",
+      "geometry_revision": "v0.21 native grip dock",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        23.00108528137207,
+        3.5546905994415283,
+        5.961904525756836
+      ]
+    },
+    {
+      "name": "09_QRE_latch_RIGHT",
+      "filename": "preview/09_QRE_latch_RIGHT.stl",
+      "color": "#C69259",
+      "group": "QRE",
+      "description": "Reuse existing v032 part; unchanged assembly pose.",
+      "reference": false,
+      "printable": true,
+      "source": "v032 reused manufacturing STL",
+      "geometry_revision": "v0.21 native grip dock",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        -23.029085159301758,
+        3.5546905994415283,
+        5.9435997009277335
+      ]
+    },
+    {
+      "name": "REF_QRE_red_PCB",
+      "filename": "preview/REF_QRE_red_PCB.stl",
+      "color": "#BF3845",
+      "group": "QRE",
+      "description": "Width requires caliper confirmation before fit coupon",
+      "reference": true,
+      "printable": false,
+      "source": "v032 nominal component envelope translated exactly 1 mm downward",
+      "geometry_revision": "v0.21 native grip dock"
+    },
+    {
+      "name": "REF_QRE_downward_optics",
+      "filename": "preview/REF_QRE_downward_optics.stl",
+      "color": "#25323B",
+      "group": "QRE",
+      "description": "Optical face at original datum; no launcher optical test",
+      "reference": true,
+      "printable": false,
+      "source": "v032 nominal component envelope translated exactly 1 mm downward",
+      "geometry_revision": "v0.21 native grip dock"
+    },
+    {
+      "name": "REF_Underside_resistor_-1.524",
+      "filename": "preview/REF_Underside_resistor_-1.524.stl",
+      "color": "#68636A",
+      "group": "QRE",
+      "description": "Local component relief is provisional",
+      "reference": true,
+      "printable": false,
+      "source": "v032 nominal component envelope translated exactly 1 mm downward",
+      "geometry_revision": "v0.21 native grip dock"
+    },
+    {
+      "name": "REF_Underside_resistor_1.524",
+      "filename": "preview/REF_Underside_resistor_1.524.stl",
+      "color": "#68636A",
+      "group": "QRE",
+      "description": "Local component relief is provisional",
+      "reference": true,
+      "printable": false,
+      "source": "v032 nominal component envelope translated exactly 1 mm downward",
+      "geometry_revision": "v0.21 native grip dock"
+    },
+    {
+      "name": "REF_QRE_existing_upright_plug_0",
+      "filename": "preview/REF_QRE_existing_upright_plug_0.stl",
+      "color": "#282D34",
+      "group": "QRE",
+      "description": "Along -Y long edge of crosswise M5, not below device",
+      "reference": true,
+      "printable": false,
+      "source": "v032 nominal component envelope translated exactly 1 mm downward",
+      "geometry_revision": "v0.21 native grip dock"
+    },
+    {
+      "name": "REF_QRE_existing_upright_plug_1",
+      "filename": "preview/REF_QRE_existing_upright_plug_1.stl",
+      "color": "#282D34",
+      "group": "QRE",
+      "description": "Along -Y long edge of crosswise M5, not below device",
+      "reference": true,
+      "printable": false,
+      "source": "v032 nominal component envelope translated exactly 1 mm downward",
+      "geometry_revision": "v0.21 native grip dock"
+    },
+    {
+      "name": "REF_QRE_existing_upright_plug_2",
+      "filename": "preview/REF_QRE_existing_upright_plug_2.stl",
+      "color": "#282D34",
+      "group": "QRE",
+      "description": "Along -Y long edge of crosswise M5, not below device",
+      "reference": true,
+      "printable": false,
+      "source": "v032 nominal component envelope translated exactly 1 mm downward",
+      "geometry_revision": "v0.21 native grip dock"
+    },
+    {
+      "name": "REF_M2x5_CLIP_1",
+      "filename": "preview/REF_M2x5_CLIP_1.stl",
+      "color": "#B2BBC6",
+      "group": "hardware",
+      "reference": true,
+      "printable": false,
+      "description": "M2x5 countersunk: modeled 4mm head; 3.3mm nominal pilot engagement.",
+      "source": "v032 nominal component envelope at unchanged pose"
+    },
+    {
+      "name": "REF_M2x5_CLIP_2",
+      "filename": "preview/REF_M2x5_CLIP_2.stl",
+      "color": "#B2BBC6",
+      "group": "hardware",
+      "reference": true,
+      "printable": false,
+      "description": "M2x5 countersunk: modeled 4mm head; 3.3mm nominal pilot engagement.",
+      "source": "v032 nominal component envelope at unchanged pose"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_1",
+      "filename": "preview/REF_M2x4_SENSOR_1.stl",
+      "color": "#B2BBC6",
+      "group": "hardware",
+      "reference": true,
+      "printable": false,
+      "description": "M2x4 pan head: nominal 1.8mm pilot engagement, centered pressure on the PCB; actual grip untested.",
+      "source": "v032 nominal component envelope translated exactly 1 mm downward"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_2",
+      "filename": "preview/REF_M2x4_SENSOR_2.stl",
+      "color": "#B2BBC6",
+      "group": "hardware",
+      "reference": true,
+      "printable": false,
+      "description": "M2x4 pan head: nominal 1.8mm pilot engagement, centered pressure on the PCB; actual grip untested.",
+      "source": "v032 nominal component envelope translated exactly 1 mm downward"
+    }
+  ]
+}

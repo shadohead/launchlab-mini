@@ -1,0 +1,27 @@
+{
+  "release": "0.3.0-sticks3-qre1113",
+  "runtime_version": "0.3.0-sticks3-practice",
+  "date": "2026-10-01",
+  "board": "M5StickS3 K150",
+  "sensor": {
+    "type": "SparkFun QRE1113 analog breakout",
+    "output": "analog OUT/AO",
+    "supply_v": 3.3,
+    "wiring": {
+      "VCC": "3V3_L2 / 3V3",
+      "GND": "GND",
+      "OUT": "G1 / GPIO1"
+    }
+  },
+  "status": "user-confirmed-working",
+  "binary": "LaunchLabMini.ino.bin",
+  "binary_bytes": 646000,
+  "sha256": "5871bedad295a1f309a397f2b5a0ceffe3606294702d1b6389089a000697d7da",
+  "application_offset": "0x10000",
+  "toolchain": {
+    "arduino_esp32": "3.3.0",
+    "m5unified": "0.2.23",
+    "m5gfx": "0.2.30"
+  },
+  "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+}

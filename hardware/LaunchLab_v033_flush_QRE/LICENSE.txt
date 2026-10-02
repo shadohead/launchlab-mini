@@ -1,0 +1,6 @@
+Reference-derived connector: BP Gear Port Connector by Migbello, Thingiverse 6856080.
+Original supplied notice: Creative Commons - Attribution - Share Alike.
+The source did not specify a version number. Its unmodified LICENSE.txt is preserved under reference/.
+New LaunchLab adapter/cradle contributions: Creative Commons - Attribution - Share Alike.
+Changes: rigid source placement, union of overlapping latch interiors, new retaining bridge and sensor cradle, integration with the earlier electronics enclosure.
+No endorsement or physical validation by the source creator is implied.

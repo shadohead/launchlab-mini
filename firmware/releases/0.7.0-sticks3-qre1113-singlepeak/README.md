@@ -1,0 +1,11 @@
+# M5StickS3 + QRE1113: single-turn peak RPM
+
+Runtime `0.7.0-sticks3-singlepeak`. A confirmed pull can now report a genuine peak lasting just one complete revolution. Three consistent turns still establish that a pull is real; the peak no longer needs three turns at that higher speed. Pulse width, strong contrast, duty, neighboring-mark continuity and a 0.5-ms arrival-mark check protect against malformed or shifted optical edges. There is no speed-jump veto. Sustained three-turn speed still controls slowdown detection so a brief surge does not prematurely finish the pull.
+
+The existing 30,000-RPM timing ceiling remains; it is a measurement bound, not a claimed human limit. Single-turn edge timing has 100-us resolution. This reports average launcher-shaft speed over one turn, not instantaneous speed within the turn or direct Beyblade release RPM. An indistinguishable plausible optical artifact cannot be proven genuine by one sensor alone; absolute accuracy still needs physical calibration.
+
+Native sanitizer tests cover brief final surges, accelerating tails, continued pulls, and malformed/weak/oversized/narrow/duty noise. All 13 saved waveform fixtures retain their original launch counts. One retained pull changes from about 4,945 three-turn RPM to 5,128 single-turn RPM. Old history values remain unchanged; the next accepted pull is armed to start a fresh session to separate the changed metric. `RPM_PEAK_MODE` exposes the sustained speed and single-peak counters for diagnostics.
+
+The VQF orientation recap, front-edge neutral view, frozen Start/End dots, always-ready controls, battery page and ten-minute auto-off are unchanged. Separate old TCRT5000 and prior QRE releases remain saved. See the manifest for installation status and validation scope. Flash only the app at `0x10000` on an existing LaunchLab installation.
+
+Installed and flash-hash verified on 2026-10-01. Runtime confirms single-turn mode. All 122 prior launches and 17 sessions have identical full exports after installation. The bounded 20-Hz display-load check had zero ADC loss and a worst acquisition batch of 600 us within its 5,120-us budget. Stress was disabled and the live page restored. Fresh physical single-peak acceptance and absolute RPM calibration remain pending.

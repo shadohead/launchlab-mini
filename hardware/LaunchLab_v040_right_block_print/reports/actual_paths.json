@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "objects": {
+    "01_M5_stepped_platform": {
+      "actual_model_layers": 173,
+      "first_layer_mm": 0.2,
+      "last_layer_mm": 34.6,
+      "support_paths_inside_model_bounding_box": 1696
+    }
+  },
+  "method": "Positive model deposition mapped through saved 3MF transforms, child centering and configured nozzle offset; deposited layer midplanes. Brim and support paths excluded from model counts."
+}

@@ -1,0 +1,35 @@
+{
+  "new_base": {
+    "support_g": 1.9626379933045424,
+    "support_base_g": 1.6841917627299627,
+    "support_interface_g": 0.1725554326234026,
+    "extrusion_by_feature_g": {
+      "Custom": 0.09365205510075682,
+      "Support": 1.6841917627299627,
+      "Outer wall": 1.2536634528438468,
+      "Inner wall": 1.7899014304484495,
+      "Support interface": 0.1725554326234026,
+      "Overhang wall": 0.07318234049931385,
+      "Bridge": 0.07631410697757648,
+      "Internal solid infill": 0.23722763473610664,
+      "Support transition": 0.10589079795117713,
+      "Top surface": 0.07480592115901596,
+      "Sparse infill": 0.021196025061893196,
+      "Floating vertical shell": 0.005527439733631485,
+      "Gap infill": 0.0003468406843206054
+    },
+    "total_header_g": 5.59,
+    "estimated_time": "40m 1s",
+    "name": "v033_BASE_TREE_SLIM",
+    "material": "PLA",
+    "source": "/Users/mingj/Projects/custom-beypass/releases/LaunchLab_v033_flush_QRE/LaunchLab_v033_BASE_TREE_SLIM_UNSLICED.3mf",
+    "project": "/Users/mingj/Projects/custom-beypass/inspection/print_v033_flush_QRE/slices/v033_BASE_TREE_SLIM_PLA/v033_BASE_TREE_SLIM_PLA.3mf",
+    "cli_exit": 0,
+    "release_project": "bambu/LaunchLab_v033_P1S_PLA_BASE_TREE_SLIM.3mf",
+    "parts": [
+      "01_QRE_minimal_port"
+    ],
+    "log_warnings": [],
+    "support_transition_g": 0.10589079795117713
+  }
+}

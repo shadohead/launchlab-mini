@@ -1,0 +1,96 @@
+{
+  "status": "DIGITAL_CHECKS_PASS_PHYSICAL_THUMB_REACH_UNVERIFIED",
+  "version": "0.40",
+  "matching_factory_edge": {
+    "type": "Factory 0.5 mm bevel copied from opposite end, including corner",
+    "width_mm": 0.5,
+    "native_source_y_mm": [
+      18,
+      18.5
+    ],
+    "revised_y_mm": [
+      -15.5,
+      -15
+    ],
+    "top_edge_z_mm": [
+      9,
+      9.5
+    ],
+    "copied_native_cap_transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "GLB_vertex_deltas_mm": {
+    "01_M5_stepped_platform": 2.8837982071234506e-06,
+    "REF_M5Stick_factory_geometry": 2.560748943265199e-06,
+    "REF_Display_visual": 1.9011832079315479e-06,
+    "REF_M2x6_1": 2.024475286356434e-06,
+    "REF_M2x6_2": 2.6971204669239714e-06,
+    "REF_soft_liner_1": 1.9902291511015033e-06,
+    "REF_soft_liner_2": 2.525848469088411e-06
+  },
+  "factory_pose_and_fastener_references_byte_identical": true,
+  "manufacturing_pose": "Existing +90 degree Y side orientation, independently checked",
+  "only_replacement": "01_M5_stepped_platform",
+  "local_slice": {
+    "new_base": {
+      "support_g": 2.32051088971601,
+      "support_base_g": 1.7001234089263653,
+      "support_interface_g": 0.3528995845541876,
+      "extrusion_by_feature_g": {
+        "Custom": 0.09365205510075682,
+        "Support": 1.7001234089263653,
+        "Brim": 0.10003166888481463,
+        "Inner wall": 2.953048919366594,
+        "Outer wall": 1.7668757305546452,
+        "Overhang wall": 0.05722910064433824,
+        "Internal solid infill": 0.6875421781744114,
+        "Top surface": 0.13301771222101647,
+        "Bridge": 0.3690010869460744,
+        "Support transition": 0.26748789623545677,
+        "Support interface": 0.3528995845541876,
+        "Sparse infill": 0.5257796080424523,
+        "Floating vertical shell": 0.15557562904724437,
+        "Gap infill": 0.00021766646437112203
+      },
+      "total_header_g": 9.16,
+      "estimated_time": "42m 46s",
+      "name": "v040_M5_RIGHT_BLOCK_TREE_SLIM",
+      "material": "PLA",
+      "source": "/Users/mingj/Projects/custom-beypass/releases/LaunchLab_v040_right_block_print/LaunchLab_v040_M5_RIGHT_BLOCK_TREE_SLIM_UNSLICED.3mf",
+      "project": "/Users/mingj/Projects/custom-beypass/inspection/print_v040_right_block/slices/v040_M5_RIGHT_BLOCK_TREE_SLIM_PLA/v040_M5_RIGHT_BLOCK_TREE_SLIM_PLA.3mf",
+      "cli_exit": 0,
+      "support_transition_g": 0.26748789623545677,
+      "release_project": "bambu/LaunchLab_v040_P1S_PLA_M5_RIGHT_BLOCK_TREE_SLIM.3mf",
+      "parts": [
+        "01_M5_stepped_platform"
+      ],
+      "log_warnings": []
+    }
+  },
+  "source_v024_unchanged": true,
+  "printer_dispatch": "None"
+}

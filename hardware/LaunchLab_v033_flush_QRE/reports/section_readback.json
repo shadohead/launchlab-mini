@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "references": {
+    "REF_section_base": {
+      "closed": true,
+      "components": 1,
+      "source": "Actual delivered CAD"
+    },
+    "REF_section_bar": {
+      "closed": true,
+      "components": 3,
+      "source": "Actual delivered CAD"
+    },
+    "REF_section_PCB": {
+      "closed": true,
+      "components": 1,
+      "source": "Unchanged nominal PCB envelope"
+    }
+  }
+}

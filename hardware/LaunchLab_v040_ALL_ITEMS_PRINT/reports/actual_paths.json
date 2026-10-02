@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "objects": {
+    "01_M5_stepped_platform": {
+      "actual_model_layers": 173,
+      "first_layer_mm": 0.2,
+      "last_layer_mm": 34.6,
+      "support_paths_inside_model_bounding_box": 1699
+    },
+    "01_QRE_minimal_port": {
+      "actual_model_layers": 216,
+      "first_layer_mm": 0.2,
+      "last_layer_mm": 43.2,
+      "support_paths_inside_model_bounding_box": 2075
+    },
+    "03_QRE_pressure_bar": {
+      "actual_model_layers": 64,
+      "first_layer_mm": 0.2,
+      "last_layer_mm": 12.8,
+      "support_paths_inside_model_bounding_box": 0
+    },
+    "02_QRE_clip_keeper": {
+      "actual_model_layers": 15,
+      "first_layer_mm": 0.2,
+      "last_layer_mm": 3.0,
+      "support_paths_inside_model_bounding_box": 30
+    },
+    "08_QRE_latch_LEFT": {
+      "actual_model_layers": 60,
+      "first_layer_mm": 0.2,
+      "last_layer_mm": 12.0,
+      "support_paths_inside_model_bounding_box": 515
+    },
+    "09_QRE_latch_RIGHT": {
+      "actual_model_layers": 60,
+      "first_layer_mm": 0.2,
+      "last_layer_mm": 12.0,
+      "support_paths_inside_model_bounding_box": 524
+    }
+  },
+  "method": "Positive model deposition mapped through saved 3MF transforms, child centering and configured nozzle offset; deposited layer midplanes. Brim and support paths excluded from model counts.",
+  "pressure_plate": "64 complete model layers; no support deposition within its bounding box"
+}

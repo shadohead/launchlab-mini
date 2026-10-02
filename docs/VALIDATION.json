@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-02",
+  "source_project": "custom-beypass",
+  "source_base_commit": "224fb73",
+  "scope": "M5StickS3 K150 + analog QRE1113; firmware and CAD catalog have independent versions",
+  "firmware_release": "0.7.0-sticks3-qre1113-singlepeak",
+  "firmware_sha256": "6f3ad29aca0d8a97f7e23f8d4c71399c128768e729d6568520bdc138408557eb",
+  "firmware_export_matches_saved_source": true,
+  "exported_source_compiles": true,
+  "native_sanitizer_suites_passed": 11,
+  "updater_tests_passed": 10,
+  "artifact_checksums_passed": 176,
+  "three_mf_archives_valid": true,
+  "physical_browser_flash": "not performed",
+  "physical_single_turn_peak_acceptance": "pending",
+  "independent_absolute_rpm_calibration": "pending",
+  "v040_physical_fit_and_strength": "pending",
+  "frozen_firmware_versions": 15,
+  "hardware_complete_plate": "LaunchLab_v040_ALL_ITEMS_PRINT",
+  "omitted": "Device backups, personal practice exports, factory dumps, mobile apps and unrelated development history."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "LaunchLab_v033_BASE_TREE_SLIM_UNSLICED.3mf",
+      "mesh_count": 1,
+      "geometry_readback": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v033_P1S_PLA_BASE_TREE_SLIM.3mf",
+      "mesh_count": 1,
+      "geometry_readback": "PASS",
+      "gcode_integrity": "PASS",
+      "supports_enabled": true,
+      "actual_support_g": 1.9626379933045426
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+site/dist/
+firmware/.arduino/
+firmware/build/
+firmware/build-source/
+__pycache__/
+*.pyc

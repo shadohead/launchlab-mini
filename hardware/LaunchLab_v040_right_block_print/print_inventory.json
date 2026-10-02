@@ -1,0 +1,14 @@
+{
+  "replacement_printed_parts": 1,
+  "plates": {
+    "new_base": [
+      "01_M5_stepped_platform"
+    ]
+  },
+  "reuse": [
+    "current v033 sensor assembly",
+    "two M2x6 M5 screws"
+  ],
+  "requested_filament": "AMS A3 / filament 3; assignment occurs at dispatch",
+  "dispatch": "None"
+}

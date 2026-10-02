@@ -1,0 +1,136 @@
+{
+  "version": "0.33",
+  "units": "mm",
+  "architecture": "Narrowed launcher-facing step and 1 mm lower center platform; side clips fixed",
+  "optical_center_xy_mm": [
+    0.1418,
+    -7.8658
+  ],
+  "optical_face_z_mm": 3.0999999999999996,
+  "PCB_box_mm": [
+    -4.3582,
+    4.6418,
+    -14.2158,
+    -0.21579999999999977,
+    5.4,
+    7.1
+  ],
+  "PCB_nominal_mm": [
+    14,
+    9,
+    1.7
+  ],
+  "PCB_side_clearance_mm": 0.12,
+  "PCB_thickness_range_for_keeper_mm": [
+    1.7,
+    2.0
+  ],
+  "PCB_reference": "Current v0.20/v0.21 measured-photo envelope: 1.7mm PCB plus 2.3mm sensor. Keeper can rise 0.3mm for the earlier 2mm PCB measurement; actual optical projection requires physical verification.",
+  "keeper_preload_gap_mm": 0.6,
+  "keeper_edge_overlap_mm": null,
+  "header_tail_relief_floor_z_mm": 3.2,
+  "clip_screw_axes_xy_mm": [
+    [
+      -13.2,
+      0
+    ],
+    [
+      13.2,
+      0
+    ]
+  ],
+  "sensor_screw_axes_xy_mm": [
+    [
+      -6.5582,
+      -6.115800104522704
+    ],
+    [
+      6.8418,
+      -6.115800104522704
+    ]
+  ],
+  "fasteners": {
+    "clip_keeper": "2 x M2x5 countersunk (nominal 4mm head, 90deg)",
+    "sensor_keeper": "2 x M2x4 pan head",
+    "clip_engagement_mm": 3.3,
+    "sensor_engagement_mm": 1.8
+  },
+  "replacement_parts": [
+    "01_QRE_minimal_port"
+  ],
+  "reuse": [
+    "v032 centered pressure plate",
+    "v032 thicker latch crossbar",
+    "original latches",
+    "existing separate v024 M5 platform",
+    "two M2x4 sensor screws",
+    "two M2x5 clip screws"
+  ],
+  "comparison": {
+    "central_platform_drop_mm": 1.0,
+    "center_width_reduction_mm": 1.0,
+    "old_base_volume_mm3": 3038.1836600719225,
+    "new_base_volume_mm3": 3007.0111164458503
+  },
+  "limits": [
+    "Digital checks cover modeled parts; installed launcher clearance, retention and optical response need a physical fit check.",
+    "The new central step and sensor seat intentionally change the original optical datum by minus 1 mm; the prior launcher-top reference is not a measured collision model.",
+    "Side clips, hinge beds, crossbar and separate M5 platform retain their prior poses.",
+    "Nominal board and plugs retain v032 clearances; solder tails, wire routing and purchased screw envelopes remain provisional.",
+    "Center-to-side wall connection is 0.62 mm high at the flat shoulder; printed strength needs inspection.",
+    "No printer dispatch."
+  ],
+  "keeper_flat_contact_box_mm": [
+    -4.2382,
+    4.5218,
+    -11.49580020904541,
+    -0.7357999999999998,
+    7.1,
+    8.299999999999999
+  ],
+  "keeper_contact_step_down_mm": 0.4,
+  "keeper_tab_bottom_z_mm": 7.5,
+  "keeper_tab_top_z_mm": 9.1,
+  "keeper_body_thickness_mm": 1.2,
+  "keeper_tab_thickness_mm": 1.6,
+  "keeper_nominal_contact_z_mm": 7.1,
+  "keeper_contact_footprint_mm2": 94.25760183123779,
+  "dupont_clearance_mm": 0.3,
+  "keeper_bare_end_bevel_trim_mm": 0.4,
+  "keeper_underside_ramp_rise_mm": 0.8,
+  "keeper_underside_ramp_run_mm": 0.8,
+  "keeper_flat_bed_edge_y_mm": 1.2342000000000002,
+  "keeper_front_bridge_bottom_z_mm": 7.9,
+  "keeper_front_bridge_top_z_mm": 8.7,
+  "keeper_print_orientation": "Upright on straight bare-end edge; centered screw wings extend to the bed edge",
+  "keeper_print_height_mm": 12.730000209045409,
+  "keeper_print_layer_height_mm": 0.2,
+  "sensor_screw_position": "Midpoint of flat exposed-PCB contact rectangle",
+  "sensor_screw_shift_y_mm": -5.4500001045227044,
+  "main_flat_floor_z_mm": 5.4,
+  "flattening_patch_bottom_z_mm": 3.2,
+  "clip_crossbar_added_thickness_mm": 0.6,
+  "clip_crossbar_thickness_mm": 1.7840000000000007,
+  "clip_screw_seats_z_mm": 13.284,
+  "positive_header_end_stops_mm": 0.55,
+  "physical_feedback": "Photo IMG_7549: central step too wide for launcher black area; narrow 0.5 mm per side and lower center/sensor 1 mm",
+  "keeper_bed_contact_area_mm2": 17.119999970793714,
+  "keeper_screw_front_hole_wall_mm": 6.250000104522705,
+  "interpretation": "User confirmed: lower center platform and sensor; keep side clips fixed",
+  "central_step_trim_per_side_mm": 0.5,
+  "central_platform_drop_mm": 1.0,
+  "old_center_step_width_at_y0_mm": 19.202018889938802,
+  "new_center_step_width_at_y0_mm": 18.202018889938802,
+  "central_left_boundary": {
+    "slope_dx_dy": -0.000949819921366036,
+    "old_intercept_mm": -9.479019317184802,
+    "new_intercept_mm": -8.979019317184802
+  },
+  "central_right_boundary_mm": [
+    9.722999572754,
+    9.222999572754
+  ],
+  "minimum_center_to_side_join_height_mm": 0.6200000000000001,
+  "outer_flat_floor_z_mm": 6.4,
+  "legacy_launcher_top_reference_z_mm": 3.78
+}

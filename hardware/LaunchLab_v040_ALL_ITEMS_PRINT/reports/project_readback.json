@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "plate_count": 1,
+  "model_count": 6,
+  "all_meshes_match_frozen_STLs": true,
+  "gcode_md5": "PASS",
+  "pressure_plate_support_override": false,
+  "bed_bounds_mm": [
+    80.93729,
+    77.64566,
+    175.86199000000002,
+    175.67598
+  ]
+}

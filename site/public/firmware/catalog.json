@@ -1,0 +1,35 @@
+{
+  "version": "0.7.0",
+  "runtime": "0.7.0-sticks3-singlepeak",
+  "board": "M5StickS3 K150",
+  "chip": "ESP32-S3",
+  "flashBytes": 8388608,
+  "applicationOffset": 65536,
+  "files": [
+    {
+      "path": "firmware/0.7.0/bootloader.bin",
+      "offset": 0,
+      "size": 20256,
+      "sha256": "8581a3fb98309f261482327b5ff51a2fabca0ec513f9ba38595ed04479794e58"
+    },
+    {
+      "path": "firmware/0.7.0/partitions.bin",
+      "offset": 32768,
+      "size": 3072,
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c"
+    },
+    {
+      "path": "firmware/0.7.0/boot_app0.bin",
+      "offset": 57344,
+      "size": 8192,
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+    },
+    {
+      "path": "firmware/0.7.0/application.bin",
+      "offset": 65536,
+      "size": 709712,
+      "sha256": "6f3ad29aca0d8a97f7e23f8d4c71399c128768e729d6568520bdc138408557eb"
+    }
+  ],
+  "validation": "Software tests and prior device installation verified. Fresh single-turn peak acceptance and absolute RPM calibration pending."
+}

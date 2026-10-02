@@ -1,0 +1,15 @@
+{
+  "release": "0.2.2-sticks3-portrait",
+  "date": "2026-10-01",
+  "board": "M5StickS3 K150",
+  "binary": "LaunchLabMini.ino.bin",
+  "binary_bytes": 628720,
+  "sha256": "dd972cbe6aab9d2ab206e335022d435e7bb92b68e796ecb302a1a0fbf857bf58",
+  "application_offset": "0x10000",
+  "toolchain": {
+    "arduino_esp32": "3.3.0",
+    "m5unified": "0.2.23",
+    "m5gfx": "0.2.30"
+  },
+  "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration."
+}

@@ -1,0 +1,54 @@
+{
+  "parts": {
+    "01_QRE_minimal_port": {
+      "source_release": "LaunchLab_v033_flush_QRE",
+      "source_file": "stl/01_QRE_minimal_port.stl",
+      "sha256": "ce2e81c800008620a56630a4258dee1c67f4a26e9dcbe1701e8186c621922438",
+      "quantity": 1,
+      "supports": true
+    },
+    "02_QRE_clip_keeper": {
+      "source_release": "LaunchLab_v033_flush_QRE",
+      "source_file": "stl/02_QRE_clip_keeper.stl",
+      "sha256": "ceb068e24c6b704861fe1531dd17aa151b630d64226e8857c53de8e3f63df245",
+      "quantity": 1,
+      "supports": true
+    },
+    "03_QRE_pressure_bar": {
+      "source_release": "LaunchLab_v033_flush_QRE",
+      "source_file": "stl/03_QRE_pressure_bar.stl",
+      "sha256": "3c30eef675bb74ef50cc1886f2665e0f2e9a9602c3f486365887e6b5d56ea68f",
+      "quantity": 1,
+      "supports": false
+    },
+    "08_QRE_latch_LEFT": {
+      "source_release": "LaunchLab_v033_flush_QRE",
+      "source_file": "stl/08_QRE_latch_LEFT.stl",
+      "sha256": "065e8a051beabd771ff9227a8c4c2a0d3d82297f15b5cf8fd6235b7a9d8ebdda",
+      "quantity": 1,
+      "supports": true
+    },
+    "09_QRE_latch_RIGHT": {
+      "source_release": "LaunchLab_v033_flush_QRE",
+      "source_file": "stl/09_QRE_latch_RIGHT.stl",
+      "sha256": "d42baa9845393cfd6ba12870b4687e51d4ad91ab8982de14579ec578bd463f57",
+      "quantity": 1,
+      "supports": true
+    },
+    "01_M5_stepped_platform": {
+      "source_release": "LaunchLab_v040_right_block_print",
+      "source_file": "stl/01_M5_stepped_platform.stl",
+      "sha256": "cf46cb638f5d63ea6a7ac35af9e33cfcbfe94ac21a212e527d1bef1a68d03c75",
+      "quantity": 1,
+      "supports": true
+    }
+  },
+  "plates": 1,
+  "requested_filament": "AMS A3 / filament 3 at dispatch",
+  "dispatch": "None",
+  "hardware": [
+    "2 x M2x6 for M5",
+    "2 x M2x5 countersunk for clip crossbar",
+    "2 x M2x4 pan head for sensor pressure plate"
+  ]
+}

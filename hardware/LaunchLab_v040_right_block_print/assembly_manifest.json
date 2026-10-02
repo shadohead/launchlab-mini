@@ -1,0 +1,84 @@
+{
+  "version": "0.40",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "01_M5_stepped_platform",
+      "filename": "preview/01_M5_stepped_platform.stl",
+      "color": "#357B73",
+      "description": "Circled right block trimmed 3 mm left; native opposite-end 0.5 mm bevel copied to the new edge.",
+      "group": "M5",
+      "reference": false,
+      "printable": true,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.40 matching factory edge, printable"
+    },
+    {
+      "name": "REF_M5Stick_factory_geometry",
+      "filename": "preview/REF_M5Stick_factory_geometry.stl",
+      "color": "#A0A6AE",
+      "description": "Unscaled factory M5; top flush with native head, USB-C right and Hat left.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_Display_visual",
+      "filename": "preview/REF_Display_visual.stl",
+      "color": "#101A23",
+      "description": "Display visual only.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_M2x6_1",
+      "filename": "preview/REF_M2x6_1.stl",
+      "color": "#C3C9D1",
+      "description": "M2x6 inserted from underside; nominal 1.7mm insert engagement.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_M2x6_2",
+      "filename": "preview/REF_M2x6_2.stl",
+      "color": "#C3C9D1",
+      "description": "M2x6 inserted from underside; nominal 1.7mm insert engagement.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_soft_liner_1",
+      "filename": "preview/REF_soft_liner_1.stl",
+      "color": "#454A50",
+      "description": "0.3mm soft liner at Hat end.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_soft_liner_2",
+      "filename": "preview/REF_soft_liner_2.stl",
+      "color": "#454A50",
+      "description": "0.3mm soft liner at Hat end.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    }
+  ],
+  "print_package_created": true
+}

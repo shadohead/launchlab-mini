@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "actual_model_layer_count": 216,
+  "layer_height_mm": 0.2,
+  "joining_height_mm": 0.62,
+  "join_checks": {
+    "LEFT": {
+      "boundary_x_mm": -8.986142966595047,
+      "adjacent_CAD_layer_x_mm": [
+        -9.072998046870001,
+        -8.87299804687
+      ],
+      "actual_print_z_mm": [
+        12.6,
+        12.8
+      ],
+      "positive_model_path_samples": [
+        2,
+        1
+      ]
+    },
+    "RIGHT": {
+      "boundary_x_mm": 9.222999572754,
+      "adjacent_CAD_layer_x_mm": [
+        9.12700245313,
+        9.327001953129997
+      ],
+      "actual_print_z_mm": [
+        30.8,
+        31.0
+      ],
+      "positive_model_path_samples": [
+        11,
+        2
+      ]
+    }
+  },
+  "method": "Positive model extrusions through the 0.62 mm shoulder overlap at Y5..10; saved 3MF transforms, child centering, nozzle offset and deposited layer midpoint mapped back to delivered CAD. Adjacent layers on both sides deposit material in the join.",
+  "limits": "Toolpaths establish deposited geometry, not printed strength or installed fit."
+}

@@ -1,0 +1,18 @@
+{
+  "replacement_printed_parts": 1,
+  "plates": {
+    "new_base": [
+      "01_QRE_minimal_port"
+    ]
+  },
+  "reuse": [
+    "v032 centered pressure plate",
+    "v032 crossbar",
+    "existing QRE latches",
+    "separate v024 M5 platform",
+    "two M2x4 sensor screws",
+    "two M2x5 clip screws"
+  ],
+  "requested_filament": "AMS A3 / filament 3; assignment occurs at dispatch",
+  "dispatch": "None"
+}

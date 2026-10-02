@@ -1,0 +1,21 @@
+{
+  "runtime_version": "0.2.0-sticks3-acquisition",
+  "sensor": {
+    "role": "old sensor",
+    "type": "TCRT5000/LM393 analog module",
+    "input": "AO",
+    "supply_v": 3.3,
+    "gpio": 1
+  },
+  "toolchain": {
+    "arduino_esp32": "3.3.0",
+    "m5unified": "0.2.23",
+    "m5gfx": "0.2.30",
+    "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc,USBMode=hwcdc,FlashSize=8M,PartitionScheme=default_8MB,PSRAM=opi"
+  },
+  "validation_note": "Historical development release; see README. Firmware installation is distinct from physical acceptance and absolute RPM calibration.",
+  "binary": "LaunchLabMini.ino.bin",
+  "binary_bytes": 619408,
+  "sha256": "8f60898d0a4fd3e9e6cf16c741ada3ac50949d21f52ab84574b8c54e09a5dec6",
+  "application_offset": "0x10000"
+}
