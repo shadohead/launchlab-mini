@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "units": "mm",
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "source_sha256": {
+    "LICENSE.txt": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb",
+    "assembly_manifest.json": "a4f778a4f2ed60071d663f9bfa0cdf0b7834e8fcea2fae4165f85b99bafabe1a",
+    "parameters.json": "c40d321d429f12d9b63ae0dbc9a656c3e87ec17508a6e7015c8366d7ed6404ca",
+    "preview/01_M5_smooth_rectangle_platform.stl": "e599d77ae208a739bbdd16b3581ceb985c77291371e19f2b85c47bc193124a63",
+    "preview/REF_Display_visual.stl": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433",
+    "preview/REF_M2x6_1.stl": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170",
+    "preview/REF_M2x6_2.stl": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564",
+    "preview/REF_M5Stick_factory_geometry.stl": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29",
+    "stl/01_M5_smooth_rectangle_platform.stl": "7450b496a090ed2248f14251a0336f447b1e36e7493685d426f969e3b7f261a8"
+  },
+  "shape": "Trapezoidal loft with rounded corners and concave base blend",
+  "projection_mm": 1.25,
+  "nominal_base_yz_size_mm": [
+    4.25,
+    6.25
+  ],
+  "nominal_top_yz_size_mm": [
+    1.75,
+    3.75
+  ],
+  "edge_and_base_fillet_mm": 0.8,
+  "analytic_feature_valid": true,
+  "CAD_seam_weld_delta_mm": 0.0,
+  "degenerate_or_duplicate_CAD_faces_removed": 4,
+  "protrusion_bounds_mm": [
+    [
+      -12.75,
+      -2.4557461738586426,
+      -3.080768346786499
+    ],
+    [
+      -11.500009536743164,
+      2.455768346786499,
+      3.830768346786499
+    ]
+  ],
+  "changed_material_outside_feature_mm3": 0.0,
+  "STL_export_delta_mm": 1.966049969490843e-06,
+  "M5_overlap_mm3": 4.561091902137283e-06,
+  "print_bounds_mm": [
+    [
+      -9.599999904632568,
+      -24.5,
+      0.0
+    ],
+    [
+      9.599999904632568,
+      24.5,
+      35.54999923706055
+    ]
+  ],
+  "preserved": {
+    "M5_deck_screw_recesses_standoffs_and_supports_symmetric_difference_mm3": 0.0,
+    "left_launcher_receiver_symmetric_difference_mm3": 0.0,
+    "right_launcher_receiver_symmetric_difference_mm3": 0.0,
+    "underlying_plate_symmetric_difference_mm3": 0.0
+  }
+}

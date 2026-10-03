@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "units": "mm",
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "source_sha256": {
+    "LICENSE.txt": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb",
+    "assembly_manifest.json": "c2deb8831043ab895bac9b2e478c1b1a7b9abda2f7c39ed1c127e8cfd6ff6686",
+    "parameters.json": "eca84ba2e9bc7f78ed3f863551808d4ac33c235c96e9a50bca46f519ef7ff64b",
+    "preview/01_M5_recessed_screw_platform.stl": "9415fd240367f4fddff61a5c352bd9cce55cb07c457d4427b971c827bf0b519d",
+    "preview/REF_Display_visual.stl": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433",
+    "preview/REF_M2x6_1.stl": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170",
+    "preview/REF_M2x6_2.stl": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564",
+    "preview/REF_M5Stick_factory_geometry.stl": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29",
+    "stl/01_M5_recessed_screw_platform.stl": "04c319ff30345db2810f1d5b95e92efd314e96d2b89c1dde2fdd3311f2e58a80"
+  },
+  "outward_extension_mm": 1.0,
+  "extension_vector_world_mm": [
+    -1,
+    0,
+    0
+  ],
+  "plate_face_x_mm": -11.5,
+  "original_tip_x_mm": -11.75,
+  "revised_tip_x_mm": -12.75,
+  "original_projection_mm": 0.25,
+  "revised_projection_mm": 1.25,
+  "same_yz_position": true,
+  "original_rounded_cap_symmetric_difference_mm3": 8.10781997095944e-13,
+  "added_material_mm3": 6.562500006872862,
+  "removed_material_mm3": 0.0,
+  "changed_material_outside_feature_mm3": 0.0,
+  "STL_export_delta_mm": 1.966049969490843e-06,
+  "M5_overlap_mm3": 4.561091902137283e-06,
+  "print_bounds_mm": [
+    [
+      -9.599999904632568,
+      -24.5,
+      0.0
+    ],
+    [
+      9.599999904632568,
+      24.5,
+      35.54999923706055
+    ]
+  ],
+  "preserved": {
+    "M5_deck_screw_recesses_standoffs_and_supports_symmetric_difference_mm3": 0.0,
+    "left_launcher_receiver_symmetric_difference_mm3": 0.0,
+    "right_launcher_receiver_symmetric_difference_mm3": 0.0
+  }
+}

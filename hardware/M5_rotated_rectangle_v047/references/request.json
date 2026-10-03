@@ -1,0 +1,5 @@
+{
+  "request": "Rectangle in the other direction, growing bottom left and top right in preview",
+  "interpretation": "Turn existing footprint 90 degrees: new short-side growth 1 mm at each end, retaining 1.25 mm projection",
+  "preview_mapping": "Camera (1,1,1.5) in print pose: print X / original world Z is the bottom-left and top-right direction"
+}

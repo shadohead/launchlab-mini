@@ -17,6 +17,11 @@ for directory in (root/'hardware').iterdir():
             digest, name=line.split(maxsplit=1); p=directory/name
             assert p.exists() and hashlib.sha256(p.read_bytes()).hexdigest()==digest,p
             count+=1
+for version in json.loads((root/'hardware/versions.json').read_text())['versions']:
+    for file in version['files']:
+        data=(root/file['path']).read_bytes()
+        assert len(data)==file['size'] and hashlib.sha256(data).hexdigest()==file['sha256'],file['path']
+        count+=1
 for p in root.rglob('*.3mf'):
     if 'node_modules' in p.parts or 'dist' in p.parts: continue
     with zipfile.ZipFile(p) as z:

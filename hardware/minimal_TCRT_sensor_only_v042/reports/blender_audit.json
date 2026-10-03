@@ -1,0 +1,132 @@
+{
+  "01_TCRT_sensor_cradle": {
+    "vertices": 4931,
+    "triangles": 9878,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_faces": 2,
+    "components": 1,
+    "volume_mm3": 4170.863371675502,
+    "bounds_mm": {
+      "min": [
+        -21.57299965620041,
+        -16.475001350045204,
+        0.0
+      ],
+      "max": [
+        21.57299965620041,
+        19.93420161306858,
+        16.300000250339508
+      ],
+      "size": [
+        43.14599931240082,
+        36.409202963113785,
+        16.300000250339508
+      ]
+    }
+  },
+  "02_TCRT_clip_keeper": {
+    "vertices": 2164,
+    "triangles": 4324,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_faces": 0,
+    "components": 1,
+    "volume_mm3": 384.89113137319663,
+    "bounds_mm": {
+      "min": [
+        -18.50000023841858,
+        -14.400000683963299,
+        10.900000110268593
+      ],
+      "max": [
+        18.50000023841858,
+        4.19999985024333,
+        13.884000480175018
+      ],
+      "size": [
+        37.00000047683716,
+        18.60000053420663,
+        2.9840003699064255
+      ]
+    }
+  },
+  "03_TCRT_sensor_pressure_keeper": {
+    "vertices": 1260,
+    "triangles": 2524,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_faces": 0,
+    "components": 1,
+    "volume_mm3": 174.53388683267383,
+    "bounds_mm": {
+      "min": [
+        -11.958201415836811,
+        -13.465801253914833,
+        16.100000590085983
+      ],
+      "max": [
+        12.241801247000694,
+        18.534202128648758,
+        17.70000159740448
+      ],
+      "size": [
+        24.200002662837505,
+        32.00000338256359,
+        1.6000010073184967
+      ]
+    }
+  },
+  "08_TCRT_latch_LEFT": {
+    "vertices": 212,
+    "triangles": 428,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_faces": 0,
+    "components": 1,
+    "volume_mm3": 698.5707925831333,
+    "bounds_mm": {
+      "min": [
+        -29.87469732761383,
+        -5.961904767900705,
+        -3.4631439484655857
+      ],
+      "max": [
+        -16.12747460603714,
+        5.943600088357925,
+        10.572525672614574
+      ],
+      "size": [
+        13.74722272157669,
+        11.90550485625863,
+        14.03566962108016
+      ]
+    }
+  },
+  "09_TCRT_latch_RIGHT": {
+    "vertices": 212,
+    "triangles": 428,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_faces": 0,
+    "components": 1,
+    "volume_mm3": 698.5708284823743,
+    "bounds_mm": {
+      "min": [
+        16.15547388792038,
+        -5.943600088357925,
+        -3.4631439484655857
+      ],
+      "max": [
+        29.90269847214222,
+        5.961904767900705,
+        10.572525672614574
+      ],
+      "size": [
+        13.74722458422184,
+        11.90550485625863,
+        14.03566962108016
+      ]
+    }
+  }
+}

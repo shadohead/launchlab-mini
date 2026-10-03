@@ -1,0 +1,10 @@
+# Frozen CAD and printer archives retain exporter bytes and checksums.
+*.stl binary
+*.step binary
+*.STEP binary
+*.3mf binary
+*.blend binary
+*.glb binary
+*.gcode binary
+*.bin binary
+*.zip binary

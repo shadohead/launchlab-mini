@@ -2,15 +2,19 @@
 
 **A removable launch-practice meter for Beyblade X string launchers.** LaunchLab Mini uses an optical sensor to measure the launcher's shaft speed, then shows your peak RPM, launch history, and a replay of the device's tilt and rotation on an M5StickS3 screen. Use it to compare pulls, track consistency across practice sessions, and try to repeat a chosen launch.
 
-Built around **M5StickS3 K150 + the small analog QRE1113 sensor**, with a six-piece printed attachment. The M5 keeps its factory case, display, controller and battery; you do not need a phone to view your results. The mount is designed to be removable. Check the supplied launcher interface and printed fit before using it on your launcher.
+Built around **M5StickS3 K150**, with separate printed mounts for the **small analog QRE1113** or **older TCRT5000 / LM393** sensor. The current full-featured firmware targets QRE1113; the old TCRT build is preserved separately. The M5 keeps its factory case, display, controller and battery; you do not need a phone to view your results. The mount is designed to be removable. Check the supplied launcher interface and printed fit before using it on your launcher.
 
 **[USB firmware updater](https://shadohead.github.io/launchlab-mini/) · [Firmware & print releases](https://github.com/shadohead/launchlab-mini/releases) · [Build & wiring](docs/BUILD.md)**
 
 ![LaunchLab Mini M5StickS3 mount, rendered from the published CAD](site/public/images/m5-mount.png)
 
-Current firmware: **0.7.0**. Current print package: **v0.40**, six pieces on one P1S PLA plate. Firmware and hardware versions are tracked separately.
+Current QRE firmware: **0.7.0**. Old TCRT firmware: **0.2.0**. Latest M5 carrier: **v0.50**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
+
+**[Choose your sensor and see every revision](docs/HARDWARE_VERSIONS.md)** — includes all newly published v0.41–v0.50 models, historical v0.19 TCRT, and current QRE files.
 
 ## What it does
+
+The features and device UI below describe **QRE firmware 0.7.0**. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
 
 | Feature | What you see or do |
 | --- | --- |
@@ -53,9 +57,19 @@ From the live screen, **B opens history** and **A recalls the last recap**. In h
 
 ## Exploded assemblies
 
-The Beyblade X attachment has **two independent assemblies**: the M5 display mount and the QRE optical sensor attachment. The views below use the exact published CAD meshes, separated for illustration. They do not assert a measured combined mounting position on a complete launcher. Electronics and screws are reference envelopes, not printed parts.
+The Beyblade X attachment has **two independent assemblies**: the M5 display mount and your chosen optical sensor attachment (QRE1113 or TCRT5000). The views below use the exact published CAD meshes, separated for illustration. They do not assert a measured combined mounting position on a complete launcher. Electronics and screws are reference envelopes, not printed parts.
 
-### M5StickS3 display mount
+### Latest M5StickS3 carrier — v0.50
+
+![Exploded latest M5 v0.50 carrier, intact device reference and underside screws](docs/assets/hardware/variants/m5-exploded.png)
+
+**1 — Equal-height M5 carrier:** one replacement printed piece with the v0.49 soft center ramp, recessed screw heads and supports raised to 2.3 mm. [Download v0.50 3MF](hardware/M5_equal_supports_v050/bambu/LaunchLab_v050_P1S_PLA_M5_EQUAL_SUPPORTS_TREE_SLIM.3mf) · [Full package](hardware/M5_equal_supports_v050_package.zip). Saved slice: 43m18s / 9.24 g PLA.
+
+**Prototype: physical seating and leveling are unverified.** The original nominal M5 reference overlaps the taller pads in its saved assembly pose; it is lifted here for illustration. Screw length and insert engagement must be checked after the counterbore revision. STEP files contain only the added supports; the full carrier is mesh geometry.
+
+<img src="docs/assets/hardware/variants/m5-part-01.png" width="360" alt="Actual v0.50 printed M5 equal-height support carrier">
+
+### Earlier M5StickS3 display mount — v0.40
 
 ![Exploded M5StickS3 assembly showing printed part 1, the intact M5StickS3 and underside screws](docs/assets/hardware/m5-exploded.png)
 
@@ -73,7 +87,29 @@ The Beyblade X attachment has **two independent assemblies**: the M5 display mou
 | 5 | Left launcher latch | One side of the removable launcher attachment. | Retained by the base/crossbar assembly. |
 | 6 | Right launcher latch | Opposite side of the removable launcher attachment. | Retained by the base/crossbar assembly. |
 
-### Each printed piece
+### Old TCRT5000 sensor attachment — v0.43
+
+![Exploded TCRT5000 v0.43 mount with six printed pieces, analog sensor and nominal screws](docs/assets/hardware/variants/tcrt-exploded.png)
+
+This version uses the **older 31×13×1 mm TCRT5000 / LM393 PCB**. Two independent screw-on clip caps replace the earlier crossbar; M5 stays on a separate carrier. [Six-piece CAD/STL/STEP package](hardware/minimal_TCRT_split_keepers_v043_package.zip) · [Old-sensor wiring & firmware](docs/TCRT5000.md). This is an **unsliced CAD prototype**; fit, solder clearance, preload and optical alignment still need checking.
+
+| No. | Printed piece | Purpose |
+| --- | --- | --- |
+| 1 | TCRT sensor cradle | Locates the larger board and preserves the launcher interface. |
+| 2 | Left clip cap | Retains one launcher latch with an M2×5 countersunk screw. |
+| 3 | Right clip cap | Retains the opposite latch with an M2×5 countersunk screw. |
+| 4 | Sensor pressure keeper | Holds the board with two M2×4 pan-head screws. |
+| 5 | Left launcher latch | Removable launcher attachment. |
+| 6 | Right launcher latch | Opposite side of the launcher attachment. |
+
+<table>
+<tr><th>1 · TCRT cradle</th><th>2 · Left cap</th><th>3 · Right cap</th></tr>
+<tr><td><img src="docs/assets/hardware/variants/tcrt-part-01.png" width="240" alt="TCRT sensor cradle"></td><td><img src="docs/assets/hardware/variants/tcrt-part-02.png" width="240" alt="Left TCRT clip cap"></td><td><img src="docs/assets/hardware/variants/tcrt-part-03.png" width="240" alt="Right TCRT clip cap"></td></tr>
+<tr><th>4 · Pressure keeper</th><th>5 · Left latch</th><th>6 · Right latch</th></tr>
+<tr><td><img src="docs/assets/hardware/variants/tcrt-part-04.png" width="240" alt="TCRT pressure keeper"></td><td><img src="docs/assets/hardware/variants/tcrt-part-05.png" width="240" alt="Left TCRT launcher latch"></td><td><img src="docs/assets/hardware/variants/tcrt-part-06.png" width="240" alt="Right TCRT launcher latch"></td></tr>
+</table>
+
+### Each original QRE printed piece — v0.40 plate
 
 All six pieces are included in the complete v0.40 plate. The views below show their actual mesh geometry; each build uses one of each.
 
@@ -94,7 +130,11 @@ All six pieces are included in the complete v0.40 plate. The views below show th
 
 If your five-piece sensor attachment is already built, only the **v0.40 M5 platform** needs replacement. [Download the combined 3MF](hardware/LaunchLab_v040_ALL_ITEMS_PRINT/bambu/LaunchLab_v040_P1S_PLA_ALL_ITEMS_ONE_PLATE.3mf) or the [full print package](hardware/LaunchLab_v040_ALL_ITEMS_PRINT_package.zip). Physical fit, button/thumb access and launch-load retention still need checking after printing. [Render provenance](docs/assets/hardware/provenance.json) identifies the source meshes; `scripts/render-readme-hardware.py` reproduces these illustrations in Blender.
 
+[Latest-render provenance](docs/assets/hardware/variants/provenance.json) records the frozen source mesh hashes; `scripts/render-variant-hardware.py` reproduces the new illustrations. [Version history](docs/HARDWARE_VERSIONS.md) explains every v0.41–v0.50 change.
+
 ## Get started
+
+Choose **QRE1113 or old TCRT5000** in the [version guide](docs/HARDWARE_VERSIONS.md) first. For TCRT use [its build/restore guide](docs/TCRT5000.md); the following complete-plate/updater steps are for QRE.
 
 1. Download the [complete v0.40 print package](hardware/LaunchLab_v040_ALL_ITEMS_PRINT_package.zip) or open [the combined 3MF](hardware/LaunchLab_v040_ALL_ITEMS_PRINT/bambu/LaunchLab_v040_P1S_PLA_ALL_ITEMS_ONE_PLATE.3mf) in Bambu Studio.
 2. Assemble with an intact M5StickS3 K150 and analog QRE1113. Read [BUILD.md](docs/BUILD.md) for wiring, fasteners and print settings.
@@ -103,6 +143,10 @@ If your five-piece sensor attachment is already built, only the **v0.40 M5 platf
 Update writes only the application at `0x10000` after checking the installed partition table. First install replaces the factory firmware and partition table and requires an explicit checkbox. Neither flow erases all flash. Every downloaded image is SHA-256 checked and writes use esptool's device MD5 verification. Chip identity alone cannot distinguish every ESP32-S3 board, so confirm your device is specifically an M5StickS3 K150.
 
 ## Hardware files
+
+- [All hardware revisions and sensor compatibility](docs/HARDWARE_VERSIONS.md), with a [checksum inventory](hardware/versions.json).
+- [v0.50 M5 carrier](hardware/M5_equal_supports_v050/): latest saved sliced prototype, plus v0.44–v0.49 history.
+- [v0.43 TCRT mount](hardware/minimal_TCRT_split_keepers_v043/): latest unsliced six-piece prototype, plus v0.19/v0.41/v0.42 history.
 
 - [v0.40 complete plate](hardware/LaunchLab_v040_ALL_ITEMS_PRINT/): all six prints, source STLs, QRE STEP files, profiles and digital verification.
 - [v0.40 M5 mount](hardware/LaunchLab_v040_right_block_print/): editable Blender mesh and GLB, independent 3MF, dimensions and CAD reports.

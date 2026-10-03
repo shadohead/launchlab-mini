@@ -1,0 +1,1 @@
+The local v0.42 checksum file predated the final renders/03_exploded.png. All CAD/STL/STEP checksums matched. Original checksum file is preserved here; publication SHA256SUMS.txt records the current saved files. No geometry was changed.

@@ -1,0 +1,153 @@
+{
+  "cad": {
+    "01_TCRT_attachment_port": {
+      "bounds_mm": [
+        [
+          -21.572998046870026,
+          -16.47500038147,
+          -2.85032161232543e-12
+        ],
+        [
+          21.572998046875316,
+          16.47500038147019,
+          13.283997535706
+        ]
+      ],
+      "volume_mm3": 3751.937989167468
+    },
+    "03_TCRT_sensor_cradle": {
+      "bounds_mm": [
+        [
+          -19.4,
+          -16.4,
+          10.9
+        ],
+        [
+          19.4,
+          20.500000000000004,
+          17.3
+        ]
+      ],
+      "volume_mm3": 1747.5046507180225
+    },
+    "04_TCRT_M5_top_dock": {
+      "bounds_mm": [
+        [
+          -19.4,
+          -17.5,
+          17.3
+        ],
+        [
+          19.4,
+          29.0,
+          25.9
+        ]
+      ],
+      "volume_mm3": 1408.9844644832108
+    },
+    "11_TCRT_SEAT_FIT": {
+      "bounds_mm": [
+        [
+          -19.4,
+          -16.4,
+          13.284
+        ],
+        [
+          19.4,
+          20.4342,
+          17.3
+        ]
+      ],
+      "volume_mm3": 1590.5554614964826
+    },
+    "12_TCRT_KEEPER_FIT": {
+      "bounds_mm": [
+        [
+          -19.4,
+          -16.4,
+          17.3
+        ],
+        [
+          19.4,
+          20.4342,
+          18.7
+        ]
+      ],
+      "volume_mm3": 295.3666173079408
+    },
+    "13_M5_MOUNT_FIT": {
+      "bounds_mm": [
+        [
+          -12.0,
+          -17.5,
+          21.6
+        ],
+        [
+          12.0,
+          -11.0,
+          25.9
+        ]
+      ],
+      "volume_mm3": 283.5028330884823
+    }
+  },
+  "mesh": {
+    "preview/01_TCRT_attachment_port.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 3751.9379774430167
+    },
+    "stl/01_TCRT_attachment_port.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 3751.9380030107513
+    },
+    "preview/03_TCRT_sensor_cradle.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1747.4683706635105
+    },
+    "stl/03_TCRT_sensor_cradle.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1747.4686361407673
+    },
+    "preview/04_TCRT_M5_top_dock.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1408.9398303437422
+    },
+    "stl/04_TCRT_M5_top_dock.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1408.9397431175755
+    },
+    "extras/11_TCRT_SEAT_FIT.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1590.5185164316752
+    },
+    "extras/12_TCRT_KEEPER_FIT.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 295.362724259569
+    },
+    "extras/13_M5_MOUNT_FIT.stl": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 283.49011741418656
+    }
+  },
+  "source_sha256": {
+    "reference files/TCRT5000_user_measurements_2026-09-21.md": "417136ad0784e4f50cbc8183b18a4b125b7d79a692490a569665482309ecbe28",
+    "releases/LaunchLab_v017_open_stack/step/01_attachment_port.step": "33eb7a70634bec5072f7cfd369d91fa99d101d78165ca961ac0286426f229803",
+    "releases/LaunchLab_v017_open_stack/references/StickS3_VENDOR_ASSEMBLY_AND_EXPLODED.stl": "cadfa88716cb74a85d0d76dc866d83dbd627d6f5c310b528d43e588dab37ecec",
+    "releases/LaunchLab_v017_open_stack/stl/02_latch_LEFT.stl": "0d21f3605b3e081a1f40c0d80b46b3a52c22f3c2d3bf69dc02b9ac8c458a96f6",
+    "releases/LaunchLab_v017_open_stack/stl/02_latch_RIGHT.stl": "16dfa8511f5258a5672fade5682b25ae6a25314f3d15467b2a03f41025136dfe"
+  },
+  "nominal_collisions": [],
+  "protected_v017_packages_sha256": {
+    "releases/LaunchLab_v017_OPEN_STACK_package.zip": "c829426f65eea2ef362ba5940c0771cf8dc7046204ed32e598bbbb0903ccced9",
+    "releases/LaunchLab_v017_COMPLETE_FIRST_BUILD_package.zip": "6949a0d79d302c9ea6fdd2bb49e3683b6640c49d16b0e94054911000854050be"
+  }
+}

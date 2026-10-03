@@ -1,0 +1,61 @@
+{
+  "version": "0.50",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "01_M5_equal_supports_platform",
+      "filename": "preview/01_M5_equal_supports_platform.stl",
+      "color": "#357B73",
+      "description": "v049 carrier with both opposite-end supports raised to the screw standoff height",
+      "group": "M5",
+      "reference": false,
+      "printable": true,
+      "source": "Frozen v049 carrier plus analytic support extensions"
+    },
+    {
+      "name": "REF_M5Stick_factory_geometry",
+      "filename": "preview/REF_M5Stick_factory_geometry.stl",
+      "color": "#A0A6AE",
+      "description": "Unscaled factory M5; top flush with native head, USB-C right and Hat left.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_Display_visual",
+      "filename": "preview/REF_Display_visual.stl",
+      "color": "#101A23",
+      "description": "Display visual only.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_M2x6_1",
+      "filename": "preview/REF_M2x6_1.stl",
+      "color": "#C3C9D1",
+      "description": "Previous nominal 3.8 x 1.4 mm head / M2x6 reference seated in new recess; actual user fastener dimensions unconfirmed",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v045 head bottom flush with deck underside"
+    },
+    {
+      "name": "REF_M2x6_2",
+      "filename": "preview/REF_M2x6_2.stl",
+      "color": "#C3C9D1",
+      "description": "Previous nominal 3.8 x 1.4 mm head / M2x6 reference seated in new recess; actual user fastener dimensions unconfirmed",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v045 head bottom flush with deck underside"
+    }
+  ],
+  "print_package_created": true
+}

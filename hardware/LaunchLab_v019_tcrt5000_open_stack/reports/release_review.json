@@ -1,0 +1,66 @@
+{
+  "version": "0.19",
+  "variant": "OLD TCRT5000/LM393, exposed M5StickS3 on top",
+  "status": "COMPLETE_FIRST_BUILD_DIGITAL_CHECKS_PASS_PHYSICAL_FIT_UNVERIFIED",
+  "sensor_identity": "Blue TCRT5000/LM393 module in IMG_7445\u20137448; OLD sensor, not QRE1113",
+  "measurement_source": "references/TCRT5000_user_measurements_2026-09-21.md",
+  "core_footprint_mm": [
+    43.146,
+    48.0
+  ],
+  "clip_span_mm": 59.777393,
+  "height_above_launcher_mm": 35.12,
+  "M5_top_z_mm": 38.9,
+  "sensor_PCB_mm": [
+    31,
+    13,
+    1
+  ],
+  "sensor_component_thickness_mm": 19,
+  "pot_to_M5_gap_mm": 0.8,
+  "PCB_xy_clearance_mm": 0.3,
+  "PCB_vertical_capture_play_mm": 0.2,
+  "complete_printed_piece_count": 5,
+  "replacement_piece_count": 3,
+  "printed_parts": [
+    "01_TCRT_attachment_port",
+    "03_TCRT_sensor_cradle",
+    "04_TCRT_M5_top_dock",
+    "02_latch_LEFT",
+    "02_latch_RIGHT"
+  ],
+  "original_clip_exports_unchanged": true,
+  "fit_and_removal": "PASS",
+  "saved_Blender_and_project_readback": "PASS",
+  "all_eight_local_slices_successful": true,
+  "slice_warnings": [],
+  "full_plate_estimate": {
+    "time": "1h 27m 57s",
+    "PLA_g": 21.8,
+    "support_g": 11.196572551114375
+  },
+  "fasteners": {
+    "mount": "4 x M3x8 DIN912",
+    "device": "2 x M2x6 pan head",
+    "top_dock": "4 x M2x4 pan head",
+    "mount_thread_engagement_mm": 6.6,
+    "device_nominal_insert_engagement_mm": 1.7,
+    "sensor_keeper_thread_engagement_mm": 2.6
+  },
+  "preserved_packages_sha256": {
+    "releases/LaunchLab_v017_OPEN_STACK_package.zip": "c829426f65eea2ef362ba5940c0771cf8dc7046204ed32e598bbbb0903ccced9",
+    "releases/LaunchLab_v017_COMPLETE_FIRST_BUILD_package.zip": "6949a0d79d302c9ea6fdd2bb49e3683b6640c49d16b0e94054911000854050be",
+    "releases/LaunchLab_v018_LOW_STACK_package.zip": "9814f2118fc80f4dea163b72ca741cbd5e254f90aa99e235f09e2cbbb119bea4"
+  },
+  "physical_acceptance": "Not tested",
+  "printer_dispatch": "None",
+  "firmware_or_device_setting_changes": "None",
+  "limitations": [
+    "Actual sensor housing lateral registration, module component positions,4bare PCB corner lands,plug envelope and wire bends require fit check.",
+    "No whole-launcher registration or physical strength/retention/optical/RPM proof.",
+    "The7x6lens-pair envelope may be partially obscured by the real launcher aperture; no actual launcher modification or optical success is claimed.",
+    "M5 brass thread is user-confirmedM2;1.7mm insert depth and factory mount-face contact are nominal until dry fit.",
+    "The sensor 12 mm projection is taken from the measurement record; prior10.5mm CAD pose is corrected rather than silently reused.",
+    "v0.17 complete first-build package remains unchanged. This is a separateOLD-sensor prototype; no printer dispatch,purchase or firmware change."
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "description": "Frozen local STL snapshots. Explosion translations are illustrative. M5 v0.50 has nominal reference-pad overlap in its original assembly; lifted reference here is not a fit claim. TCRT v0.43 has provisional electronic envelopes; all physical fit remains unverified.",
+  "renders": [
+    {
+      "scene": "m5 latest exploded",
+      "part": "01_M5_equal_supports_platform",
+      "source": "hardware/M5_equal_supports_v050/preview/01_M5_equal_supports_platform.stl",
+      "sha256": "8c88954c6d2b90d67963cfc3d551f921533341a1defd7e3513153dea52426ddd"
+    },
+    {
+      "scene": "m5 latest exploded",
+      "part": "REF_M5Stick_factory_geometry",
+      "source": "hardware/M5_equal_supports_v050/preview/REF_M5Stick_factory_geometry.stl",
+      "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+    },
+    {
+      "scene": "m5 latest exploded",
+      "part": "REF_Display_visual",
+      "source": "hardware/M5_equal_supports_v050/preview/REF_Display_visual.stl",
+      "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+    },
+    {
+      "scene": "m5 latest exploded",
+      "part": "REF_M2x6_1",
+      "source": "hardware/M5_equal_supports_v050/preview/REF_M2x6_1.stl",
+      "sha256": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170"
+    },
+    {
+      "scene": "m5 latest exploded",
+      "part": "REF_M2x6_2",
+      "source": "hardware/M5_equal_supports_v050/preview/REF_M2x6_2.stl",
+      "sha256": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "01_TCRT_sensor_cradle",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/01_TCRT_sensor_cradle.stl",
+      "sha256": "6afc3e4fab1ac84bbcb579f9b7648523f58f927b8bd987443ec4a9b0d0636f1f"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "02_TCRT_clip_cap_LEFT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/02_TCRT_clip_cap_LEFT.stl",
+      "sha256": "637d442249a44d9026696575f7a839fb74946b168e981c4373c35eb674092394"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "02_TCRT_clip_cap_RIGHT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/02_TCRT_clip_cap_RIGHT.stl",
+      "sha256": "c7b31caa655a797e311f7bfd9616d43044ee784dfcdd338e6bc7767ec1c6a1da"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "03_TCRT_sensor_pressure_keeper",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/03_TCRT_sensor_pressure_keeper.stl",
+      "sha256": "8668a5936d3cd7a0224c96cca3d506214e96f238c1579fdfa4a02ede8d47ea49"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "08_TCRT_latch_LEFT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/08_TCRT_latch_LEFT.stl",
+      "sha256": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "09_TCRT_latch_RIGHT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/09_TCRT_latch_RIGHT.stl",
+      "sha256": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_TCRT_PCB_MEASURED",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_PCB_MEASURED.stl",
+      "sha256": "8bc0e6d43fd6ef4e91af42fc536df3a773f9717a97b7b7689bbfa3eb227c396b"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_TCRT_HEAD_AND_LEGS",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_HEAD_AND_LEGS.stl",
+      "sha256": "badd7b7c758329e5d637d12cdbb6044de3dc443138c469d4eac292a309bf8c1e"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_TCRT_LENS_PAIR",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_LENS_PAIR.stl",
+      "sha256": "d957fdc925f9a65ef9094a94f6c6456c626314d4880c7e6652e2a4dd8bf34e63"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_TCRT_POT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_POT.stl",
+      "sha256": "305e619f1f0c4b01f0508514a80bbbfa68d7eba9b1a90509a364d3c3045cc8e9"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_TCRT_HEADER",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_HEADER.stl",
+      "sha256": "7a0f69075cec5de839cf6cef90b2e74c9ca383ed74a0ade57835233ce5718a6e"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_M2x4_SENSOR_1",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x4_SENSOR_1.stl",
+      "sha256": "0827486f2ccc0c2463bf3c3301d6f6577e76cbf2e9a86eff56316b6ba7a2a622"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_M2x4_SENSOR_2",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x4_SENSOR_2.stl",
+      "sha256": "e47092e2b9ce7bf8e4dff40a3cf2e86f8bb60b685cdbfad11617f52b9577c419"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_M2x5_CLIP_1",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x5_CLIP_1.stl",
+      "sha256": "8c54ed921f87de4fcb674e5c78c1ba9c727dc7044c1ba21b332ba1812c7d482e"
+    },
+    {
+      "scene": "tcrt latest exploded",
+      "part": "REF_M2x5_CLIP_2",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x5_CLIP_2.stl",
+      "sha256": "515aa44d9b8879a4a1ab20e07a4cc261a178a3dbcd4c2eb8905a70ea47c0c2db"
+    },
+    {
+      "scene": "m5 piece 1",
+      "part": "01_M5_equal_supports_platform",
+      "source": "hardware/M5_equal_supports_v050/preview/01_M5_equal_supports_platform.stl",
+      "sha256": "8c88954c6d2b90d67963cfc3d551f921533341a1defd7e3513153dea52426ddd"
+    },
+    {
+      "scene": "tcrt piece 1",
+      "part": "01_TCRT_sensor_cradle",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/01_TCRT_sensor_cradle.stl",
+      "sha256": "6afc3e4fab1ac84bbcb579f9b7648523f58f927b8bd987443ec4a9b0d0636f1f"
+    },
+    {
+      "scene": "tcrt piece 2",
+      "part": "02_TCRT_clip_cap_LEFT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/02_TCRT_clip_cap_LEFT.stl",
+      "sha256": "637d442249a44d9026696575f7a839fb74946b168e981c4373c35eb674092394"
+    },
+    {
+      "scene": "tcrt piece 3",
+      "part": "02_TCRT_clip_cap_RIGHT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/02_TCRT_clip_cap_RIGHT.stl",
+      "sha256": "c7b31caa655a797e311f7bfd9616d43044ee784dfcdd338e6bc7767ec1c6a1da"
+    },
+    {
+      "scene": "tcrt piece 4",
+      "part": "03_TCRT_sensor_pressure_keeper",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/03_TCRT_sensor_pressure_keeper.stl",
+      "sha256": "8668a5936d3cd7a0224c96cca3d506214e96f238c1579fdfa4a02ede8d47ea49"
+    },
+    {
+      "scene": "tcrt piece 5",
+      "part": "08_TCRT_latch_LEFT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/08_TCRT_latch_LEFT.stl",
+      "sha256": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84"
+    },
+    {
+      "scene": "tcrt piece 6",
+      "part": "09_TCRT_latch_RIGHT",
+      "source": "hardware/minimal_TCRT_split_keepers_v043/preview/09_TCRT_latch_RIGHT.stl",
+      "sha256": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624"
+    }
+  ]
+}

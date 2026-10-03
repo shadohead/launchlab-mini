@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "one_printable_mesh": true,
+  "unsliced_3mf_vertex_delta_mm": 3.5739549504366415e-06,
+  "print_pose": "Unchanged +90 degree Y side orientation",
+  "source_v048_geometry_unchanged": true,
+  "tab_shape": "Broader trapezoidal ramp with larger concave blend to plate",
+  "tab_projection_mm": 1.25,
+  "base_and_edge_fillet_mm": 0.8,
+  "physical_launcher_fit": "UNVERIFIED",
+  "printer_dispatch": "None"
+}

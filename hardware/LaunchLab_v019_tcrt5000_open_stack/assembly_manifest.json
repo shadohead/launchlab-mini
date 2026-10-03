@@ -1,0 +1,317 @@
+{
+  "version": "0.19",
+  "variant": "OLD TCRT5000 + top-mounted M5StickS3",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "02_latch_LEFT",
+      "filename": "preview/02_latch_LEFT.stl",
+      "group": "latches",
+      "color": "#C69259",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "description": "Unchanged from v0.2. Second identical source latch placed on opposite side. Same physical print as right latch.",
+      "source": "Migbello / Thingiverse 6856080 / CC BY-SA",
+      "quantity": 1
+    },
+    {
+      "name": "02_latch_RIGHT",
+      "filename": "preview/02_latch_RIGHT.stl",
+      "group": "latches",
+      "color": "#C69259",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "description": "Unchanged from v0.2. One source latch; four overlapping source shells unioned without scaling. Closed position is a modeled fit hypothesis.",
+      "source": "Migbello / Thingiverse 6856080 / CC BY-SA",
+      "quantity": 1
+    },
+    {
+      "name": "01_TCRT_attachment_port",
+      "filename": "preview/01_TCRT_attachment_port.stl",
+      "color": "#C13C47",
+      "group": "Launcher attachment",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "description": "Original-scale launcher attachment; upper lens recess fits old TCRT pair.",
+      "source": "LaunchLab v0.19",
+      "quantity": 1
+    },
+    {
+      "name": "03_TCRT_sensor_cradle",
+      "filename": "preview/03_TCRT_sensor_cradle.stl",
+      "color": "#417767",
+      "group": "Sensor/device dock",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "description": "Measured old-sensor corner seats and original clip keepers; open service from above.",
+      "source": "LaunchLab v0.19",
+      "quantity": 1
+    },
+    {
+      "name": "04_TCRT_M5_top_dock",
+      "filename": "preview/04_TCRT_M5_top_dock.stl",
+      "color": "#D0A96A",
+      "group": "Sensor keeper",
+      "reference": false,
+      "printable": true,
+      "print_rotation_deg": [
+        180,
+        0,
+        0
+      ],
+      "description": "Removable M5 support and four-corner PCB keeper with four M2x4 screws; 0.2 mm PCB vertical play.",
+      "source": "LaunchLab v0.19",
+      "quantity": 1
+    },
+    {
+      "name": "REF_M5_OFFICIAL_GEOMETRY",
+      "filename": "preview/REF_M5_OFFICIAL_GEOMETRY.stl",
+      "group": "electronics",
+      "color": "#858F9E",
+      "reference": true,
+      "printable": false,
+      "description": "Manufacturer assembled shell, Grove/USB -Y, Hat +Y; lowest back Z23.9, top38.9.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M5_SOFT_LINER",
+      "filename": "preview/REF_M5_SOFT_LINER.stl",
+      "group": "liner",
+      "color": "#59646E",
+      "reference": true,
+      "printable": false,
+      "description": "0.3 mm soft liner on the long back beams.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_PCB_MEASURED",
+      "filename": "preview/REF_TCRT_PCB_MEASURED.stl",
+      "group": "electronics",
+      "color": "#365D9D",
+      "reference": true,
+      "printable": false,
+      "description": "OLD TCRT5000/LM393 blue module. User PCB31x13x1, not QRE1113.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_HEAD_AND_LEGS",
+      "filename": "preview/REF_TCRT_HEAD_AND_LEGS.stl",
+      "group": "electronics",
+      "color": "#48525E",
+      "reference": true,
+      "printable": false,
+      "description": "10x6 envelope, 9.5 mm PCB-face to housing lens-side datum; lateral registration provisional.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_LENS_PAIR",
+      "filename": "preview/REF_TCRT_LENS_PAIR.stl",
+      "group": "electronics",
+      "color": "#344B6A",
+      "reference": true,
+      "printable": false,
+      "description": "7x6 lens-pair envelope,2.5 projection included in total12 from PCB face.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_POT",
+      "filename": "preview/REF_TCRT_POT.stl",
+      "group": "electronics",
+      "color": "#457EC0",
+      "reference": true,
+      "printable": false,
+      "description": "7x7x6 adjustment block on opposite PCB face;0.3 long-edge inset and12mm from header edge interpreted as in priorCAD.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_HEADER",
+      "filename": "preview/REF_TCRT_HEADER.stl",
+      "group": "electronics",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "User bare right-angle header:6 past edge,4 high.10x8 lateral footprint is a priorCAD assumption.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_UNDERSIDE_SOLDER",
+      "filename": "preview/REF_TCRT_UNDERSIDE_SOLDER.stl",
+      "group": "clearance",
+      "color": "#C68A60",
+      "reference": true,
+      "printable": false,
+      "description": "Conservative2mm underside allowance except outer edge seats.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_TOP_SOLDER",
+      "filename": "preview/REF_TCRT_TOP_SOLDER.stl",
+      "group": "clearance",
+      "color": "#C68A60",
+      "reference": true,
+      "printable": false,
+      "description": "Conservative2mm top allowance except four corner lands visible in photos; actual copper/solder contact must be checked.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_SENSOR_SOCKET_ALLOWANCE",
+      "filename": "preview/REF_SENSOR_SOCKET_ALLOWANCE.stl",
+      "group": "clearance",
+      "color": "#CE8459",
+      "reference": true,
+      "printable": false,
+      "description": "Same conservative18.5mm socket allowance as earlierM5/TCRT design; actual housing unmeasured. Rear stays open.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_HAT_PLUG_ALLOWANCE",
+      "filename": "preview/REF_HAT_PLUG_ALLOWANCE.stl",
+      "group": "clearance",
+      "color": "#CE8459",
+      "reference": true,
+      "printable": false,
+      "description": "Provisional8mm Hat connection at same end as sensor pins; actual plug/bends unmeasured.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_WIRE_ROUTE_ALLOWANCE",
+      "filename": "preview/REF_WIRE_ROUTE_ALLOWANCE.stl",
+      "group": "clearance",
+      "color": "#D29243",
+      "reference": true,
+      "printable": false,
+      "description": "Provisional short rear loop;3-wire analog harness, both connectors at+Y. No firmware change.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M5_SCREEN_VISUAL_ONLY",
+      "filename": "preview/REF_M5_SCREEN_VISUAL_ONLY.stl",
+      "group": "visual",
+      "color": "#111B24",
+      "reference": true,
+      "printable": false,
+      "description": "Illustrative display face, not fit geometry.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M3x8_MOUNT_1",
+      "filename": "preview/REF_M3x8_MOUNT_1.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M3x8DIN912 mount screws;6.6mm nominal engagement in original posts.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M3x8_MOUNT_2",
+      "filename": "preview/REF_M3x8_MOUNT_2.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M3x8DIN912 mount screws;6.6mm nominal engagement in original posts.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M3x8_MOUNT_3",
+      "filename": "preview/REF_M3x8_MOUNT_3.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M3x8DIN912 mount screws;6.6mm nominal engagement in original posts.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M3x8_MOUNT_4",
+      "filename": "preview/REF_M3x8_MOUNT_4.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M3x8DIN912 mount screws;6.6mm nominal engagement in original posts.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M2x6_DEVICE_1",
+      "filename": "preview/REF_M2x6_DEVICE_1.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M2x6 underside device mount;1.7mm nominal insertion. Attach before lowering dock onto base.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M2x6_DEVICE_2",
+      "filename": "preview/REF_M2x6_DEVICE_2.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M2x6 underside device mount;1.7mm nominal insertion. Attach before lowering dock onto base.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_1",
+      "filename": "preview/REF_M2x4_SENSOR_1.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M2x4 top-dock screws, 2.6 mm printed pilot engagement; top module lifts for sensor service.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_2",
+      "filename": "preview/REF_M2x4_SENSOR_2.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M2x4 top-dock screws, 2.6 mm printed pilot engagement; top module lifts for sensor service.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_3",
+      "filename": "preview/REF_M2x4_SENSOR_3.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M2x4 top-dock screws, 2.6 mm printed pilot engagement; top module lifts for sensor service.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_4",
+      "filename": "preview/REF_M2x4_SENSOR_4.stl",
+      "group": "fasteners",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "M2x4 top-dock screws, 2.6 mm printed pilot engagement; top module lifts for sensor service.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    }
+  ]
+}

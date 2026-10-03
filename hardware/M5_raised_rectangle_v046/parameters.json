@@ -1,0 +1,178 @@
+{
+  "version": "0.46",
+  "units": "mm",
+  "architecture": "Existing recessed-screw M5 carrier with center rectangle projecting an additional 1 mm",
+  "native_crop_x_mm": -2.0,
+  "source_scale": 1,
+  "M5_center_x_mm": 10.3,
+  "M5_back_z_mm": -5.5,
+  "M5_mount_face_z_mm": -3.5,
+  "M5_screw_seat_z_mm": -6.4,
+  "M5_axes_xy_mm": [
+    [
+      1.3000000000000007,
+      -21
+    ],
+    [
+      19.3,
+      -21
+    ]
+  ],
+  "platform_thickness_mm": 2,
+  "platform_top_z_mm": -5.8,
+  "M5_to_cliff_gap_mm": 0.3,
+  "top_alignment_z_mm": 9.5,
+  "USB_C_direction": [
+    0,
+    -1,
+    0
+  ],
+  "U_recess_opening_direction": [
+    0,
+    0,
+    -1
+  ],
+  "M5_rotation_about_z_deg": 90,
+  "print_rotation_deg": [
+    0,
+    90,
+    0
+  ],
+  "print_translation_mm": [
+    0.09999990463256836,
+    -0.0,
+    22.799999237060547
+  ],
+  "nominal_insert_engagement_mm": 3.0999999999999996,
+  "fasteners": "Actual user screw length unconfirmed; nominal reference uses M2x6 / 3.8 x 1.4 mm pan heads",
+  "shortened_native_rail_tails": true,
+  "separate_lock": false,
+  "printed_replacement_parts": 1,
+  "QRE": "Reuse existing snug QRE port and clips; no sensor datum changes",
+  "physical_fit": "CAD geometry checked; revised launcher contact and retention untested",
+  "circled_block_trim_mm": 3,
+  "original_raised_right_edge_y_mm": -18.5,
+  "revised_raised_right_edge_y_mm": -15.5,
+  "block_floor_z_mm": 0,
+  "cut_direction_world": [
+    0,
+    1,
+    0
+  ],
+  "cut_direction_top_view": "left, along the M5 length",
+  "lower_attachment_foot_unchanged": true,
+  "M5_deck_unchanged": true,
+  "print_package_created": false,
+  "edge_finish": {
+    "type": "Factory 0.5 mm bevel copied from opposite end, including corner",
+    "width_mm": 0.5,
+    "native_source_y_mm": [
+      18,
+      18.5
+    ],
+    "revised_y_mm": [
+      -15.5,
+      -15
+    ],
+    "top_edge_z_mm": [
+      9,
+      9.5
+    ],
+    "copied_native_cap_transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "replacement_printed_parts": 1,
+  "rear_supports": {
+    "centers_xy_mm": [
+      [
+        4.3,
+        12.5
+      ],
+      [
+        16.3,
+        12.5
+      ]
+    ],
+    "width_mm": 6,
+    "depth_mm": 2.6,
+    "corner_radius_mm": 0.5,
+    "top_z_mm": -5.3,
+    "height_above_deck_mm": 0.5,
+    "source": "Actual downward back-panel face of factory M5 mesh"
+  },
+  "limits": [
+    "Head dimensions are inherited from the existing nominal reference pending user measurement.",
+    "Recess moves the bearing seat 1.4 mm toward the M5, reducing the clamped thickness from 4.3 to 2.9 mm.",
+    "Nominal M2x4 provides 1.1 mm of thread reach; nominal M2x6 provides 3.1 mm. Actual screw length and usable insert depth remain unmeasured.",
+    "Opposite-end supports retain their v044 0.5 mm height.",
+    "Center rectangle now projects 1.25 mm from its original face; revised physical launcher fit remains untested.",
+    "One unsliced replacement carrier; no printer dispatch."
+  ],
+  "screw_head_recesses": {
+    "axes_xy_mm": [
+      [
+        1.3000000000000007,
+        -21
+      ],
+      [
+        19.3,
+        -21
+      ]
+    ],
+    "diameter_mm": 4.2,
+    "depth_mm": 1.4,
+    "head_diameter_assumed_mm": 3.8,
+    "head_thickness_assumed_mm": 1.4,
+    "head_radial_clearance_mm": 0.20000000000000018,
+    "underside_plane_z_mm": -7.8,
+    "bearing_face_z_mm": -6.4,
+    "thread_reach_gain_mm": 1.4,
+    "remaining_clamped_material_mm": 2.9000000000000004,
+    "shape": "Cylindrical flat-bottom counterbore, existing 2.4 mm through holes preserved"
+  },
+  "center_rectangle": {
+    "plate_face_x_mm": -11.5,
+    "original_projection_mm": 0.25,
+    "revised_projection_mm": 1.25,
+    "added_projection_mm": 1,
+    "extension_vector_world_mm": [
+      -1,
+      0,
+      0
+    ],
+    "root_y_bounds_mm": [
+      -1.875,
+      1.875
+    ],
+    "root_z_bounds_mm": [
+      -0.5,
+      1.25
+    ],
+    "position_yz_unchanged": true,
+    "edge_finish": "Original rounded outer cap translated intact"
+  }
+}

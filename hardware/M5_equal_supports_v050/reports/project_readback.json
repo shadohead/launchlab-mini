@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "LaunchLab_v050_M5_EQUAL_SUPPORTS_TREE_SLIM_UNSLICED.3mf",
+      "mesh_count": 1,
+      "geometry_readback": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v050_P1S_PLA_M5_EQUAL_SUPPORTS_TREE_SLIM.3mf",
+      "mesh_count": 1,
+      "geometry_readback": "PASS",
+      "gcode_integrity": "PASS",
+      "supports_enabled": true,
+      "actual_support_g": 2.3282719607892934
+    }
+  ]
+}

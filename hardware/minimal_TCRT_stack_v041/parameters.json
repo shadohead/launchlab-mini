@@ -1,0 +1,51 @@
+{
+  "sensor": "OLD TCRT5000/LM393",
+  "PCB_mm": [
+    31,
+    13,
+    1
+  ],
+  "optical_projection_mm": 12,
+  "pot_mm": [
+    7,
+    7,
+    6
+  ],
+  "sensor_seat_z_mm": 15.1,
+  "optics_z_mm": 3.1,
+  "M5_back_z_mm": 22.9,
+  "M5_top_z_mm": 37.9,
+  "clamp_screw_axes_mm": [
+    [
+      -9.6582,
+      3.6
+    ],
+    [
+      9.9418,
+      3.6
+    ]
+  ],
+  "clamp_screws": "2 x M2x4 pan head",
+  "M5_screws": "2 x M2x6 underside",
+  "M5_screw_axes_mm": [
+    [
+      -9,
+      -19
+    ],
+    [
+      9,
+      -19
+    ]
+  ],
+  "assembly_order": "Tighten sensor keeper first through driver windows, then mount M5 from underneath via the front overhang",
+  "wall_mm": 1.6,
+  "deck_mm": 2,
+  "xy_play_per_side_mm": 0.2,
+  "preload_ear_gap_mm": 0.4,
+  "limits": [
+    "Component positions and bare corner lands follow earlier TCRT CAD assumptions; physically check contact lands.",
+    "Plug and wire bends are provisional; header end remains open.",
+    "Launcher optical aperture alignment and lens-to-ring spacing need bench verification.",
+    "Prototype CAD/STL only; not sliced or sent to printer."
+  ]
+}

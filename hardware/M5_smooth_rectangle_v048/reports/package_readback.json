@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "one_printable_mesh": true,
+  "unsliced_3mf_vertex_delta_mm": 3.5953155264620225e-06,
+  "print_pose": "Unchanged +90 degree Y side orientation",
+  "source_v047_geometry_unchanged": true,
+  "tab_shape": "Tapered and rounded, concave blend to plate",
+  "tab_projection_mm": 1.25,
+  "base_and_edge_fillet_mm": 0.3,
+  "physical_launcher_fit": "UNVERIFIED",
+  "printer_dispatch": "None"
+}

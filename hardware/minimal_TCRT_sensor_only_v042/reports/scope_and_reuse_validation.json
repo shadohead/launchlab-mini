@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "TCRT5000 sensor-only mount",
+  "M5_geometry_in_package": false,
+  "M5_existing_files_verified": {
+    "stl/01_M5_stepped_platform.stl": "cf46cb638f5d63ea6a7ac35af9e33cfcbfe94ac21a212e527d1bef1a68d03c75",
+    "parameters.json": "b72e5e161b6ff3d62bcd29cb4997d6646cee38801392cde0ca30f04c17628ebe"
+  }
+}

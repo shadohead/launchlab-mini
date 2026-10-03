@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "one_printable_mesh": true,
+  "unsliced_3mf_vertex_delta_mm": 3.5739549504366415e-06,
+  "source_v049_unchanged": true,
+  "support_height_mm": 2.3,
+  "added_support_height_mm": 1.8,
+  "existing_standoff_top_z_mm": -3.5,
+  "preserved_center_ramp_projection_mm": 1.25,
+  "preserved_center_ramp_fillet_mm": 0.8,
+  "tree_slim_verified": true,
+  "print_estimate": {
+    "time": "43m 18s",
+    "PLA_g": 9.24
+  },
+  "physical_launcher_and_M5_fit": "UNVERIFIED",
+  "dispatch_at_packaging": "Pending bed-clear check"
+}

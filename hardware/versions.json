@@ -1,0 +1,2433 @@
+{
+  "description": "Independent firmware, sensor mount and M5 carrier versions. CAD checks are not physical fit acceptance. Existing QRE v0.33 / complete v0.40 packages remain unchanged.",
+  "latest": {
+    "QRE1113": "0.33",
+    "TCRT5000": "0.43",
+    "M5StickS3 carrier": "0.50"
+  },
+  "versions": [
+    {
+      "version": "0.19",
+      "family": "TCRT5000",
+      "directory": "hardware/LaunchLab_v019_tcrt5000_open_stack",
+      "status": "historical sliced package; fit unverified",
+      "files": [
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/LaunchLab_v019_ALL_PARTS_UNSLICED.3mf",
+          "size": 242958,
+          "sha256": "1870069f136b6ea9a744a73f9c9e24e86e957fc801001ff443db3efa38894b0b"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/LaunchLab_v019_CLIPS_UNSLICED.3mf",
+          "size": 7016,
+          "sha256": "6e689ae983544cdb49491c46c10c0a2804af5165036f19c14faf0c2dee6a59bb"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/LaunchLab_v019_REPLACEMENTS_UNSLICED.3mf",
+          "size": 236598,
+          "sha256": "ce2fa5763dbf024b7b2f7fd4f7eb70cfe55de2ecfcb0baebe015f09713b768bd"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/LaunchLab_v019_SENSOR_FIT_UNSLICED.3mf",
+          "size": 132493,
+          "sha256": "dc1043c85e074d29899602c3823b6369dfc318e67cc7ccbaf71ed4d81a651446"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/LaunchLab_v019_TCRT_open_stack_assembly.step",
+          "size": 7281225,
+          "sha256": "cf7589b9b1046d5d98af64bd7dfde0b1de31a59e2e9ee1435ab05ff61393bb85"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/LaunchLab_v019_tcrt5000_open_stack.blend",
+          "size": 1354617,
+          "sha256": "42c6605f9905232a2249f6197cfc21b29b2074ad574b382f5b11879b8ef9df0f"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/README.md",
+          "size": 9426,
+          "sha256": "25bf104a78967aba4e4d820758adec5cb1329d3bd375f7ca5ae1c1b2e5d46698"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/SHA256SUMS.txt",
+          "size": 9656,
+          "sha256": "fb3f2c754685828237314f7dd47156c1d81534162a2e3c20bfea6f6e064ad1c6"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/assembly_manifest.json",
+          "size": 11955,
+          "sha256": "3d55da98f3c16b53ee02ee8875b0474778e23581cb27998e2139ccb2d6bc1687"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_ALL_PARTS.3mf",
+          "size": 877756,
+          "sha256": "bc7d5ed16df9e204e6565828189adda906f4706623d1ad007a5d5f99894e72c4"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_CLIPS.3mf",
+          "size": 123337,
+          "sha256": "d9d801864ed0d01e9d9e2d3bc4110ffa0ebed377a6f22f72c0639ced2d87e96e"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_M5_MOUNT_FIT.3mf",
+          "size": 99411,
+          "sha256": "56793e5ed23887f881a6381065969203fa4716cab447b2aa83d8135e6b8588f8"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_M5_TOP_DOCK.3mf",
+          "size": 258073,
+          "sha256": "6eb5194ed706558275a47a3d2864f954675db3b67933bb3922619b58c9131d35"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_PORT.3mf",
+          "size": 276880,
+          "sha256": "dfc4182df38a9ae9d65939211358b2fd781ed03d8ff53eb7a8998e981eb2fa5c"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_REPLACEMENTS.3mf",
+          "size": 716840,
+          "sha256": "25f53e081a397ec43cf2efefba323fd98fc0afce269376b0d469e5eea102b952"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_SENSOR_CRADLE.3mf",
+          "size": 222819,
+          "sha256": "dbcfaccde83d9e516955048202c24bc285a0ce885d1ecdb7ba92f47b37290860"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/bambu/LaunchLab_v019_P1S_PLA_SENSOR_FIT.3mf",
+          "size": 321390,
+          "sha256": "788201d36d5c380d1dc1b0e196d190699a7a693ebe04a370a7d2417818815cd4"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/extras/11_TCRT_SEAT_FIT.step",
+          "size": 195465,
+          "sha256": "f8f16d9bfb912e4c658e3a781340007a2239030d09c9066dc50ca76017a5dd21"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/extras/11_TCRT_SEAT_FIT.stl",
+          "size": 387684,
+          "sha256": "0b0e81334d915f5f5f45bb28f3f743e2853ef4f9053ab6a443f740ad99ee14e3"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/extras/12_TCRT_KEEPER_FIT.step",
+          "size": 206227,
+          "sha256": "466584b764ada6ed10235f65a2e553f09b273be5775a2952a54c346f505480fe"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/extras/12_TCRT_KEEPER_FIT.stl",
+          "size": 269884,
+          "sha256": "6c29c2cd36a0ca5aefd4acadd1101d9b0f9fae714b69a24ab43dc0d996a480cb"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/extras/13_M5_MOUNT_FIT.step",
+          "size": 62892,
+          "sha256": "f00b973af4d3d54977dbcd53b48a57e6d297c9c437d2ac519785507aebd675fb"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/extras/13_M5_MOUNT_FIT.stl",
+          "size": 128884,
+          "sha256": "480a6ced11dbf6bd663bbd5df6ca5a76fd07ea57e4a4bbd15a22c38efdd08fb6"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/parameters.json",
+          "size": 3706,
+          "sha256": "660d583717e75dbecd660a69baaf04269efd496ffc3449016b2180cd1d6b448c"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/01_TCRT_attachment_port.stl",
+          "size": 206984,
+          "sha256": "56ce466026371b3a860980b519c8d64c99dd15eca5159e107eabcb683c370633"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/02_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "f95d7e56b69a3ebedaf4948d3511986e9f8a60294855a4081f0a32f7fbea41f7"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/02_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "13d7d0555c1d0ef9d1c4d67b1cae3725198122fb1e1f56338415bad8eab787df"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/03_TCRT_sensor_cradle.stl",
+          "size": 422984,
+          "sha256": "fad3185deb81a1039846b4a544298c8da43e81fa4dc679d9b86173467c7fddd4"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/04_TCRT_M5_top_dock.stl",
+          "size": 527484,
+          "sha256": "a4b10cf5ac49f0bd1ad12f0c3d442c4e21d9c14543ef2c76e7443fb4827a42ca"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_HAT_PLUG_ALLOWANCE.stl",
+          "size": 684,
+          "sha256": "33fbbdda583bfb76a181989002129eccf77115c75b279774d8c98073b3753039"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M2x4_SENSOR_1.stl",
+          "size": 50284,
+          "sha256": "999d722e08d850aab8ded3243ebc8b873cace81006a9bbbdd4761be696ae818e"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M2x4_SENSOR_2.stl",
+          "size": 50284,
+          "sha256": "6d28502ecc4293ebdbafa006ff7e3e69f2dfd6f5e900c71fec6f5674e4c7627b"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M2x4_SENSOR_3.stl",
+          "size": 50284,
+          "sha256": "b60ac5ca8a056d366789d55b1e13cad5d33ef51d601fb85b785002ae1104d984"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M2x4_SENSOR_4.stl",
+          "size": 50284,
+          "sha256": "627c50d5f4130a0fbfc42b9a5b505d97d7646cb8bbee0b9bd76714ed26af7734"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M2x6_DEVICE_1.stl",
+          "size": 50284,
+          "sha256": "409789851eee6fbf31b278001abd7f32ad6243f9ec137784750406f009112739"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M2x6_DEVICE_2.stl",
+          "size": 50284,
+          "sha256": "dad924f14b64ed8d443db338c9ba1934982b6a2879e9a13c45c89e48a4abb4e8"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M3x8_MOUNT_1.stl",
+          "size": 50284,
+          "sha256": "ebb9109ee55725e4bc3a5bccceb62666713d51fa86765a37363931392ee35c20"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M3x8_MOUNT_2.stl",
+          "size": 50284,
+          "sha256": "e654df714115f6ff57c99d82a1c64bf2daa8749ffd33f35601b4387fc7e18e25"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M3x8_MOUNT_3.stl",
+          "size": 50284,
+          "sha256": "451bbfae547bc92be2b8423221666f4d5e5036bdaa9ebd2c22429bda6affce9a"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M3x8_MOUNT_4.stl",
+          "size": 50284,
+          "sha256": "ce53d2f7364d0982d9201e148607f298d4d0a6862ad86094ce67881207558f99"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M5_OFFICIAL_GEOMETRY.stl",
+          "size": 367484,
+          "sha256": "4234dafb4fa202dae89bc55bce57829832eb6be4627bfae910d37aaf91ea86b1"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M5_SCREEN_VISUAL_ONLY.stl",
+          "size": 684,
+          "sha256": "a5e11d1b793f28e35a1707f9dbf7c549cedac33da290ac5c66d09db49f5b29ce"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_M5_SOFT_LINER.stl",
+          "size": 1284,
+          "sha256": "001f9ddebf10e93e50b7ff812a462fcd48fb5ff8efed48903ff37b8319cc9cc8"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_SENSOR_SOCKET_ALLOWANCE.stl",
+          "size": 684,
+          "sha256": "919016e1312fb61a78253deb0bb8654644c3d9bb462fa47ac8f9866050ae166b"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_TCRT_HEADER.stl",
+          "size": 684,
+          "sha256": "713b406eeb6ea2bb244b5754ddd870fa84278931a6cf3e83c39f546f219b4318"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_TCRT_HEAD_AND_LEGS.stl",
+          "size": 684,
+          "sha256": "8d354d5329e51ad4c8df759b76bfa7ee61a3f829e79fe006b063fd28138c988e"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_TCRT_LENS_PAIR.stl",
+          "size": 684,
+          "sha256": "687b8ea6130d478e01bae4a7e80c21c60597fb60e55c727bc9e7a766594d2bd5"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_TCRT_PCB_MEASURED.stl",
+          "size": 684,
+          "sha256": "bae3e373b69beb032644946d2188701c31bb2ee5c05595626750aaa6e21177fb"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_TCRT_POT.stl",
+          "size": 684,
+          "sha256": "b7bff47df175bb8eed1304e550b4c38d1e60819de40dabfb88c5661157e11d10"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_TCRT_TOP_SOLDER.stl",
+          "size": 3884,
+          "sha256": "81c518b2b922b349a54f42304be55d5f8a6e1716e01ccf6f95d8fa805daf875d"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_TCRT_UNDERSIDE_SOLDER.stl",
+          "size": 684,
+          "sha256": "80986595bb8e19d2eb096624cf5e1034216ade992cf023bf271575ba2f0c41d2"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/preview/REF_WIRE_ROUTE_ALLOWANCE.stl",
+          "size": 1284,
+          "sha256": "78dbd51c8ecb5b956792a042114b762165f3d314b876f04cb710ebc28c0fbe86"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/print_inventory.json",
+          "size": 3995,
+          "sha256": "b58d32b882bde5d0af5f9ec2d2ec08bdad0777f713c1b1ca2bd9cf4cf9ff6e80"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/print_profiles/PETG.json",
+          "size": 7379,
+          "sha256": "4b29a1ac2bf82b9a8db4fcd43fc9549a7362e7c5948ecde7048a959262c4c87d"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/print_profiles/PLA.json",
+          "size": 7701,
+          "sha256": "c4fecf4dfdd9a0a2d80f75b97e7575f333f19b95dd8ec7b26d80864a11bd3498"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/print_profiles/machine.json",
+          "size": 20248,
+          "sha256": "5fc0cd32fb0f4118269e503311e23d8e434d0bb49a8f832fa93e036810b75896"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/print_profiles/process.json",
+          "size": 7927,
+          "sha256": "20d1160f282fbd759ac60b0b91fb888917e54f28bef26fc3c3140b907c7f7643"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/print_profiles/process_no_support.json",
+          "size": 7976,
+          "sha256": "ba493553d23b4c2199b2248073857fe0b15ca7f641f311e06fc6ea70e62eef9b"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/blender_helpers_v09.py",
+          "size": 7605,
+          "sha256": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/build_compact_v010.py",
+          "size": 12558,
+          "sha256": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/build_low_stack_v018.py",
+          "size": 15626,
+          "sha256": "8e77aced321071b17de5e495eadfd47321b3e7f407323766bbd626dcb221f52b"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/build_tcrt_open_stack_v019.py",
+          "size": 14765,
+          "sha256": "480a638bedf041bb6e6926227ba3d7deddcf72114e5a9ffc94b53e91162db0ed"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/check_open_stack_v017.py",
+          "size": 7047,
+          "sha256": "d64304d09de73c77302493a81fad1ac0f2fb6606525179315d6b9388df6a21e5"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/check_tcrt_open_stack_v019.py",
+          "size": 9173,
+          "sha256": "d06dcc00c7a0e4cc4deabc3ec49ef5e4efc72192d7fe7f35a5b9df3e43fcddda"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/finalize_low_stack_v018.py",
+          "size": 5311,
+          "sha256": "819416b41707cb40d82f3ffbcc7c857d092351ab06752ebcb2d4d84cbc0e1a4e"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/finalize_tcrt_open_stack_v019.py",
+          "size": 7602,
+          "sha256": "a44d30326c27b1ab0358dd6d7c33cb942e4e33ceddccffeaa129c7d059d5ff1a"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/preview_tcrt_open_stack_v019.py",
+          "size": 6368,
+          "sha256": "1dc8a2d64dc25cdab24451e39b934ecdd0f932db1de7c2290afe936c9fc70b12"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/refresh_tcrt_guide_v019.py",
+          "size": 1154,
+          "sha256": "65ae053bbc8aa263e3aa3d9a0446a12b55ac94d2450843fcdc3a33b0d3e8258c"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/slice_comparison_v05.py",
+          "size": 2778,
+          "sha256": "359135c13e5a06efa1e3e5937d2a821070b7d5d094b447efdba05ab5b677eb59"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/provenance/slice_tcrt_open_stack_v019.py",
+          "size": 1998,
+          "sha256": "5939c1e4962ecb89e7734a15511b6c00e96b3017e5d1873c567f81800699db09"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/references/IMG_7445.jpeg",
+          "size": 1543318,
+          "sha256": "5aeb1658345c9c12ca5d053665d387475a3999a7c109dd6cf1835cb3956e0e2c"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/references/IMG_7447.jpeg",
+          "size": 2152507,
+          "sha256": "8b0e6606b9dfcb4f5ae5d904c1f499cd9a064768f306c31ef1025d9c257fd264"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/references/IMG_7448.jpeg",
+          "size": 1717224,
+          "sha256": "b24215619a5c128e382cf107db26ebd8686884e261d6107c44fd0b436549b2af"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/references/K150-sticks3-dimensions.pdf",
+          "size": 89859,
+          "sha256": "ca0ba7c839e6c918e5eec9bebce0235ed955f333f6c3dedff6eb0f61a08ffd42"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/references/StickS3_VENDOR_ASSEMBLY_AND_EXPLODED.stl",
+          "size": 734884,
+          "sha256": "cadfa88716cb74a85d0d76dc866d83dbd627d6f5c310b528d43e588dab37ecec"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/references/TCRT5000_user_measurements_2026-09-21.md",
+          "size": 7119,
+          "sha256": "417136ad0784e4f50cbc8183b18a4b125b7d79a692490a569665482309ecbe28"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/renders/01_assembled.png",
+          "size": 1629974,
+          "sha256": "e62e8b183ff262a4d632aaf0f19b618f93d5ede20347f0d29806dd1297fed9a2"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/renders/02_underside_sensor.png",
+          "size": 1633913,
+          "sha256": "2425b4eee09950595f8be0495305961a3ec31e9b6cd2e8e33a2b7210faaa7429"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/renders/03_exploded.png",
+          "size": 1609636,
+          "sha256": "dc1448ea352837be1c894283b3c5b5faa981d3f883f1cc2d9a3f977a04159d51"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/renders/04_complete_five_pieces.png",
+          "size": 1594651,
+          "sha256": "f959dbb097a6bf58a3e6e2e41d8097c7fc35b6b6023859f674337e01baca3f40"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/blender_mesh_audit.json",
+          "size": 2830,
+          "sha256": "8003952d68e88dc2dc7cba866bd28cce9c5dc190d6274aeb92fddcde9f056d8f"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/blender_saved_readback.json",
+          "size": 3176,
+          "sha256": "4c3912a886f78150d1d8dd2a2e43db03dfffefd52bd3191b6490cdd85675a274"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/cad_validation.json",
+          "size": 3840,
+          "sha256": "709c2ebf99149f02c07188c81dbbc7232261eef68b3a0c9a50b96f191ffbf612"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/fit_and_motion.json",
+          "size": 5898,
+          "sha256": "8acde822e86e565f2800158c9bd5441886233d48e257535c77252c5ac767d89d"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/project_readback.json",
+          "size": 2893,
+          "sha256": "ed1c851421cc0cfdf63c42ccc3aa3d6db398d5c43007ef69b8d47001b8d5ba58"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/release_review.json",
+          "size": 2796,
+          "sha256": "62cf6694071bbb37d3f7e159743a9d4978beb3de18b826cd4a9cc21043c5cf51"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/slicing_metrics.json",
+          "size": 10567,
+          "sha256": "bc52f29738a6441277b23c09006515c15de0b648c1a8a38bfa4eb39b16e41104"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/reports/visual_review.json",
+          "size": 730,
+          "sha256": "beacabf846671f9471afda521528960cd3282dbc1a9f3af8edefbb5fdce974ee"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/step/01_TCRT_attachment_port.step",
+          "size": 6613515,
+          "sha256": "e85f2dac031358f9ed8151d3e5aa86e18aef201406de00643d55c1b421e41b0f"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/step/02_latch_LEFT.step",
+          "size": 458469,
+          "sha256": "2cedb4cae14df781bcaa7c0f0f13c9689cb293546153467c672da24adaceb22f"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/step/02_latch_RIGHT.step",
+          "size": 449544,
+          "sha256": "4a741988980f9c31825c771825897d9112b30c4e4bc75f322c935680086e034d"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/step/03_TCRT_sensor_cradle.step",
+          "size": 273108,
+          "sha256": "b49905d01ffb491a68738a7a17f379eedbe56dccff137e5d4268f43981ef97be"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/step/04_TCRT_M5_top_dock.step",
+          "size": 332272,
+          "sha256": "d9bc4990df649a66df3151b8ea6391c3b5b799d8e07bd0b0318d18f7747d2081"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/stl/01_TCRT_attachment_port.stl",
+          "size": 206984,
+          "sha256": "e4c2f4b2f38e1e09c789c53e80e2e7fbb9d5ecb7b4535fcb53d95cc5b2f97ad4"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/stl/02_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "0d21f3605b3e081a1f40c0d80b46b3a52c22f3c2d3bf69dc02b9ac8c458a96f6"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/stl/02_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "16dfa8511f5258a5672fade5682b25ae6a25314f3d15467b2a03f41025136dfe"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/stl/03_TCRT_sensor_cradle.stl",
+          "size": 422984,
+          "sha256": "64d94168192a6f40469c3f8e1a9e1c046288cd81b9155293ca6216546b466157"
+        },
+        {
+          "path": "hardware/LaunchLab_v019_tcrt5000_open_stack/stl/04_TCRT_M5_top_dock.stl",
+          "size": 527484,
+          "sha256": "d9c6c8a44023cfd709f1238d016b03e2c7c8d095fc00d32b33f2854699100678"
+        }
+      ]
+    },
+    {
+      "version": "0.41",
+      "family": "TCRT5000",
+      "directory": "hardware/minimal_TCRT_stack_v041",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 5,
+      "files": [
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/README.md",
+          "size": 687,
+          "sha256": "fb1c761f309ab40d559e35353157b080b0fad75131e4d2f4b549693973ec4b49"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/SHA256SUMS.txt",
+          "size": 4152,
+          "sha256": "84908e092e7cc26c978c8ab9b724ee0370811ea869e5aa7dd578a8d23204c713"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/TCRT_minimal_stack_v041.blend",
+          "size": 678376,
+          "sha256": "b9d08848a52fa397637c70102370fe0434094eef1a07937ca8274c859efb76df"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/TCRT_minimal_stack_v041.step",
+          "size": 5093817,
+          "sha256": "55ba3f25b9019b421a0c00d5f0a6d75be0f693cf106e950949405449c8dcceeb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/assembly_manifest.json",
+          "size": 7705,
+          "sha256": "5fc56517ffa4543b2565b202289790958770d1a89d5090679c52bb38f7acc4e8"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/parameters.json",
+          "size": 1100,
+          "sha256": "dbd8a85fbc4eb0d6adadc127447f5ff11138ac7440ed15a3108083f542147c63"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/01_TCRT_minimal_cradle.stl",
+          "size": 462784,
+          "sha256": "9c5b967c3131c3edccd1fa21bcd78d65791b3fc35d8cf7ab485bac88911a854e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/02_TCRT_clip_keeper.stl",
+          "size": 216284,
+          "sha256": "bed0bb0e18168fc10e2d206a01bb082d212cbf2e39e484168e60905290ecf84a"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/03_TCRT_M5_clamp_dock.stl",
+          "size": 354284,
+          "sha256": "987837350b753fbe6d515052cb680c5225eeb72fe81399f403868d76b7989b30"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/08_TCRT_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/09_TCRT_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_HAT_PLUG_ALLOWANCE.stl",
+          "size": 684,
+          "sha256": "c04581154a6d6dfb473592eb5edf0067b9e002a460c75ca6e0e4e83a669c48a0"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_M5_OFFICIAL_GEOMETRY.stl",
+          "size": 367484,
+          "sha256": "77ca1c1d1cda3a887978bc97b91b8579f3685a35022cfdb8cd8c2c58840401c8"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_M5_SCREEN_VISUAL_ONLY.stl",
+          "size": 684,
+          "sha256": "f311bc5d0e4dc12f0c770c369e7b8a31171d40afa98436af989153627f9eb2ae"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_M5_SOFT_LINER.stl",
+          "size": 1284,
+          "sha256": "2abaf17255f1324f88a5cd0800ce83b6c3c059060d40eb073f7e455ad7dc45a8"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_SENSOR_SOCKET_ALLOWANCE.stl",
+          "size": 684,
+          "sha256": "c22587c69dca3f68d6e4b0730d42cae60be989786b826fe4ea3243e7a013c4c1"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_TCRT_HEADER.stl",
+          "size": 684,
+          "sha256": "7a0f69075cec5de839cf6cef90b2e74c9ca383ed74a0ade57835233ce5718a6e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_TCRT_HEAD_AND_LEGS.stl",
+          "size": 684,
+          "sha256": "badd7b7c758329e5d637d12cdbb6044de3dc443138c469d4eac292a309bf8c1e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_TCRT_LENS_PAIR.stl",
+          "size": 684,
+          "sha256": "d957fdc925f9a65ef9094a94f6c6456c626314d4880c7e6652e2a4dd8bf34e63"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_TCRT_PCB_MEASURED.stl",
+          "size": 684,
+          "sha256": "8bc0e6d43fd6ef4e91af42fc536df3a773f9717a97b7b7689bbfa3eb227c396b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_TCRT_POT.stl",
+          "size": 684,
+          "sha256": "305e619f1f0c4b01f0508514a80bbbfa68d7eba9b1a90509a364d3c3045cc8e9"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_TCRT_TOP_SOLDER.stl",
+          "size": 3884,
+          "sha256": "26237e94c398e803c66c372eb71a031a4a72dd762b926a099f550d748029c9e8"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_TCRT_UNDERSIDE_SOLDER.stl",
+          "size": 684,
+          "sha256": "df517f93a6614a82e467b1ae051a07e06538ce88109368fa38f7c8afb7dffcc0"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/preview/REF_WIRE_ROUTE_ALLOWANCE.stl",
+          "size": 1284,
+          "sha256": "26d7d618e6f8432d3a3b1f089472a33300b0233a4b271380a5bfead49b76444d"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/provenance/build_minimal_tcrt_v041.py",
+          "size": 9815,
+          "sha256": "409b446ee23e149685a24cb4704e7eaaa490c4e0f43904a13f1e5a07336bba61"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/provenance/check_minimal_tcrt_v041.py",
+          "size": 2347,
+          "sha256": "5e0c4e0679f84898320f3573a415003275aec4bf450e20716488762735e3990d"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/provenance/render_minimal_tcrt_v041.py",
+          "size": 3475,
+          "sha256": "5b9b504095d2937fb69fb92d0d540b683904bae668c625551855f39fe1cc1400"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/references/QRE_BP_port_LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/references/TCRT5000_measurements.md",
+          "size": 7119,
+          "sha256": "417136ad0784e4f50cbc8183b18a4b125b7d79a692490a569665482309ecbe28"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/renders/01_assembled.png",
+          "size": 1748090,
+          "sha256": "a4f5ab28a57ee2ad58166e4da913ba33655cbbda09e2a874af0d051979e61434"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/renders/02_sensor_cradle.png",
+          "size": 1664851,
+          "sha256": "34cb1b969d6a920bc03ce47b40dbed6de5f07d6f6a06688cb335b67f1e496046"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/renders/03_exploded.png",
+          "size": 1681924,
+          "sha256": "a488317bd5f8a1e0f1727a2755b5b0c49bd3e1b7abb2bac2f0f3fd6411775eeb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/reports/blender_audit.json",
+          "size": 2836,
+          "sha256": "0cfb070e5623e03c7dd08861a3ea45b572d71fbffb5d81048880a06485ad7115"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/reports/cad_validation.json",
+          "size": 2899,
+          "sha256": "7f9c7d290b289d1c0f9261ab206fad8a658ec1cecf821518d76f24c08704562f"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/reports/independent_checks.json",
+          "size": 241,
+          "sha256": "1bc7d48978bb0bba9883d87c44d036aa6befcd56f45790f3f912787671750904"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/step/01_TCRT_minimal_cradle.step",
+          "size": 4505210,
+          "sha256": "cc064ffedafa296795abe26f2c8361c494d57dc169654dc56899de32da6b2859"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/step/02_TCRT_clip_keeper.step",
+          "size": 193765,
+          "sha256": "ff3bb35c13bf24d237b0111dccc36511d2d9180bb914e4e5ba30aaf981532c29"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/step/03_TCRT_M5_clamp_dock.step",
+          "size": 363059,
+          "sha256": "0f200f1b1cb1736dbd7b45da4fca27507e77ead082d51cf24a3ab0ddba7f0468"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/stl/01_TCRT_minimal_cradle.stl",
+          "size": 462784,
+          "sha256": "6c419b484c517a81d9d624a430195344ca51109ef3e8f45c02537aa93dfdd74b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/stl/02_TCRT_clip_keeper.stl",
+          "size": 216284,
+          "sha256": "389e02fa5b4b735504b82156471c14c8cdba5c1dc9e6a282d10d3542bbd9c94a"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/stl/03_TCRT_M5_clamp_dock.stl",
+          "size": 354284,
+          "sha256": "bb6cd6322d4a7a33348d0170cd574afb1615cd1bf10acd8d8fe929e65c0213f4"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/stl/08_TCRT_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "065e8a051beabd771ff9227a8c4c2a0d3d82297f15b5cf8fd6235b7a9d8ebdda"
+        },
+        {
+          "path": "hardware/minimal_TCRT_stack_v041/stl/09_TCRT_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "d42baa9845393cfd6ba12870b4687e51d4ad91ab8982de14579ec578bd463f57"
+        }
+      ]
+    },
+    {
+      "version": "0.42",
+      "family": "TCRT5000",
+      "directory": "hardware/minimal_TCRT_sensor_only_v042",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 5,
+      "files": [
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/README.md",
+          "size": 954,
+          "sha256": "97e608da9500055b4ba90cc04eda48bac0f7a5687594415a9fef684e1ac1fe2f"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/SHA256SUMS.txt",
+          "size": 4463,
+          "sha256": "ec4aac29509c6abc5d3881aee9f9782d9ba57458105b5ce3727c9c81dcb29068"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/TCRT_sensor_only_v042.blend",
+          "size": 475615,
+          "sha256": "66f904e0410c6f0c513c250960ec0e2e9a79dddeac44adac4572e1b9ceea76b0"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/TCRT_sensor_only_v042.step",
+          "size": 5844943,
+          "sha256": "cfaf4fb454a2d5b026714c3f881de24668ff4134a04653cdd31bef853ae83618"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/assembly_manifest.json",
+          "size": 6705,
+          "sha256": "4ee79d1c73bc046e5199a487dea370622f31cf8fbdd1a117e3de043dc1fb425e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/parameters.json",
+          "size": 1201,
+          "sha256": "5082ba453d8698facbf3ec8fbba26b4a7de87c866e3c9b799a80a4f5b957da24"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/01_TCRT_sensor_cradle.stl",
+          "size": 493984,
+          "sha256": "47c17a0831018446ca62c40797906ed43493a284ce06f0b530e48a8665dbe86e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/02_TCRT_clip_keeper.stl",
+          "size": 216284,
+          "sha256": "08cadf2cfbb19494858a69534619ae1d1a450033f2b52a9d9638e85a6fe43770"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/03_TCRT_sensor_pressure_keeper.stl",
+          "size": 126284,
+          "sha256": "8668a5936d3cd7a0224c96cca3d506214e96f238c1579fdfa4a02ede8d47ea49"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/08_TCRT_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/09_TCRT_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_M2x4_SENSOR_1.stl",
+          "size": 63084,
+          "sha256": "0827486f2ccc0c2463bf3c3301d6f6577e76cbf2e9a86eff56316b6ba7a2a622"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_M2x4_SENSOR_2.stl",
+          "size": 63084,
+          "sha256": "e47092e2b9ce7bf8e4dff40a3cf2e86f8bb60b685cdbfad11617f52b9577c419"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_SENSOR_SOCKET_ALLOWANCE.stl",
+          "size": 684,
+          "sha256": "c22587c69dca3f68d6e4b0730d42cae60be989786b826fe4ea3243e7a013c4c1"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_TCRT_HEADER.stl",
+          "size": 684,
+          "sha256": "7a0f69075cec5de839cf6cef90b2e74c9ca383ed74a0ade57835233ce5718a6e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_TCRT_HEAD_AND_LEGS.stl",
+          "size": 684,
+          "sha256": "badd7b7c758329e5d637d12cdbb6044de3dc443138c469d4eac292a309bf8c1e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_TCRT_LENS_PAIR.stl",
+          "size": 684,
+          "sha256": "d957fdc925f9a65ef9094a94f6c6456c626314d4880c7e6652e2a4dd8bf34e63"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_TCRT_PCB_MEASURED.stl",
+          "size": 684,
+          "sha256": "8bc0e6d43fd6ef4e91af42fc536df3a773f9717a97b7b7689bbfa3eb227c396b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_TCRT_POT.stl",
+          "size": 684,
+          "sha256": "305e619f1f0c4b01f0508514a80bbbfa68d7eba9b1a90509a364d3c3045cc8e9"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_TCRT_TOP_SOLDER.stl",
+          "size": 3884,
+          "sha256": "26237e94c398e803c66c372eb71a031a4a72dd762b926a099f550d748029c9e8"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/preview/REF_TCRT_UNDERSIDE_SOLDER.stl",
+          "size": 684,
+          "sha256": "df517f93a6614a82e467b1ae051a07e06538ce88109368fa38f7c8afb7dffcc0"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/provenance/build_sensor_only_tcrt_v042.py",
+          "size": 9618,
+          "sha256": "d4292fcb8606d22e81ede6487b1f553efe86a9859464e50a8838bcf96e20061b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/provenance/original-SHA256SUMS.txt",
+          "size": 4149,
+          "sha256": "8078078f3cc367d2b1d469ce01eca8b20e27fea10a9102c2655c3567944bf20e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/provenance/publication-checksums.md",
+          "size": 237,
+          "sha256": "96f8c50b865460f32c233030eb67f8fc2aea58888b55bac4667f08e5de37306c"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/provenance/render_sensor_only_tcrt_v042.py",
+          "size": 4610,
+          "sha256": "fe02d8143d9c0d47c9c72df9837d8400e4585889a971332167e5bec890f0afac"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/references/BP_port_LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/references/TCRT5000_measurements.md",
+          "size": 7119,
+          "sha256": "417136ad0784e4f50cbc8183b18a4b125b7d79a692490a569665482309ecbe28"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/renders/01_assembled.png",
+          "size": 1735094,
+          "sha256": "e342124baf4fa0adb2e44779652e0e0bde8384b6f2eae02b1d5126a6823dbccc"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/renders/02_sensor_cradle.png",
+          "size": 1729527,
+          "sha256": "3651f44b1f624a33a7d2ef0cb6cc1167925c6d752473136cde894d0c0f5fde19"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/renders/03_exploded.png",
+          "size": 1786087,
+          "sha256": "dd45ef677465d0b0cac996841a083395a5174f3d25ebca7e9c98c32efa7d29da"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/renders/04_underside.png",
+          "size": 1655879,
+          "sha256": "b996d7e8d6c612f7c94ffa16a1cb563d2c96c7357796f50f0cdd6db982027b3a"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/renders/Pasted 2026-10-02 at 12.49.13 PM.png",
+          "size": 2064520,
+          "sha256": "934441ff9f0d453a99502d1d63a706eabc1e120ddc419043bdf70cce471a9af1"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/reports/blender_audit.json",
+          "size": 2848,
+          "sha256": "068168c017c9340850f3c7520e70cf7fc25cd6fa90094b46eeb4ca6e67cd2ea3"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/reports/blender_saved_readback.json",
+          "size": 3145,
+          "sha256": "79fb6f8427d43f25aafd15fb43e703961d98888934a3fe1d896d02dfacdbe67c"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/reports/cad_validation.json",
+          "size": 4199,
+          "sha256": "10eccb208d26eaa64162ca8ffc2554d6617c7368f9c93e69f36191d856d6bb82"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/reports/scope_and_reuse_validation.json",
+          "size": 333,
+          "sha256": "f86653e78616484325d0c0c5ac474e0bba9c3b4191db59addc338bd1c6035c74"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/step/01_TCRT_sensor_cradle.step",
+          "size": 4472278,
+          "sha256": "6a357611923112d031ee15ac8ff2ef960eca329732058da12353142d6363cea3"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/step/02_TCRT_clip_keeper.step",
+          "size": 190658,
+          "sha256": "fc4a326031dd003156c6f7e9009168b51eb4b6fbe3d77203cee933baca0191d1"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/step/03_TCRT_sensor_pressure_keeper.step",
+          "size": 189257,
+          "sha256": "445a062674740314c0c207fda9761e1afe438d4a09c1026c3f45348b6a1e0041"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/step/08_TCRT_latch_LEFT.step",
+          "size": 458469,
+          "sha256": "2cedb4cae14df781bcaa7c0f0f13c9689cb293546153467c672da24adaceb22f"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/step/09_TCRT_latch_RIGHT.step",
+          "size": 449544,
+          "sha256": "4a741988980f9c31825c771825897d9112b30c4e4bc75f322c935680086e034d"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/stl/01_TCRT_sensor_cradle.stl",
+          "size": 493984,
+          "sha256": "296d1bf236e368e01c3bcee7754ba5ad42e8f1c4496e78adb44acea36f49cae6"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/stl/02_TCRT_clip_keeper.stl",
+          "size": 216284,
+          "sha256": "c2a2d78ea5f665e7ae13a6fc38635d8448aec2da09b31ac19cc70bc9181c1acd"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/stl/03_TCRT_sensor_pressure_keeper.stl",
+          "size": 126284,
+          "sha256": "4bf650278c884cb9406e0b24b7041094f68819d0ec1f35b35b3957a16fbdd3ad"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/stl/08_TCRT_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "065e8a051beabd771ff9227a8c4c2a0d3d82297f15b5cf8fd6235b7a9d8ebdda"
+        },
+        {
+          "path": "hardware/minimal_TCRT_sensor_only_v042/stl/09_TCRT_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "d42baa9845393cfd6ba12870b4687e51d4ad91ab8982de14579ec578bd463f57"
+        }
+      ]
+    },
+    {
+      "version": "0.43",
+      "family": "TCRT5000",
+      "directory": "hardware/minimal_TCRT_split_keepers_v043",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 6,
+      "files": [
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/README.md",
+          "size": 933,
+          "sha256": "d3c8d500f36c0440990fb97653c88e6cb234ef16b6d58241f7fdd3727b7aa0d8"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/SHA256SUMS.txt",
+          "size": 4751,
+          "sha256": "b5a8044f03aa637f6159b1e64671918c28da94a0940ae5afd47806f6e5dc573d"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/TCRT_split_keepers_v043.blend",
+          "size": 524960,
+          "sha256": "5dc6cd27a77cb116082d5cc1e7b00cc2a67e173beff54a7b37d817d63778d69a"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/TCRT_split_keepers_v043.step",
+          "size": 5530809,
+          "sha256": "bfc82c4929ee32fff52f7b1a4f930a0b6a10a813595b83e367cc04601218dc1d"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/assembly_manifest.json",
+          "size": 7975,
+          "sha256": "00f2bfc59bcf2ca4b44dbf7601b4d90f261039908ec01964e6355d25cc18c6e7"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/parameters.json",
+          "size": 1955,
+          "sha256": "66ea8c7dfec96e1c4dae4f80a25988bb186d6d011c0896a71490b19b9842e2da"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/01_TCRT_sensor_cradle.stl",
+          "size": 501184,
+          "sha256": "6afc3e4fab1ac84bbcb579f9b7648523f58f927b8bd987443ec4a9b0d0636f1f"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/02_TCRT_clip_cap_LEFT.stl",
+          "size": 118684,
+          "sha256": "637d442249a44d9026696575f7a839fb74946b168e981c4373c35eb674092394"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/02_TCRT_clip_cap_RIGHT.stl",
+          "size": 118684,
+          "sha256": "c7b31caa655a797e311f7bfd9616d43044ee784dfcdd338e6bc7767ec1c6a1da"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/03_TCRT_sensor_pressure_keeper.stl",
+          "size": 126284,
+          "sha256": "8668a5936d3cd7a0224c96cca3d506214e96f238c1579fdfa4a02ede8d47ea49"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/08_TCRT_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "90556c63e1136b00b433920039b2181363abc890787f596f17739483f1094a84"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/09_TCRT_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "51c75d370d6b70a979499a27f4dd48ceebf0e2513efdb8ba93cffabd77c38624"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x4_SENSOR_1.stl",
+          "size": 63084,
+          "sha256": "0827486f2ccc0c2463bf3c3301d6f6577e76cbf2e9a86eff56316b6ba7a2a622"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x4_SENSOR_2.stl",
+          "size": 63084,
+          "sha256": "e47092e2b9ce7bf8e4dff40a3cf2e86f8bb60b685cdbfad11617f52b9577c419"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x5_CLIP_1.stl",
+          "size": 86784,
+          "sha256": "8c54ed921f87de4fcb674e5c78c1ba9c727dc7044c1ba21b332ba1812c7d482e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_M2x5_CLIP_2.stl",
+          "size": 86784,
+          "sha256": "515aa44d9b8879a4a1ab20e07a4cc261a178a3dbcd4c2eb8905a70ea47c0c2db"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_SENSOR_SOCKET_ALLOWANCE.stl",
+          "size": 684,
+          "sha256": "c22587c69dca3f68d6e4b0730d42cae60be989786b826fe4ea3243e7a013c4c1"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_HEADER.stl",
+          "size": 684,
+          "sha256": "7a0f69075cec5de839cf6cef90b2e74c9ca383ed74a0ade57835233ce5718a6e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_HEAD_AND_LEGS.stl",
+          "size": 684,
+          "sha256": "badd7b7c758329e5d637d12cdbb6044de3dc443138c469d4eac292a309bf8c1e"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_LENS_PAIR.stl",
+          "size": 684,
+          "sha256": "d957fdc925f9a65ef9094a94f6c6456c626314d4880c7e6652e2a4dd8bf34e63"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_PCB_MEASURED.stl",
+          "size": 684,
+          "sha256": "8bc0e6d43fd6ef4e91af42fc536df3a773f9717a97b7b7689bbfa3eb227c396b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_POT.stl",
+          "size": 684,
+          "sha256": "305e619f1f0c4b01f0508514a80bbbfa68d7eba9b1a90509a364d3c3045cc8e9"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_TOP_SOLDER.stl",
+          "size": 3884,
+          "sha256": "26237e94c398e803c66c372eb71a031a4a72dd762b926a099f550d748029c9e8"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/preview/REF_TCRT_UNDERSIDE_SOLDER.stl",
+          "size": 684,
+          "sha256": "df517f93a6614a82e467b1ae051a07e06538ce88109368fa38f7c8afb7dffcc0"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/provenance/build_split_tcrt_keepers_v043.py",
+          "size": 9936,
+          "sha256": "3138e201de97826c0781cf55415e35f9b1392716694b8637e059fb399a111f5a"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/provenance/render_split_tcrt_keepers_v043.py",
+          "size": 4775,
+          "sha256": "543c0e711d3450b5fb0d624198dff73b4e6a1346d77cfe3b9faf61c119f22177"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/references/BP_port_LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/references/TCRT5000_measurements.md",
+          "size": 7119,
+          "sha256": "417136ad0784e4f50cbc8183b18a4b125b7d79a692490a569665482309ecbe28"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/references/USER_marked_exploded.png",
+          "size": 1786087,
+          "sha256": "dd45ef677465d0b0cac996841a083395a5174f3d25ebca7e9c98c32efa7d29da"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/renders/01_assembled.png",
+          "size": 1728818,
+          "sha256": "718a54b66a6253f402d7d68e9634659bb0890c2e18844e5e52f444131e8c4c4b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/renders/02_sensor_cradle.png",
+          "size": 1715865,
+          "sha256": "847f338236bd93a806ce1f27022239fb217536fe96071f7231d4a5696891de6b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/renders/03_exploded.png",
+          "size": 1691377,
+          "sha256": "f62e8ada6196bfd29dbe530b1ecb3d6aed23b40360a557aa08ce045d4306d6ca"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/renders/04_underside.png",
+          "size": 1657207,
+          "sha256": "67477f610b031adf902cb11f874a27c9fcb0fbee03014e5e6482fe52c8c02327"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/reports/blender_audit.json",
+          "size": 3420,
+          "sha256": "9017970ec9f245484481825950e5c6e9f29f2c9e23be775edc012d540ec5f226"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/reports/blender_saved_readback.json",
+          "size": 3769,
+          "sha256": "2e304146bd37c817c6c735e660ebc3efe26d6fd2e3039079f6905a9f3125240c"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/reports/cad_validation.json",
+          "size": 5521,
+          "sha256": "1b41868d408bcd14e69d07ff1f8bd2770f7ce88c48fb9f01524a5a399f473315"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/reports/source_and_reuse_validation.json",
+          "size": 258,
+          "sha256": "9ca9bbbf7dc51f4f6c4b6d66edd9a39f9ef39dcbcacb218675c539fc1adfb594"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/step/01_TCRT_sensor_cradle.step",
+          "size": 4281653,
+          "sha256": "7fe3490e055b68505991157332bcfac84ca6113c28d3c4e3da2338ed7a338072"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/step/02_TCRT_clip_cap_LEFT.step",
+          "size": 44296,
+          "sha256": "80603c2b5feec5ee8ae7fd975e04bd84a681460a1de32e3fa9038b6251f62d4b"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/step/02_TCRT_clip_cap_RIGHT.step",
+          "size": 44235,
+          "sha256": "c9b545684f03f1a85d270039297f41b1df3461f7aa88f0798aa082dff3df5274"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/step/03_TCRT_sensor_pressure_keeper.step",
+          "size": 189257,
+          "sha256": "445a062674740314c0c207fda9761e1afe438d4a09c1026c3f45348b6a1e0041"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/step/08_TCRT_latch_LEFT.step",
+          "size": 458469,
+          "sha256": "2cedb4cae14df781bcaa7c0f0f13c9689cb293546153467c672da24adaceb22f"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/step/09_TCRT_latch_RIGHT.step",
+          "size": 449544,
+          "sha256": "4a741988980f9c31825c771825897d9112b30c4e4bc75f322c935680086e034d"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/stl/01_TCRT_sensor_cradle.stl",
+          "size": 501184,
+          "sha256": "bbcd5443c65e5adafde44b2d452eda87ce86440163af60edb1f1c1afdfc502a4"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/stl/02_TCRT_clip_cap_LEFT.stl",
+          "size": 118684,
+          "sha256": "d0124ed3e4647fac2fdbace2ee36f23eb4c6f3e8f64d1e2b438f1a4ecc8209a9"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/stl/02_TCRT_clip_cap_RIGHT.stl",
+          "size": 118684,
+          "sha256": "06c79bd3d2f495e415fe2f2d229088f94355698be109a9e1a1ec375457baff40"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/stl/03_TCRT_sensor_pressure_keeper.stl",
+          "size": 126284,
+          "sha256": "4bf650278c884cb9406e0b24b7041094f68819d0ec1f35b35b3957a16fbdd3ad"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/stl/08_TCRT_latch_LEFT.stl",
+          "size": 21484,
+          "sha256": "065e8a051beabd771ff9227a8c4c2a0d3d82297f15b5cf8fd6235b7a9d8ebdda"
+        },
+        {
+          "path": "hardware/minimal_TCRT_split_keepers_v043/stl/09_TCRT_latch_RIGHT.stl",
+          "size": 21484,
+          "sha256": "d42baa9845393cfd6ba12870b4687e51d4ad91ab8982de14579ec578bd463f57"
+        }
+      ]
+    },
+    {
+      "version": "0.44",
+      "family": "M5StickS3 carrier",
+      "directory": "hardware/M5_level_support_v044",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 1,
+      "files": [
+        {
+          "path": "hardware/M5_level_support_v044/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/M5_level_support_v044.blend",
+          "size": 478755,
+          "sha256": "34d11db572adff6134da6ab6b8ef5820ac3f8171fe8545ff29278ac06f9b52c9"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/README.md",
+          "size": 732,
+          "sha256": "c222a96e3d054a8fdfda8e45aac95edc013a8654e91fa4fe8bff177faddd6ecc"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/SHA256SUMS.txt",
+          "size": 2367,
+          "sha256": "1d6dd7af80af143d1aa1a5bd87f1e209978836af2b33facf5d7229c7ece95236"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/assembly_manifest.json",
+          "size": 2077,
+          "sha256": "f5b8057c4bc8b73fd6c71d77af7e40214ec54f3bb5a3ed7cdd867775f4c114c6"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/parameters.json",
+          "size": 2822,
+          "sha256": "35987e7c8c37b31ab048d64c692ea404202f63786be8ad0a62ba76d0dc28fbae"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/preview/01_M5_level_platform.stl",
+          "size": 469784,
+          "sha256": "8ff10ab7deccde5859d686381e76d6fe099374ca3f378fef399b956242867444"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/preview/REF_Display_visual.stl",
+          "size": 684,
+          "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/preview/REF_M2x6_1.stl",
+          "size": 63084,
+          "sha256": "0bcfb2c49c8712ecc3da12167a8fb7af92fbf4bf2c9b567fbb348d295b509080"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/preview/REF_M2x6_2.stl",
+          "size": 63084,
+          "sha256": "0ab78b67488b9bcd0b026ecaeea927525d135108e63adcbfdce2fa2b6945ae28"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/preview/REF_M5Stick_factory_geometry.stl",
+          "size": 367484,
+          "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/provenance/build_m5_level_support_v044.py",
+          "size": 7130,
+          "sha256": "12add61ae84ebbcb044ed7ca7ed81dec844754fcacf2c76123d2288a08344573"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/provenance/render_m5_level_support_v044.py",
+          "size": 4627,
+          "sha256": "f57f7d5e64bee1800a97703ec1a740d62cd9dea383447245f2d10766d73449fd"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/references/Added_support_pad_1.stl",
+          "size": 43084,
+          "sha256": "365b60a912d76f2a655f03162e429acac2ef5f866f59b600131e3d33e42abc93"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/references/Added_support_pad_2.stl",
+          "size": 43084,
+          "sha256": "14100a05713a2c062ff88a6c405a2ba4448b1fe11c8c43b26b2b23b031da5b66"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/references/USER_M5_level_markup.png",
+          "size": 2064520,
+          "sha256": "934441ff9f0d453a99502d1d63a706eabc1e120ddc419043bdf70cce471a9af1"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/renders/01_assembled.png",
+          "size": 1715602,
+          "sha256": "8e645ea117a6d93e0642da464e296a05c706b6a3333743d14246d2f41cd556f9"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/renders/02_bare_supports.png",
+          "size": 1581760,
+          "sha256": "1406d910d9bdea5084c127644c93a68babe0faa2186f31979d2d4c75befe614c"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/renders/03_exploded.png",
+          "size": 1643571,
+          "sha256": "d0c46f2ff6e7986a3457ef0b3988952a8357cda82c2e2d5afb5bb5b5a8616562"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/renders/04_side_contact.png",
+          "size": 1567684,
+          "sha256": "1634a2a088e3860fbb59ec914a692274b60813ae7eade9d7769d685d190a4f76"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/reports/blender_audit.json",
+          "size": 494,
+          "sha256": "f7c4a89752b3e298605aa9770118b22bb107251fca469e3d5de3d7801b237171"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/reports/blender_saved_readback.json",
+          "size": 578,
+          "sha256": "3ff52958952559068702d2cc04af3c3be0b5ec6bd2a781f0e3721c290b9ae0b2"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/reports/cad_validation.json",
+          "size": 6713,
+          "sha256": "6e3f2c020500e0d0dd501ddcfc968bacc8d45fb8c16b497145ed8708778e0270"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/step/Added_support_pad_1.step",
+          "size": 31935,
+          "sha256": "7627ba82f45e59a72945171eb3d4fe8fb132f70ce2b1bd604abb75e7aaf784d9"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/step/Added_support_pad_2.step",
+          "size": 31985,
+          "sha256": "3a8f3a4c12cb3118b15b3c5b2051d53bec054d092288de3cc0d15e672124682c"
+        },
+        {
+          "path": "hardware/M5_level_support_v044/stl/01_M5_level_platform.stl",
+          "size": 469784,
+          "sha256": "ae1aab8e223cb28f1a3123fc24470268215aeeea7edd7bbd7009c20b61fa6256"
+        }
+      ]
+    },
+    {
+      "version": "0.45",
+      "family": "M5StickS3 carrier",
+      "directory": "hardware/M5_recessed_screws_v045",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 1,
+      "files": [
+        {
+          "path": "hardware/M5_recessed_screws_v045/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/M5_recessed_screws_v045.blend",
+          "size": 448382,
+          "sha256": "002ebfd2d9de37b64ea8cc53f81448e913f81885df96297294422ff65366dfa5"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/M5_recessed_screws_v045_UNSLICED.3mf",
+          "size": 121840,
+          "sha256": "763baf801406a084bf05da2a8a4668ff740626159df4bc755ce7917ac8a9a805"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/README.md",
+          "size": 1167,
+          "sha256": "d5df64befb7f75460e8ee4e919e989bc440e4e0f2b87b84f786261b90ec54fcf"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/SHA256SUMS.txt",
+          "size": 3211,
+          "sha256": "26d590fdf956e3a5630199b401be6de23eb144d1cb3225f21d23423c29899622"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/assembly_manifest.json",
+          "size": 2188,
+          "sha256": "c2deb8831043ab895bac9b2e478c1b1a7b9abda2f7c39ed1c127e8cfd6ff6686"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/parameters.json",
+          "size": 3640,
+          "sha256": "eca84ba2e9bc7f78ed3f863551808d4ac33c235c96e9a50bca46f519ef7ff64b"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/preview/01_M5_recessed_screw_platform.stl",
+          "size": 553784,
+          "sha256": "9415fd240367f4fddff61a5c352bd9cce55cb07c457d4427b971c827bf0b519d"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/preview/REF_Display_visual.stl",
+          "size": 684,
+          "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/preview/REF_M2x6_1.stl",
+          "size": 63084,
+          "sha256": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/preview/REF_M2x6_2.stl",
+          "size": 63084,
+          "sha256": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/preview/REF_M5Stick_factory_geometry.stl",
+          "size": 367484,
+          "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/provenance/blender_helpers_v09.py",
+          "size": 7605,
+          "sha256": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/provenance/build_compact_v010.py",
+          "size": 12558,
+          "sha256": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/provenance/build_m5_recessed_screws_v045.py",
+          "size": 9542,
+          "sha256": "016bd956faf9198f6cbb4ae66bafc757bd4c6d738d8c474df94ef1ecfe3edc01"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/provenance/render_m5_recessed_screws_v045.py",
+          "size": 6265,
+          "sha256": "1d86308417af7c3c59a406430d922b6c0d9a15a6c4c540b5191661a0a3b15f1c"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/provenance/render_minimal_qre_v025.py",
+          "size": 8137,
+          "sha256": "928277b4e68f8b18e2209744536a25bfd830d067d25d8f89b57a94b2aa428b2c"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/references/Counterbore_cutter_1.stl",
+          "size": 41884,
+          "sha256": "5ce87bc94ba70434cca6007997532a869339f2f77c7af0d677cdc05bacd23bed"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/references/Counterbore_cutter_2.stl",
+          "size": 41884,
+          "sha256": "6ea5830b177ce0deb241f1ee066e6726e358a254a6295232664f8be4a2704ff1"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/references/SECTION_carrier.stl",
+          "size": 110284,
+          "sha256": "327bf62ceae8ddbc709883282188ab8eec5e55220ac477e15c3d8d6522dd46e1"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/references/SECTION_screw_1.stl",
+          "size": 31884,
+          "sha256": "d406fdc350d8c30a630843a94d520b81dbcdf01aa04eb947895ff43e9394840c"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/references/SECTION_screw_2.stl",
+          "size": 31884,
+          "sha256": "94516b2ec87f1fa1cd6fe06b7945f29f43e835800ff8a1ccb26171f3b2397b08"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/references/USER_M5_level_markup.png",
+          "size": 2064520,
+          "sha256": "934441ff9f0d453a99502d1d63a706eabc1e120ddc419043bdf70cce471a9af1"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/renders/01_underside_recesses.png",
+          "size": 1535281,
+          "sha256": "7c251ce719a35d6e83a909ab2af0d76d2e84c50223509d9b4684ffd16bd99e0a"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/renders/02_flush_heads.png",
+          "size": 1538161,
+          "sha256": "96543ec40259eab0ebe3f9804565c1c2198847bf3694d0ff430b653620b2aa08"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/renders/03_axial_section.png",
+          "size": 1507344,
+          "sha256": "8513e2239a676ec3df74b0070b4f8ff0b96177ad6f119237f302e1561dfc33bb"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/renders/04_top_unchanged.png",
+          "size": 1573310,
+          "sha256": "cda453b0d03b6b0e2ada02fccb1901c860d9e0e540ee059429ca8f346f4aad4b"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/reports/blender_audit.json",
+          "size": 495,
+          "sha256": "45069b9a16e2365d6eb01e0d9d4bd6015955b3bf57e7702fadd0ac6e687aa8fe"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/reports/blender_saved_readback.json",
+          "size": 579,
+          "sha256": "e9b2cf13e33d4cf68a9b186d3ac047d13795c141c6a68efa5af17a16fc449203"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/reports/cad_validation.json",
+          "size": 4219,
+          "sha256": "19832a897e326da18b3ae03ceff28625bafcbd32fae2fca5ae0c6d7615a1ea5d"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/reports/package_readback.json",
+          "size": 321,
+          "sha256": "251121de3cb0f98e7df33635fcb390891950e823f1bac3175c9b344d6a43a7b6"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/step/Counterbore_cutter_1_ONLY.step",
+          "size": 5653,
+          "sha256": "4fcac8974b4dcca96f12afd5399622bedb4567c2fc1fa38a1d8199d7a790417d"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/step/Counterbore_cutter_2_ONLY.step",
+          "size": 5661,
+          "sha256": "18eb08d10ca2db50f07822eb9231f508c93382f091cabaa11d954faf58830418"
+        },
+        {
+          "path": "hardware/M5_recessed_screws_v045/stl/01_M5_recessed_screw_platform.stl",
+          "size": 553784,
+          "sha256": "04c319ff30345db2810f1d5b95e92efd314e96d2b89c1dde2fdd3311f2e58a80"
+        }
+      ]
+    },
+    {
+      "version": "0.46",
+      "family": "M5StickS3 carrier",
+      "directory": "hardware/M5_raised_rectangle_v046",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 1,
+      "files": [
+        {
+          "path": "hardware/M5_raised_rectangle_v046/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/M5_raised_rectangle_v046.blend",
+          "size": 518103,
+          "sha256": "7a16b57846b1b20ec6c48102707a374f4947c3ad805fde3b8c516492b251a499"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/M5_raised_rectangle_v046_UNSLICED.3mf",
+          "size": 120266,
+          "sha256": "20ccd1e92240090a3cdc2c924b7b14d408ef7b3aa8d11455c95fb199ec5fc546"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/README.md",
+          "size": 850,
+          "sha256": "4104f7a1ab490e6fe093087d4ea974cc00925ac130f3e1075b81adf7228fa64b"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/SHA256SUMS.txt",
+          "size": 3260,
+          "sha256": "cf7cac0c6bc55beadf8fd82dc1a08cd13d2c0b1223c3122ebbb50a9bafd6e3e6"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/assembly_manifest.json",
+          "size": 2216,
+          "sha256": "a7ec221edcdae6cdd0c65f79842c6ce737d391baa49edd5380491062023227f8"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/parameters.json",
+          "size": 4204,
+          "sha256": "68e5dc977332ed96a71ccfbc8c7d91bb5d277b8e10d82244c9e54042f325fd3e"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/preview/01_M5_raised_rectangle_platform.stl",
+          "size": 555584,
+          "sha256": "2587ecb8823e6596f76480800153d2f86f13069d9c2167ce524668e2004ac069"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/preview/REF_Display_visual.stl",
+          "size": 684,
+          "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/preview/REF_M2x6_1.stl",
+          "size": 63084,
+          "sha256": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/preview/REF_M2x6_2.stl",
+          "size": 63084,
+          "sha256": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/preview/REF_M5Stick_factory_geometry.stl",
+          "size": 367484,
+          "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/provenance/blender_helpers_v09.py",
+          "size": 7605,
+          "sha256": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/provenance/build_compact_v010.py",
+          "size": 12558,
+          "sha256": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/provenance/build_m5_raised_rectangle_v046.py",
+          "size": 8239,
+          "sha256": "02a5c28587e7653b097bc587ae3a1199a0ed337a26b3cbfb7ba57d57a8ca839f"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/provenance/render_m5_raised_rectangle_v046.py",
+          "size": 5688,
+          "sha256": "490983e28a1b0c3252061f13f3d4fbfce4435b123c7ed187e0f6727f39b5bae5"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/provenance/render_minimal_qre_v025.py",
+          "size": 8137,
+          "sha256": "928277b4e68f8b18e2209744536a25bfd830d067d25d8f89b57a94b2aa428b2c"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/references/Original_center_rectangle_cap.stl",
+          "size": 12484,
+          "sha256": "db0d39010ee7d76309958ed73610bb838fa9d33d9ed7eb7cd2d24768385a6344"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/references/Original_v045_carrier.stl",
+          "size": 553784,
+          "sha256": "9415fd240367f4fddff61a5c352bd9cce55cb07c457d4427b971c827bf0b519d"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/references/SECTION_original_rectangle.stl",
+          "size": 9684,
+          "sha256": "b78b6d139d7a48f6d081c6ba37a4d9133ec4476a0d27c49e1021b6554650cf25"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/references/SECTION_revised_rectangle.stl",
+          "size": 10984,
+          "sha256": "e9ca8c894c7753687a6a991f0299833a5302166559adb20850f47818136f7f04"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/references/Translated_original_rounded_cap.stl",
+          "size": 12484,
+          "sha256": "e3a69e469933a62d2ef500dcb82d330cc5db9b3d222f81ffe14d2331b60aa2c2"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/references/USER_center_rectangle.png",
+          "size": 100761,
+          "sha256": "4a66c084d1c95501a071b1d0f63217a939610a3abe988e5264c22b140fbf2659"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/references/request.json",
+          "size": 206,
+          "sha256": "3a894c3e35bf4a36b9ce482e784891f627433449690486fee945058e8ddda595"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/renders/01_revised_carrier.png",
+          "size": 1386224,
+          "sha256": "d0a11950a8fbe1a6320fcd019bdb6ebb2d802516241895857ff3789e023607b6"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/renders/02_revised_closeup.png",
+          "size": 1493970,
+          "sha256": "bd33d4f6a3f25a32b196ea085d0a685bfa78912f8a7fbd3f0254bd92e6ae19d9"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/renders/03_original_closeup.png",
+          "size": 1495904,
+          "sha256": "a04c16c24481542f54a89888fe01b3df67bae52c7fc83ced645e2192710e7295"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/renders/04_center_section.png",
+          "size": 1351628,
+          "sha256": "fd281b8dd37bd112d95ea2edde18962182c787d5dda8d1c43ed5a9e9d6030b96"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/reports/blender_audit.json",
+          "size": 480,
+          "sha256": "d159fd8ebe6b10ec79af2b4dc86532035c5212db34b604639a83e15a8b3f7182"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/reports/blender_saved_readback.json",
+          "size": 564,
+          "sha256": "a81bfb308eb0763bffa2a58ec04361f9229c778eaa346691f9fc5c4d92bf1e5b"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/reports/cad_validation.json",
+          "size": 2006,
+          "sha256": "7ae26d4cdf26eedbe761aad6b7247f1377ba40cb84f1d9c234bc2d556f183ae8"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/reports/package_readback.json",
+          "size": 353,
+          "sha256": "2569086f6131e33198c4519f1b2e66a0cc1d9bd14ef7ee54a27005e837118df5"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/step/Added_rectangle_root_ONLY.step",
+          "size": 15725,
+          "sha256": "7d29f093c0ac8bcac6852d6a2ceb8d47eaee83824b06baa1d15049ffe5ea1a14"
+        },
+        {
+          "path": "hardware/M5_raised_rectangle_v046/stl/01_M5_raised_rectangle_platform.stl",
+          "size": 555584,
+          "sha256": "f9f76689b06940031feff3144604e1f5a01758b2a73c0c84961964efa23bf007"
+        }
+      ]
+    },
+    {
+      "version": "0.47",
+      "family": "M5StickS3 carrier",
+      "directory": "hardware/M5_rotated_rectangle_v047",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 1,
+      "files": [
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/M5_rotated_rectangle_v047.blend",
+          "size": 486433,
+          "sha256": "b0f93980e49bab08676a01bc8a0f6b8ad236d7b7cc3cd3e9d4ff2465f62f8d2b"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/M5_rotated_rectangle_v047_UNSLICED.3mf",
+          "size": 120440,
+          "sha256": "1d470e8885b065b13c68617297ac452878ca4776f7d7d73d59a9dd004146e92a"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/README.md",
+          "size": 866,
+          "sha256": "72605df72ea6352b7b658b689cba8d6f72cb85cf2af0d7d712e663065d716460"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/SHA256SUMS.txt",
+          "size": 2831,
+          "sha256": "da96d2c044f21c51adf76c6463c45a9649b33d1b23fbd4bc29af39fd9583bfe2"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/assembly_manifest.json",
+          "size": 2218,
+          "sha256": "9a93e76c8cc02d88b5468c298be6120aa8e548058a1cd81dc6157f69501bcb43"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/parameters.json",
+          "size": 4234,
+          "sha256": "c4b7df47fc4e32fdbcd760babfded6d0ea155dd1cd08680b586bc49ae57814c9"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/preview/01_M5_rotated_rectangle_platform.stl",
+          "size": 555984,
+          "sha256": "9f51a64e19bdf82fe99a880e6b3df1a0b81706b7aed0b7ce51e8dde58c5ff305"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/preview/REF_Display_visual.stl",
+          "size": 684,
+          "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/preview/REF_M2x6_1.stl",
+          "size": 63084,
+          "sha256": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/preview/REF_M2x6_2.stl",
+          "size": 63084,
+          "sha256": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/preview/REF_M5Stick_factory_geometry.stl",
+          "size": 367484,
+          "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/provenance/blender_helpers_v09.py",
+          "size": 7605,
+          "sha256": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/provenance/build_compact_v010.py",
+          "size": 12558,
+          "sha256": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/provenance/build_m5_rotated_rectangle_v047.py",
+          "size": 7870,
+          "sha256": "ecc1dc21b0a2ff02ec58910a2b47c20bf4376f47f6ff4759a8484d1457a19f87"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/provenance/render_m5_rotated_rectangle_v047.py",
+          "size": 5274,
+          "sha256": "e08445742bba8e0b23deb3cd5c0580ef24c09f55c58eb55579f3f47e6a05c84b"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/provenance/render_minimal_qre_v025.py",
+          "size": 8137,
+          "sha256": "928277b4e68f8b18e2209744536a25bfd830d067d25d8f89b57a94b2aa428b2c"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/references/Rotated_actual_rectangle.stl",
+          "size": 14084,
+          "sha256": "75a9ac848e5669b70d683d4e7734688c4c4f978a6abe336870cb7e7d828c0d09"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/references/USER_center_rectangle.png",
+          "size": 100761,
+          "sha256": "4a66c084d1c95501a071b1d0f63217a939610a3abe988e5264c22b140fbf2659"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/references/request.json",
+          "size": 351,
+          "sha256": "13b3ffa87dfc7399e456ae2a80105d85807ad79067cdd5154bc86705a0fc0340"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/renders/01_revised_carrier.png",
+          "size": 1391278,
+          "sha256": "50af42df68dcdea03935bfcda077a2492086551446b45bc7c8aeb43bd058769f"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/renders/02_revised_closeup.png",
+          "size": 1502278,
+          "sha256": "5b226fd46cac400ef9554e1e8408a3ae952d2995370239b4a22acec7f20711c8"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/renders/03_previous_closeup.png",
+          "size": 1493169,
+          "sha256": "7d038883f00096e171da607d8af5f8bc9d03e05b11b4f192aaca57b32839f921"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/renders/04_footprint_top.png",
+          "size": 1403593,
+          "sha256": "a313da91ed94e7d3e002bc6d77b6bc332db4d42eeed63aa37a7f5c2bac284ac1"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/reports/blender_audit.json",
+          "size": 480,
+          "sha256": "461a8a843d7f99045e5bc4551c6bc45e32544fc0ee4a0c477ce2742dbeabd051"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/reports/blender_saved_readback.json",
+          "size": 564,
+          "sha256": "2382ef20138ce1dfb650b632b095815fdffdfa255553740790e8e5c8415a00e8"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/reports/cad_validation.json",
+          "size": 2467,
+          "sha256": "64d44964d2ec4b9e3cd37690bbc41eee118f7e4fb0c001e01751a786bf6f3fdf"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/reports/package_readback.json",
+          "size": 370,
+          "sha256": "ea4bf9237c3c02c0f1eba92e581bf20446b5047b3f76f2651aa182acaec71939"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/step/Rotated_rectangle_root_ONLY.step",
+          "size": 15725,
+          "sha256": "59fe3c1ba786b1e83f252403abd5dc22ccd1a2c8e3776cd2886e95c4d8b6e558"
+        },
+        {
+          "path": "hardware/M5_rotated_rectangle_v047/stl/01_M5_rotated_rectangle_platform.stl",
+          "size": 555984,
+          "sha256": "7a072576d4e0ad9595411a3668ff3749d392d99b93179b241f1e0342c982726c"
+        }
+      ]
+    },
+    {
+      "version": "0.48",
+      "family": "M5StickS3 carrier",
+      "directory": "hardware/M5_smooth_rectangle_v048",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 1,
+      "files": [
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/M5_smooth_rectangle_v048.blend",
+          "size": 2210238,
+          "sha256": "e03eb4b8820f1e4a4ed7cd29366da0617e38b5037dd865216a23144d80165911"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/M5_smooth_rectangle_v048_UNSLICED.3mf",
+          "size": 1125489,
+          "sha256": "0ed7a45991ad70bb1938d6235f7d5c05b974db22ce3155d5573ceb6a4b9ff2d6"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/README.md",
+          "size": 839,
+          "sha256": "64bc7fee0817696a2f2b9fe10652dab5488e5fc725bc1161e7828b51aa41cffe"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/SHA256SUMS.txt",
+          "size": 2839,
+          "sha256": "433eb197cef91ffe046a030752df50f2e6fadf4a8d27d6b0579b9af4b7f23105"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/assembly_manifest.json",
+          "size": 2223,
+          "sha256": "a4f778a4f2ed60071d663f9bfa0cdf0b7834e8fcea2fae4165f85b99bafabe1a"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/parameters.json",
+          "size": 4143,
+          "sha256": "c40d321d429f12d9b63ae0dbc9a656c3e87ec17508a6e7015c8366d7ed6404ca"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/preview/01_M5_smooth_rectangle_platform.stl",
+          "size": 4409584,
+          "sha256": "e599d77ae208a739bbdd16b3581ceb985c77291371e19f2b85c47bc193124a63"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/preview/REF_Display_visual.stl",
+          "size": 684,
+          "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/preview/REF_M2x6_1.stl",
+          "size": 63084,
+          "sha256": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/preview/REF_M2x6_2.stl",
+          "size": 63084,
+          "sha256": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/preview/REF_M5Stick_factory_geometry.stl",
+          "size": 367484,
+          "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/provenance/blender_helpers_v09.py",
+          "size": 7605,
+          "sha256": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/provenance/build_compact_v010.py",
+          "size": 12558,
+          "sha256": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/provenance/build_m5_rotated_rectangle_v047.py",
+          "size": 7870,
+          "sha256": "ecc1dc21b0a2ff02ec58910a2b47c20bf4376f47f6ff4759a8484d1457a19f87"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/provenance/build_m5_smooth_rectangle_v048.py",
+          "size": 8096,
+          "sha256": "7385457bc0867ca38ad9593365a369e694a59a06593433d02cf23b6cf59e32ec"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/provenance/render_m5_smooth_rectangle_v048.py",
+          "size": 5297,
+          "sha256": "76d10719d0d12ff5313848ab729274d6bb0ff1bbdc63335d8a7d97856149e737"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/provenance/render_minimal_qre_v025.py",
+          "size": 8137,
+          "sha256": "928277b4e68f8b18e2209744536a25bfd830d067d25d8f89b57a94b2aa428b2c"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/references/Smoothed_center_tab.stl",
+          "size": 3856384,
+          "sha256": "c98dd40c578f97693e58ecec07ebdcb544b96869a508faf7ccc4919de13bbe9c"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/references/USER_center_rectangle.png",
+          "size": 100761,
+          "sha256": "4a66c084d1c95501a071b1d0f63217a939610a3abe988e5264c22b140fbf2659"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/renders/01_revised_carrier.png",
+          "size": 1394057,
+          "sha256": "5ab75c9d412d56a780c128bcfb91ebfc3b0496e608795036320369081cba2c6d"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/renders/02_revised_closeup.png",
+          "size": 1501988,
+          "sha256": "65425a8e92877a1fbec537ddd8cd1975be80f0893204e5495155cc1bef0df68e"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/renders/03_previous_closeup.png",
+          "size": 1505174,
+          "sha256": "64393f2c495de72a030c6d2a82eb282a3f56282424975359a7ef1ddbf225e4b0"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/renders/04_footprint_top.png",
+          "size": 1404010,
+          "sha256": "f857539bb270f1dfd7eb4f43ee9421b87ac3933db350b0f58e5a2ca12bc0c0d3"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/reports/blender_audit.json",
+          "size": 481,
+          "sha256": "3babb674326b5bde44efc9a2a132510f3949bc7dc3d4f9bfcd114aa12e994f32"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/reports/blender_saved_readback.json",
+          "size": 565,
+          "sha256": "0a8527f29072241737f715bc35f02b590fb7c12b9ea2b2a08e0bab245d0eb571"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/reports/cad_validation.json",
+          "size": 2208,
+          "sha256": "626ebe03148d210a3db3b4982586ca8cc056b00422e64d7b2962896e6fa3bed4"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/reports/package_readback.json",
+          "size": 407,
+          "sha256": "4d70dcd63f699018225e115773c0e56c1408cfb6e67e374af37236ca45b81769"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/step/Smoothed_center_tab_ONLY.step",
+          "size": 163908,
+          "sha256": "656d289a2051deb772696804c62416b12ee0849dad1f94a10b87bdc80608b8f3"
+        },
+        {
+          "path": "hardware/M5_smooth_rectangle_v048/stl/01_M5_smooth_rectangle_platform.stl",
+          "size": 4409584,
+          "sha256": "7450b496a090ed2248f14251a0336f447b1e36e7493685d426f969e3b7f261a8"
+        }
+      ]
+    },
+    {
+      "version": "0.49",
+      "family": "M5StickS3 carrier",
+      "directory": "hardware/M5_soft_ramp_v049",
+      "status": "unsliced CAD prototype",
+      "printed_parts": 1,
+      "files": [
+        {
+          "path": "hardware/M5_soft_ramp_v049/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/M5_soft_ramp_v049.blend",
+          "size": 3473131,
+          "sha256": "935c79ee2d162e8ef101b0747cac60daec5b7cbb2055fc3066bdf9ed9f7b0ac6"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/M5_soft_ramp_v049_UNSLICED.3mf",
+          "size": 870319,
+          "sha256": "a420cb5f86f558271c559482848944264106f7c579071a3bbc8c141f22d22102"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/README.md",
+          "size": 872,
+          "sha256": "331fef18de92d90c812e83bdeec81cfa77cf075014d9e7146edbdd9e4b8570ff"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/SHA256SUMS.txt",
+          "size": 2791,
+          "sha256": "753c70ce0b31c269bcbac8292ddb2ae9cd93ea8e364e24994ad0cb50cdab2b8d"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/assembly_manifest.json",
+          "size": 2208,
+          "sha256": "96e44bef599d8e48de5b8d36a1f02ba95c543e8a43bc9ac5a677068ab08e71ee"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/parameters.json",
+          "size": 4236,
+          "sha256": "13068149d93bbdcbfbf7f5fdca2b9cacc3c73c17ea403f4e3f63d8e7ce230ad8"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/preview/01_M5_soft_ramp_platform.stl",
+          "size": 3355384,
+          "sha256": "facdf3b08406da5b51874ee626050e6156ceb7c480911c7486732ee795bb718e"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/preview/REF_Display_visual.stl",
+          "size": 684,
+          "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/preview/REF_M2x6_1.stl",
+          "size": 63084,
+          "sha256": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/preview/REF_M2x6_2.stl",
+          "size": 63084,
+          "sha256": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/preview/REF_M5Stick_factory_geometry.stl",
+          "size": 367484,
+          "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/provenance/blender_helpers_v09.py",
+          "size": 7605,
+          "sha256": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/provenance/build_compact_v010.py",
+          "size": 12558,
+          "sha256": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/provenance/build_m5_rotated_rectangle_v047.py",
+          "size": 7870,
+          "sha256": "ecc1dc21b0a2ff02ec58910a2b47c20bf4376f47f6ff4759a8484d1457a19f87"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/provenance/build_m5_soft_ramp_v049.py",
+          "size": 8103,
+          "sha256": "dc2b2e707fa1b09a7e9a2bbf2ba46b27b2b8c7a03861dc21f5dea7334c51f0ee"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/provenance/render_m5_soft_ramp_v049.py",
+          "size": 5248,
+          "sha256": "18c1781c2941928264d3909d26930bf9f68f91db0d4ee142e4bb2e8ff8d6712c"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/provenance/render_minimal_qre_v025.py",
+          "size": 8137,
+          "sha256": "928277b4e68f8b18e2209744536a25bfd830d067d25d8f89b57a94b2aa428b2c"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/references/Soft_center_ramp.stl",
+          "size": 2790984,
+          "sha256": "234ea396a11aebdd283312a05c771380a45017fa7c852e86daf0198d8c454a0d"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/references/USER_center_rectangle.png",
+          "size": 100761,
+          "sha256": "4a66c084d1c95501a071b1d0f63217a939610a3abe988e5264c22b140fbf2659"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/renders/01_revised_carrier.png",
+          "size": 1396193,
+          "sha256": "f0cc5111f5329e8cae9df5e90ad3c345b4148271f75467bbc563baa7673ccdd4"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/renders/02_revised_closeup.png",
+          "size": 1502595,
+          "sha256": "1e9e1cd53a9918d6f53eb98f58f62ac7bae95573fd63031b7e21a9f5f1e8d439"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/renders/03_previous_closeup.png",
+          "size": 1500385,
+          "sha256": "89bd744c83dd5add14440a73647a17f990d7f4c89505f1960a4bec0f75aaec4c"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/renders/04_footprint_top.png",
+          "size": 1416740,
+          "sha256": "cadefa286a027758a99a08c096ed02f0e36d39ff0e85fd595e08ad8320032e96"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/reports/blender_audit.json",
+          "size": 481,
+          "sha256": "d85be2efbd22dbc9e1850172057c6e5f9ee3f4fbad85d10e20e8a7b6ba3f563a"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/reports/blender_saved_readback.json",
+          "size": 565,
+          "sha256": "449ac485a7a5631b9a7c9ef4e607ccb569058e24892809af18ede2608297b92b"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/reports/cad_validation.json",
+          "size": 2203,
+          "sha256": "5034a105a10e1af1b3f735d98060d28c16c17b3a146b99d0cc42460b91a88e42"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/reports/package_readback.json",
+          "size": 423,
+          "sha256": "7431f305ff288f0333d34496b5f813021cda9b6aeae242af917a8ad7c76e56f3"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/step/Soft_center_ramp_ONLY.step",
+          "size": 182569,
+          "sha256": "6f47759ac803a9b41ef087095ef70fc6e0228c6d537f1dd359bf28741a72353c"
+        },
+        {
+          "path": "hardware/M5_soft_ramp_v049/stl/01_M5_soft_ramp_platform.stl",
+          "size": 3355384,
+          "sha256": "2d9d5e970cc197411014ea505613f46bec8959eb57cca8a64df9c3c3f78bb168"
+        }
+      ]
+    },
+    {
+      "version": "0.50",
+      "family": "M5StickS3 carrier",
+      "directory": "hardware/M5_equal_supports_v050",
+      "status": "sliced prototype; seating unverified",
+      "printed_parts": 1,
+      "files": [
+        {
+          "path": "hardware/M5_equal_supports_v050/LICENSE.txt",
+          "size": 586,
+          "sha256": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/LaunchLab_v050_M5_EQUAL_SUPPORTS_TREE_SLIM_UNSLICED.3mf",
+          "size": 1012366,
+          "sha256": "b7dbae80de5680b2aeb2c82a0387262bc4998b06ed28686c7f50269b322d66ab"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/M5_equal_supports_v050.blend",
+          "size": 3080911,
+          "sha256": "570f24b2f591d75a528752e6b1c9edfe4e2d005b6da1a53b29b396554469c45c"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/M5_equal_supports_v050_UNSLICED.3mf",
+          "size": 882895,
+          "sha256": "3743d875627ba915ed558b6af71fe84bd47efabfe2ed9c743627c3d1f2463358"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/README.md",
+          "size": 1178,
+          "sha256": "7435a42f45aa4d175292f1b3405815491e909299de06b433752731dfa87581e5"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/SHA256SUMS.txt",
+          "size": 3960,
+          "sha256": "12f172052103ed356dbfe0c448f42eeec826c507cfd66e88e20176a84b8f4a30"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/assembly_manifest.json",
+          "size": 2237,
+          "sha256": "a6f3a9c4246c1acc356a031581820fdec0582224ec01088d9db88da55f171275"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/bambu/LaunchLab_v050_P1S_PLA_M5_EQUAL_SUPPORTS_TREE_SLIM.3mf",
+          "size": 1254757,
+          "sha256": "c4881c6390c57ed824687bce14b7b4170598f27f18a94300ed4d864520eefc3e"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/parameters.json",
+          "size": 4435,
+          "sha256": "cf4ed0683411a7dc24c824029aa05b04d45d251e7b856b56d7b4ecf76c7497a2"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/preview/01_M5_equal_supports_platform.stl",
+          "size": 3408684,
+          "sha256": "8c88954c6d2b90d67963cfc3d551f921533341a1defd7e3513153dea52426ddd"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/preview/REF_Display_visual.stl",
+          "size": 684,
+          "sha256": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/preview/REF_M2x6_1.stl",
+          "size": 63084,
+          "sha256": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/preview/REF_M2x6_2.stl",
+          "size": 63084,
+          "sha256": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/preview/REF_M5Stick_factory_geometry.stl",
+          "size": 367484,
+          "sha256": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/print_inventory.json",
+          "size": 309,
+          "sha256": "101a1d172a3959e20873c419724089b19089fc8263ffc9a3eda299873ab89e2c"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/print_profiles/PLA.json",
+          "size": 7701,
+          "sha256": "c4fecf4dfdd9a0a2d80f75b97e7575f333f19b95dd8ec7b26d80864a11bd3498"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/print_profiles/machine.json",
+          "size": 20248,
+          "sha256": "5fc0cd32fb0f4118269e503311e23d8e434d0bb49a8f832fa93e036810b75896"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/print_profiles/process_base.json",
+          "size": 7941,
+          "sha256": "75a5175c15188cf4b0b8e55ecc0a32b944e71edf75be620a01b49c2df2b5aa22"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/blender_helpers_v09.py",
+          "size": 7605,
+          "sha256": "7e6c24c098a6b890b8782d262813ca4cf45829b7f8709792c2deb3829f036c0a"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/build_compact_v010.py",
+          "size": 12558,
+          "sha256": "22e8148177b55ccedbc0dc0002491c1acf76a0fc65eef8d2decbad40e9ae33b4"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/build_m5_equal_supports_v050.py",
+          "size": 7435,
+          "sha256": "b28946a71897c6325fbe19fa8dc0cc90e8edf22e8507b82783f62a0371b9fdf1"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/finalize_low_stack_v018.py",
+          "size": 5311,
+          "sha256": "819416b41707cb40d82f3ffbcc7c857d092351ab06752ebcb2d4d84cbc0e1a4e"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/prepare_m5_equal_supports_v050.py",
+          "size": 6590,
+          "sha256": "dd711aaa3cda84b0e5e8769ed3485f1504339cce92586c853e1dfe736a4f976b"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/render_m5_equal_supports_v050.py",
+          "size": 4629,
+          "sha256": "7c01bd386a80d93299203771bd4110a82b1ca0919efe561d3d33dc805640e99f"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/render_minimal_qre_v025.py",
+          "size": 8137,
+          "sha256": "928277b4e68f8b18e2209744536a25bfd830d067d25d8f89b57a94b2aa428b2c"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/provenance/slice_comparison_v05.py",
+          "size": 2778,
+          "sha256": "359135c13e5a06efa1e3e5937d2a821070b7d5d094b447efdba05ab5b677eb59"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/references/Equal_height_support_1.stl",
+          "size": 43084,
+          "sha256": "37787773abc59ba862a2959330dcf99cfa071fed74f131e403b33000aeb37ff7"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/references/Equal_height_support_2.stl",
+          "size": 43084,
+          "sha256": "a56875f4fcb5f9bec254066ecbd03236bc12c38181b7bf4c8599dd98736b3fde"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/references/USER_center_rectangle.png",
+          "size": 100761,
+          "sha256": "4a66c084d1c95501a071b1d0f63217a939610a3abe988e5264c22b140fbf2659"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/renders/01_raised_supports.png",
+          "size": 1507207,
+          "sha256": "79cab8dc1f96f3b9578c1d1b17517fb9487a4ff8c8f6f0f45559924538340c4c"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/renders/02_height_alignment.png",
+          "size": 1474184,
+          "sha256": "c5d41e8f47f630e0ea015b8f6b19922d50a7591d731333dee5e811658c314e55"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/renders/03_support_closeup.png",
+          "size": 1559084,
+          "sha256": "4ff716afac8c319dbc2a3d636111f191d90abbed2822b4082e586b7e5543eee6"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/reports/blender_audit.json",
+          "size": 497,
+          "sha256": "1df8228a4c3f5cc8869f85dbf66f02f462b1c008160bf829bd756001a52817be"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/reports/blender_saved_readback.json",
+          "size": 581,
+          "sha256": "1156ee6dd148301eb5c68157b05768788eaec67adfc199997267652ed4f9ae7b"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/reports/cad_validation.json",
+          "size": 2140,
+          "sha256": "1ec125e74bf8ef29a30267c99c67e378cadd596e05d6943175c40332132fc570"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/reports/package_readback.json",
+          "size": 532,
+          "sha256": "32445038cc445b2a627f7be8f98f5398926fdb23870445e986cfd38603b4c6eb"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/reports/project_readback.json",
+          "size": 442,
+          "sha256": "ae64f7ebcc34813896b52521563bab1262cb50255b15e20170f9a464aa2c6eba"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/reports/slicing_metrics.json",
+          "size": 1475,
+          "sha256": "13d67669a39b07fc225c476ecce2a120375f5850d81a298ac52f57d4e55ce9ee"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/step/Equal_height_support_1_ONLY.step",
+          "size": 31935,
+          "sha256": "9863279975ff0548ec16bdb2283ab39220e4f915ce4cff2593873ac7da993133"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/step/Equal_height_support_2_ONLY.step",
+          "size": 31985,
+          "sha256": "9b7afb47265f8504fa95aae7f97e519a0a87b1a9ccb604db029e21fc02eb4c3b"
+        },
+        {
+          "path": "hardware/M5_equal_supports_v050/stl/01_M5_equal_supports_platform.stl",
+          "size": 3408684,
+          "sha256": "a5d65467f1df64884d3b4f0662047ecd86469377deaf810bbdd242aa23961523"
+        }
+      ]
+    }
+  ]
+}

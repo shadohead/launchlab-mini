@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "mesh": {
+    "01_TCRT_sensor_cradle": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 4223.7877972955375,
+      "bounds_mm": [
+        [
+          -21.57299804687,
+          -16.47500038147,
+          0.0
+        ],
+        [
+          21.572998046875,
+          19.9342,
+          16.3
+        ]
+      ]
+    },
+    "02_TCRT_clip_cap_LEFT": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 87.94414568420274,
+      "bounds_mm": [
+        [
+          -18.5,
+          -3.4,
+          10.9
+        ],
+        [
+          -10.200429202627605,
+          3.4,
+          13.284
+        ]
+      ]
+    },
+    "02_TCRT_clip_cap_RIGHT": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 87.94414568420275,
+      "bounds_mm": [
+        [
+          10.200429202627605,
+          -3.4,
+          10.9
+        ],
+        [
+          18.5,
+          3.4,
+          13.284
+        ]
+      ]
+    },
+    "03_TCRT_sensor_pressure_keeper": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 174.53372770634112,
+      "bounds_mm": [
+        [
+          -11.958200454711914,
+          -13.465800285339355,
+          16.100000381469727
+        ],
+        [
+          12.241800308227539,
+          18.53420066833496,
+          17.700000762939453
+        ]
+      ]
+    }
+  },
+  "collisions": {
+    "01_TCRT_sensor_cradle / 02_TCRT_clip_cap_LEFT": 0.0,
+    "01_TCRT_sensor_cradle / 02_TCRT_clip_cap_RIGHT": 0.0,
+    "01_TCRT_sensor_cradle / 03_TCRT_sensor_pressure_keeper": 0.0,
+    "02_TCRT_clip_cap_LEFT / 02_TCRT_clip_cap_RIGHT": 0.0,
+    "02_TCRT_clip_cap_LEFT / 03_TCRT_sensor_pressure_keeper": 0.0,
+    "02_TCRT_clip_cap_RIGHT / 03_TCRT_sensor_pressure_keeper": 0.0,
+    "01_TCRT_sensor_cradle / 08_TCRT_latch_LEFT": 0,
+    "02_TCRT_clip_cap_LEFT / 08_TCRT_latch_LEFT": 0,
+    "02_TCRT_clip_cap_RIGHT / 08_TCRT_latch_LEFT": 0,
+    "03_TCRT_sensor_pressure_keeper / 08_TCRT_latch_LEFT": 0,
+    "01_TCRT_sensor_cradle / 09_TCRT_latch_RIGHT": 0,
+    "02_TCRT_clip_cap_LEFT / 09_TCRT_latch_RIGHT": 0,
+    "02_TCRT_clip_cap_RIGHT / 09_TCRT_latch_RIGHT": 0,
+    "03_TCRT_sensor_pressure_keeper / 09_TCRT_latch_RIGHT": 0,
+    "01_TCRT_sensor_cradle / REF_TCRT_PCB_MEASURED": 0,
+    "02_TCRT_clip_cap_LEFT / REF_TCRT_PCB_MEASURED": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_TCRT_PCB_MEASURED": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_TCRT_PCB_MEASURED": 0,
+    "01_TCRT_sensor_cradle / REF_TCRT_HEAD_AND_LEGS": 0,
+    "02_TCRT_clip_cap_LEFT / REF_TCRT_HEAD_AND_LEGS": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_TCRT_HEAD_AND_LEGS": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_TCRT_HEAD_AND_LEGS": 0,
+    "01_TCRT_sensor_cradle / REF_TCRT_LENS_PAIR": 0.0,
+    "02_TCRT_clip_cap_LEFT / REF_TCRT_LENS_PAIR": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_TCRT_LENS_PAIR": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_TCRT_LENS_PAIR": 0,
+    "01_TCRT_sensor_cradle / REF_TCRT_POT": 0,
+    "02_TCRT_clip_cap_LEFT / REF_TCRT_POT": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_TCRT_POT": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_TCRT_POT": 0,
+    "01_TCRT_sensor_cradle / REF_TCRT_HEADER": 0,
+    "02_TCRT_clip_cap_LEFT / REF_TCRT_HEADER": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_TCRT_HEADER": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_TCRT_HEADER": 0,
+    "01_TCRT_sensor_cradle / REF_TCRT_UNDERSIDE_SOLDER": 0,
+    "02_TCRT_clip_cap_LEFT / REF_TCRT_UNDERSIDE_SOLDER": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_TCRT_UNDERSIDE_SOLDER": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_TCRT_UNDERSIDE_SOLDER": 0,
+    "01_TCRT_sensor_cradle / REF_TCRT_TOP_SOLDER": 0,
+    "02_TCRT_clip_cap_LEFT / REF_TCRT_TOP_SOLDER": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_TCRT_TOP_SOLDER": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_TCRT_TOP_SOLDER": 0,
+    "01_TCRT_sensor_cradle / REF_SENSOR_SOCKET_ALLOWANCE": 0,
+    "02_TCRT_clip_cap_LEFT / REF_SENSOR_SOCKET_ALLOWANCE": 0,
+    "02_TCRT_clip_cap_RIGHT / REF_SENSOR_SOCKET_ALLOWANCE": 0,
+    "03_TCRT_sensor_pressure_keeper / REF_SENSOR_SOCKET_ALLOWANCE": 0
+  },
+  "source_sha256": {
+    "inspection/minimal_TCRT_sensor_only_v042/step/01_TCRT_sensor_cradle.step": "6a357611923112d031ee15ac8ff2ef960eca329732058da12353142d6363cea3",
+    "inspection/minimal_TCRT_sensor_only_v042/step/03_TCRT_sensor_pressure_keeper.step": "445a062674740314c0c207fda9761e1afe438d4a09c1026c3f45348b6a1e0041",
+    "releases/LaunchLab_v033_flush_QRE/step/02_QRE_clip_keeper.step": "d94463971afbadc87cdf08b3d0e2c21bd8e6665147aa074f81cf2d86ca16ab4e",
+    "releases/LaunchLab_v033_flush_QRE/parameters.json": "22a37666827d5b87cc7bafca4e0a5f93fe86aed88a9cb00c19327b4f37379eb6",
+    "inspection/minimal_TCRT_split_keepers_v043/references/USER_marked_exploded.png": "dd45ef677465d0b0cac996841a083395a5174f3d25ebca7e9c98c32efa7d29da"
+  },
+  "protected": {
+    "exact_QRE_narrow_lower_underside_difference_mm3": 0.0,
+    "hinge_-35_-16_difference_mm3": 0.0,
+    "hinge_16_35_difference_mm3": 0.0,
+    "02_TCRT_clip_cap_LEFT_latch_bearing_faces_difference_mm3": 0.0,
+    "02_TCRT_clip_cap_RIGHT_latch_bearing_faces_difference_mm3": 0.0,
+    "clip_screw_1_driver_overlap_mm3": 0.0,
+    "clip_screw_2_driver_overlap_mm3": 0.0
+  },
+  "changes": {
+    "crossbar_removed": true,
+    "independent_clip_caps": 2,
+    "clip_through_hole_diameter_mm": 2.4,
+    "clip_countersink_diameter_mm": 4.5,
+    "clip_countersink_depth_mm": 1.05,
+    "gray_indent_patch_count": 2,
+    "old_QRE_front_recess_filled": true,
+    "orange_clip_lips": "Unchanged per user clarification"
+  }
+}

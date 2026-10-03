@@ -1,0 +1,14 @@
+{
+  "replacement_printed_parts": 1,
+  "plates": {
+    "new_base": [
+      "01_M5_equal_supports_platform"
+    ]
+  },
+  "reuse": [
+    "separate current sensor assembly",
+    "existing M5 mounting screws"
+  ],
+  "requested_filament": "AMS A3 / filament 3; assignment occurs at dispatch",
+  "dispatch": "None"
+}

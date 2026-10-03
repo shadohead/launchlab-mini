@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "checks": {
+    "nominal": "All five printed parts vs vendor M5, measured OLD sensor envelopes, liner and provisional sockets/wires. Thread-forming pilot interference excepted.",
+    "clips_byte_identical": true,
+    "native_port_sides_-1_delta_mm3": 5.9117155615240335e-12,
+    "clip_keeper_contact_-1_delta_mm3": 1.4210854715202004e-14,
+    "native_port_sides_1_delta_mm3": 4.547473508864641e-13,
+    "clip_keeper_contact_1_delta_mm3": 0.0,
+    "source_port_below_launcher_plane_Z3p78_delta_mm3": 9.094947017729282e-13,
+    "M3_head_bearing_mm2": [
+      16.259626937919485,
+      16.25962693791948,
+      16.25962693791948,
+      16.25962693791948
+    ],
+    "M3_thread_engagement_mm": 6.6,
+    "M3_tip_to_source_post_bottom_mm": 0.766,
+    "M5_pad_contact_when_dock_lifted_0p05_mm3": 0.656852181524332,
+    "M5_liner_contact_when_lifted_0p05_mm3": 5.457855916925811,
+    "screw_driver_paths": "M3 side access with M5 attached; M5 underside access while entire top module is removed from base; sensor keeper screws clear M5 sides.",
+    "measured_old_sensor_dimensions": {
+      "PCB_mm": [
+        31,
+        13,
+        1
+      ],
+      "projection_mm": 12.000000476837158,
+      "opposite_face_pot_mm": [
+        7,
+        7,
+        6
+      ],
+      "total_thickness_mm": 19.000000476837158
+    },
+    "printed_upper_optical_path_mm3": {
+      "01_TCRT_attachment_port": 0.0,
+      "03_TCRT_sensor_cradle": 0.0,
+      "04_TCRT_M5_top_dock": 0.0
+    },
+    "PCB_seat_probe_mm3": 0.17999722480817582,
+    "PCB_keeper_probe_mm3": 0.18000409126216255,
+    "PCB_xy_stops_probe_mm3": [
+      3.0999969482422784,
+      3.100011730193728,
+      1.03998313905322,
+      1.0399930572566518
+    ],
+    "removal_sweeps": "Vertical0..40mm in0.75mm steps. Hat unplugged; fourM3 removed for top module, twoM2x6 for M5, fourM2x4 for top dock. Sensor lifts vertically.",
+    "latch_sweep": "0..90degrees every5degrees, original pivot hypothesis. No real-launcher or load test.",
+    "seat_coupon_matches_current_dock": true
+  },
+  "collisions": [],
+  "input_sha256": {
+    "preview/02_latch_LEFT.stl": "f95d7e56b69a3ebedaf4948d3511986e9f8a60294855a4081f0a32f7fbea41f7",
+    "preview/02_latch_RIGHT.stl": "13d7d0555c1d0ef9d1c4d67b1cae3725198122fb1e1f56338415bad8eab787df",
+    "preview/01_TCRT_attachment_port.stl": "56ce466026371b3a860980b519c8d64c99dd15eca5159e107eabcb683c370633",
+    "preview/03_TCRT_sensor_cradle.stl": "fad3185deb81a1039846b4a544298c8da43e81fa4dc679d9b86173467c7fddd4",
+    "preview/04_TCRT_M5_top_dock.stl": "a4b10cf5ac49f0bd1ad12f0c3d442c4e21d9c14543ef2c76e7443fb4827a42ca",
+    "preview/REF_M5_OFFICIAL_GEOMETRY.stl": "4234dafb4fa202dae89bc55bce57829832eb6be4627bfae910d37aaf91ea86b1",
+    "preview/REF_M5_SOFT_LINER.stl": "001f9ddebf10e93e50b7ff812a462fcd48fb5ff8efed48903ff37b8319cc9cc8",
+    "preview/REF_TCRT_PCB_MEASURED.stl": "bae3e373b69beb032644946d2188701c31bb2ee5c05595626750aaa6e21177fb",
+    "preview/REF_TCRT_HEAD_AND_LEGS.stl": "8d354d5329e51ad4c8df759b76bfa7ee61a3f829e79fe006b063fd28138c988e",
+    "preview/REF_TCRT_LENS_PAIR.stl": "687b8ea6130d478e01bae4a7e80c21c60597fb60e55c727bc9e7a766594d2bd5",
+    "preview/REF_TCRT_POT.stl": "b7bff47df175bb8eed1304e550b4c38d1e60819de40dabfb88c5661157e11d10",
+    "preview/REF_TCRT_HEADER.stl": "713b406eeb6ea2bb244b5754ddd870fa84278931a6cf3e83c39f546f219b4318",
+    "preview/REF_TCRT_UNDERSIDE_SOLDER.stl": "80986595bb8e19d2eb096624cf5e1034216ade992cf023bf271575ba2f0c41d2",
+    "preview/REF_TCRT_TOP_SOLDER.stl": "81c518b2b922b349a54f42304be55d5f8a6e1716e01ccf6f95d8fa805daf875d",
+    "preview/REF_SENSOR_SOCKET_ALLOWANCE.stl": "919016e1312fb61a78253deb0bb8654644c3d9bb462fa47ac8f9866050ae166b",
+    "preview/REF_HAT_PLUG_ALLOWANCE.stl": "33fbbdda583bfb76a181989002129eccf77115c75b279774d8c98073b3753039",
+    "preview/REF_WIRE_ROUTE_ALLOWANCE.stl": "78dbd51c8ecb5b956792a042114b762165f3d314b876f04cb710ebc28c0fbe86",
+    "preview/REF_M5_SCREEN_VISUAL_ONLY.stl": "a5e11d1b793f28e35a1707f9dbf7c549cedac33da290ac5c66d09db49f5b29ce",
+    "preview/REF_M3x8_MOUNT_1.stl": "ebb9109ee55725e4bc3a5bccceb62666713d51fa86765a37363931392ee35c20",
+    "preview/REF_M3x8_MOUNT_2.stl": "e654df714115f6ff57c99d82a1c64bf2daa8749ffd33f35601b4387fc7e18e25",
+    "preview/REF_M3x8_MOUNT_3.stl": "451bbfae547bc92be2b8423221666f4d5e5036bdaa9ebd2c22429bda6affce9a",
+    "preview/REF_M3x8_MOUNT_4.stl": "ce53d2f7364d0982d9201e148607f298d4d0a6862ad86094ce67881207558f99",
+    "preview/REF_M2x6_DEVICE_1.stl": "409789851eee6fbf31b278001abd7f32ad6243f9ec137784750406f009112739",
+    "preview/REF_M2x6_DEVICE_2.stl": "dad924f14b64ed8d443db338c9ba1934982b6a2879e9a13c45c89e48a4abb4e8",
+    "preview/REF_M2x4_SENSOR_1.stl": "999d722e08d850aab8ded3243ebc8b873cace81006a9bbbdd4761be696ae818e",
+    "preview/REF_M2x4_SENSOR_2.stl": "6d28502ecc4293ebdbafa006ff7e3e69f2dfd6f5e900c71fec6f5674e4c7627b",
+    "preview/REF_M2x4_SENSOR_3.stl": "b60ac5ca8a056d366789d55b1e13cad5d33ef51d601fb85b785002ae1104d984",
+    "preview/REF_M2x4_SENSOR_4.stl": "627c50d5f4130a0fbfc42b9a5b505d97d7646cb8bbee0b9bd76714ed26af7734"
+  },
+  "limitations": [
+    "Actual sensor housing lateral registration, module component positions,4bare PCB corner lands,plug envelope and wire bends require fit check.",
+    "No whole-launcher registration or physical strength/retention/optical/RPM proof.",
+    "The7x6lens-pair envelope may be partially obscured by the real launcher aperture; no actual launcher modification or optical success is claimed.",
+    "M5 brass thread is user-confirmedM2;1.7mm insert depth and factory mount-face contact are nominal until dry fit.",
+    "The sensor 12 mm projection is taken from the measurement record; prior10.5mm CAD pose is corrected rather than silently reused.",
+    "v0.17 complete first-build package remains unchanged. This is a separateOLD-sensor prototype; no printer dispatch,purchase or firmware change."
+  ]
+}

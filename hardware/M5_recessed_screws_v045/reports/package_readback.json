@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "one_printable_mesh": true,
+  "unsliced_3mf_vertex_delta_mm": 3.559861709387279e-06,
+  "print_pose": "Unchanged +90 degree Y side orientation",
+  "source_v044_hashes_unchanged": true,
+  "physical_fastener_fit": "UNVERIFIED, based on prior nominal 3.8 x 1.4 mm head",
+  "printer_dispatch": "None"
+}

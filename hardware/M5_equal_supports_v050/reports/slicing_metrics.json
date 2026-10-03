@@ -1,0 +1,36 @@
+{
+  "new_base": {
+    "support_g": 2.3282719607892934,
+    "support_base_g": 1.7078844799996493,
+    "support_interface_g": 0.3528995845541876,
+    "extrusion_by_feature_g": {
+      "Custom": 0.09365205510075682,
+      "Support": 1.7078844799996493,
+      "Brim": 0.09889248409354917,
+      "Inner wall": 2.9972578193593336,
+      "Outer wall": 1.800397111705184,
+      "Overhang wall": 0.06013863735745574,
+      "Internal solid infill": 0.6843568749321662,
+      "Top surface": 0.12856428857151805,
+      "Gap infill": 0.00028334220492267194,
+      "Bridge": 0.367305447889836,
+      "Support transition": 0.26748789623545677,
+      "Support interface": 0.3528995845541876,
+      "Sparse infill": 0.5257796080424523,
+      "Floating vertical shell": 0.15557562904724437
+    },
+    "total_header_g": 9.24,
+    "estimated_time": "43m 18s",
+    "name": "v050_M5_EQUAL_SUPPORTS_TREE_SLIM",
+    "material": "PLA",
+    "source": "/Users/mingj/Projects/custom-beypass/inspection/M5_equal_supports_v050/LaunchLab_v050_M5_EQUAL_SUPPORTS_TREE_SLIM_UNSLICED.3mf",
+    "project": "/Users/mingj/Projects/custom-beypass/inspection/print_v050_equal_supports/slices/v050_M5_EQUAL_SUPPORTS_TREE_SLIM_PLA/v050_M5_EQUAL_SUPPORTS_TREE_SLIM_PLA.3mf",
+    "cli_exit": 0,
+    "support_transition_g": 0.26748789623545677,
+    "release_project": "bambu/LaunchLab_v050_P1S_PLA_M5_EQUAL_SUPPORTS_TREE_SLIM.3mf",
+    "parts": [
+      "01_M5_equal_supports_platform"
+    ],
+    "log_warnings": []
+  }
+}

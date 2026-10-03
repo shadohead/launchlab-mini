@@ -1,0 +1,117 @@
+{
+  "version": "0.19",
+  "variant": "OLD TCRT5000/LM393, exposed M5StickS3 on top",
+  "sensor_identity": "Blue TCRT5000/LM393 module in IMG_7445\u20137448; OLD sensor, not QRE1113",
+  "first_build_printed_piece_count": 5,
+  "upgrade_printed_piece_count": 3,
+  "printed_parts": [
+    {
+      "name": "01_TCRT_attachment_port",
+      "print_filename": "stl/01_TCRT_attachment_port.stl",
+      "quantity_first_build": 1,
+      "quantity_upgrade": 1,
+      "sha256": "e4c2f4b2f38e1e09c789c53e80e2e7fbb9d5ecb7b4535fcb53d95cc5b2f97ad4"
+    },
+    {
+      "name": "03_TCRT_sensor_cradle",
+      "print_filename": "stl/03_TCRT_sensor_cradle.stl",
+      "quantity_first_build": 1,
+      "quantity_upgrade": 1,
+      "sha256": "64d94168192a6f40469c3f8e1a9e1c046288cd81b9155293ca6216546b466157"
+    },
+    {
+      "name": "04_TCRT_M5_top_dock",
+      "print_filename": "stl/04_TCRT_M5_top_dock.stl",
+      "quantity_first_build": 1,
+      "quantity_upgrade": 1,
+      "sha256": "d9c6c8a44023cfd709f1238d016b03e2c7c8d095fc00d32b33f2854699100678"
+    },
+    {
+      "name": "02_latch_LEFT",
+      "print_filename": "stl/02_latch_LEFT.stl",
+      "quantity_first_build": 1,
+      "quantity_upgrade": 0,
+      "sha256": "0d21f3605b3e081a1f40c0d80b46b3a52c22f3c2d3bf69dc02b9ac8c458a96f6"
+    },
+    {
+      "name": "02_latch_RIGHT",
+      "print_filename": "stl/02_latch_RIGHT.stl",
+      "quantity_first_build": 1,
+      "quantity_upgrade": 0,
+      "sha256": "16dfa8511f5258a5672fade5682b25ae6a25314f3d15467b2a03f41025136dfe"
+    }
+  ],
+  "optional_fit_samples": [
+    {
+      "filename": "extras/11_TCRT_SEAT_FIT.stl",
+      "quantity": 1,
+      "installed": false
+    },
+    {
+      "filename": "extras/12_TCRT_KEEPER_FIT.stl",
+      "quantity": 1,
+      "installed": false
+    },
+    {
+      "filename": "extras/13_M5_MOUNT_FIT.stl",
+      "quantity": 1,
+      "installed": false
+    }
+  ],
+  "hardware": [
+    {
+      "name": "M3x8 DIN912 socket head",
+      "quantity": 4
+    },
+    {
+      "name": "M2x6 pan head, M5 brass mounts",
+      "quantity": 2
+    },
+    {
+      "name": "M2x4 pan head, top dock printed pilots",
+      "quantity": 4
+    },
+    {
+      "name": "0.3mm soft liner strips",
+      "quantity": 2
+    },
+    {
+      "name": "Three-wire analog harness",
+      "quantity": 1
+    }
+  ],
+  "complete_first_build_plate": "bambu/LaunchLab_v019_P1S_PLA_ALL_PARTS.3mf",
+  "upgrade_plate": "bambu/LaunchLab_v019_P1S_PLA_REPLACEMENTS.3mf",
+  "clips_only_plate": "bambu/LaunchLab_v019_P1S_PLA_CLIPS.3mf",
+  "sensor_measurement_source": "references/TCRT5000_user_measurements_2026-09-21.md",
+  "dimensions": {
+    "sensor_PCB_mm": [
+      31,
+      13,
+      1
+    ],
+    "head_total_projection_from_PCB_mm": 12,
+    "sensor_total_component_thickness_mm": 19,
+    "core_footprint_mm": [
+      43.146,
+      48.0
+    ],
+    "height_above_launcher_mm": 35.12,
+    "pot_to_M5_gap_mm": 0.8,
+    "PCB_xy_clearance_mm": 0.3,
+    "PCB_vertical_capture_play_mm": 0.2
+  },
+  "limits": [
+    "Actual sensor housing lateral registration, module component positions,4bare PCB corner lands,plug envelope and wire bends require fit check.",
+    "No whole-launcher registration or physical strength/retention/optical/RPM proof.",
+    "The7x6lens-pair envelope may be partially obscured by the real launcher aperture; no actual launcher modification or optical success is claimed.",
+    "M5 brass thread is user-confirmedM2;1.7mm insert depth and factory mount-face contact are nominal until dry fit.",
+    "The sensor 12 mm projection is taken from the measurement record; prior10.5mm CAD pose is corrected rather than silently reused.",
+    "v0.17 complete first-build package remains unchanged. This is a separateOLD-sensor prototype; no printer dispatch,purchase or firmware change."
+  ],
+  "physical_fit": "UNVERIFIED",
+  "printer_dispatch": "None",
+  "protected_packages_sha256": {
+    "releases/LaunchLab_v018_LOW_STACK_package.zip": "9814f2118fc80f4dea163b72ca741cbd5e254f90aa99e235f09e2cbbb119bea4"
+  }
+}

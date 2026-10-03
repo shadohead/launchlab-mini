@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "units": "mm",
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "source_sha256": {
+    "LICENSE.txt": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb",
+    "M5_level_support_v044.blend": "34d11db572adff6134da6ab6b8ef5820ac3f8171fe8545ff29278ac06f9b52c9",
+    "README.md": "c222a96e3d054a8fdfda8e45aac95edc013a8654e91fa4fe8bff177faddd6ecc",
+    "assembly_manifest.json": "f5b8057c4bc8b73fd6c71d77af7e40214ec54f3bb5a3ed7cdd867775f4c114c6",
+    "parameters.json": "35987e7c8c37b31ab048d64c692ea404202f63786be8ad0a62ba76d0dc28fbae",
+    "preview/01_M5_level_platform.stl": "8ff10ab7deccde5859d686381e76d6fe099374ca3f378fef399b956242867444",
+    "preview/REF_Display_visual.stl": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433",
+    "preview/REF_M2x6_1.stl": "0bcfb2c49c8712ecc3da12167a8fb7af92fbf4bf2c9b567fbb348d295b509080",
+    "preview/REF_M2x6_2.stl": "0ab78b67488b9bcd0b026ecaeea927525d135108e63adcbfdce2fa2b6945ae28",
+    "preview/REF_M5Stick_factory_geometry.stl": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29",
+    "provenance/build_m5_level_support_v044.py": "12add61ae84ebbcb044ed7ca7ed81dec844754fcacf2c76123d2288a08344573",
+    "provenance/render_m5_level_support_v044.py": "f57f7d5e64bee1800a97703ec1a740d62cd9dea383447245f2d10766d73449fd",
+    "references/Added_support_pad_1.stl": "365b60a912d76f2a655f03162e429acac2ef5f866f59b600131e3d33e42abc93",
+    "references/Added_support_pad_2.stl": "14100a05713a2c062ff88a6c405a2ba4448b1fe11c8c43b26b2b23b031da5b66",
+    "references/USER_M5_level_markup.png": "934441ff9f0d453a99502d1d63a706eabc1e120ddc419043bdf70cce471a9af1",
+    "renders/01_assembled.png": "8e645ea117a6d93e0642da464e296a05c706b6a3333743d14246d2f41cd556f9",
+    "renders/02_bare_supports.png": "1406d910d9bdea5084c127644c93a68babe0faa2186f31979d2d4c75befe614c",
+    "renders/03_exploded.png": "d0c46f2ff6e7986a3457ef0b3988952a8357cda82c2e2d5afb5bb5b5a8616562",
+    "renders/04_side_contact.png": "1634a2a088e3860fbb59ec914a692274b60813ae7eade9d7769d685d190a4f76",
+    "reports/blender_audit.json": "f7c4a89752b3e298605aa9770118b22bb107251fca469e3d5de3d7801b237171",
+    "reports/blender_saved_readback.json": "3ff52958952559068702d2cc04af3c3be0b5ec6bd2a781f0e3721c290b9ae0b2",
+    "reports/cad_validation.json": "6e3f2c020500e0d0dd501ddcfc968bacc8d45fb8c16b497145ed8708778e0270",
+    "step/Added_support_pad_1.step": "7627ba82f45e59a72945171eb3d4fe8fb132f70ce2b1bd604abb75e7aaf784d9",
+    "step/Added_support_pad_2.step": "3a8f3a4c12cb3118b15b3c5b2051d53bec054d092288de3cc0d15e672124682c",
+    "stl/01_M5_level_platform.stl": "ae1aab8e223cb28f1a3123fc24470268215aeeea7edd7bbd7009c20b61fa6256"
+  },
+  "old_volume_mm3": 7323.264413599118,
+  "new_volume_mm3": 7297.141376140651,
+  "removed_material_mm3": 26.12303745846657,
+  "added_material_mm3": 0.0,
+  "M5_overlap_mm3": 4.561091902137283e-06,
+  "recess_diameter_mm": 4.2,
+  "recess_depth_mm": 1.4,
+  "head_reference_diameter_mm": 3.8,
+  "head_reference_thickness_mm": 1.4,
+  "head_bottom_z_mm": -7.800000000000001,
+  "deck_bottom_z_mm": -7.8,
+  "screw_bearing_face_z_mm": -6.4,
+  "head_bottom_flush_delta_mm": 8.881784197001252e-16,
+  "remaining_clamped_material_mm": 2.9000000000000004,
+  "thread_reach_gain_mm": 1.4,
+  "STL_export_delta_mm": 1.966049969490843e-06,
+  "preserved": {
+    "native_head_and_receivers_symmetric_difference_mm3": 0.0,
+    "deck_top_and_standoffs_symmetric_difference_mm3": 0.0,
+    "opposite_end_supports_symmetric_difference_mm3": 0.0,
+    "trimmed_right_block_symmetric_difference_mm3": 0.0
+  },
+  "seats": [
+    {
+      "axis_xy_mm": [
+        1.3000000000000007,
+        -21
+      ],
+      "bearing_probe_solid_fraction": 0.9999938255042294,
+      "screw_carrier_overlap_mm3": 0.0,
+      "nominal_6mm_thread_engagement_mm": 3.0999999999999996,
+      "nominal_4mm_thread_engagement_mm": 1.0999999999999996
+    },
+    {
+      "axis_xy_mm": [
+        19.3,
+        -21
+      ],
+      "bearing_probe_solid_fraction": 0.9999938412296143,
+      "screw_carrier_overlap_mm3": 0.0,
+      "nominal_6mm_thread_engagement_mm": 3.0999999999999996,
+      "nominal_4mm_thread_engagement_mm": 1.0999999999999996
+    }
+  ]
+}

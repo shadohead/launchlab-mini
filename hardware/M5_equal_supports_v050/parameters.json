@@ -1,0 +1,178 @@
+{
+  "version": "0.50",
+  "units": "mm",
+  "architecture": "Soft-ramp M5 carrier with equal-height screw posts and opposite-end supports",
+  "native_crop_x_mm": -2.0,
+  "source_scale": 1,
+  "M5_center_x_mm": 10.3,
+  "M5_back_z_mm": -5.5,
+  "M5_mount_face_z_mm": -3.5,
+  "M5_screw_seat_z_mm": -6.4,
+  "M5_axes_xy_mm": [
+    [
+      1.3000000000000007,
+      -21
+    ],
+    [
+      19.3,
+      -21
+    ]
+  ],
+  "platform_thickness_mm": 2,
+  "platform_top_z_mm": -5.8,
+  "M5_to_cliff_gap_mm": 0.3,
+  "top_alignment_z_mm": 9.5,
+  "USB_C_direction": [
+    0,
+    -1,
+    0
+  ],
+  "U_recess_opening_direction": [
+    0,
+    0,
+    -1
+  ],
+  "M5_rotation_about_z_deg": 90,
+  "print_rotation_deg": [
+    0,
+    90,
+    0
+  ],
+  "print_translation_mm": [
+    0.09999990463256836,
+    -0.0,
+    22.799999237060547
+  ],
+  "nominal_insert_engagement_mm": 3.0999999999999996,
+  "fasteners": "Actual user screw length unconfirmed; nominal reference uses M2x6 / 3.8 x 1.4 mm pan heads",
+  "shortened_native_rail_tails": true,
+  "separate_lock": false,
+  "printed_replacement_parts": 1,
+  "QRE": "Reuse existing snug QRE port and clips; no sensor datum changes",
+  "physical_fit": "User-requested equal support heights; actual M5 seating and leveling unverified",
+  "circled_block_trim_mm": 3,
+  "original_raised_right_edge_y_mm": -18.5,
+  "revised_raised_right_edge_y_mm": -15.5,
+  "block_floor_z_mm": 0,
+  "cut_direction_world": [
+    0,
+    1,
+    0
+  ],
+  "cut_direction_top_view": "left, along the M5 length",
+  "lower_attachment_foot_unchanged": true,
+  "M5_deck_unchanged": true,
+  "print_package_created": true,
+  "edge_finish": {
+    "type": "Factory 0.5 mm bevel copied from opposite end, including corner",
+    "width_mm": 0.5,
+    "native_source_y_mm": [
+      18,
+      18.5
+    ],
+    "revised_y_mm": [
+      -15.5,
+      -15
+    ],
+    "top_edge_z_mm": [
+      9,
+      9.5
+    ],
+    "copied_native_cap_transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        3.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "replacement_printed_parts": 1,
+  "rear_supports": {
+    "centers_xy_mm": [
+      [
+        4.3,
+        12.5
+      ],
+      [
+        16.3,
+        12.5
+      ]
+    ],
+    "width_mm": 6,
+    "depth_mm": 2.6,
+    "corner_radius_mm": 0.5,
+    "top_z_mm": -3.5,
+    "height_above_deck_mm": 2.3,
+    "source": "User-requested match to existing screw standoff plane",
+    "added_height_mm": 1.7999999999999998
+  },
+  "limits": [
+    "Head dimensions are inherited from the existing nominal reference pending user measurement.",
+    "Recess moves the bearing seat 1.4 mm toward the M5, reducing the clamped thickness from 4.3 to 2.9 mm.",
+    "Nominal M2x4 provides 1.1 mm of thread reach; nominal M2x6 provides 3.1 mm. Actual screw length and usable insert depth remain unmeasured.",
+    "Tapered center tab has a wider blended base; physical launcher fit remains untested.",
+    "Center ramp has a wider blended base; physical launcher fit remains untested.",
+    "One unsliced replacement carrier; no printer dispatch.",
+    "Both opposite-end supports are now 2.3 mm high, matching the screw posts; the unchanged nominal M5 reference has a stepped underside, so this revision does not claim CAD-level assembly fit."
+  ],
+  "screw_head_recesses": {
+    "axes_xy_mm": [
+      [
+        1.3000000000000007,
+        -21
+      ],
+      [
+        19.3,
+        -21
+      ]
+    ],
+    "diameter_mm": 4.2,
+    "depth_mm": 1.4,
+    "head_diameter_assumed_mm": 3.8,
+    "head_thickness_assumed_mm": 1.4,
+    "head_radial_clearance_mm": 0.20000000000000018,
+    "underside_plane_z_mm": -7.8,
+    "bearing_face_z_mm": -6.4,
+    "thread_reach_gain_mm": 1.4,
+    "remaining_clamped_material_mm": 2.9000000000000004,
+    "shape": "Cylindrical flat-bottom counterbore, existing 2.4 mm through holes preserved"
+  },
+  "center_rectangle": {
+    "plate_face_x_mm": -11.5,
+    "projection_mm": 1.25,
+    "footprint_rotation_deg": 90,
+    "center_yz_mm": [
+      0,
+      0.375
+    ],
+    "nominal_base_yz_size_mm": [
+      4.25,
+      6.25
+    ],
+    "nominal_top_yz_size_mm": [
+      1.75,
+      3.75
+    ],
+    "edge_and_base_fillet_mm": 0.8,
+    "edge_finish": "Broader shallow slopes, 0.8 mm rounded top and side corners, concave blend to plate"
+  }
+}

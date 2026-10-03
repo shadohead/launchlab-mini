@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "v042_CAD_STL_parameters_match_frozen_source": true,
+  "v042_user_annotated_exploded_view_preserved": true,
+  "M5_carrier_unchanged": true,
+  "original_latch_lips_unchanged": true,
+  "sensor_keeper_manufacturing_STL_unchanged": true
+}

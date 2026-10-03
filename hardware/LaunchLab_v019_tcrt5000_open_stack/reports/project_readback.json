@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "LaunchLab_v019_ALL_PARTS_UNSLICED.3mf",
+      "build_items": 5,
+      "mesh_count": 5,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "LaunchLab_v019_REPLACEMENTS_UNSLICED.3mf",
+      "build_items": 3,
+      "mesh_count": 3,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "LaunchLab_v019_CLIPS_UNSLICED.3mf",
+      "build_items": 2,
+      "mesh_count": 2,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "LaunchLab_v019_SENSOR_FIT_UNSLICED.3mf",
+      "build_items": 2,
+      "mesh_count": 2,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_ALL_PARTS.3mf",
+      "build_items": 5,
+      "mesh_count": 5,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_REPLACEMENTS.3mf",
+      "build_items": 3,
+      "mesh_count": 3,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_CLIPS.3mf",
+      "build_items": 2,
+      "mesh_count": 2,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_PORT.3mf",
+      "build_items": 1,
+      "mesh_count": 1,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_SENSOR_CRADLE.3mf",
+      "build_items": 1,
+      "mesh_count": 1,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_M5_TOP_DOCK.3mf",
+      "build_items": 1,
+      "mesh_count": 1,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_SENSOR_FIT.3mf",
+      "build_items": 2,
+      "mesh_count": 2,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    },
+    {
+      "file": "bambu/LaunchLab_v019_P1S_PLA_M5_MOUNT_FIT.3mf",
+      "build_items": 1,
+      "mesh_count": 1,
+      "geometry_matches_current_STLs": true,
+      "unit_scale_transforms": true,
+      "zip_integrity": "PASS"
+    }
+  ],
+  "vertex_tolerance_mm": 0.002,
+  "gcode_md5": "All eight sliced projects verified"
+}

@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "mesh": {
+    "01_TCRT_minimal_cradle": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 4175.26310763631,
+      "bounds_mm": [
+        [
+          -21.57299804687,
+          -16.47500038147,
+          0.0
+        ],
+        [
+          21.572998046875,
+          19.9342,
+          16.3
+        ]
+      ]
+    },
+    "02_TCRT_clip_keeper": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 384.8911361758433,
+      "bounds_mm": [
+        [
+          -18.5,
+          -14.4,
+          10.9
+        ],
+        [
+          18.5,
+          4.2,
+          13.884
+        ]
+      ]
+    },
+    "03_TCRT_M5_clamp_dock": {
+      "watertight": true,
+      "components": 1,
+      "volume_mm3": 1130.9439419200437,
+      "bounds_mm": [
+        [
+          -12.8582,
+          -21.499524700923388,
+          16.1
+        ],
+        [
+          13.141800000000002,
+          25.0,
+          24.9
+        ]
+      ]
+    }
+  },
+  "collisions": {
+    "01_TCRT_minimal_cradle / 02_TCRT_clip_keeper": 0.0,
+    "01_TCRT_minimal_cradle / 03_TCRT_M5_clamp_dock": 0.0,
+    "02_TCRT_clip_keeper / 03_TCRT_M5_clamp_dock": 0.0,
+    "01_TCRT_minimal_cradle / PCB": 0.0,
+    "01_TCRT_minimal_cradle / head": 0.0,
+    "01_TCRT_minimal_cradle / lens": 0.0,
+    "01_TCRT_minimal_cradle / pot": 0.0,
+    "01_TCRT_minimal_cradle / header": 0.0,
+    "02_TCRT_clip_keeper / PCB": 0.0,
+    "02_TCRT_clip_keeper / head": 0.0,
+    "02_TCRT_clip_keeper / lens": 0.0,
+    "02_TCRT_clip_keeper / pot": 0.0,
+    "02_TCRT_clip_keeper / header": 0.0,
+    "03_TCRT_M5_clamp_dock / PCB": 0.0,
+    "03_TCRT_M5_clamp_dock / head": 0.0,
+    "03_TCRT_M5_clamp_dock / lens": 0.0,
+    "03_TCRT_M5_clamp_dock / pot": 0.0,
+    "03_TCRT_M5_clamp_dock / header": 0.0,
+    "01_TCRT_minimal_cradle / REF_TCRT_UNDERSIDE_SOLDER": 0.0,
+    "02_TCRT_clip_keeper / REF_TCRT_UNDERSIDE_SOLDER": 0.0,
+    "03_TCRT_M5_clamp_dock / REF_TCRT_UNDERSIDE_SOLDER": 0.0,
+    "01_TCRT_minimal_cradle / REF_TCRT_TOP_SOLDER": 0.0,
+    "02_TCRT_clip_keeper / REF_TCRT_TOP_SOLDER": 0.0,
+    "03_TCRT_M5_clamp_dock / REF_TCRT_TOP_SOLDER": 0.0,
+    "01_TCRT_minimal_cradle / REF_SENSOR_SOCKET_ALLOWANCE": 0.0,
+    "02_TCRT_clip_keeper / REF_SENSOR_SOCKET_ALLOWANCE": 0.0,
+    "03_TCRT_M5_clamp_dock / REF_SENSOR_SOCKET_ALLOWANCE": 0.0,
+    "01_TCRT_minimal_cradle / factory M5": 0.0,
+    "02_TCRT_clip_keeper / factory M5": 0.0,
+    "03_TCRT_M5_clamp_dock / factory M5": 0.0
+  },
+  "source_sha256": {
+    "releases/LaunchLab_v033_flush_QRE/step/01_QRE_minimal_port.step": "fddc57d374366dcad4eaa6d1c4350440022e3680c87107f062039e46ed3f8bec",
+    "releases/LaunchLab_v033_flush_QRE/step/02_QRE_clip_keeper.step": "d94463971afbadc87cdf08b3d0e2c21bd8e6665147aa074f81cf2d86ca16ab4e",
+    "reference files/TCRT5000_user_measurements_2026-09-21.md": "417136ad0784e4f50cbc8183b18a4b125b7d79a692490a569665482309ecbe28"
+  }
+}

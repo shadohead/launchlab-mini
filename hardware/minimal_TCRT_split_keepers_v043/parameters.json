@@ -1,0 +1,68 @@
+{
+  "version": "0.43",
+  "sensor": "OLD TCRT5000/LM393",
+  "architecture": "Sensor-only two-clip mount; M5 remains on separate existing v040 launcher attachment",
+  "PCB_mm": [
+    31,
+    13,
+    1
+  ],
+  "optical_projection_mm": 12,
+  "pot_mm": [
+    7,
+    7,
+    6
+  ],
+  "sensor_seat_z_mm": 15.1,
+  "optics_z_mm": 3.1,
+  "clamp_screw_axes_mm": [
+    [
+      -9.6582,
+      3.6
+    ],
+    [
+      9.9418,
+      3.6
+    ]
+  ],
+  "clamp_screws": "2 x M2x4 pan head",
+  "clip_keeper_screws": "2 x M2x5 countersunk (existing)",
+  "side_guide_wall_mm": 1.6,
+  "keeper_side_rail_mm": 1.35,
+  "keeper_body_mm": 1.2,
+  "xy_play_per_side_mm": 0.2,
+  "preload_ear_gap_mm": 0.4,
+  "keeper_max_z_mm": 17.7,
+  "sensor_max_z_mm": 22.1,
+  "M5_attachment": "Existing v040 separate carrier, unchanged and excluded from this design",
+  "limits": [
+    "Component locations and bare corner lands follow earlier TCRT CAD assumptions; physically check the contact lands.",
+    "Connector housing and wire bends remain provisional; header end stays open.",
+    "Optical alignment through the actual launcher opening needs physical verification.",
+    "CAD prototype and unsliced STL package; no printer dispatch."
+  ],
+  "clip_keeper_design": "Two independent removable clip caps, no crossbar",
+  "clip_cap_through_hole_diameter_mm": 2.4,
+  "clip_cap_countersink_diameter_mm": 4.5,
+  "clip_cap_screw_axes_mm": [
+    [
+      -13.2,
+      0
+    ],
+    [
+      13.2,
+      0
+    ]
+  ],
+  "central_step_width_at_y0_mm": 18.202018889938802,
+  "central_platform_drop_mm": 1.0,
+  "central_trim_per_side_mm": 0.5,
+  "gray_plate_cleanup": "Unused QRE front recess filled flush to5.4; outer shoulder indent floors filled flush to6.4",
+  "orange_clip_lips": "Kept unchanged per user answer",
+  "sensor_keeper": "Existing v042 part, manufacturing STL byte-identical",
+  "replacement_parts": [
+    "01_TCRT_sensor_cradle",
+    "02_TCRT_clip_cap_LEFT",
+    "02_TCRT_clip_cap_RIGHT"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "one_printable_mesh": true,
+  "unsliced_3mf_vertex_delta_mm": 3.559861709387279e-06,
+  "print_pose": "Unchanged +90 degree Y side orientation",
+  "source_v045_geometry_unchanged": true,
+  "rectangle_extension_mm": 1,
+  "rectangle_total_projection_mm": 1.25,
+  "physical_launcher_fit": "UNVERIFIED",
+  "printer_dispatch": "None"
+}

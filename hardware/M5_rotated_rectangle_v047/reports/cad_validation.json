@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "units": "mm",
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "source_sha256": {
+    "LICENSE.txt": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb",
+    "assembly_manifest.json": "a7ec221edcdae6cdd0c65f79842c6ce737d391baa49edd5380491062023227f8",
+    "parameters.json": "68e5dc977332ed96a71ccfbc8c7d91bb5d277b8e10d82244c9e54042f325fd3e",
+    "preview/01_M5_raised_rectangle_platform.stl": "2587ecb8823e6596f76480800153d2f86f13069d9c2167ce524668e2004ac069",
+    "preview/REF_Display_visual.stl": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433",
+    "preview/REF_M2x6_1.stl": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170",
+    "preview/REF_M2x6_2.stl": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564",
+    "preview/REF_M5Stick_factory_geometry.stl": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29",
+    "stl/01_M5_raised_rectangle_platform.stl": "f9f76689b06940031feff3144604e1f5a01758b2a73c0c84961964efa23bf007"
+  },
+  "footprint_rotation_deg": 90,
+  "normal_axis_world": [
+    1,
+    0,
+    0
+  ],
+  "rotation_center_mm": [
+    -11.5,
+    0,
+    0.375
+  ],
+  "rotation_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      6.123233995736766e-17,
+      -1.0,
+      0.375
+    ],
+    [
+      0.0,
+      1.0,
+      6.123233995736766e-17,
+      0.375
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "root_original_yz_size_mm": [
+    3.75,
+    1.75
+  ],
+  "root_revised_yz_size_mm": [
+    1.75,
+    3.75
+  ],
+  "growth_at_each_short_side_mm": 1,
+  "projection_mm": 1.25,
+  "rotated_protrusion_bounds_mm": [
+    [
+      -12.75,
+      -0.875,
+      -1.5
+    ],
+    [
+      -11.500100135803223,
+      0.875,
+      2.25
+    ]
+  ],
+  "actual_rotated_geometry_symmetric_difference_mm3": 0.0,
+  "changed_material_outside_feature_mm3": 0.0,
+  "STL_export_delta_mm": 1.966049969490843e-06,
+  "M5_overlap_mm3": 4.561091902137283e-06,
+  "print_bounds_mm": [
+    [
+      -9.599999904632568,
+      -24.5,
+      0.0
+    ],
+    [
+      9.599999904632568,
+      24.5,
+      35.54999923706055
+    ]
+  ],
+  "preserved": {
+    "M5_deck_screw_recesses_standoffs_and_supports_symmetric_difference_mm3": 0.0,
+    "left_launcher_receiver_symmetric_difference_mm3": 0.0,
+    "right_launcher_receiver_symmetric_difference_mm3": 0.0,
+    "underlying_plate_symmetric_difference_mm3": 0.0
+  }
+}

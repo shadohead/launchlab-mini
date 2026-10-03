@@ -6,3 +6,5 @@ firmware/build/
 firmware/build-source/
 __pycache__/
 *.pyc
+
+.release-assets/

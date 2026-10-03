@@ -1,0 +1,249 @@
+{
+  "version": "0.43",
+  "units": "mm",
+  "architecture": "Sensor-only two-clip mount; M5 remains on separate existing v040 launcher attachment",
+  "parts": [
+    {
+      "name": "01_TCRT_sensor_cradle",
+      "filename": "preview/01_TCRT_sensor_cradle.stl",
+      "color": "#48545D",
+      "reference": false,
+      "printable": true,
+      "group": "printed",
+      "source": "User-marked v043 sensor-only revision",
+      "description": "Smoothed narrow lower plate",
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "print_translation_mm": [
+        8.15,
+        -1.7295998092650002,
+        21.57299804687
+      ]
+    },
+    {
+      "name": "02_TCRT_clip_cap_LEFT",
+      "filename": "preview/02_TCRT_clip_cap_LEFT.stl",
+      "color": "#398B83",
+      "reference": false,
+      "printable": true,
+      "group": "printed",
+      "source": "User-marked v043 sensor-only revision",
+      "description": "Independent clip cap with vertical M2 clearance hole and countersunk seat",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        14.350214601313802,
+        -0.0,
+        -10.9
+      ]
+    },
+    {
+      "name": "02_TCRT_clip_cap_RIGHT",
+      "filename": "preview/02_TCRT_clip_cap_RIGHT.stl",
+      "color": "#398B83",
+      "reference": false,
+      "printable": true,
+      "group": "printed",
+      "source": "User-marked v043 sensor-only revision",
+      "description": "Independent clip cap with vertical M2 clearance hole and countersunk seat",
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        -14.350214601313802,
+        -0.0,
+        -10.9
+      ]
+    },
+    {
+      "name": "03_TCRT_sensor_pressure_keeper",
+      "filename": "preview/03_TCRT_sensor_pressure_keeper.stl",
+      "color": "#D0A96A",
+      "reference": false,
+      "printable": true,
+      "group": "printed",
+      "source": "v042 TCRT sensor-only mount",
+      "description": "03_TCRT_sensor_pressure_keeper",
+      "print_rotation_deg": [
+        -90,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        -0.14179999999999993,
+        -16.900000000000002,
+        18.5342
+      ]
+    },
+    {
+      "name": "08_TCRT_latch_LEFT",
+      "filename": "preview/08_TCRT_latch_LEFT.stl",
+      "color": "#C69259",
+      "group": "QRE",
+      "description": "Existing launcher latch, unchanged",
+      "reference": false,
+      "printable": true,
+      "source": "v032 reused manufacturing STL",
+      "geometry_revision": "v0.21 native grip dock",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        23.00108528137207,
+        3.5546905994415283,
+        5.961904525756836
+      ]
+    },
+    {
+      "name": "09_TCRT_latch_RIGHT",
+      "filename": "preview/09_TCRT_latch_RIGHT.stl",
+      "color": "#C69259",
+      "group": "QRE",
+      "description": "Existing launcher latch, unchanged",
+      "reference": false,
+      "printable": true,
+      "source": "v032 reused manufacturing STL",
+      "geometry_revision": "v0.21 native grip dock",
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ],
+      "print_translation_mm": [
+        -23.029085159301758,
+        3.5546905994415283,
+        5.9435997009277335
+      ]
+    },
+    {
+      "name": "REF_TCRT_PCB_MEASURED",
+      "filename": "preview/REF_TCRT_PCB_MEASURED.stl",
+      "group": "electronics",
+      "color": "#365D9D",
+      "reference": true,
+      "printable": false,
+      "description": "OLD TCRT5000/LM393 blue module. User PCB31x13x1, not QRE1113.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_HEAD_AND_LEGS",
+      "filename": "preview/REF_TCRT_HEAD_AND_LEGS.stl",
+      "group": "electronics",
+      "color": "#48525E",
+      "reference": true,
+      "printable": false,
+      "description": "10x6 envelope, 9.5 mm PCB-face to housing lens-side datum; lateral registration provisional.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_LENS_PAIR",
+      "filename": "preview/REF_TCRT_LENS_PAIR.stl",
+      "group": "electronics",
+      "color": "#344B6A",
+      "reference": true,
+      "printable": false,
+      "description": "7x6 lens-pair envelope,2.5 projection included in total12 from PCB face.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_POT",
+      "filename": "preview/REF_TCRT_POT.stl",
+      "group": "electronics",
+      "color": "#457EC0",
+      "reference": true,
+      "printable": false,
+      "description": "7x7x6 adjustment block on opposite PCB face;0.3 long-edge inset and12mm from header edge interpreted as in priorCAD.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_HEADER",
+      "filename": "preview/REF_TCRT_HEADER.stl",
+      "group": "electronics",
+      "color": "#AAB1BA",
+      "reference": true,
+      "printable": false,
+      "description": "User bare right-angle header:6 past edge,4 high.10x8 lateral footprint is a priorCAD assumption.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_UNDERSIDE_SOLDER",
+      "filename": "preview/REF_TCRT_UNDERSIDE_SOLDER.stl",
+      "group": "clearance",
+      "color": "#C68A60",
+      "reference": true,
+      "printable": false,
+      "description": "Conservative2mm underside allowance except outer edge seats.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_TCRT_TOP_SOLDER",
+      "filename": "preview/REF_TCRT_TOP_SOLDER.stl",
+      "group": "clearance",
+      "color": "#C68A60",
+      "reference": true,
+      "printable": false,
+      "description": "Conservative2mm top allowance except four corner lands visible in photos; actual copper/solder contact must be checked.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_SENSOR_SOCKET_ALLOWANCE",
+      "filename": "preview/REF_SENSOR_SOCKET_ALLOWANCE.stl",
+      "group": "clearance",
+      "color": "#CE8459",
+      "reference": true,
+      "printable": false,
+      "description": "Same conservative18.5mm socket allowance as earlierM5/TCRT design; actual housing unmeasured. Rear stays open.",
+      "source": "User measurement / intact vendor M5 reference / explicit provisional allowance"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_1",
+      "filename": "preview/REF_M2x4_SENSOR_1.stl",
+      "reference": true,
+      "printable": false,
+      "group": "hardware",
+      "color": "#AAB1BA",
+      "source": "Nominal screw envelope",
+      "description": "M2x4 pan head keeper screw"
+    },
+    {
+      "name": "REF_M2x4_SENSOR_2",
+      "filename": "preview/REF_M2x4_SENSOR_2.stl",
+      "reference": true,
+      "printable": false,
+      "group": "hardware",
+      "color": "#AAB1BA",
+      "source": "Nominal screw envelope",
+      "description": "M2x4 pan head keeper screw"
+    },
+    {
+      "name": "REF_M2x5_CLIP_1",
+      "filename": "preview/REF_M2x5_CLIP_1.stl",
+      "reference": true,
+      "printable": false,
+      "group": "hardware",
+      "color": "#AAB1BA",
+      "source": "Nominal fastener envelope",
+      "description": "M2x5 countersunk screw, reuse existing clip screws"
+    },
+    {
+      "name": "REF_M2x5_CLIP_2",
+      "filename": "preview/REF_M2x5_CLIP_2.stl",
+      "reference": true,
+      "printable": false,
+      "group": "hardware",
+      "color": "#AAB1BA",
+      "source": "Nominal fastener envelope",
+      "description": "M2x5 countersunk screw, reuse existing clip screws"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "review": "Inspected all four CAD renders. Exposed intact M5, conservative old TCRT head/PCB/pot envelopes, removable top dock, accessible side fasteners, and all five printed pieces present. Electronics are dimension envelopes, not a scanned populated circuit.",
+  "render_sha256": {
+    "renders/01_assembled.png": "e62e8b183ff262a4d632aaf0f19b618f93d5ede20347f0d29806dd1297fed9a2",
+    "renders/02_underside_sensor.png": "2425b4eee09950595f8be0495305961a3ec31e9b6cd2e8e33a2b7210faaa7429",
+    "renders/03_exploded.png": "dc1448ea352837be1c894283b3c5b5faa981d3f883f1cc2d9a3f977a04159d51",
+    "renders/04_complete_five_pieces.png": "f959dbb097a6bf58a3e6e2e41d8097c7fc35b6b6023859f674337e01baca3f40"
+  }
+}

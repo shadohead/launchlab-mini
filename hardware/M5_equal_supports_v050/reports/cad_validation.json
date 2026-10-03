@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "units": "mm",
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "source_sha256": {
+    "LICENSE.txt": "b6735a3953fdf92b238b5886d7cb98aac028b40066f17cf106e0046e2c5f3ebb",
+    "assembly_manifest.json": "96e44bef599d8e48de5b8d36a1f02ba95c543e8a43bc9ac5a677068ab08e71ee",
+    "parameters.json": "13068149d93bbdcbfbf7f5fdca2b9cacc3c73c17ea403f4e3f63d8e7ce230ad8",
+    "preview/01_M5_soft_ramp_platform.stl": "facdf3b08406da5b51874ee626050e6156ceb7c480911c7486732ee795bb718e",
+    "preview/REF_Display_visual.stl": "5c006d0363f6706fffff0415c89940097668d0b6a9b0fc9ebfb6124b7662b433",
+    "preview/REF_M2x6_1.stl": "3689f6dc5eba64cddb93495218c6731e41e571535df6bc7af7b8432eae2fc170",
+    "preview/REF_M2x6_2.stl": "4a74dfc407dcee9327bbd2a6ef0c3e7bc9e6a6429515ea885a8099552329a564",
+    "preview/REF_M5Stick_factory_geometry.stl": "8e5dda1c24153d998764c97d52b87b426be3fd36ae7ed6127c45911dd2389f29",
+    "stl/01_M5_soft_ramp_platform.stl": "2d9d5e970cc197411014ea505613f46bec8959eb57cca8a64df9c3c3f78bb168"
+  },
+  "old_support_height_mm": 0.5,
+  "new_support_height_mm": 2.3,
+  "added_support_height_mm": 1.7999999999999998,
+  "support_top_z_mm": [
+    -3.5,
+    -3.5
+  ],
+  "screw_standoff_top_z_mm": [
+    -3.5,
+    -3.5
+  ],
+  "support_centers_xy_mm": [
+    [
+      4.3,
+      12.5
+    ],
+    [
+      16.3,
+      12.5
+    ]
+  ],
+  "removed_material_mm3": 9.33236012079508e-09,
+  "added_material_mm3": 55.38703022234736,
+  "changed_material_outside_support_extensions_mm3": 4.032678717000304e-09,
+  "STL_export_delta_mm": 1.966049969490843e-06,
+  "preserved": "All prior geometry outside the two support extensions, including softened center ramp and screw-head recesses",
+  "fixed_nominal_M5_reference_overlap_mm3": 26.034990126403827,
+  "reference_pose": "Frozen manufacturer reference is unchanged; equal-height supports are a user-requested physical-fit iteration rather than a verified assembly fit",
+  "physical_fit": "UNVERIFIED",
+  "print_bounds_mm": [
+    [
+      -9.599999904632568,
+      -24.5,
+      0.0
+    ],
+    [
+      9.599999904632568,
+      24.5,
+      35.54999923706055
+    ]
+  ]
+}

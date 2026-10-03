@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "protected_hinge_geometry": {
+    "(-35, -16)": 0.0,
+    "(16, 35)": 0.0
+  },
+  "tool_clearances": {
+    "M5 screw -9": 0.0,
+    "M5 screw 9": 0.0,
+    "Sensor screw -9.6582": 0.0,
+    "Sensor screw 9.9418": 0.0
+  }
+}
