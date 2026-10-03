@@ -4,7 +4,43 @@
 
 Built around **M5StickS3 K150**, with separate printed mounts for the **small analog QRE1113** or **older TCRT5000 / LM393** sensor. The current full-featured firmware targets QRE1113; the old TCRT build is preserved separately. The M5 keeps its factory case, display, controller and battery; you do not need a phone to view your results. The mount is designed to be removable. Check the supplied launcher interface and printed fit before using it on your launcher.
 
-**[USB firmware updater](https://shadohead.github.io/launchlab-mini/) · [Firmware & print releases](https://github.com/shadohead/launchlab-mini/releases) · [Build & wiring](docs/BUILD.md)**
+**[USB firmware updater](https://shadohead.github.io/launchlab-mini/) · [Firmware & print releases](https://github.com/shadohead/launchlab-mini/releases) · [Parts list & Amazon links](#parts-list--build-your-own) · [Build & wiring](docs/BUILD.md)**
+
+## Parts list — build your own
+
+Start with **one M5StickS3 K150 + one analog sensor + three short wires + printed mounts and M2 screws**. The StickS3 already contains the display, processor, IMU and battery. Choose **QRE1113** for the current firmware/UI, or **TCRT5000 / LM393** for the preserved old-sensor firmware.
+
+**Amazon affiliate disclosure:** As an Amazon Associate I earn from qualifying purchases. Amazon links below use the [Beywatch](https://beywatch.gg/) affiliate tag and help support the project at no extra cost to you.
+
+| Qty per build | Part | Which build / purchase notes | Buy |
+| --- | --- | --- | --- |
+| 1 | **M5StickS3 K150** | Both sensor builds. ESP32-S3, 8 MB flash/PSRAM, intact factory case. | [Amazon — M5Stack Official, ordered](https://www.amazon.com/dp/B0GWHN8HK3?tag=beywatchgg-20) · [M5Stack K150 specs](https://docs.m5stack.com/en/core/StickS3) |
+| 1 | **SparkFun QRE1113 analog breakout, ROB-09453** | Small-sensor build; exact ordered listing. **Analog ROB-09453** is required. Use the SparkFun link if Amazon is unavailable. | [Amazon — SparkFun analog board](https://www.amazon.com/dp/B07YM4551X?tag=beywatchgg-20) · [SparkFun](https://www.sparkfun.com/sparkfun-line-sensor-breakout-qre1113-analog.html) |
+| 1, instead of QRE | **TCRT5000 / LM393 module with AO** | Old-sensor build. Choose the four-pin **VCC/GND/D0/A0** module and use A0. The mount uses the measured 31×13×1 mm PCB; check your board/header dimensions. | [Amazon — HiLetgo 10-pack, ordered](https://www.amazon.com/dp/B00LZV1V10?tag=beywatchgg-20) |
+| 3 leads | **Short 2.54 mm jumper wires** | VCC, GND and AO/OUT; the ordered SinLoon pack is 8 cm male-to-female. Trim/reroute as needed, checking connector clearance. | [Amazon — SinLoon 8 cm](https://www.amazon.com/dp/B08M3QLL3Q?tag=beywatchgg-20) · [Amazon — ELEGOO mixed jumper kit](https://www.amazon.com/dp/B01EV70C78?tag=beywatchgg-20) |
+| 1 | **USB-C data cable** | Flashing and charging; use an existing cable that carries data. | Use an existing data cable, or [Amazon search — USB-C data cable](https://www.amazon.com/s?k=USB-C+data+cable&tag=beywatchgg-20) |
+| 1 set | **Printed M5 + sensor mounts** | QRE: six-piece v0.40 plate. TCRT: six v0.43 sensor pieces + a separate M5 carrier. v0.50 M5 is a prototype replacement. | [Print files](docs/HARDWARE_VERSIONS.md#current-downloads) |
+| See below | **M2 machine screws** | Head style and length depend on the mount revision. | [Amazon — ordered MEIYYJ countersunk assortment](https://www.amazon.com/dp/B07HC3LQYS?tag=beywatchgg-20); pan-head sizes below |
+| Small amount | **1.75 mm PLA filament** | Print yourself or use a printing service; saved profiles target P1S / 0.4 mm nozzle. | Use existing PLA, a printing service, or [Amazon search — PLA filament](https://www.amazon.com/s?k=1.75mm+PLA+filament&tag=beywatchgg-20) |
+
+Links marked **ordered**, plus the SparkFun, SinLoon, ELEGOO and uxcell links, match the project-related product listings from purchase history. Cable, filament and pan-head links marked **Amazon search** are general supplies, not exact ordered products. Check the selected variant and pack contents; purchasing a component does not establish printed fit.
+
+### Screws, connectors and tools
+
+The ordered MEIYYJ assortment includes M2×4/5/6/8 **flat/countersunk heads**. Its M2×5 pieces can supply the clip/crossbar screws, subject to head-seat fit. Obtain the **pan-head** pieces separately: [Amazon search — M2×4 pan-head](https://www.amazon.com/s?k=M2x4+pan+head+machine+screws&tag=beywatchgg-20) · [Amazon search — M2×6 pan-head](https://www.amazon.com/s?k=M2x6+pan+head+machine+screws&tag=beywatchgg-20).
+
+| Assembly | Screws required |
+| --- | --- |
+| Original v0.40 M5 carrier | 2 × **M2×6 pan-head**, from below into the StickS3 mounts. |
+| QRE v0.40 plate sensor assembly | 2 × **M2×5 countersunk** for the latch crossbar + 2 × **M2×4 pan-head** for the sensor pressure plate. |
+| TCRT v0.43 sensor assembly | 2 × **M2×5 countersunk** for the separate clip caps + 2 × **M2×4 pan-head** for the sensor keeper; M5 fasteners are additional. |
+| Latest v0.50 M5 carrier | 2 × M2 screws, with **length/insert engagement still unverified** after the counterbore and raised-support revisions. Do not assume the old M2×6 reference is a confirmed fit. |
+
+If your sensor has bare pads, add a **3-pin 2.54 mm header** or solder the three wires directly. The ordered [uxcell right-angle male header strip](https://www.amazon.com/dp/B01461DQ6S?tag=beywatchgg-20) can be cut to three pins; check header direction and cable clearance against the printed seat. You will also need a small screwdriver, cutters, and a soldering iron/solder if attaching bare wires or headers.
+
+Use a **Beyblade X string launcher with the supplied removable clip/port interface**. The interface derives from Migbello's BP Gear Port Connector; check retention and optical access on your actual launcher before a pull. No universal launcher-fit claim is made by these CAD files.
+
+Wire **AO/OUT → G1 / GPIO1**, **VCC → 3V3 / 3V3_L2**, **GND → GND**. DO is unused. The Grove red lead supplies 5 V; use the Hat 3.3 V pin for these builds. [QRE build/wiring](docs/BUILD.md) · [TCRT build/wiring](docs/TCRT5000.md) · [Sensor and hardware versions](docs/HARDWARE_VERSIONS.md).
 
 ![LaunchLab Mini M5StickS3 mount, rendered from the published CAD](site/public/images/m5-mount.png)
 

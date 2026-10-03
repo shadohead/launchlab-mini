@@ -1,5 +1,7 @@
 # Build a LaunchLab Mini — small QRE1113 sensor
 
+[Parts list, quantities and purchase links](../README.md#parts-list--build-your-own) are at the top of the README.
+
 Use M5StickS3 **K150**, which has ESP32-S3, 8 MB flash, integrated display and battery. M5StickC/C Plus/C Plus2 use different hardware and are not supported by these images. The small sensor is the **analog QRE1113 breakout**; a digital-output board is not interchangeable.
 
 For the **old TCRT5000 / LM393 module**, use [TCRT5000.md](TCRT5000.md). [Hardware versions](HARDWARE_VERSIONS.md) covers the latest independent M5 v0.50 carrier and its unverified seating/fastener engagement. The original v0.40 plate below retains its earlier carrier.
