@@ -1,0 +1,1 @@
+PASS: full-rate fused poses, exact onset/end, gravity separation, fixed recorded tilt, heading-independent comparisons, moving-start acceptance, gap/clipping/warmup rejection, ring wrap, v4 storage and v1/v2/v3 retention

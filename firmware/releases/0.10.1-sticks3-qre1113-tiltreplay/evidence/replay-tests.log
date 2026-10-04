@@ -1,0 +1,1 @@
+PASS: fixed-center rotation only, neutral screen faces nearest middle edge, measured tilt preserved, acceleration cannot create travel, arbitrary heading canceled, constant cube scale, full rotated-body containment, pre/post capture, and legacy/invalid rejection
