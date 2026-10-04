@@ -31,9 +31,19 @@ int main() {
     assert(near(center.length(),0));
     assert(near(cube.high.x-cube.low.x,cube.high.y-cube.low.y) && near(cube.high.x-cube.low.x,cube.high.z-cube.low.z));
   }
+  // Smooth optical-onset/end lookup clamps safely and preserves measured pose.
+  assert(LaunchMotion::Quaternion::difference(rotation.at(-1000),rotation.pose[0])<.01f);
+  assert(LaunchMotion::Quaternion::difference(rotation.at(2000),rotation.pose[47])<.01f);
+  for(unsigned i=1;i<Replay::COUNT;++i) {
+    assert(LaunchMotion::Quaternion::difference(rotation.at(rotation.ms[i]),rotation.pose[i])<.01f);
+    const int mid=(rotation.ms[i-1]+rotation.ms[i])/2;
+    assert(LaunchMotion::Quaternion::difference(rotation.at(mid),rotation.pose[i-1])<2);
+  }
   // Initial tilt is retained, not silently flattened at optical onset.
   const LaunchMotion::Quaternion neutralHeading{std::cos(.785398163f*.5f),0,0,std::sin(.785398163f*.5f)};
   assert(near(LaunchMotion::Quaternion::difference(rotation.pose[0],neutralHeading),0,.03f));
+  assert(near(LaunchMotion::Quaternion::difference(rotation.at(0),neutralHeading),45,.05f));
+  assert(near(LaunchMotion::Quaternion::difference(rotation.at(400),neutralHeading),81,.05f));
   assert(near(LaunchMotion::Quaternion::difference(rotation.pose[47],neutralHeading),103.5f,.03f));
   const float up[3]={0,0,1};float actual[3],shown[3];
   for(unsigned i=0;i<Replay::COUNT;++i) {

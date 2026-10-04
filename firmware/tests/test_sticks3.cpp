@@ -8,7 +8,7 @@ static void level(D &d,int value,uint32_t us) {
   for(uint32_t i=0;i<us/20;++i)d.feed(value);
 }
 static D ready() {
-  D d;StickS3SensorProfile::configure(d);level(d,140,1200000);
+  D d;StickS3SensorProfile::configure(d);d.singleTurnPeak=true;level(d,140,1200000);
   assert(d.phase==D::Phase::Ready);return d;
 }
 static void square(D &d,uint32_t period,unsigned count,int amplitude=100) {

@@ -27,5 +27,10 @@ for p in root.rglob('*.3mf'):
     with zipfile.ZipFile(p) as z:
         assert z.testzip() is None,p
         assert '[Content_Types].xml' in z.namelist(),p
-assert (root/'site/public/firmware/0.7.0/application.bin').read_bytes()==(root/'firmware/releases/0.7.0-sticks3-qre1113-singlepeak/LaunchLabMini.ino.bin').read_bytes()
+current = root/'firmware/releases/0.10.1-sticks3-qre1113-tiltreplay'
+assert (root/'site/public'/catalog['files'][3]['path']).read_bytes()==(current/'LaunchLabMini.ino.bin').read_bytes()
+assert catalog['runtime']==json.loads((current/'manifest.json').read_text())['runtime_version']
+for path in (root/'firmware/LaunchLabMini').rglob('*'):
+    if path.is_file() and path.suffix in ['.h','.ino','.cpp','.c']:
+        assert path.read_bytes()==(current/'source'/path.relative_to(root/'firmware/LaunchLabMini')).read_bytes(),path
 print(f'PASS: {count} checksums; all 3MF archives intact; site app matches frozen firmware')

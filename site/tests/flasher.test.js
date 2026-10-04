@@ -20,3 +20,14 @@ test('HTTP failure reported',async()=>{await assert.rejects(verifiedDownload(cat
 test('catalog cannot write into NVS or inject external URLs',()=>{for(const mutate of [c=>c.files[3].offset=0x9000,c=>c.files[3].path='https://bad.example/app.bin',c=>c.files[0].size=0x9000,c=>c.files[3].sha256='bad']){const c=structuredClone(catalog);mutate(c);assert.throws(()=>validateCatalog(c));}});
 test('missing images or invalid mode cannot flash',async()=>{const l=fake();await assert.rejects(flashVerified({...opts(l),images:[]}),/Incomplete/);await assert.rejects(flashVerified({...opts(l),mode:'erase'}),/Unknown/);assert.equal(l.writes.length,0);});
 test('write verification failure is propagated',async()=>{const l=fake();l.writeFlash=async()=>{throw new Error('MD5 mismatch');};await assert.rejects(flashVerified(opts(l)),/MD5 mismatch/);});
+
+test('fresh device first install does not require LaunchLab partition table',async()=>{
+ const l=fake();l.readFlash=async()=>{throw new Error('Factory device must not be treated as an update');};
+ await flashVerified({...opts(l),mode:'install'});
+ assert.deepEqual(l.writes[0].fileArray.map(f=>f.address),[0,0x8000,0xe000,0x10000]);
+ assert.equal(l.writes[0].flashMode,'dio');assert.equal(l.writes[0].flashSize,'8MB');
+ for(const file of l.writes[0].fileArray)assert.ok(file.address+file.data.length<=0x9000 || file.address>=0xe000,'NVS must not be overwritten');
+});
+test('first install also refuses wrong-chip factory devices before any writes',async()=>{
+ const l=fake('ESP32-S2');await assert.rejects(flashVerified({...opts(l),mode:'install'}),/M5StickS3/);assert.equal(l.writes.length,0);
+});

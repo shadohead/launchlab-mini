@@ -39,7 +39,17 @@ Update checks for the expected partition table and writes only `0x10000`. First 
 
 Short A recalls the latest recap. Short B opens history. In history, A cycles views. Hold A for one second to start a new session on the next accepted pull. Motion/Recreate pages have reference selection controls described in [the firmware guide](../firmware/LaunchLabMini/README.md). Automatic power-off occurs after ten minutes without a measured pull, button use or interactive USB command.
 
-When moving from older three-turn peak firmware to 0.7.0, hold A on the live page to start a fresh session; previous records retain their original metric. Single-turn timing is more sensitive to optical jitter and needs physical calibration.
+Firmware 0.10.1 defaults to the peak of three-consecutive-turn elapsed-time
+averages. Settings offers a persistent 1-turn peak alternative. On Settings,
+hold B selects Sleep/RPM; hold A changes/saves the selected row. Changing the
+metric starts the next accepted pull in a new session. The default sleep is
+3 minutes; saved 1–10 minute choices remain. Hold A on main toggles tournament;
+B cycles Recording Only/RPM. Auto-sleep restores the selected mode/view.
+
+A fresh K150 needs **First install**, which writes bootloader, partition table,
+boot_app0 and application. Update writes the application only and requires a
+matching partition table. Both paths verify downloads and device MD5 without
+an erase-all. First install replaces the factory app/layout; back up first.
 
 ## Troubleshooting
 

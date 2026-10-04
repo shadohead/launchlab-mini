@@ -44,30 +44,30 @@ Wire **AO/OUT → G1 / GPIO1**, **VCC → 3V3 / 3V3_L2**, **GND → GND**. DO is
 
 ![LaunchLab Mini M5StickS3 mount, rendered from the published CAD](site/public/images/m5-mount.png)
 
-Current QRE firmware: **0.7.0**. Old TCRT firmware: **0.2.0**. Latest M5 carrier: **v0.50**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
+Current QRE firmware: **0.10.1**. Old TCRT firmware: **0.2.0**. Latest M5 carrier: **v0.50**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
 
 **[Choose your sensor and see every revision](docs/HARDWARE_VERSIONS.md)** — includes all newly published v0.41–v0.50 models, historical v0.19 TCRT, and current QRE files.
 
 ## What it does
 
-The features and device UI below describe **QRE firmware 0.7.0**. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
+The features and device UI below describe **QRE firmware 0.10.1**. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
 
 | Feature | What you see or do |
 | --- | --- |
-| Optical peak RPM | See the fastest validated complete shaft revolution in an accepted pull. Three consistent turns confirm the pull before a peak is recorded. |
+| Optical peak RPM | Three-turn elapsed-time average peak by default; validated single-turn peak is selectable in Settings. Three consistent turns confirm the pull before a peak is recorded. |
 | Live level | Use the bubble and tilt angle while holding still to check the device's orientation before launching. |
-| Launch recap | After a pull, see peak RPM, a short rotation replay, and frozen Start/End tilt circles. Press A to recall the latest recap. |
+| Launch recap | After a pull, see peak RPM, a clearer Start-to-End rotation replay, and frozen Start/End tilt circles. Press A to recall the latest recap. |
 | Launch history | Review recent pulls and the current session's pull count, average, and best RPM. Retains up to 128 launches and 24 sessions on the device. |
 | Pull and session trends | Compare individual pulls, a trailing five-pull average, and session averages to follow your practice consistency. |
 | Motion & Recreate | Save a chosen pull as a reference, compare its relative rotation with a later pull, and inspect RPM, turn difference, rotation-speed traces and pull duration. |
-| Battery and auto-off | Check approximate charge, voltage and charging status. Powers down after ten minutes without a measured pull, button use or interactive USB command. |
+| Battery and auto-off | Check approximate charge, voltage and charging status. Shake-to-wake sleep after a configurable 1–10 minutes (3-minute default) without a measured pull, button use or interactive USB command. |
 | Browser firmware updates | Install over USB in desktop Chrome or Edge. Updates write only the application after checking the partition layout. |
 
 RPM is **launcher-shaft speed**, not a direct measurement of the Beyblade's release RPM or its spin in the stadium. Motion replay shows rotation and gravity-relative tilt; it does not measure travel distance or absolute compass heading. The live level references the screen plane until the mounting orientation is calibrated.
 
 ## Device UI
 
-These are saved device-framebuffer screenshots, not concept UI. Screens marked **DEMO** use synthetic sample data. The live/recap images are from firmware 0.6.2, whose screen layout is retained in 0.7.0; history/trend images are from the 0.3.0 baseline and battery from 0.3.1. [Image provenance](docs/assets/ui/provenance.json) records their sources.
+These are saved device-framebuffer screenshots, not concept UI. Screens marked **DEMO** use synthetic sample data. The live/recap images are from firmware 0.6.2, and are historical examples; 0.10.1 has a revised tilt recap; history/trend images are from the 0.3.0 baseline and battery from 0.3.1. [Image provenance](docs/assets/ui/provenance.json) records their sources.
 
 <table>
 <tr><th>Live RPM & level</th><th>Launch recap</th><th>Launch history</th></tr>
@@ -89,7 +89,7 @@ These are saved device-framebuffer screenshots, not concept UI. Screens marked *
 <tr><td>See variation across recent pulls.</td><td>Compare averages across sessions.</td><td>Check power before practice.</td></tr>
 </table>
 
-From the live screen, **B opens history** and **A recalls the last recap**. In history, A cycles Recent → Pulls → Sessions → Battery → Motion → Recreate. Hold B to browse older history windows; hold A on the live/history pages to start a fresh session on the next accepted pull. Motion and Recreate have their own reference-selection controls; see the [firmware guide](firmware/LaunchLabMini/README.md).
+From the live screen, **B opens history** and **A recalls the last recap**. In history, A cycles Recent → Pulls → Sessions → Battery → Motion → Recreate → Settings. Hold B to browse older history windows; hold A on main toggles tournament mode (B cycles Recording Only/RPM). Hold A in history starts a new session except on Settings or Motion/Recreate. Settings: hold B selects Sleep/RPM and hold A changes/saves it. Motion and Recreate have their own reference-selection controls; see the [firmware guide](firmware/LaunchLabMini/README.md).
 
 ## Exploded assemblies
 
@@ -206,7 +206,7 @@ npm run build
 
 `python3 scripts/verify-artifacts.py` verifies published checksums and 3MF ZIP integrity. GitHub Actions runs the native tests, updater tests and artifact checks before deploying Pages from `main`.
 
-Fifteen frozen M5 firmware versions are in [firmware/releases](firmware/releases/catalog.json), including the working 0.3.0 QRE baseline and the separate 0.2.0 old TCRT5000 variant. Only current QRE firmware is offered by the web updater. Historical source snapshots retain their original layouts and notes; use each release's source rather than mixing headers across versions. Device backups, personal practice exports and factory flash dumps are excluded.
+Sixteen frozen M5 firmware versions are in [firmware/releases](firmware/releases/catalog.json), including the working 0.3.0 QRE baseline and the separate 0.2.0 old TCRT5000 variant. Only current QRE firmware is offered by the web updater. Historical source snapshots retain their original layouts and notes; use each release's source rather than mixing headers across versions. Device backups, personal practice exports and factory flash dumps are excluded.
 
 ## Validation scope
 

@@ -4,13 +4,21 @@
 
 int main() {
   InactivityTimer timer;timer.touch(1000);
-  assert(timer.remaining(1000)==600000 && !timer.due(600999));
-  assert(timer.due(601000) && timer.remaining(601000)==0);
-  assert(!timer.due(601000,true)); // active measured burst is protected
-  timer.touch(601000);assert(!timer.due(1200999));assert(timer.due(1201000));
-  timer.touch(UINT32_MAX-500000);
-  assert(!timer.due(uint32_t(UINT32_MAX-500000+599999u)));
-  assert(timer.due(uint32_t(UINT32_MAX-500000+600000u)));
+  assert(timer.minutes()==3 && timer.timeout()==180000);
+  assert(timer.remaining(1000)==180000 && !timer.due(180999));
+  assert(timer.due(181000) && timer.remaining(181000)==0);
+  assert(!timer.due(181000,true)); // active measured burst is protected
+  for(uint8_t minutes=1;minutes<=10;++minutes) {
+    assert(timer.setMinutes(minutes));timer.touch(1000);
+    assert(!timer.due(1000+timer.timeout()-1));assert(timer.due(1000+timer.timeout()));
+    timer.touch(1000+timer.timeout());assert(timer.remaining(1000+timer.timeout())==timer.timeout());
+    timer.touch(UINT32_MAX-50000);
+    assert(!timer.due(uint32_t(UINT32_MAX-50000+timer.timeout()-1)));
+    assert(timer.due(uint32_t(UINT32_MAX-50000+timer.timeout())));
+  }
+  for(uint8_t bad:{0,11,15,30,255})assert(!timer.setMinutes(bad) && timer.minutes()==10);
+  uint8_t minutes=1;for(unsigned i=0;i<10;++i)minutes=InactivityTimer::nextMinutes(minutes);
+  assert(minutes==1);
 
   StickS3Battery b;
   assert(!b.valid(0) && b.percent==-1);
@@ -24,5 +32,5 @@ int main() {
   b.update(3700,false,false,0,400);assert(!b.valid(400) && !b.chargeKnown && !b.charging);
   b.update(3900,true,false,0,500);assert(b.valid(500) && b.percent==75 && !b.chargeKnown);
   b.update(3900,true,true,1,UINT32_MAX-1000);assert(b.valid(1000));
-  std::cout<<"PASS: exact 10-minute timeout, activity reset, active-burst guard, millis wrap, checked battery voltage, estimate limits, stale/error handling and charging GPIO\n";
+  std::cout<<"PASS: 3-minute default, all 1–10 minute timeouts, invalid-value rejection, activity reset, active-burst guard, millis wrap, checked battery voltage, estimate limits, stale/error handling and charging GPIO\n";
 }
