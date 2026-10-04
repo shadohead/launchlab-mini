@@ -1,6 +1,6 @@
 # Readable tilt recap 0.10.1
 
-**Built offline; not flashed.** Installed firmware remains 0.10.0.
+**Full first install and exact readback verified on a fresh M5StickS3.** Runtime verification awaits a physical power cycle. The native USB installation used the same four files served by the web updater; browser USB transfer remains pending because the chooser cancelled before any writes.
 
 The automatic recap shows a larger blue-screen/violet-back body, a thick white
 USB end, a quieter isometric cube, gravity reference and progress marker.
@@ -20,4 +20,4 @@ The displayed launch is synthetic. Device readability/physical acceptance is
 pending. See [design research and evidence](evidence/design-notes.md),
 [animated preview](evidence/tilt-replay.gif) and [manifest](manifest.json).
 
-Application-only ESP32-S3 binary at 0x10000; preserve NVS, bootloader and partitions.
+For an existing compatible LaunchLab installation, update the application at 0x10000. For a fresh factory M5StickS3, choose First install in the web updater: bootloader at 0x0, partitions at 0x8000, boot_app0 at 0xe000 and application at 0x10000. Back up factory firmware first if it must be restorable.

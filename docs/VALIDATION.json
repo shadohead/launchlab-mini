@@ -11,7 +11,7 @@
   "updater_tests_passed": 12,
   "artifact_checksums_passed": 1096,
   "three_mf_archives_valid": true,
-  "physical_browser_flash": "pending fresh-device download mode; software first-install paths and four-image bundle tested",
+  "physical_browser_flash": "pending: Chrome USB chooser cancelled before writes; native USB first-install and all four image readback hashes verified on a fresh factory M5StickS3",
   "physical_single_turn_peak_acceptance": "pending",
   "independent_absolute_rpm_calibration": "pending",
   "v040_physical_fit_and_strength": "pending",
@@ -19,5 +19,6 @@
   "hardware_complete_plate": "LaunchLab_v040_ALL_ITEMS_PRINT",
   "omitted": "Device backups, personal practice exports, factory dumps, mobile apps and unrelated development history.",
   "physical_tilt_playback_acceptance": "pending",
-  "fresh_first_install": "bootloader@0x0, partitions@0x8000, boot_app0@0xe000, application@0x10000; NVS not targeted, eraseAll=false"
+  "fresh_first_install": "Verified native USB installation from factory layout using live Pages files: bootloader@0x0, partitions@0x8000, boot_app0@0xe000, application@0x10000; new NVS region unchanged before boot, eraseAll=false",
+  "fresh_first_install_runtime": "pending physical power cycle; console silent after software reset"
 }

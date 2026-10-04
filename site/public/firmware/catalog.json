@@ -31,5 +31,5 @@
       "sha256": "bf3b6607729de89fccae3ddb15b4724216abfe2ce56bba5e8918b287d629fc66"
     }
   ],
-  "validation": "Offline build and motion tests passed; first-install browser/device verification in progress. No absolute RPM calibration claim."
+  "validation": "Software tests and full native USB first-install/readback passed on a fresh M5StickS3. Runtime restart check and physical browser USB transfer pending. No absolute RPM calibration claim."
 }
