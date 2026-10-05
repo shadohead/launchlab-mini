@@ -1,0 +1,69 @@
+{
+  "release": "0.10.7-sticks3-qre1113-navigation",
+  "runtime_version": "0.10.7-sticks3-navigation",
+  "board": "M5StickS3 K150",
+  "sensor": "SparkFun QRE1113 analog",
+  "status": "installed-runtime-verified",
+  "binary": "LaunchLabMini.ino.bin",
+  "application_offset": "0x10000",
+  "binary_bytes": 735456,
+  "sha256": "54fe847cc82ac11b8f50669c424498267e079dfe967020271763e24ba5c808d2",
+  "wake": "shake only; A wake removed before any device installation",
+  "sleep": "Original IMU-only PM1 battery standby, ESP32 G13 ext0 fallback on USB; no new hour cutoff",
+  "sleep_default_minutes": 3,
+  "awake_led": "PM1 LED_EN cleared and read back at startup/restore",
+  "diagnostics": {
+    "storage": "ll-power/log checksummed version-1 binary, 48-record ring",
+    "checkpoints": "before sleep and every 5 awake minutes outside launch/motion capture; last interval may be lost on abrupt power loss",
+    "record_interval_seconds": 60,
+    "records": "boot/sample/pre-sleep/wake voltage, charging/LED/boost/tournament/sensor flags, backlight, CPU frequency, PM1 wake flags",
+    "counters": "boots, shake/power/other wakes, sleep attempts, awake/charging/LED/boost/display time",
+    "sleep_duration": "USB RTC-retained deep sleep counted; battery CPU power-cut sleep duration explicitly unknown",
+    "current_ma": "unavailable; not a fuel gauge or per-component current meter",
+    "USB_export": "P observational power log; p live status",
+    "bench_sleep": "S invokes normal save/sleep path without changing saved timeout"
+  },
+  "validation": {
+    "build": "passed",
+    "device_flash": "App-only flash/device hash verified; 20 KB NVS identical before startup",
+    "runtime": "0.10.7 confirmed; ~50 kS/s, zero overflow/read errors; awake LED off",
+    "display": "Actual battery frame verified: A next page B main occupies one line, ink x=10..122 on 135px screen; same font/text on history/motion/Settings",
+    "history": "128 launches, 24 sessions, generation 403; saved single-turn, 3-minute timeout, 30% brightness preserved"
+  },
+  "brightness": {
+    "percent_options": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "default_percent": 40,
+    "storage": "launchlab-mini/bright_pct",
+    "controls": "Settings: hold B selects Sleep/RPM/Brightness; hold A changes/saves selected row",
+    "restore": "startup, shake wake and failed-sleep recovery",
+    "invalid_saved_value": "40% fallback",
+    "zero_percent": "not offered; sleep still switches backlight off"
+  },
+  "battery_page": {
+    "shows": [
+      "percent",
+      "battery icon",
+      "voltage",
+      "charging status"
+    ],
+    "removed": [
+      "Approx. charge",
+      "Off in countdown",
+      "minutes without use"
+    ],
+    "clock": "cancelled; no time sync or clock in application; shake-only battery standby cuts processor power",
+    "footer": "A next page B main; dark grey at y=219"
+  },
+  "navigation": "History, battery, motion/recreate and Settings: A next page B main; tap actions unchanged"
+}

@@ -27,10 +27,31 @@ for p in root.rglob('*.3mf'):
     with zipfile.ZipFile(p) as z:
         assert z.testzip() is None,p
         assert '[Content_Types].xml' in z.namelist(),p
-current = root/'firmware/releases/0.10.1-sticks3-qre1113-tiltreplay'
+index=json.loads((root/'site/public/firmware/versions.json').read_text())
+assert catalog['version']==index['latest']==json.loads((root/'site/package.json').read_text())['version']
+assert catalog==json.loads((root/f"site/public/firmware/{index['latest']}/catalog.json").read_text())
+for entry in index['releases']:
+    c=json.loads((root/'site/public'/entry['catalog']).read_text())
+    assert c['version']==entry['version']
+    frozen=root/'firmware/releases'/c['release']
+    m=json.loads((frozen/'manifest.json').read_text())
+    assert c['runtime']==m['runtime_version']
+    for f in c['files']:
+        data=(root/'site/public'/f['path']).read_bytes()
+        assert len(data)==f['size'] and hashlib.sha256(data).hexdigest()==f['sha256'], f['path']
+    app=(root/'site/public'/c['files'][3]['path']).read_bytes()
+    assert app==(frozen/m.get('binary','LaunchLabMini.ino.bin')).read_bytes()
+    known=next(x for x in c['knownApplications'] if x['version']==c['version'])
+    assert known['sha256']==hashlib.sha256(app).hexdigest()
+    assert known['md5']==hashlib.md5(app).hexdigest()
+    assert known['elfSha256']==app[176:208].hex()
+    assert known['size']==len(app)
+    count+=len(c['files'])
+current = root/'firmware/releases'/catalog['release']
 assert (root/'site/public'/catalog['files'][3]['path']).read_bytes()==(current/'LaunchLabMini.ino.bin').read_bytes()
 assert catalog['runtime']==json.loads((current/'manifest.json').read_text())['runtime_version']
 for path in (root/'firmware/LaunchLabMini').rglob('*'):
-    if path.is_file() and path.suffix in ['.h','.ino','.cpp','.c']:
+    if path.is_file():
         assert path.read_bytes()==(current/'source'/path.relative_to(root/'firmware/LaunchLabMini')).read_bytes(),path
-print(f'PASS: {count} checksums; all 3MF archives intact; site app matches frozen firmware')
+assert (root/'firmware/LaunchLabRpm/analog_tachometer.h').read_bytes()==(current/'source/analog_tachometer.h').read_bytes()
+print(f"PASS: {count} checksums; all 3MF archives intact; selected {catalog['version']} app/source and version list match frozen firmware")

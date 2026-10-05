@@ -1,0 +1,50 @@
+{
+  "candidate": "0.10.7",
+  "application": {
+    "path": "firmware/0.10.7/application.bin",
+    "offset": 65536,
+    "size": 735456,
+    "sha256": "54fe847cc82ac11b8f50669c424498267e079dfe967020271763e24ba5c808d2"
+  },
+  "source": "Frozen 0.10.7 source; all 30 compiled source files match saved staged build source",
+  "support_images": [
+    {
+      "file": {
+        "path": "firmware/0.10.7/bootloader.bin",
+        "offset": 0,
+        "size": 20256,
+        "sha256": "8581a3fb98309f261482327b5ff51a2fabca0ec513f9ba38595ed04479794e58"
+      },
+      "source": "firmware/build-m5/LaunchLabMini.ino.bootloader.bin",
+      "byte_identical_to_public_0_10_1": true
+    },
+    {
+      "file": {
+        "path": "firmware/0.10.7/partitions.bin",
+        "offset": 32768,
+        "size": 3072,
+        "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c"
+      },
+      "source": "firmware/build-m5/LaunchLabMini.ino.partitions.bin",
+      "byte_identical_to_public_0_10_1": true
+    },
+    {
+      "file": {
+        "path": "firmware/0.10.7/boot_app0.bin",
+        "offset": 57344,
+        "size": 8192,
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      },
+      "source": "firmware/.arduino/data/packages/esp32/hardware/esp32/3.3.0/tools/partitions/boot_app0.bin",
+      "byte_identical_to_public_0_10_1": true
+    }
+  ],
+  "fqbn": "esp32:esp32:esp32s3:CDCOnBoot=cdc,USBMode=hwcdc,FlashSize=8M,PartitionScheme=default_8MB,PSRAM=opi",
+  "cpp_flags": "-DVQF_SINGLE_PRECISION",
+  "build_toolchain": {
+    "arduino_esp32": "3.3.0",
+    "m5unified": "0.2.23",
+    "m5gfx": "0.2.30"
+  },
+  "physical_validation": "Existing saved app-only flash/runtime/NVS evidence; no new hardware access or four-image 0.10.7/browser/rollback trial"
+}

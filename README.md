@@ -44,13 +44,16 @@ Wire **AO/OUT → G1 / GPIO1**, **VCC → 3V3 / 3V3_L2**, **GND → GND**. DO is
 
 ![LaunchLab Mini M5StickS3 mount, rendered from the published CAD](site/public/images/m5-mount.png)
 
-Current QRE firmware: **0.10.1**. Old TCRT firmware: **0.2.0**. Preferred separate M5 carrier: **v0.68**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
+
+The updater defaults to **0.10.7**. It checks the complete known installed application before an app-only update, blocks downgrades and unknown/incomplete images, and skips writing an identical version. **Repair / rollback** requires an explicit target/backup confirmation; both app-only paths require the matching partition layout and boot selection. The previous 0.10.1 binary is preserved. A physical browser transfer, four-image 0.10.7 install and rollback remain unverified. [Update and recovery details](docs/UPDATER.md).
+
+Current QRE firmware: **0.10.7**. Old TCRT firmware: **0.2.0**. Preferred separate M5 carrier: **v0.68**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
 
 **[Choose your sensor and see every revision](docs/HARDWARE_VERSIONS.md)** — includes the preferred v0.68 M5 carrier, earlier v0.41–v0.50 models, historical v0.19 TCRT, and current QRE files.
 
 ## What it does
 
-The features and device UI below describe **QRE firmware 0.10.1**. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
+The current QRE firmware is **0.10.7**. It adds power diagnostics, selectable brightness and clearer page hints to the 0.10.1 practice features below. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
 
 | Feature | What you see or do |
 | --- | --- |
@@ -89,7 +92,7 @@ These are saved device-framebuffer screenshots, not concept UI. Screens marked *
 <tr><td>See variation across recent pulls.</td><td>Compare averages across sessions.</td><td>Check power before practice.</td></tr>
 </table>
 
-From the live screen, **B opens history** and **A recalls the last recap**. In history, A cycles Recent → Pulls → Sessions → Battery → Motion → Recreate → Settings. Hold B to browse older history windows; hold A on main toggles tournament mode (B cycles Recording Only/RPM). Hold A in history starts a new session except on Settings or Motion/Recreate. Settings: hold B selects Sleep/RPM and hold A changes/saves it. Motion and Recreate have their own reference-selection controls; see the [firmware guide](firmware/LaunchLabMini/README.md).
+From the live screen, **B opens history** and **A recalls the last recap**. In history, A cycles Recent → Pulls → Sessions → Battery → Motion → Recreate → Settings. Hold B to browse older history windows; hold A on main toggles tournament mode (B cycles Recording Only/RPM). Hold A in history starts a new session except on Settings or Motion/Recreate. Settings: hold B selects Sleep/RPM/Brightness and hold A changes/saves it. Motion and Recreate have their own reference-selection controls; see the [firmware guide](firmware/LaunchLabMini/README.md).
 
 ## Exploded assemblies
 

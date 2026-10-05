@@ -1,0 +1,13 @@
+{
+  "latest": "0.10.7",
+  "releases": [
+    {
+      "version": "0.10.7",
+      "catalog": "firmware/0.10.7/catalog.json"
+    },
+    {
+      "version": "0.10.1",
+      "catalog": "firmware/0.10.1/catalog.json"
+    }
+  ]
+}
