@@ -1,0 +1,21 @@
+{
+  "status": "PASS_DIGITAL_PROTOTYPE_PHYSICAL_FIT_AND_STRENGTH_UNVERIFIED",
+  "version": "v068",
+  "scope": "M5 carrier underside cable hook; prior carrier retained",
+  "hook_height_mm": 4.8,
+  "hook_depth_mm": 6.0,
+  "preview_length_reduction_mm": 2.0,
+  "root_fixed": true,
+  "opening": "Image-down in marked bottom view (+Y)",
+  "nominal_three_wire_OD_mm": 1.3,
+  "wire_layout": "Staggered in two rows, load separately",
+  "nominal_M5_seating_limit": "Same older nominal overlap as v065",
+  "estimated_time": "43m 33s",
+  "estimated_PLA_g": 8.38,
+  "local_slice_and_mesh_readback": "PASS",
+  "hook_and_groove_toolpaths": "PASS_CLEAR",
+  "physical_fit": "UNVERIFIED",
+  "strength": "UNVERIFIED",
+  "dispatch": "NONE",
+  "project_sha256": "9fbe054c0fde2c28599c6f7cc49d70de0fc321e401f78bf5e033802a0cf12a22"
+}

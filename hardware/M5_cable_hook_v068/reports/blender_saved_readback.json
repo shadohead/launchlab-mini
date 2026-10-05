@@ -1,0 +1,29 @@
+{
+  "status": "PASS_NATIVE_GEOMETRY_READBACK",
+  "mesh": {
+    "vertices": 56150,
+    "triangles": 112312,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "degenerate_faces": 4,
+    "components": 1,
+    "volume_mm3": 6818.271269868482,
+    "bounds_mm": {
+      "min": [
+        -11.750000528991222,
+        -24.500001221895218,
+        -12.600000947713852
+      ],
+      "max": [
+        22.80000038444996,
+        24.500001221895218,
+        9.50000062584877
+      ],
+      "size": [
+        34.55000091344118,
+        49.000002443790436,
+        22.100001573562622
+      ]
+    }
+  }
+}

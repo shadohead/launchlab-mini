@@ -1,0 +1,30 @@
+{
+  "status": "PASS_PUBLIC_REBUILD_AND_FROZEN_GEOMETRY_IDENTITY",
+  "rebuilds": {
+    "carrier_native.stl": {
+      "maximum_surface_distance_for_unmatched_vertices_mm": 6.311757684126514e-05,
+      "unmatched_vertex_positions_checked": 13,
+      "volume_difference_mm3": 8.549250196665525e-11,
+      "bounds_match": true,
+      "watertight": true,
+      "components": 1,
+      "rebuilt_faces": 112310,
+      "frozen_faces": 112312
+    },
+    "carrier_print.stl": {
+      "maximum_surface_distance_for_unmatched_vertices_mm": 6.311757684104317e-05,
+      "unmatched_vertex_positions_checked": 13,
+      "volume_difference_mm3": 6.730260793119669e-11,
+      "bounds_match": true,
+      "watertight": true,
+      "components": 1,
+      "rebuilt_faces": 112310,
+      "frozen_faces": 112312
+    }
+  },
+  "project_sha256": "9fbe054c0fde2c28599c6f7cc49d70de0fc321e401f78bf5e033802a0cf12a22",
+  "source_geometry_and_print_files_unchanged": true,
+  "method": "Compare vertex positions, unmatched vertex-to-triangle surface distances, mesh bounds and volume. Coplanar triangle subdivisions can differ.",
+  "physical_fit": "UNVERIFIED",
+  "strength": "UNVERIFIED"
+}

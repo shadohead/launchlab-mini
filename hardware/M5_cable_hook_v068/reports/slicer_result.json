@@ -1,0 +1,68 @@
+{
+  "error_string": "Success.",
+  "export_time": 802,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 173,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bridge": 106.47410583496094,
+        "Brim": 10.231157302856445,
+        "Custom": 373.1290588378906,
+        "Flush": 29.0,
+        "Gap infill": 0.7415308356285095,
+        "Inner wall": 786.8759155273438,
+        "Internal solid infill": 138.80477905273438,
+        "Outer wall": 551.1904907226562,
+        "Overhang wall": 93.62896728515625,
+        "Sparse infill": 33.533912658691406,
+        "Support": 134.825439453125,
+        "Support interface": 68.19835662841797,
+        "Support transition": 40.8612060546875,
+        "Top surface": 34.995601654052734,
+        "Travel": 226.78338623046875,
+        "Undefined": 211.53302001953125
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFL99",
+          "id": 1,
+          "main_used_g": 8.379363059997559,
+          "total_used_g": 8.379363059997559
+        }
+      ],
+      "generate_support_material_time": 76,
+      "id": 1,
+      "infill_time": 22,
+      "layer_filament_change": 0,
+      "main_predication": 2198.144775390625,
+      "make_perimeters_time": 59,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 49.0,
+            "height": 34.54999923706055,
+            "width": 22.09999656677246,
+            "x": 116.94994354248047,
+            "y": 103.5,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "01_M5_channel_two_humps_cable_hook",
+          "triangle_count": 112312
+        }
+      ],
+      "sliced_time": 504,
+      "sliced_time_with_cache": 324,
+      "total_predication": 2613.992919921875,
+      "triangle_count": 112312,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 15.0,
+  "wall_loops": 4
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_LOCAL_SLICE_AND_GEOMETRY_READBACK",
+  "model_count": 1,
+  "support_blocker_count": 1,
+  "mesh_matches_manufacturing_STL": true,
+  "gcode_md5": "PASS",
+  "estimated_time": "43m 33s",
+  "estimated_mass_g": 8.38,
+  "support_g": 0.960438719195893,
+  "bridge_no_support": true,
+  "wall_loops": 4,
+  "layer_height_mm": 0.2,
+  "dispatch": "NONE",
+  "project": "bambu/LaunchLab_v068_P1S_PLA_M5_ATTACHMENT_PROTOTYPE.3mf",
+  "project_sha256": "9fbe054c0fde2c28599c6f7cc49d70de0fc321e401f78bf5e033802a0cf12a22",
+  "limits": [
+    "The open groove still needs physical wire-fit and retention inspection."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "support_g": 0.960438719195893,
+  "support_base_g": 0.600851662095625,
+  "support_interface_g": 0.35958705710026795,
+  "extrusion_by_feature_g": {
+    "Custom": 0.09365205510075682,
+    "Support": 0.600851662095625,
+    "Brim": 0.026437617249000605,
+    "Inner wall": 3.6916866745626065,
+    "Outer wall": 2.0123690240927394,
+    "Overhang wall": 0.10467949511238499,
+    "Bridge": 0.2584985516165848,
+    "Support interface": 0.35958705710026795,
+    "Internal solid infill": 0.5208633225320923,
+    "Sparse infill": 0.26720040828669334,
+    "Floating vertical shell": 0.20679599594102094,
+    "Top surface": 0.14413128826294178,
+    "Gap infill": 0.0002997760528081869,
+    "Support transition": 0.09230981833779525
+  },
+  "total_header_g": 8.38,
+  "estimated_time": "43m 33s",
+  "name": "M5_ATTACHMENT",
+  "material": "PLA",
+  "source": "development/inspection/print_m5_cable_hook_v068/LaunchLab_v068_M5_ATTACHMENT_UNSLICED.3mf",
+  "project": "development/inspection/print_m5_cable_hook_v068/slices/M5_ATTACHMENT_PLA/M5_ATTACHMENT_PLA.3mf",
+  "cli_exit": 0
+}

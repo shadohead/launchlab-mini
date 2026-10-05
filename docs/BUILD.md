@@ -4,7 +4,7 @@
 
 Use M5StickS3 **K150**, which has ESP32-S3, 8 MB flash, integrated display and battery. M5StickC/C Plus/C Plus2 use different hardware and are not supported by these images. The small sensor is the **analog QRE1113 breakout**; a digital-output board is not interchangeable.
 
-For the **old TCRT5000 / LM393 module**, use [TCRT5000.md](TCRT5000.md). [Hardware versions](HARDWARE_VERSIONS.md) covers the latest independent M5 v0.50 carrier and its unverified seating/fastener engagement. The original v0.40 plate below retains its earlier carrier.
+For the **old TCRT5000 / LM393 module**, use [TCRT5000.md](TCRT5000.md). [Hardware versions](HARDWARE_VERSIONS.md) covers the preferred independent M5 v0.68 carrier and its unverified seating/fastener engagement. The original v0.40 plate below retains its earlier carrier.
 
 ## Parts and wiring
 
@@ -30,6 +30,24 @@ Open `hardware/LaunchLab_v040_ALL_ITEMS_PRINT/bambu/LaunchLab_v040_P1S_PLA_ALL_I
 The saved profile targets a P1S, PLA, 0.4 mm nozzle, 0.2 mm layers, Arachne walls, and 5 mm outer brims. Tree Slim support is enabled except on the upright pressure plate. Re-slice and review the plate for your own printer and filament. The original profile's AMS filament assignment is local metadata; select your own loaded filament. Estimate: 1h 15m 59s, 18.04 g.
 
 Use the included exploded CAD/assembly references and per-part STLs. Keep the attachment removable, preserve the factory M5 enclosure, and inspect cable strain relief, sensor alignment, button/USB access and screw engagement before use. Check the printed launcher retention by hand before any pull. Digital checks do not establish physical fit or launch-load strength.
+
+## Preferred M5 carrier and cable routing
+
+The [v0.68 separate M5 carrier](../hardware/M5_cable_hook_v068/README.md) replaces
+the original M5 platform; reuse your sensor attachment. Print its supplied single
+carrier [P1S PLA project](../hardware/M5_cable_hook_v068/bambu/LaunchLab_v068_P1S_PLA_M5_ATTACHMENT_PROTOTYPE.3mf)
+with the wire groove open upward and its WIRE GROOVE SUPPORT BLOCKER retained.
+The saved slice is 43m33s / 8.38 g. Re-slice for your own printer and filament.
+
+With M5 removed, lay the three leads into the 34 × 3 mm side-open groove, keeping
+DuPont housings outside its ends. The shortened 6 mm underside hook accepts three
+nominal 1.3 mm leads in a staggered arrangement, loaded separately. Keep the plugs
+outside the hook. Choose cable length after a dry fit with relaxed bends.
+
+Check seating on the two support humps and actual screw engagement before
+remounting M5. M2×6 is a nominal reference; the retained pad geometry overlaps the
+older nominal M5 underside, so do not force seating or tighten against rocking.
+Printed hook strength, wire retention and launcher clearance remain unverified.
 
 ## Firmware and controls
 

@@ -19,7 +19,7 @@ Start with **one M5StickS3 K150 + one analog sensor + three short wires + printe
 | 1, instead of QRE | **TCRT5000 / LM393 module with AO** | Old-sensor build. Choose the four-pin **VCC/GND/D0/A0** module and use A0. The mount uses the measured 31×13×1 mm PCB; check your board/header dimensions. | [Amazon — HiLetgo 10-pack, ordered](https://www.amazon.com/dp/B00LZV1V10?tag=beywatchgg-20) |
 | 3 leads | **Short 2.54 mm jumper wires** | VCC, GND and AO/OUT; the ordered SinLoon pack is 8 cm male-to-female. Trim/reroute as needed, checking connector clearance. | [Amazon — SinLoon 8 cm](https://www.amazon.com/dp/B08M3QLL3Q?tag=beywatchgg-20) · [Amazon — ELEGOO mixed jumper kit](https://www.amazon.com/dp/B01EV70C78?tag=beywatchgg-20) |
 | 1 | **USB-C data cable** | Flashing and charging; use an existing cable that carries data. | Use an existing data cable, or [Amazon search — USB-C data cable](https://www.amazon.com/s?k=USB-C+data+cable&tag=beywatchgg-20) |
-| 1 set | **Printed M5 + sensor mounts** | QRE: six-piece v0.40 plate. TCRT: six v0.43 sensor pieces + a separate M5 carrier. v0.50 M5 is a prototype replacement. | [Print files](docs/HARDWARE_VERSIONS.md#current-downloads) |
+| 1 set | **Printed M5 + sensor mounts** | QRE: six-piece v0.40 plate. TCRT: six v0.43 sensor pieces + a separate M5 carrier. v0.68 M5 with wire channel and shortened hook is the preferred separate carrier. | [Print files](docs/HARDWARE_VERSIONS.md#current-downloads) |
 | See below | **M2 machine screws** | Head style and length depend on the mount revision. | [Amazon — ordered MEIYYJ countersunk assortment](https://www.amazon.com/dp/B07HC3LQYS?tag=beywatchgg-20); pan-head sizes below |
 | Small amount | **1.75 mm PLA filament** | Print yourself or use a printing service; saved profiles target P1S / 0.4 mm nozzle. | Use existing PLA, a printing service, or [Amazon search — PLA filament](https://www.amazon.com/s?k=1.75mm+PLA+filament&tag=beywatchgg-20) |
 
@@ -34,7 +34,7 @@ The ordered MEIYYJ assortment includes M2×4/5/6/8 **flat/countersunk heads**. I
 | Original v0.40 M5 carrier | 2 × **M2×6 pan-head**, from below into the StickS3 mounts. |
 | QRE v0.40 plate sensor assembly | 2 × **M2×5 countersunk** for the latch crossbar + 2 × **M2×4 pan-head** for the sensor pressure plate. |
 | TCRT v0.43 sensor assembly | 2 × **M2×5 countersunk** for the separate clip caps + 2 × **M2×4 pan-head** for the sensor keeper; M5 fasteners are additional. |
-| Latest v0.50 M5 carrier | 2 × M2 screws, with **length/insert engagement still unverified** after the counterbore and raised-support revisions. Do not assume the old M2×6 reference is a confirmed fit. |
+| Preferred v0.68 M5 carrier | 2 × M2 screws; M2×6 is the nominal reference. **Actual length, insert engagement and seating remain unverified.** |
 
 If your sensor has bare pads, add a **3-pin 2.54 mm header** or solder the three wires directly. The ordered [uxcell right-angle male header strip](https://www.amazon.com/dp/B01461DQ6S?tag=beywatchgg-20) can be cut to three pins; check header direction and cable clearance against the printed seat. You will also need a small screwdriver, cutters, and a soldering iron/solder if attaching bare wires or headers.
 
@@ -44,9 +44,9 @@ Wire **AO/OUT → G1 / GPIO1**, **VCC → 3V3 / 3V3_L2**, **GND → GND**. DO is
 
 ![LaunchLab Mini M5StickS3 mount, rendered from the published CAD](site/public/images/m5-mount.png)
 
-Current QRE firmware: **0.10.1**. Old TCRT firmware: **0.2.0**. Latest M5 carrier: **v0.50**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
+Current QRE firmware: **0.10.1**. Old TCRT firmware: **0.2.0**. Preferred separate M5 carrier: **v0.68**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
 
-**[Choose your sensor and see every revision](docs/HARDWARE_VERSIONS.md)** — includes all newly published v0.41–v0.50 models, historical v0.19 TCRT, and current QRE files.
+**[Choose your sensor and see every revision](docs/HARDWARE_VERSIONS.md)** — includes the preferred v0.68 M5 carrier, earlier v0.41–v0.50 models, historical v0.19 TCRT, and current QRE files.
 
 ## What it does
 
@@ -95,11 +95,25 @@ From the live screen, **B opens history** and **A recalls the last recap**. In h
 
 The Beyblade X attachment has **two independent assemblies**: the M5 display mount and your chosen optical sensor attachment (QRE1113 or TCRT5000). The views below use the exact published CAD meshes, separated for illustration. They do not assert a measured combined mounting position on a complete launcher. Electronics and screws are reference envelopes, not printed parts.
 
-### Latest M5StickS3 carrier — v0.50
+### Preferred M5StickS3 carrier — v0.68
 
-![Exploded latest M5 v0.50 carrier, intact device reference and underside screws](docs/assets/hardware/variants/m5-exploded.png)
+![Preferred v0.68 M5 carrier with underside cable hook](hardware/M5_cable_hook_v068/renders/02_hook_underside.png)
 
-**1 — Equal-height M5 carrier:** one replacement printed piece with the v0.49 soft center ramp, recessed screw heads and supports raised to 2.3 mm. [Download v0.50 3MF](hardware/M5_equal_supports_v050/bambu/LaunchLab_v050_P1S_PLA_M5_EQUAL_SUPPORTS_TREE_SLIM.3mf) · [Full package](hardware/M5_equal_supports_v050_package.zip). Saved slice: 43m18s / 9.24 g PLA.
+One replacement carrier retains the two older support humps and adds the side-open
+wire channel plus a **6 mm long, 4.8 mm tall underside hook**, opening downward in
+the bottom-face preview. The hook is 2 mm shorter than v0.66. The sensor mount
+remains separate. [P1S PLA 3MF](hardware/M5_cable_hook_v068/bambu/LaunchLab_v068_P1S_PLA_M5_ATTACHMENT_PROTOTYPE.3mf)
+· [Complete package](hardware/M5_cable_hook_v068_package.zip)
+· [STL, editable CAD and rebuild source](hardware/M5_cable_hook_v068/README.md).
+Saved slice: **43m33s / 8.38 g PLA**. Physical seating, screw engagement, hook
+strength and cable retention remain unverified. Stagger the three leads inside
+the smaller hook and keep plug housings outside its opening.
+
+### Earlier M5StickS3 carrier — v0.50
+
+![Exploded earlier M5 v0.50 carrier, intact device reference and underside screws](docs/assets/hardware/variants/m5-exploded.png)
+
+**1 — Earlier equal-height M5 carrier:** one replacement printed piece with the v0.49 soft center ramp, recessed screw heads and supports raised to 2.3 mm. [Download v0.50 3MF](hardware/M5_equal_supports_v050/bambu/LaunchLab_v050_P1S_PLA_M5_EQUAL_SUPPORTS_TREE_SLIM.3mf) · [Full package](hardware/M5_equal_supports_v050_package.zip). Saved slice: 43m18s / 9.24 g PLA.
 
 **Prototype: physical seating and leveling are unverified.** The original nominal M5 reference overlaps the taller pads in its saved assembly pose; it is lifted here for illustration. Screw length and insert engagement must be checked after the counterbore revision. STEP files contain only the added supports; the full carrier is mesh geometry.
 
@@ -166,7 +180,7 @@ All six pieces are included in the complete v0.40 plate. The views below show th
 
 If your five-piece sensor attachment is already built, only the **v0.40 M5 platform** needs replacement. [Download the combined 3MF](hardware/LaunchLab_v040_ALL_ITEMS_PRINT/bambu/LaunchLab_v040_P1S_PLA_ALL_ITEMS_ONE_PLATE.3mf) or the [full print package](hardware/LaunchLab_v040_ALL_ITEMS_PRINT_package.zip). Physical fit, button/thumb access and launch-load retention still need checking after printing. [Render provenance](docs/assets/hardware/provenance.json) identifies the source meshes; `scripts/render-readme-hardware.py` reproduces these illustrations in Blender.
 
-[Latest-render provenance](docs/assets/hardware/variants/provenance.json) records the frozen source mesh hashes; `scripts/render-variant-hardware.py` reproduces the new illustrations. [Version history](docs/HARDWARE_VERSIONS.md) explains every v0.41–v0.50 change.
+[Latest-render provenance](docs/assets/hardware/variants/provenance.json) records the frozen source mesh hashes; `scripts/render-variant-hardware.py` reproduces the new illustrations. [Version history](docs/HARDWARE_VERSIONS.md) explains v0.68 and every earlier v0.41–v0.50 change.
 
 ## Get started
 
@@ -181,7 +195,8 @@ Update writes only the application at `0x10000` after checking the installed par
 ## Hardware files
 
 - [All hardware revisions and sensor compatibility](docs/HARDWARE_VERSIONS.md), with a [checksum inventory](hardware/versions.json).
-- [v0.50 M5 carrier](hardware/M5_equal_supports_v050/): latest saved sliced prototype, plus v0.44–v0.49 history.
+- [Preferred v0.68 M5 carrier](hardware/M5_cable_hook_v068/): side-open wire channel, two support humps and shortened underside cable hook; CAD, source and saved P1S PLA slice.
+- [Earlier v0.50 M5 carrier](hardware/M5_equal_supports_v050/): preserved sliced prototype, plus v0.44–v0.49 history.
 - [v0.43 TCRT mount](hardware/minimal_TCRT_split_keepers_v043/): latest unsliced six-piece prototype, plus v0.19/v0.41/v0.42 history.
 
 - [v0.40 complete plate](hardware/LaunchLab_v040_ALL_ITEMS_PRINT/): all six prints, source STLs, QRE STEP files, profiles and digital verification.

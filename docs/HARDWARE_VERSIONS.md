@@ -13,9 +13,22 @@ The web updater offers **QRE 0.7.0 only**. Do not use it to replace the old TCRT
 
 ## Current downloads
 
+- **Preferred separate M5 v0.68 carrier:** [assembly and source](../hardware/M5_cable_hook_v068/README.md), [complete package](../hardware/M5_cable_hook_v068_package.zip), [sliced P1S PLA 3MF](../hardware/M5_cable_hook_v068/bambu/LaunchLab_v068_P1S_PLA_M5_ATTACHMENT_PROTOTYPE.3mf), [carrier STL](../hardware/M5_cable_hook_v068/stl/01_M5_channel_two_humps_cable_hook.stl), [editable Blender model](../hardware/M5_cable_hook_v068/LaunchLab_v068_M5_underside_cable_hook.blend).
+
+v0.68 is the project owner's preferred separate M5 carrier. It combines the
+side-open wire channel, two older support humps and a downward-opening underside
+hook shortened from 8 to 6 mm, retaining its 4.8 mm height. Its P1S PLA slice is
+43m33s / 8.38 g. Three nominal 1.3 mm leads fit staggered in two rows and load
+separately; connector housings stay outside. Physical seating, screw engagement,
+hook strength, retention and launcher clearance remain unverified. The older
+nominal M5 underside overlap is retained; dry-fit the actual device. This is a
+single-carrier replacement, separate from the sensor mount and stacked layouts.
+
+Earlier published options:
+
 - [M5 v0.50 release](https://github.com/shadohead/launchlab-mini/releases/tag/hardware-m5-v0.50): [complete package](../hardware/M5_equal_supports_v050_package.zip), [sliced P1S PLA 3MF](../hardware/M5_equal_supports_v050/bambu/LaunchLab_v050_P1S_PLA_M5_EQUAL_SUPPORTS_TREE_SLIM.3mf), [unsliced project](../hardware/M5_equal_supports_v050/M5_equal_supports_v050_UNSLICED.3mf), [carrier STL](../hardware/M5_equal_supports_v050/stl/01_M5_equal_supports_platform.stl).
 - [TCRT v0.43 release](https://github.com/shadohead/launchlab-mini/releases/tag/hardware-tcrt5000-v0.43): [six-piece package](../hardware/minimal_TCRT_split_keepers_v043_package.zip), [per-part STLs](../hardware/minimal_TCRT_split_keepers_v043/stl/), [full STEP assembly](../hardware/minimal_TCRT_split_keepers_v043/TCRT_split_keepers_v043.step). Unsliced CAD prototype; no saved 3MF exists for this revision.
-- [QRE v0.40 complete plate](../hardware/LaunchLab_v040_ALL_ITEMS_PRINT/bambu/LaunchLab_v040_P1S_PLA_ALL_ITEMS_ONE_PLATE.3mf): existing six prints with the v0.40 M5 carrier. The v0.50 carrier is a separate replacement, not included on that older plate.
+- [QRE v0.40 complete plate](../hardware/LaunchLab_v040_ALL_ITEMS_PRINT/bambu/LaunchLab_v040_P1S_PLA_ALL_ITEMS_ONE_PLATE.3mf): existing six prints with the v0.40 M5 carrier. The v0.68 and v0.50 carriers are separate replacements, not included on that older plate.
 
 **M5 v0.50 is a prototype:** its two supports rise from 0.5 to 2.3 mm to match the screw standoffs. The original nominal device reference has a stepped underside and overlaps these raised pads. Physical seating and leveling remain unverified. Its saved slice is 43m18s / 9.24 g PLA, Tree Slim supports; this is a slicing result, not proof of printing or fit. Re-slice for your printer and loaded filament. M2 screw length/insert engagement must be checked; the v0.45 counterbores changed the engagement of the earlier M2×6 reference. Do not infer a confirmed screw length from that reference.
 
@@ -40,6 +53,7 @@ Every row links to a frozen local snapshot with source files, manufacturing STLs
 | [v0.48](../hardware/M5_smooth_rectangle_v048/) | M5 carrier | Sloped center rectangle with 0.3 mm rounded transitions. | Unsliced 3MF/STL. |
 | [v0.49](../hardware/M5_soft_ramp_v049/) | M5 carrier | Broader center ramp with 0.8 mm fillets. | Unsliced 3MF/STL. |
 | [v0.50](../hardware/M5_equal_supports_v050/) | M5 carrier | Opposite-end supports raised to 2.3 mm; v0.49 geometry retained. | Saved P1S PLA slice; seating unverified. |
+| [v0.68](../hardware/M5_cable_hook_v068/) | M5 carrier | Preferred separate carrier: side-open channel, two older humps and 6 mm underside cable hook. | Saved P1S PLA slice; physical fit and strength unverified. |
 
 [Machine-readable inventory and SHA-256 hashes](../hardware/versions.json) identify all newly published files. Older versions remain available; no published firmware binary or existing v0.40 geometry was replaced. One v0.42 render had a stale local checksum; its original checksum list is preserved under `provenance/`, and the publication list records the final saved render. All original CAD/STL/STEP hashes matched.
 

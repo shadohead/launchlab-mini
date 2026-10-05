@@ -1,0 +1,72 @@
+{
+  "version": "0.68 PROTOTYPE",
+  "units": "mm",
+  "parts": [
+    {
+      "name": "01_M5_channel_two_humps_cable_hook",
+      "filename": "preview/01_M5_channel_two_humps_cable_hook.stl",
+      "group": "M5",
+      "color": "#83969D",
+      "reference": false,
+      "printable": true,
+      "description": "v065 carrier plus downward-opening underside cable hook",
+      "source": "Frozen v061 side-open carrier plus two exact frozen v050 support humps",
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ],
+      "print_translation_mm": [
+        -1.5500001907348633,
+        -0.0,
+        11.75
+      ]
+    },
+    {
+      "name": "REF_M5Stick_factory_geometry",
+      "filename": "preview/REF_M5Stick_factory_geometry.stl",
+      "color": "#A0A6AE",
+      "description": "Unscaled factory M5; top flush with native head, USB-C right and Hat left.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_Display_visual",
+      "filename": "preview/REF_Display_visual.stl",
+      "color": "#101A23",
+      "description": "Display visual only.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_M2x6_1",
+      "filename": "preview/REF_M2x6_1.stl",
+      "color": "#C3C9D1",
+      "description": "M2x6 inserted from underside; nominal 1.7mm insert engagement.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    },
+    {
+      "name": "REF_M2x6_2",
+      "filename": "preview/REF_M2x6_2.stl",
+      "color": "#C3C9D1",
+      "description": "M2x6 inserted from underside; nominal 1.7mm insert engagement.",
+      "group": "M5",
+      "reference": true,
+      "printable": false,
+      "source": "User native grip STL and manufacturer M5 reference",
+      "geometry_revision": "v0.24 stepped thin platform"
+    }
+  ],
+  "print_package_created": true,
+  "scope": "Separate M5 carrier only; user-marked underside cable hook"
+}

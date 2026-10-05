@@ -1,0 +1,24 @@
+{
+  "status": "PASS_ACTUAL_MODEL_LAYERS_AND_OPEN_GROOVE_PATHS",
+  "model_layers": 173,
+  "first_layer_mm": 0.2,
+  "last_layer_mm": 34.6,
+  "positive_model_extrusion_mm": 2319.0701599999943,
+  "mesh_readback_error_mm": 1.0206248549139964e-06,
+  "deposited_segments_inside_groove_core": 0,
+  "core_wall_margin_mm": 0.3,
+  "positive_linear_segments_evaluated": 26910,
+  "groove_candidate_segments": 0,
+  "groove_path_samples_checked": 0,
+  "physical_fit": "UNVERIFIED",
+  "dispatch": "NONE",
+  "restored_hump_model_deposition_segments": {
+    "1": 284,
+    "2": 283
+  },
+  "hook_model_deposition_segments": 1082,
+  "hook_void_samples_checked": 393,
+  "deposited_segments_inside_hook_clearance_core": 0,
+  "hook_core_wall_margin_mm": 0.5,
+  "method": "Positive linear extrusion paths mapped through saved 3MF transforms, mesh centering, nozzle offset, manufacturing rotation and layer midplanes. Groove checks exclude 0.3 mm next to the wall; they do not establish printed plug fit."
+}

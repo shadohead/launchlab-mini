@@ -1,0 +1,75 @@
+{
+  "status": "PASS_DIGITAL_HOOK_GEOMETRY_PHYSICAL_FIT_UNVERIFIED",
+  "source": "source/carrier_before_hook.stl",
+  "source_sha256": "99a7f90b53725f56baebb2a7a4c315518ec0bca4ce1422c9ed90f6c09c3e47cb",
+  "hook": {
+    "center_xy_mm": [
+      1.7426215277777777,
+      -15.994285300925924
+    ],
+    "protrusion_below_bottom_mm": 4.8,
+    "width_mm": 6.0,
+    "depth_mm": 6.0,
+    "wall_mm": 1.6,
+    "minimum_nominal_mouth_gap_mm": 2.2,
+    "inside_height_mm": 3.1999999999999997,
+    "inside_depth_mm": 2.8,
+    "root_overlap_into_plate_mm": 0.4,
+    "profile_radius_mm": 0.45,
+    "edge_radius_mm": 0.25,
+    "opening_direction": [
+      0,
+      1,
+      0
+    ],
+    "opening_in_marked_view": "Down",
+    "wire_allowance": "Three nominal 1.3 mm leads staggered in two rows; load separately; connectors outside",
+    "nominal_wire_centers_yz_relative_mm": [
+      [
+        -0.7,
+        -2.3
+      ],
+      [
+        0.7,
+        -2.3
+      ],
+      [
+        0.0,
+        -1.0
+      ]
+    ],
+    "preview_length_reduction_mm": 2.0,
+    "root_position_unchanged": true,
+    "previous_depth_mm": 8.0,
+    "previous_center_y_mm": -14.994285300925924
+  },
+  "added_material_mm3": 96.84325083282265,
+  "removed_material_mm3": 0.0,
+  "added_material_outside_hook_mm3": 3.0726628880151097e-10,
+  "root_overlap_mm3": 3.269601326364756,
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "STL_readback_vertex_error_mm": 1.9073486328125e-06,
+  "old_carrier_material_retained": true,
+  "groove_void_overlap_mm3": 0.0,
+  "fixed_nominal_M5_reference_overlap_mm3": 26.03499012595886,
+  "wire_checks": {
+    "wire_1_overlap_mm3": 0.0,
+    "wire_1_mouth_sweep_overlap_mm3": 0.0,
+    "wire_1_placement_sweep_overlap_mm3": 0.0,
+    "wire_2_overlap_mm3": 0.0,
+    "wire_2_mouth_sweep_overlap_mm3": 0.0,
+    "wire_2_placement_sweep_overlap_mm3": 0.0,
+    "wire_3_overlap_mm3": 0.0,
+    "wire_3_mouth_sweep_overlap_mm3": 0.0,
+    "wire_3_placement_sweep_overlap_mm3": 0.0,
+    "REF_M5Stick_factory_geometry_hook_overlap_mm3": 0.0,
+    "REF_Display_visual_hook_overlap_mm3": 0.0,
+    "REF_M2x6_1_hook_overlap_mm3": 0.0,
+    "REF_M2x6_2_hook_overlap_mm3": 0.0
+  },
+  "physical_fit": "UNVERIFIED",
+  "strength": "UNVERIFIED",
+  "dispatch": "NONE"
+}
