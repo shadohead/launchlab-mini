@@ -21,4 +21,4 @@ One transient IMU gap/reset occurred in each controlled frequency trial. Post-pu
 Application: 729,264 bytes at `0x10000`.
 SHA-256: `4a49e2fc663efd89dca3ed527d1ba493c2cd5c39e03717fed2be263906751aaf`.
 
-This is an installed, user-checked prototype revision. Public publication status is recorded in the manifest; this preparation does not establish buyer/pilot or recovery qualification.
+This is an installed, user-checked prototype revision. Published as a prototype prerelease. Publication does not establish buyer/pilot or recovery qualification.

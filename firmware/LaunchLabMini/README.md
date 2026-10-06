@@ -1,6 +1,6 @@
 # LaunchLab Mini for M5StickS3
 
-Current prepared revision: **0.10.11-sticks3-lowcpu**, for **M5StickS3 K150 (ESP32-S3, 8 MB flash / 8 MB OPI PSRAM) + SparkFun QRE1113 analog**. [Frozen release and validation](../releases/0.10.11-sticks3-qre1113-lowcpu/README.md).
+Current published revision: **0.10.11-sticks3-lowcpu**, for **M5StickS3 K150 (ESP32-S3, 8 MB flash / 8 MB OPI PSRAM) + SparkFun QRE1113 analog**. [Frozen release and validation](../releases/0.10.11-sticks3-qre1113-lowcpu/README.md).
 
 ## Wiring
 

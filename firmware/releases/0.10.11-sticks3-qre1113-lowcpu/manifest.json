@@ -3,8 +3,8 @@
   "runtime_version": "0.10.11-sticks3-lowcpu",
   "board": "M5StickS3 K150",
   "sensor": "SparkFun QRE1113 analog",
-  "status": "installed-user-checked-release-candidate",
-  "published": false,
+  "status": "published-user-checked-prototype",
+  "published": true,
   "binary": "LaunchLabMini.ino.bin",
   "application_offset": "0x10000",
   "binary_bytes": 729264,
@@ -137,5 +137,11 @@
       "paired_imu_hz_approx": 99.40089046449307
     }
   },
-  "battery": "Lower CPU clock only; actual whole-device energy/runtime gain unmeasured. Existing power records include CPU MHz for next-session review."
+  "battery": "Lower CPU clock only; actual whole-device energy/runtime gain unmeasured. Existing power records include CPU MHz for next-session review.",
+  "publication": {
+    "repository": "https://github.com/shadohead/launchlab-mini",
+    "tag": "firmware-v0.10.11",
+    "site": "https://shadohead.github.io/launchlab-mini/",
+    "qualification": "Prototype prerelease. Publication does not clear the physical validation limits recorded above."
+  }
 }
