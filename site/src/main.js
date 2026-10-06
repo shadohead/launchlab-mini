@@ -24,7 +24,7 @@ updateControls();
 loadReleaseIndex(document.baseURI).then(index=>{
   $('release').replaceChildren(...index.releases.map(release=>{
     const option=document.createElement('option');
-    option.value=release.version;option.textContent='v'+release.version+(release.version===index.latest?' · recommended':' · previous release');
+    option.value=release.version;option.textContent='v'+release.version+(release.version===index.latest?' · latest available':' · previous release');
     return option;
   }));
   selection=createReleaseSelection({index,baseUrl:document.baseURI,onChange:state=>{
@@ -33,6 +33,7 @@ loadReleaseIndex(document.baseURI).then(index=>{
     $('checksum').textContent=catalog?catalog.files[3].sha256:'';
     $('target-version').textContent=catalog?'v'+catalog.version:'the selected version';
     $('installed').textContent='Installed version is checked after connecting.';
+    $('device').textContent='Chip and flash capacity are checked after connecting; confirm K150 from the device label.';
     if(state.error) status(state.error.message,'error');
     else if(supported) status(state.loading?'Loading selected release…':'Ready. Update blocks downgrades and unknown applications.');
     updateControls();
@@ -51,6 +52,8 @@ const installer=createInstaller({
   md5:data=>SparkMD5.ArrayBuffer.hash(data.buffer.slice(data.byteOffset,data.byteOffset+data.byteLength)),
   onBusy:value=>{busy=value;if(!busy)resetConsent();updateControls();},
   onStatus:status,onLog:log,onProgress:value=>{$('progress').value=value;},
+  onDevice:device=>{$('device').textContent=device.chip+' · '+device.flashSize+' detected. K150 model confirmation is still yours.';log($('device').textContent);},
+  onRecovery:failure=>{$('recovery-help').hidden=!failure;$('recovery-message').textContent=failure?.advice||'';},
   onInspect:installed=>{
     $('installed').textContent=installed.application?'Installed v'+installed.application.version+(installed.state==='verified'?' · complete image verified':' · image incomplete or changed'):'Installed application is unknown.';
     log($('installed').textContent);

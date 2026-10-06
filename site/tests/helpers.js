@@ -9,8 +9,9 @@ export const localFetch=async url=>({ok:true,arrayBuffer:async()=>{const b=await
 export const images=await Promise.all(catalog.files.map(f=>verifiedDownload(f,base,localFetch)));
 export const oldImages=await Promise.all(oldCatalog.files.map(f=>verifiedDownload(f,base,localFetch)));
 export const md5=data=>createHash('md5').update(data).digest('hex');
-export function fake({app=oldImages[3].data,chip='ESP32-S3',partitions=images[1].data,boot=images[2].data}={}) {
-  const l={writes:[],reads:[],chip:{CHIP_NAME:chip},app:app.slice(),partitions:partitions.slice(),boot:boot.slice(),
+export function fake({app=oldImages[3].data,chip='ESP32-S3',flashSize='8MB',partitions=images[1].data,boot=images[2].data}={}) {
+  const l={writes:[],reads:[],capacityChecks:0,chip:{CHIP_NAME:chip},app:app.slice(),partitions:partitions.slice(),boot:boot.slice(),
+    async detectFlashSize(){this.capacityChecks++;return flashSize;},
     async readFlash(address,size){
       this.reads.push({address,size});
       if(address===0x8000){assert.equal(size,this.partitions.length);return this.partitions.slice();}

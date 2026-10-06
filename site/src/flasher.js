@@ -1,6 +1,29 @@
 export const APP_OFFSET = 0x10000;
 export const APP_IDENTITY_BYTES = 1024;
 const EXPECTED_FILES = [['bootloader.bin', 0], ['partitions.bin', 0x8000], ['boot_app0.bin', 0xe000], ['application.bin', APP_OFFSET]];
+// The partition table ends at 0x9000; the NVS area before boot_app0 is not
+// part of its writable slot, even though it is absent from the image bundle.
+const FILE_REGION_LIMITS = [0x8000, 0x9000, APP_OFFSET, APP_OFFSET + 0x330000];
+const stop = (code, message) => Object.assign(new Error(message), {code});
+const EXPECTED_PARTITIONS = [
+  [1,2,0x9000,0x5000,'nvs'], [1,0,0xe000,0x2000,'otadata'],
+  [0,16,APP_OFFSET,0x330000,'app0'], [0,17,0x340000,0x330000,'app1'],
+  [1,130,0x670000,0x180000,'spiffs'], [1,3,0x7f0000,0x10000,'coredump']
+];
+function validatePartitionLayout(data, md5) {
+  // These bundles support one reviewed 8 MB layout. A new valid checksum
+  // must not silently move data, app0 or the OTA selection area.
+  const fail = () => {throw stop('bundle-layout', 'The firmware bundle has an unsupported partition layout. No flash was written.');};
+  if (data.length < 0xe0 || typeof md5 !== 'function') fail();
+  const view = new DataView(data.buffer, data.byteOffset, data.byteLength);
+  for (let i=0; i<EXPECTED_PARTITIONS.length; i++) {
+    const pos=i*32, [type,subtype,offset,size,label]=EXPECTED_PARTITIONS[i];
+    const name=new TextDecoder().decode(data.slice(pos+12,pos+28)).split('\0')[0];
+    if (view.getUint16(pos,true)!==0x50aa || data[pos+2]!==type || data[pos+3]!==subtype || view.getUint32(pos+4,true)!==offset || view.getUint32(pos+8,true)!==size || name!==label || view.getUint32(pos+28,true)!==0) fail();
+  }
+  const digest=Array.from(data.slice(0xd0,0xe0), x=>x.toString(16).padStart(2,'0')).join('');
+  if (data[0xc0]!==0xeb || data[0xc1]!==0xeb || !data.slice(0xc2,0xd0).every(x=>x===255) || md5(data.slice(0,0xc0))!==digest || !data.slice(0xe0).every(x=>x===255)) fail();
+}
 const hex = (value, length) => typeof value === 'string' && new RegExp('^[a-f0-9]{' + length + '}$').test(value);
 export function compareVersions(a, b) {
   const parts = value => {
@@ -21,7 +44,7 @@ export function validateCatalog(catalog) {
   catalog.files.forEach((file, i) => {
     const [name, offset] = EXPECTED_FILES[i];
     if (file.path !== 'firmware/' + catalog.version + '/' + name || file.offset !== offset || !hex(file.sha256, 64) || !Number.isInteger(file.size) || file.size <= 0) throw new Error('Invalid firmware file or address.');
-    const limit = i < 3 ? EXPECTED_FILES[i + 1][1] : APP_OFFSET + 0x330000;
+    const limit = FILE_REGION_LIMITS[i];
     if (offset + file.size > limit) throw new Error('Firmware exceeds its flash region.');
   });
   if (!Array.isArray(catalog.knownApplications) || !catalog.knownApplications.length || catalog.knownApplications.length > 100) throw new Error('Missing installed-application identities.');
@@ -57,36 +80,45 @@ export async function inspectInstalledApplication(loader, catalog) {
   const digest = await loader.flashMd5sum(APP_OFFSET, app.size);
   return {state:typeof digest === 'string' && digest.toLowerCase() === app.md5 ? 'verified' : 'damaged', application:app};
 }
-export async function flashVerified({loader, catalog, images, mode, recoveryConfirmed=false, installConfirmed=false, md5, reportProgress, onInspect=()=>{}}) {
+export async function flashVerified({loader, catalog, images, mode, recoveryConfirmed=false, installConfirmed=false, md5, reportProgress, onInspect=()=>{}, onDevice=()=>{}, onWriteStart=()=>{}}) {
   validateCatalog(catalog);
   if (!['update', 'install', 'recovery'].includes(mode)) throw new Error('Unknown install mode.');
   if (mode === 'install' && installConfirmed !== true) throw new Error('Confirm first install and backup before continuing.');
   if (mode === 'recovery' && recoveryConfirmed !== true) throw new Error('Confirm intentional repair or downgrade and backup before continuing.');
-  if (loader.chip?.CHIP_NAME !== 'ESP32-S3') throw new Error('This firmware requires an M5StickS3 (ESP32-S3).');
+  if (loader.chip?.CHIP_NAME !== 'ESP32-S3') throw stop('device', 'This firmware requires an M5StickS3 (ESP32-S3).');
   if (images.length !== catalog.files.length) throw new Error('Incomplete verified download.');
   for (let i=0; i<images.length; i++) {
     const image=images[i], file=catalog.files[i];
     if (!(image.data instanceof Uint8Array) || image.path !== file.path || image.offset !== file.offset || image.data.length !== file.size || await sha256(image.data) !== file.sha256) throw new Error('Incomplete or changed verified download. No flash was written.');
   }
+  validatePartitionLayout(images[1].data, md5);
+  // The catalog's declared capacity is not proof of the attached chip's size.
+  // ESP32-S3 and 8 MB still do not identify a K150: human model confirmation
+  // remains required in the UI. Refuse missing, unreadable or unexpected IDs.
+  if (typeof loader.detectFlashSize !== 'function') throw stop('device', 'Flash capacity could not be checked. No flash was written.');
+  const flashSize = await loader.detectFlashSize();
+  if (flashSize !== '8MB') throw stop('device', 'Detected flash capacity is ' + (flashSize || 'unknown') + '; K150 requires 8MB. No flash was written.');
+  onDevice({chip:'ESP32-S3', flashSize});
   let installed;
   if (mode !== 'install') {
     const same = (a,b) => a.length === b.length && a.every((byte,i)=>byte===b[i]);
     const partitions = new Uint8Array(await loader.readFlash(0x8000, images[1].data.length));
-    if (!same(partitions, images[1].data)) throw new Error('The device has a different partition layout. Stop and back up before considering First install.');
+    if (!same(partitions, images[1].data)) throw stop('layout', 'The device has a different partition layout. Stop and back up; do not use First install to bypass this check.');
     // This updater writes app0 only. Do not write an inactive slot when an
     // outside OTA tool has changed boot selection.
     const bootSelection = new Uint8Array(await loader.readFlash(0xe000, images[2].data.length));
-    if (!same(bootSelection, images[2].data)) throw new Error('The device has a different boot selection. Stop and back up; app-only update cannot safely continue.');
+    if (!same(bootSelection, images[2].data)) throw stop('layout', 'The device has a different boot selection. Stop and back up; app-only update cannot safely continue.');
     installed = await inspectInstalledApplication(loader, catalog);
     onInspect(installed);
     if (mode === 'update') {
-      if (installed.state !== 'verified') throw new Error('Installed LaunchLab application is unknown or incomplete. Update stopped. Use Repair / rollback only after backup and an intentional version choice.');
+      if (installed.state !== 'verified') throw stop('application', 'Installed LaunchLab application is unknown or incomplete. Update stopped. Use Repair / rollback only after backup and an intentional version choice.');
       const comparison = compareVersions(catalog.version, installed.application.version);
       if (comparison < 0) throw new Error('Downgrade blocked: installed v' + installed.application.version + ', selected v' + catalog.version + '. Keep the newer release or deliberately use Repair / rollback.');
       if (comparison === 0) return {status:'up-to-date', installed};
     }
   }
   const selected = mode === 'install' ? images : [images[3]];
+  onWriteStart();
   await loader.writeFlash({fileArray: selected.map(image => ({data:image.data, address:image.offset})), flashSize:'8MB', flashMode:'dio', flashFreq:'80m', eraseAll:false, compress:true, calculateMD5Hash:md5, reportProgress});
   return {status:'verified', installed};
 }

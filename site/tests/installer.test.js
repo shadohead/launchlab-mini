@@ -3,11 +3,11 @@ import assert from 'node:assert/strict';
 import {createInstaller} from '../src/installer.js';
 import {catalog,oldCatalog,base,localFetch,fake,md5,images} from './helpers.js';
 function setup({loader=fake(),requestPort=async()=>({}),fetchFn=localFetch,disconnect=async()=>{}}={}) {
-  const state={choosers:0,opens:0,closes:0,busy:[],statuses:[]};
+  const state={choosers:0,opens:0,closes:0,busy:[],statuses:[],recovery:[],devices:[]};
   const installer=createInstaller({baseUrl:base,md5,fetchFn,
     requestPort:async()=>{state.choosers++;return requestPort();},
     openConnection:async()=>{state.opens++;return {loader,transport:{disconnect:async()=>{state.closes++;await disconnect();}}};},
-    onBusy:b=>state.busy.push(b),onStatus:(message,result)=>state.statuses.push({message,result})});
+    onBusy:b=>state.busy.push(b),onStatus:(message,result)=>state.statuses.push({message,result}),onRecovery:r=>state.recovery.push(r),onDevice:d=>state.devices.push(d)});
   return {installer,state,loader};
 }
 test('cancelled chooser resets busy and does not open a device',async()=>{
@@ -56,4 +56,32 @@ test('disconnect failure cannot retain busy state or trigger another write',asyn
   const s=setup({disconnect:async()=>{throw new Error('already unplugged');}});
   assert.equal((await s.installer.run({catalog,mode:'update'})).status,'verified');assert.equal(s.installer.busy,false);
   assert.equal((await s.installer.run({catalog,mode:'update'})).status,'up-to-date');assert.equal(s.loader.writes.length,1);
+});
+test('write interruption reports possible incomplete application and deliberate repair; never claims untouched flash',async()=>{
+  const l=fake();l.writeFlash=async()=>{throw new Error('USB disconnected');};const s=setup({loader:l});
+  const r=await s.installer.run({catalog,mode:'update'});
+  assert.equal(r.phase,'write');assert.equal(r.writeStarted,true);assert.match(r.advice,/did not finish/);assert.match(r.advice,/Repair \/ rollback/);
+  assert.doesNotMatch(r.advice,/No flash was written/);assert.equal(s.state.recovery.at(-1).writeStarted,true);assert.equal(s.state.closes,1);
+});
+test('interrupted First install gives four-image retry guidance and still requires new consent',async()=>{
+  const l=fake();l.writeFlash=async()=>{throw new Error('MD5 mismatch');};const s=setup({loader:l});
+  const r=await s.installer.run({catalog,mode:'install',installConfirmed:true});
+  assert.equal(r.writeStarted,true);assert.match(r.advice,/bootloader, layout or application/);assert.match(r.advice,/Retry First install only/);
+  const choosers=s.state.choosers;await s.installer.run({catalog,mode:'install'});assert.equal(s.state.choosers,choosers);assert.equal(s.state.closes,1);
+});
+test('layout refusal gives stop guidance before writing with no implicit First install',async()=>{
+  const p=images[1].data.slice();p[0]^=1;const s=setup({loader:fake({partitions:p})});
+  const r=await s.installer.run({catalog,mode:'update'});
+  assert.equal(r.writeStarted,false);assert.equal(r.phase,'preflight');assert.match(r.advice,/No flash was written/);assert.match(r.advice,/not an automatic fix/);
+  assert.equal(s.loader.writes.length,0);assert.equal(s.state.closes,1);
+});
+test('unreadable capacity is a preflight refusal and each retry reopens and rechecks',async()=>{
+  const l=fake();let fail=true,checks=0;l.detectFlashSize=async()=>{checks++;if(fail)throw new Error('flash ID unavailable');return '8MB';};const s=setup({loader:l});
+  const r=await s.installer.run({catalog,mode:'update'});assert.equal(r.writeStarted,false);assert.match(r.advice,/No flash was written/);assert.equal(l.writes.length,0);
+  fail=false;assert.equal((await s.installer.run({catalog,mode:'update'})).status,'verified');assert.equal(checks,2);assert.equal(s.state.closes,2);
+  assert.deepEqual(s.state.devices,[{chip:'ESP32-S3',flashSize:'8MB'}]);assert.equal(s.state.recovery.at(-1),null);
+});
+test('NotFoundError after chooser is a failure, not a harmless cancelled selection',async()=>{
+  const l=fake();l.writeFlash=async()=>{throw Object.assign(new Error('device disappeared'),{name:'NotFoundError'});};const s=setup({loader:l});
+  const r=await s.installer.run({catalog,mode:'update'});assert.equal(r.status,'error');assert.equal(r.writeStarted,true);assert.match(r.advice,/did not finish/);assert.equal(s.state.closes,1);
 });

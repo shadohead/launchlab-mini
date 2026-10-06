@@ -1,11 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readFile} from 'node:fs/promises';
 import {APP_OFFSET, APP_IDENTITY_BYTES, compareVersions, validateCatalog, verifiedDownload, flashVerified, inspectInstalledApplication} from '../src/flasher.js';
 import {catalog,oldCatalog,base,localFetch,images,oldImages,fake,opts} from './helpers.js';
-test('default catalog is the frozen 0.10.7 application; old binary is preserved',()=>{
-  assert.equal(catalog.version,'0.10.7');assert.equal(images[3].data.length,735456);
+test('default catalog is the frozen 0.10.11 application; old binary is preserved',()=>{
+  assert.equal(catalog.version,'0.10.11');assert.equal(images[3].data.length,729264);
   assert.equal(oldCatalog.version,'0.10.1');assert.equal(oldImages[3].data.length,731728);
-  assert.equal(catalog.files[3].sha256,'54fe847cc82ac11b8f50669c424498267e079dfe967020271763e24ba5c808d2');
+  assert.equal(catalog.files[3].sha256,'4a49e2fc663efd89dca3ed527d1ba493c2cd5c39e03717fed2be263906751aaf');
 });
 test('release downloads have exact sizes and SHA-256',()=>assert.equal(images.length,4));
 test('versions compare numerically, not lexically or as decimals',()=>{
@@ -20,7 +22,7 @@ test('older verified application updates app only and never erases all',async()=
 });
 test('known newer installed application blocks an older selected target',async()=>{
   const l=fake({app:images[3].data});
-  await assert.rejects(flashVerified({...opts(l),catalog:oldCatalog,images:oldImages}),/Downgrade blocked.*0.10.7.*0.10.1/);
+  await assert.rejects(flashVerified({...opts(l),catalog:oldCatalog,images:oldImages}),/Downgrade blocked.*0.10.11.*0.10.1/);
   assert.equal(l.writes.length,0);
 });
 test('already installed exact version is a no-op; repeated update stays a no-op',async()=>{
@@ -31,7 +33,7 @@ test('already installed exact version is a no-op; repeated update stays a no-op'
 test('Arduino descriptor build label is not interpreted as LaunchLab version',async()=>{
   const descriptor=images[3].data.slice(48,80);assert.equal(new TextDecoder().decode(descriptor).split('\0')[0],'afa5cdd');
   const l=fake({app:images[3].data});const found=await inspectInstalledApplication(l,catalog);
-  assert.equal(found.state,'verified');assert.equal(found.application.version,'0.10.7');
+  assert.equal(found.state,'verified');assert.equal(found.application.version,'0.10.11');
 });
 test('complete device image checksum is required beyond matching ELF descriptor',async()=>{
   const app=images[3].data.slice();app[10000]^=1;const l=fake({app});
@@ -116,4 +118,67 @@ test('fresh first install skips old-layout reads and never addresses NVS',async(
   await flashVerified({...opts(l),mode:'install',installConfirmed:true});
   assert.equal(l.writes[0].flashMode,'dio');assert.equal(l.writes[0].flashSize,'8MB');
   for(const f of l.writes[0].fileArray)assert.ok(f.address+f.data.length<=0x9000||f.address>=0xe000);
+});
+test('first install refuses partition tables extending into NVS before any device read or write',async()=>{
+  for(const size of [0x1001,0x6000]){
+    const c=structuredClone(catalog);
+    const changed=images.map(f=>({...f,data:f.data.slice()}));
+    const table=new Uint8Array(size).fill(255);table.set(changed[1].data);
+    c.files[1].size=size;c.files[1].sha256=createHash('sha256').update(table).digest('hex');
+    changed[1].data=table;
+    const l=fake();
+    await assert.rejects(flashVerified({...opts(l),catalog:c,images:changed,mode:'install',installConfirmed:true}),/flash region/);
+    assert.equal(l.writes.length,0);assert.equal(l.reads.length,0);
+  }
+});
+test('a partition table filling exactly its 4 KB slot remains permitted',async()=>{
+  const c=structuredClone(catalog);
+  const changed=images.map(f=>({...f,data:f.data.slice()}));
+  const table=new Uint8Array(0x1000).fill(255);table.set(changed[1].data);
+  c.files[1].size=table.length;c.files[1].sha256=createHash('sha256').update(table).digest('hex');
+  changed[1].data=table;
+  const l=fake();
+  assert.equal((await flashVerified({...opts(l),catalog:c,images:changed,mode:'install',installConfirmed:true})).status,'verified');
+  assert.equal(l.writes[0].fileArray.find(f=>f.address===0x8000).data.length,0x1000);
+});
+test('physical capacity is checked in every mode; non-8 MB and unknown flash refuse before reads or writes',async()=>{
+  for(const mode of ['update','install','recovery']) for(const flashSize of ['4MB','16MB','unknown',null]){
+    const l=fake({flashSize});
+    await assert.rejects(flashVerified({...opts(l),mode,installConfirmed:true,recoveryConfirmed:true}),/flash capacity/);
+    assert.equal(l.capacityChecks,1);assert.equal(l.reads.length,0);assert.equal(l.writes.length,0);
+  }
+});
+test('missing capacity API and flash-ID read failure cannot trigger a write',async()=>{
+  for(const mode of ['update','install','recovery']){
+    const l=fake();delete l.detectFlashSize;
+    await assert.rejects(flashVerified({...opts(l),mode,installConfirmed:true,recoveryConfirmed:true}),/capacity could not/);
+    l.detectFlashSize=async()=>{throw new Error('flash ID disconnected');};
+    await assert.rejects(flashVerified({...opts(l),mode,installConfirmed:true,recoveryConfirmed:true}),/flash ID disconnected/);
+    assert.equal(l.reads.length,0);assert.equal(l.writes.length,0);
+  }
+});
+test('capacity is rechecked on a fresh attempt and a same-version no-op',async()=>{
+  const l=fake();await flashVerified(opts(l));assert.equal((await flashVerified(opts(l))).status,'up-to-date');
+  assert.equal(l.capacityChecks,2);assert.equal(l.writes.length,1);
+});
+test('checksummed bundles cannot move a partition, corrupt its embedded digest or append an entry',async()=>{
+  for(const mutate of [p=>p[4]^=1,p=>p[0x48]^=1,p=>p[0xd0]^=1,p=>p[0xe0]=0xaa]){
+    const c=structuredClone(catalog), changed=images.map(f=>({...f,data:f.data.slice()}));
+    mutate(changed[1].data);c.files[1].sha256=createHash('sha256').update(changed[1].data).digest('hex');
+    for(const mode of ['update','install','recovery']){
+      const l=fake();
+      await assert.rejects(flashVerified({...opts(l),catalog:c,images:changed,mode,installConfirmed:true,recoveryConfirmed:true}),/unsupported partition layout/);
+      assert.equal(l.capacityChecks,0);assert.equal(l.reads.length,0);assert.equal(l.writes.length,0);
+    }
+  }
+});
+
+test('every preserved selectable catalog recognizes 0.10.11 and blocks its downgrade',async()=>{
+  for(const version of ['0.10.1','0.10.7']){
+    const previous=JSON.parse(await readFile(new URL('../public/firmware/'+version+'/catalog.json',import.meta.url)));
+    const previousImages=await Promise.all(previous.files.map(file=>verifiedDownload(file,base,localFetch)));
+    const loader=fake({app:images[3].data});
+    await assert.rejects(flashVerified({...opts(loader),catalog:previous,images:previousImages}),/Downgrade blocked.*0.10.11/);
+    assert.equal(loader.writes.length,0);
+  }
 });

@@ -61,6 +61,17 @@ public:
   uint64_t nowUs=0, resultUs=0, burstStartUs=0, burstEndUs=0;
   uint32_t quietMs() const {return uint32_t((nowUs-quietSince)/1000);}
   uint32_t rearmMs() const {return nowUs-quietSince>=QUIET_US?0:uint32_t((QUIET_US-(nowUs-quietSince)+999)/1000);}
+  bool historyCheckpointIdle() const {
+    if(phase==Phase::Paused)return true;
+    if(phase!=Phase::Ready || signalFault || peakPending)return false;
+    // Ready can contain the first strong cycles of a new, unconfirmed pull.
+    // Weak background cycles do not indefinitely starve an idle history save.
+    for(unsigned i=0;i<std::min<uint32_t>(3,nPeriods);++i)if(amplitudes[i]>=minMark)return false;
+    const uint64_t edge=std::max(rise,fall);
+    const float swing=high?extreme-signalLow:signalHigh-extreme;
+    const uint32_t startPeriod=uint32_t(60000000.0f/MIN_LAUNCH_RPM);
+    return !edge || nowUs-edge>=startPeriod || swing<minMark;
+  }
   void setEnabled(bool value) {
     enabled=value; dataLoss(); ended=End::Cancel;
     phase=value?Phase::Settling:Phase::Paused;
@@ -274,7 +285,9 @@ private:
       // A one-turn surge must not make ordinary following turns look like
       // rewind. End detection still uses the established three-turn speed.
       const float peakPeriod=60000000.0f/sustainedPeakRpm;
-      if(period>peakPeriod*1.45f) {
+      // Subthreshold marks cannot establish slowdown any more than they can
+      // establish a peak. Otherwise two weak turns discard a later valid peak.
+      if(signalContrast>=minMark && period>peakPeriod*1.45f) {
         if(!slowCount)slowStartUs=stamp-period;
         slowCount++;
       } else {slowCount=0;slowStartUs=0;}

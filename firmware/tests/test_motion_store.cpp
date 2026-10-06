@@ -10,7 +10,9 @@ static LaunchMotion::Trace trace(uint32_t number,float rpm) {
 int main() {
   LaunchMotion::Trace reference;MotionStore store;assert(store.begin(reference) && !reference.valid());
   auto first=trace(10,5000),second=trace(11,5500);assert(store.save(first) && store.save(second));
+  const auto beforeRead=Preferences::data;
   LaunchMotion::Trace loaded;MotionStore reboot;assert(reboot.begin(loaded) && loaded.number==11 && loaded.rpm==5500);
+  assert(Preferences::data==beforeRead); // loading retained captures must not rewrite/erase either slot
   assert(loaded.fused && loaded.startLevel.valid() && loaded.endLevel.valid() && loaded.startLevel.degrees==6 && loaded.endLevel.down==-.5f);
   Preferences::data["ll-motionref0"][100]^=1;
   LaunchMotion::Trace fallback;MotionStore recovery;assert(recovery.begin(fallback) && fallback.number==10);

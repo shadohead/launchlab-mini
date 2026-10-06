@@ -1,0 +1,141 @@
+{
+  "release": "0.10.11-sticks3-qre1113-lowcpu",
+  "runtime_version": "0.10.11-sticks3-lowcpu",
+  "board": "M5StickS3 K150",
+  "sensor": "SparkFun QRE1113 analog",
+  "status": "installed-user-checked-release-candidate",
+  "published": false,
+  "binary": "LaunchLabMini.ino.bin",
+  "application_offset": "0x10000",
+  "binary_bytes": 729264,
+  "sha256": "4a49e2fc663efd89dca3ed527d1ba493c2cd5c39e03717fed2be263906751aaf",
+  "cpu_policy": {
+    "default_mhz": 80,
+    "peripheral_hz": 80000000,
+    "fallback_mhz": 240,
+    "apply": "Once before M5 initialization/acquisition tasks, including restart/shake wake; failed clock or APB readback falls back to 240",
+    "supported_test_builds_mhz": [
+      80,
+      160,
+      240
+    ],
+    "160_mhz_tested": false
+  },
+  "unchanged": [
+    "50 kS/s optical rate and sample-count RPM timebase",
+    "Selected RPM estimator, optical thresholds and launch validity rules",
+    "IMU configuration, measured-time VQF, recap rate and quality rejection",
+    "Brightness setting, battery standby/shake threshold, USB keep-awake",
+    "History schema and power-log schema"
+  ],
+  "validation": {
+    "build": "passed",
+    "software": "20 native suites plus five production harnesses passed",
+    "flash": "App-only/hash verified; 20 KB NVS byte-identical before boot",
+    "bench": "Three labeled synthetic replays each at 240 and 80 MHz; no ADC overflow/read errors/invalid frames/lost events; near 100 Hz paired IMU at both; one IMU gap/reset during each trial",
+    "performance_80": {
+      "adc_max_batch_us": 1548,
+      "adc_frame_budget_us": 5120,
+      "synthetic_max_draw_us": 33230,
+      "recap_frame_budget_us": 50000,
+      "physical_max_draw_us": 34432,
+      "optical_processing_percent_typical": 21.11
+    },
+    "physical": "User confirmed the requested normal pulls and replays looked good; latest exported tilt trace was valid and fused. Qualitative acceptance, not calibrated RPM/angle measurement.",
+    "history": "App-only installation preserved NVS before boot. Saved RPM selector, brightness and sleep settings retained; subsequent launch records saved with no pending records or save errors.",
+    "limits": "No absolute RPM calibration, current measurement, battery endurance comparison or physical 80 MHz battery shake-wake cycle yet; real post-pull history writes/stalls still create rejected IMU gaps (observed gaps10, max49.85ms, save267.5ms). Latest measured pull remained valid; do not claim gap-free IMU.",
+    "public_export": "Production source matches the installed frozen source. Exported source rebuild passed with pinned dependencies; host build paths alter the rebuilt application identity, so the installer uses the exact installed archive. Public replay tests use synthetic serialization rather than private practice recordings.",
+    "updater": "51 software tests passed; exact frozen bundles built by the site; all 1192 archive/artifact checksums passed. Physical Web Serial transfer remains unverified."
+  },
+  "benchmarks": {
+    "240": {
+      "scope": "live ADC/IMU during three labeled synthetic 3D replays; no physical RPM/current measurement",
+      "cpu_mhz": [
+        240.0
+      ],
+      "delivered_sps": {
+        "min": 49997.0,
+        "median": 50001.5,
+        "max": 50012.0
+      },
+      "processing_pct": {
+        "min": 7.47,
+        "median": 7.68,
+        "max": 8.1
+      },
+      "max_batch_us": {
+        "min": 609.0,
+        "median": 641.0,
+        "max": 641.0
+      },
+      "max_draw_us": {
+        "min": 20037.0,
+        "median": 23908.0,
+        "max": 23908.0
+      },
+      "max_poll_us": {
+        "min": 2102.0,
+        "median": 2134.0,
+        "max": 2134.0
+      },
+      "max_fusion_us": {
+        "min": 1933.0,
+        "median": 1933.0,
+        "max": 1933.0
+      },
+      "overflow_events_delta": 0.0,
+      "read_errors_delta": 0.0,
+      "invalid_frames_delta": 0.0,
+      "lost_events_delta": 0.0,
+      "gaps_delta": 1.0,
+      "resets_delta": 1.0,
+      "history_generation_delta": 0.0,
+      "paired_imu_hz_approx": 99.2929469273743
+    },
+    "80": {
+      "scope": "live ADC/IMU during three labeled synthetic 3D replays; no physical RPM/current measurement",
+      "cpu_mhz": [
+        80.0
+      ],
+      "delivered_sps": {
+        "min": 49984.0,
+        "median": 50000.0,
+        "max": 50023.0
+      },
+      "processing_pct": {
+        "min": 20.96,
+        "median": 21.11,
+        "max": 22.84
+      },
+      "max_batch_us": {
+        "min": 1543.0,
+        "median": 1548.0,
+        "max": 1548.0
+      },
+      "max_draw_us": {
+        "min": 25655.0,
+        "median": 33230.0,
+        "max": 33230.0
+      },
+      "max_poll_us": {
+        "min": 3689.0,
+        "median": 3984.0,
+        "max": 3984.0
+      },
+      "max_fusion_us": {
+        "min": 3227.0,
+        "median": 3512.0,
+        "max": 3512.0
+      },
+      "overflow_events_delta": 0.0,
+      "read_errors_delta": 0.0,
+      "invalid_frames_delta": 0.0,
+      "lost_events_delta": 0.0,
+      "gaps_delta": 1.0,
+      "resets_delta": 1.0,
+      "history_generation_delta": 0.0,
+      "paired_imu_hz_approx": 99.40089046449307
+    }
+  },
+  "battery": "Lower CPU clock only; actual whole-device energy/runtime gain unmeasured. Existing power records include CPU MHz for next-session review."
+}

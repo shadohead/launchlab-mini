@@ -4,7 +4,9 @@
 
 Built around **M5StickS3 K150**, with separate printed mounts for the **small analog QRE1113** or **older TCRT5000 / LM393** sensor. The current full-featured firmware targets QRE1113; the old TCRT build is preserved separately. The M5 keeps its factory case, display, controller and battery; you do not need a phone to view your results. The mount is designed to be removable. Check the supplied launcher interface and printed fit before using it on your launcher.
 
-**[USB firmware updater](https://shadohead.github.io/launchlab-mini/) · [Firmware & print releases](https://github.com/shadohead/launchlab-mini/releases) · [Parts list & Amazon links](#parts-list--build-your-own) · [Build & wiring](docs/BUILD.md)**
+**[USB firmware updater](https://shadohead.github.io/launchlab-mini/) · [Recovery & M5Stack reinstall](docs/RECOVERY.md) · [Firmware & print releases](https://github.com/shadohead/launchlab-mini/releases) · [Parts list & Amazon links](#parts-list--build-your-own) · [Build & wiring](docs/BUILD.md)**
+
+**Prototype validation:** **0.10.11** is the installed, user-checked prototype revision: the app hash/NVS preservation, normal pulls and visible replays were checked. It includes recap/storage repairs and computer USB keep-awake, with an 80 MHz default and 240 MHz startup fallback. Battery endurance/current comparison, absolute RPM/angle calibration, a battery shake-wake cycle at 80 MHz, physical browser first install/rollback and stock recovery remain unverified. Post-pull flash writes still cause rejected IMU gaps. These results do not establish buyer/pilot qualification.
 
 ## Parts list — build your own
 
@@ -45,15 +47,15 @@ Wire **AO/OUT → G1 / GPIO1**, **VCC → 3V3 / 3V3_L2**, **GND → GND**. DO is
 ![LaunchLab Mini M5StickS3 mount, rendered from the published CAD](site/public/images/m5-mount.png)
 
 
-The updater defaults to **0.10.7**. It checks the complete known installed application before an app-only update, blocks downgrades and unknown/incomplete images, and skips writing an identical version. **Repair / rollback** requires an explicit target/backup confirmation; both app-only paths require the matching partition layout and boot selection. The previous 0.10.1 binary is preserved. A physical browser transfer, four-image 0.10.7 install and rollback remain unverified. [Update and recovery details](docs/UPDATER.md).
+The prepared updater defaults to **0.10.11**. It checks the complete known installed application before an app-only update, blocks downgrades and unknown/incomplete images, and skips writing an identical version. **Repair / rollback** requires an explicit target/backup confirmation; both app-only paths require the matching partition layout and boot selection. All modes check the detected ESP32-S3 chip and 8 MB flash capacity. The previous 0.10.7 and 0.10.1 binaries are preserved. Physical browser transfer, four-image installation of this revision, stock recovery and rollback remain unverified. [Update details](docs/UPDATER.md) · [Recovery and vendor reinstall](docs/RECOVERY.md).
 
-Current QRE firmware: **0.10.7**. Old TCRT firmware: **0.2.0**. Preferred separate M5 carrier: **v0.68**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
+Current QRE firmware: **0.10.11**. Old TCRT firmware: **0.2.0**. Preferred separate M5 carrier: **v0.68**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
 
 **[Choose your sensor and see every revision](docs/HARDWARE_VERSIONS.md)** — includes the preferred v0.68 M5 carrier, earlier v0.41–v0.50 models, historical v0.19 TCRT, and current QRE files.
 
 ## What it does
 
-The current QRE firmware is **0.10.7**. It adds power diagnostics, selectable brightness and clearer page hints to the 0.10.1 practice features below. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
+The current QRE revision is **0.10.11**, running at 80 MHz with unchanged 50 kS/s optical sampling. It includes power diagnostics, selectable brightness, clearer page hints, recap/storage repairs and computer USB keep-awake. Normal pulls/replays were user-checked; battery savings remain unmeasured. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
 
 | Feature | What you see or do |
 | --- | --- |
@@ -62,8 +64,8 @@ The current QRE firmware is **0.10.7**. It adds power diagnostics, selectable br
 | Launch recap | After a pull, see peak RPM, a clearer Start-to-End rotation replay, and frozen Start/End tilt circles. Press A to recall the latest recap. |
 | Launch history | Review recent pulls and the current session's pull count, average, and best RPM. Retains up to 128 launches and 24 sessions on the device. |
 | Pull and session trends | Compare individual pulls, a trailing five-pull average, and session averages to follow your practice consistency. |
-| Motion & Recreate | Save a chosen pull as a reference, compare its relative rotation with a later pull, and inspect RPM, turn difference, rotation-speed traces and pull duration. |
-| Battery and auto-off | Check approximate charge, voltage and charging status. Shake-to-wake sleep after a configurable 1–10 minutes (3-minute default) without a measured pull, button use or interactive USB command. |
+| Tournament mode | Hold A on main to toggle; B cycles Recording Only/RPM. |
+| Battery and auto-off | Check percentage, voltage and charging status. Shake-to-wake sleep after a configurable 1–10 minutes (3-minute default) without activity; a detected USB computer keeps it awake. |
 | Browser firmware updates | Install over USB in desktop Chrome or Edge. Updates write only the application after checking the partition layout. |
 
 RPM is **launcher-shaft speed**, not a direct measurement of the Beyblade's release RPM or its spin in the stadium. Motion replay shows rotation and gravity-relative tilt; it does not measure travel distance or absolute compass heading. The live level references the screen plane until the mounting orientation is calibrated.
@@ -92,7 +94,7 @@ These are saved device-framebuffer screenshots, not concept UI. Screens marked *
 <tr><td>See variation across recent pulls.</td><td>Compare averages across sessions.</td><td>Check power before practice.</td></tr>
 </table>
 
-From the live screen, **B opens history** and **A recalls the last recap**. In history, A cycles Recent → Pulls → Sessions → Battery → Motion → Recreate → Settings. Hold B to browse older history windows; hold A on main toggles tournament mode (B cycles Recording Only/RPM). Hold A in history starts a new session except on Settings or Motion/Recreate. Settings: hold B selects Sleep/RPM/Brightness and hold A changes/saves it. Motion and Recreate have their own reference-selection controls; see the [firmware guide](firmware/LaunchLabMini/README.md).
+From the live screen, **B opens history** and **A recalls the last recap**. In history, A cycles Recent → Pulls → Sessions → Battery → Settings; B returns to main. Hold B to browse older history windows; hold A on main toggles tournament mode (B cycles Recording Only/RPM). Hold A in history starts a new session except on Settings. Settings: hold B selects Sleep/RPM/Brightness and hold A changes/saves it. See the [firmware guide](firmware/LaunchLabMini/README.md).
 
 ## Exploded assemblies
 
@@ -212,7 +214,7 @@ The CAD includes original launcher attachment geometry derived from Migbello's B
 
 Install Arduino CLI, then run `bash scripts/build-firmware.sh`. It installs the pinned ESP32 3.3.0, M5Unified 0.2.23 and M5GFX 0.2.30 dependencies into a project-local cache and compiles the 8 MB flash / OPI PSRAM target. Source builds may differ byte-for-byte from the archived binary across hosts/toolchains. The published binary is the exact saved release, with recorded checksum.
 
-Run `bash scripts/test-firmware.sh` for 11 native C++ suites with address/undefined sanitizers. Website development requires Node 24+:
+Run `bash scripts/test-firmware.sh` for 20 native C++ suites with address/undefined sanitizers and five production harnesses. Website development requires Node 24+:
 
 ```sh
 cd site

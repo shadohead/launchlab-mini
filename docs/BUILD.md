@@ -51,15 +51,15 @@ Printed hook strength, wire retention and launcher clearance remain unverified.
 
 ## Firmware and controls
 
-Use the [USB updater](https://shadohead.github.io/launchlab-mini/) in desktop Chrome or Edge. A USB data cable is required. Hold the side Power/Reset button about two seconds to enter download mode, close serial monitors, then connect through the page. Firmware installation begins only after clicking Connect & update/install and choosing a device.
+Use the [USB updater](https://shadohead.github.io/launchlab-mini/) in desktop Chrome or Edge. A USB data cable is required. Connect USB, then hold the side Power/Reset button until the internal green LED flashes. Close serial monitors, then connect through the page. Firmware installation begins only after clicking Connect & update/install and choosing a device. See [update instructions](UPDATER.md) for current firmware release gates; this prototype has the limits recorded below.
 
 Update checks for the expected partition table and writes only `0x10000`. First install replaces bootloader `0x0`, partitions `0x8000`, OTA selection `0xe000`, and application `0x10000`, without erase-all. Back up factory firmware before first install if you need to restore it. A full 8 MB backup contains personal settings/data and should stay private.
 
-Short A recalls the latest recap. Short B opens history. In history, A cycles views. Hold A for one second to start a new session on the next accepted pull. Motion/Recreate pages have reference selection controls described in [the firmware guide](../firmware/LaunchLabMini/README.md). Automatic power-off occurs after ten minutes without a measured pull, button use or interactive USB command.
+Short A recalls the latest recap. Short B opens history. In history, A cycles Recent/Pulls/Sessions/Battery/Settings and B returns to main. Hold A for one second to start a new session on the next accepted pull, except in Settings; see [the firmware guide](../firmware/LaunchLabMini/README.md). Automatic power-off uses a 3-minute default with saved 1–10 minute choices; measured pulls, buttons and interactive USB commands refresh it. A detected USB computer keeps it awake, including with no serial reader. Battery shake-wake at 80 MHz remains unverified.
 
-Firmware 0.10.1 defaults to the peak of three-consecutive-turn elapsed-time
+Current 0.10.11 and the preserved 0.10.7/0.10.1 default to the peak of three-consecutive-turn elapsed-time
 averages. Settings offers a persistent 1-turn peak alternative. On Settings,
-hold B selects Sleep/RPM; hold A changes/saves the selected row. Changing the
+hold B selects Sleep/RPM/Brightness; hold A changes/saves the selected row. Changing the
 metric starts the next accepted pull in a new session. The default sleep is
 3 minutes; saved 1–10 minute choices remain. Hold A on main toggles tournament;
 B cycles Recording Only/RPM. Auto-sleep restores the selected mode/view.
@@ -71,4 +71,8 @@ an erase-all. First install replaces the factory app/layout; back up first.
 
 ## Troubleshooting
 
-If no USB port appears, try a known data cable, re-enter download mode, and close apps using the serial port. If an update reports a partition mismatch, do not bypass the check: back up the device and use First install. If flashing fails, remain in download mode and retry the same install mode. A successful message requires the flasher's device MD5 verification. Press Power/Reset if the verified firmware does not restart automatically.
+If no USB port appears, try a known data cable, re-enter download mode, and close apps using the serial port. A partition or boot-selection mismatch means stop and back up; do not use First install to bypass it. After an interrupted app-only update, deliberately select Repair / rollback for the intended version. An interrupted First install may also need boot/layout recovery. Follow the [recovery and stock reinstall guide](RECOVERY.md) for the correct route. A successful message requires device MD5 verification. Press Power/Reset if verified firmware does not restart automatically.
+
+## Current qualification
+
+**0.10.11** is the installed, user-checked prototype revision: the app hash/NVS preservation, normal pulls and visible replays were checked. It includes recap/storage repairs and computer USB keep-awake, with an 80 MHz default and 240 MHz startup fallback. Battery endurance/current comparison, absolute RPM/angle calibration, a battery shake-wake cycle at 80 MHz, physical browser first install/rollback and stock recovery remain unverified. Post-pull flash writes still cause rejected IMU gaps. These results do not establish buyer/pilot qualification.

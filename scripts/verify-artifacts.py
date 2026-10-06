@@ -52,6 +52,15 @@ assert (root/'site/public'/catalog['files'][3]['path']).read_bytes()==(current/'
 assert catalog['runtime']==json.loads((current/'manifest.json').read_text())['runtime_version']
 for path in (root/'firmware/LaunchLabMini').rglob('*'):
     if path.is_file():
+        # Working instructions can be corrected without changing a frozen
+        # release. Keep exact equality for every production source file.
+        if path == root/'firmware/LaunchLabMini/README.md':
+            assert (current/'source/README.md').is_file()
+            continue
         assert path.read_bytes()==(current/'source'/path.relative_to(root/'firmware/LaunchLabMini')).read_bytes(),path
+for path in (current/'source').rglob('*'):
+    if path.is_file() and path != current/'source/README.md':
+        working=root/'firmware/LaunchLabMini'/path.relative_to(current/'source')
+        assert working.is_file() and working.read_bytes()==path.read_bytes(),working
 assert (root/'firmware/LaunchLabRpm/analog_tachometer.h').read_bytes()==(current/'source/analog_tachometer.h').read_bytes()
 print(f"PASS: {count} checksums; all 3MF archives intact; selected {catalog['version']} app/source and version list match frozen firmware")

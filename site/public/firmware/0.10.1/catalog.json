@@ -249,6 +249,24 @@
       "md5": "32dd0d33d63cd4af305284415caba80e",
       "elfSha256": "8f8b73f88d74a2e70fbaaa443fed5959d8898a9d657193c4394a94ba24c4570c",
       "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.10",
+      "runtime": "0.10.10-sticks3-usbawake",
+      "size": 729104,
+      "sha256": "9d665b703a1af9456bf2c96c03681df4a248565af7a95271c913de8360d6209f",
+      "md5": "d68c02c1c561bada9533f66362db23a9",
+      "elfSha256": "7ebba0346a9613abdd53e99e3fe9fbe1bbbb435eebe670c25a66162c3b53393d",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.11",
+      "runtime": "0.10.11-sticks3-lowcpu",
+      "size": 729264,
+      "sha256": "4a49e2fc663efd89dca3ed527d1ba493c2cd5c39e03717fed2be263906751aaf",
+      "md5": "2b0d5cbbec81b2122563f1f4c4196606",
+      "elfSha256": "93a1af41c5300c87c39a485a15ddff84ee8a938d78490ed6785ea554a0eb1f95",
+      "sensor": "qre1113"
     }
   ]
 }
