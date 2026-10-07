@@ -27,9 +27,22 @@ test('double clicks cannot start another chooser or overlapping write',async()=>
   choose({});assert.equal((await first).status,'verified');assert.equal(s.loader.writes.length,1);assert.equal(s.installer.busy,false);
 });
 test('connection failure closes transport and allows a fresh retry',async()=>{
-  const l=fake();let fail=true;l.main=async()=>{if(fail)throw new Error('connection lost');};const s=setup({loader:l});
-  assert.equal((await s.installer.run({catalog,mode:'update'})).status,'error');assert.equal(s.state.closes,1);assert.equal(l.writes.length,0);
+  const l=fake();let fail=true;const resets=[];l.main=async mode=>{resets.push(mode);if(fail)throw new Error('connection lost');};const s=setup({loader:l});
+  const failed=await s.installer.run({catalog,mode:'update'});
+  assert.equal(failed.status,'error');assert.equal(failed.phase,'connect');assert.equal(failed.writeStarted,false);
+  assert.match(failed.advice,/green LED flashes/);assert.equal(s.state.closes,1);assert.equal(l.writes.length,0);
   fail=false;assert.equal((await s.installer.run({catalog,mode:'update'})).status,'verified');assert.equal(s.state.closes,2);
+  assert.deepEqual(resets,['default_reset','default_reset']);
+});
+test('all install modes reset into the bootloader before inspecting or writing flash',async()=>{
+  for(const mode of ['update','install','recovery']){
+    const l=fake();let connected=false;
+    l.main=async reset=>{assert.equal(reset,'default_reset');assert.equal(l.writes.length,0);connected=true;};
+    const read=l.readFlash;l.readFlash=async(...args)=>{assert.equal(connected,true);return read.apply(l,args);};
+    const s=setup({loader:l});
+    assert.equal((await s.installer.run({catalog,mode,installConfirmed:true,recoveryConfirmed:true})).status,'verified');
+    assert.equal(s.state.closes,1);
+  }
 });
 test('write interruption is never reported as success; repair retry closes each connection',async()=>{
   const l=fake();const write=l.writeFlash;let fail=true;

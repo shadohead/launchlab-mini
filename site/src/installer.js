@@ -10,7 +10,8 @@ export function recoveryAdvice({phase, mode, code, writeStarted}) {
   if (code==='device') return 'No flash was written by this attempt. Check the printed model/SKU: this bundle requires StickS3 K150 with 8 MB flash. Chip and USB identity alone cannot prove the board model. Do not bypass this check.';
   if (code==='bundle-layout') return 'No flash was written by this attempt. The downloaded bundle is outside the reviewed LaunchLab layout. Save the installation log and ask for support; do not retry through another mode.';
   if (code==='application') return 'No flash was written by this attempt. If this is an interrupted LaunchLab installation, deliberately choose Repair / rollback after backup. For M5Stack software, use the vendor reinstall guide below.';
-  if (phase==='connect' || phase==='preflight') return 'No flash was written by this attempt. Close other serial tools, check the data cable and connect USB before holding the side reset button until the green LED flashes. Reconnect and repeat the checks. Use the recovery guide below if the device stays unavailable.';
+  if (phase==='connect') return 'No flash was written by this attempt. Automatic download-mode connection failed. Close other serial tools and use a USB data cable. With USB connected, hold the side Power/Reset button until the green LED flashes, then release it. Retry and select the download-mode USB device, which may appear as a new port. Use the recovery guide below if it stays unavailable.';
+  if (phase==='preflight') return 'No flash was written by this attempt. Close other serial tools, check the data cable and connect USB before holding the side reset button until the green LED flashes. Reconnect and repeat the checks. Use the recovery guide below if the device stays unavailable.';
   return 'No flash was written by this attempt. Correct the reported problem before trying again. Keep important backups private.';
 }
 export function createInstaller({baseUrl, requestPort, openConnection, md5, fetchFn=fetch, onBusy=()=>{}, onStatus=()=>{}, onLog=()=>{}, onProgress=()=>{}, onInspect=()=>{}, onDevice=()=>{}, onRecovery=()=>{}}) {
@@ -37,7 +38,10 @@ export function createInstaller({baseUrl, requestPort, openConnection, md5, fetc
         onStatus('Connecting and checking the installed application…');
         phase='connect';
         connection=await openConnection(port);
-        await connection.loader.main('no_reset');
+        // Let esptool select the native USB-Serial/JTAG reset for StickS3.
+        // Skipping reset only connects when the user has already entered ROM download mode.
+        onLog('Requesting automatic download mode. No flash has been written.');
+        await connection.loader.main('default_reset');
         phase='preflight';
         const totalBytes=mode==='install'?images.reduce((sum,f)=>sum+f.size,0):images[3].size;
         const previous=[];

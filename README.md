@@ -193,7 +193,7 @@ Choose **QRE1113 or old TCRT5000** in the [version guide](docs/HARDWARE_VERSIONS
 
 1. Download the [complete v0.40 print package](hardware/LaunchLab_v040_ALL_ITEMS_PRINT_package.zip) or open [the combined 3MF](hardware/LaunchLab_v040_ALL_ITEMS_PRINT/bambu/LaunchLab_v040_P1S_PLA_ALL_ITEMS_ONE_PLATE.3mf) in Bambu Studio.
 2. Assemble with an intact M5StickS3 K150 and analog QRE1113. Read [BUILD.md](docs/BUILD.md) for wiring, fasteners and print settings.
-3. Open the [updater](https://shadohead.github.io/launchlab-mini/) in desktop Chrome or Edge, choose Update or First install, enter download mode, and select the device.
+3. Open the [updater](https://shadohead.github.io/launchlab-mini/) in desktop Chrome or Edge, choose Update or First install, connect USB with the M5 powered on, and select the device. The updater attempts download mode automatically; follow its manual reset steps if connection fails.
 
 Update writes only the application at `0x10000` after checking the installed partition table. First install replaces the factory firmware and partition table and requires an explicit checkbox. Neither flow erases all flash. Every downloaded image is SHA-256 checked and writes use esptool's device MD5 verification. Chip identity alone cannot distinguish every ESP32-S3 board, so confirm your device is specifically an M5StickS3 K150.
 
