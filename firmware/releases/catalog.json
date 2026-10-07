@@ -472,5 +472,34 @@
       "session_boundary": "on boot and setting change, next accepted pull",
       "absolute_calibration": false
     }
+  },
+  {
+    "release": "0.10.14-sticks3-qre1113-cleanui",
+    "runtime_version": "0.10.14-sticks3-cleanui",
+    "board": "M5StickS3 K150",
+    "development_sensor": "QRE1113 setup identified by the user; preferred supported board SparkFun ROB-09453 analog",
+    "status": "published-user-checked-prototype",
+    "published": true,
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 730144,
+    "sha256": "428543c2a012f5ee865999e62494e1608b77a9091a62b253fae9fb1e87ad2b25"
+  },
+  {
+    "release": "0.10.11-sticks3-qre1113-lowcpu",
+    "runtime_version": "0.10.11-sticks3-lowcpu",
+    "board": "M5StickS3 K150",
+    "status": "published-user-checked-prototype",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 729264,
+    "sha256": "4a49e2fc663efd89dca3ed527d1ba493c2cd5c39e03717fed2be263906751aaf"
+  },
+  {
+    "release": "0.10.7-sticks3-qre1113-navigation",
+    "runtime_version": "0.10.7-sticks3-navigation",
+    "board": "M5StickS3 K150",
+    "status": "installed-runtime-verified",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 735456,
+    "sha256": "54fe847cc82ac11b8f50669c424498267e079dfe967020271763e24ba5c808d2"
   }
 ]

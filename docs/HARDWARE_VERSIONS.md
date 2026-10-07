@@ -6,10 +6,10 @@ LaunchLab Mini is a removable Beyblade X launcher-shaft RPM meter. **QRE1113** i
 
 | Sensor | Mount | Firmware | Status |
 | --- | --- | --- | --- |
-| Small analog QRE1113 | v0.33 sensor geometry / v0.40 complete six-piece plate | [0.10.11 QRE firmware](../firmware/releases/0.10.11-sticks3-qre1113-lowcpu/README.md) | User-checked prototype: 80 MHz, latest-launch tilt recap, history, trends and battery; endurance and recovery unverified. |
+| Small analog QRE1113 | v0.33 sensor geometry / v0.40 complete six-piece plate | [0.10.14 QRE firmware](../firmware/releases/0.10.14-sticks3-qre1113-cleanui/README.md) | User-checked prototype: 80 MHz, latest-launch tilt recap, history, trends and battery; endurance and recovery unverified. |
 | Old TCRT5000 / LM393 analog AO | Latest v0.43 separate sensor attachment; v0.19 historical integrated mount | [0.2.0 TCRT firmware](https://github.com/shadohead/launchlab-mini/releases/tag/firmware-tcrt5000-v0.2.0) | Frozen earlier RPM acquisition build; three confirmed pulls in the original trial. Not the current QRE UI. |
 
-The web updater selects **QRE 0.10.11**, with **0.10.7** and **0.10.1** retained for deliberate rollback. [Update and qualification details](UPDATER.md). Do not use it to replace the old TCRT firmware. Old firmware is an application-only restore at `0x10000` on an M5StickS3 already provisioned with the LaunchLab partition layout. Its exact binary retains runtime string `0.2.0-sticks3-acquisition`. See [TCRT wiring and restore guide](TCRT5000.md).
+The web updater selects **QRE 0.10.14**, with **0.10.11**, **0.10.7** and **0.10.1** retained for deliberate rollback. [Update and qualification details](UPDATER.md). Do not use it to replace the old TCRT firmware. Old firmware is an application-only restore at `0x10000` on an M5StickS3 already provisioned with the LaunchLab partition layout. Its exact binary retains runtime string `0.2.0-sticks3-acquisition`. See [TCRT wiring and restore guide](TCRT5000.md).
 
 ## Current downloads
 

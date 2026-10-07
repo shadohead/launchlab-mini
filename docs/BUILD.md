@@ -21,6 +21,8 @@ For the **old TCRT5000 / LM393 module**, use [TCRT5000.md](TCRT5000.md). [Hardwa
 | VCC | 3V3 / 3V3_L2 |
 | GND | GND |
 
+A seller's digital/analog label alone does not identify a compatible board. Capacitor-timing QRE boards require an active GPIO measurement sequence that this firmware does not implement. The MusRock B0FR9DBW4K listing contains conflicting output descriptions; its circuit and RPM accuracy remain unqualified.
+
 Do not use GPIO0 for analog sampling. Do not use Grove red as a 3.3 V supply; it supplies 5 V. The firmware defaults to GPIO1 and does not automatically change the sensor supply or pin selection. Confirm your breakout's actual pin order and keep its output within 3.3 V logic limits.
 
 ## Printing and assembly
@@ -57,7 +59,7 @@ Update checks for the expected partition table and writes only `0x10000`. First 
 
 Short A recalls the latest recap. Short B opens history. In history, A cycles Recent/Pulls/Sessions/Battery/Settings and B returns to main. Hold A for one second to start a new session on the next accepted pull, except in Settings; see [the firmware guide](../firmware/LaunchLabMini/README.md). Automatic power-off uses a 3-minute default with saved 1–10 minute choices; measured pulls, buttons and interactive USB commands refresh it. A detected USB computer keeps it awake, including with no serial reader. Battery shake-wake at 80 MHz remains unverified.
 
-Current 0.10.11 and the preserved 0.10.7/0.10.1 default to the peak of three-consecutive-turn elapsed-time
+Current 0.10.14 and the preserved 0.10.11/0.10.7/0.10.1 default to the peak of three-consecutive-turn elapsed-time
 averages. Settings offers a persistent 1-turn peak alternative. On Settings,
 hold B selects Sleep/RPM/Brightness; hold A changes/saves the selected row. Changing the
 metric starts the next accepted pull in a new session. The default sleep is
@@ -75,4 +77,4 @@ If no USB port appears, try a known data cable, re-enter download mode, and clos
 
 ## Current qualification
 
-**0.10.11** is the installed, user-checked prototype revision: the app hash/NVS preservation, normal pulls and visible replays were checked. It includes recap/storage repairs and computer USB keep-awake, with an 80 MHz default and 240 MHz startup fallback. Battery endurance/current comparison, absolute RPM/angle calibration, a battery shake-wake cycle at 80 MHz, physical browser first install/rollback and stock recovery remain unverified. Post-pull flash writes still cause rejected IMU gaps. These results do not establish buyer/pilot qualification.
+**0.10.14** is the user-checked prototype revision. Three consecutive QRE1113 pulls each produced valid tilt and prompt recaps, appearing 202–216 ms after the detected end. It includes IMU startup recovery, quieter checkpoint scheduling, shorter valid capture context and focused screen text. The 80 MHz default, 240 MHz startup fallback and 50 kS/s optical rate are unchanged. Battery endurance, long-session reliability, absolute RPM/angle calibration, MusRock digital-output behavior, physical browser first install/rollback and stock recovery remain separate checks.

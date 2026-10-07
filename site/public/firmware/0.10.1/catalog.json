@@ -267,6 +267,33 @@
       "md5": "2b0d5cbbec81b2122563f1f4c4196606",
       "elfSha256": "93a1af41c5300c87c39a485a15ddff84ee8a938d78490ed6785ea554a0eb1f95",
       "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.12",
+      "runtime": "0.10.12-sticks3-boutrecap",
+      "size": 729696,
+      "sha256": "b461fcade85f52dbff196a54df363d8b60b64c6d07b04f959468be7012369bba",
+      "md5": "1f5e79367e917b42c75373b383bafd2a",
+      "elfSha256": "b0a409472225af029313178d057eb87efc403fb46b17d1c72e697d0ca16fafa4",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.13",
+      "runtime": "0.10.13-sticks3-imurecover",
+      "size": 730368,
+      "sha256": "80c513738516a346eb4ccda93da41e0b1ea868cad016ece23f091772e6db81f3",
+      "md5": "1d3aa5cb5cb97ff5a4cecd24674c14e3",
+      "elfSha256": "666a890c314e51cb19769a87335896fdf6732428a20457138349dc847c868c11",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.14",
+      "runtime": "0.10.14-sticks3-cleanui",
+      "size": 730144,
+      "sha256": "428543c2a012f5ee865999e62494e1608b77a9091a62b253fae9fb1e87ad2b25",
+      "md5": "afbc1197bd7c6bb8054058673444e7c7",
+      "elfSha256": "6b459a52370d191e71a366f95bde6e0e2f064e5168ff59f9bc9f7476d7e693fb",
+      "sensor": "qre1113"
     }
   ]
 }
