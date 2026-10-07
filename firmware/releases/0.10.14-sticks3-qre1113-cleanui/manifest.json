@@ -85,7 +85,6 @@
     "LaunchLabMini.ino.elf": "6b459a52370d191e71a366f95bde6e0e2f064e5168ff59f9bc9f7476d7e693fb",
     "LaunchLabMini.ino.partitions.bin": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
     "README.md": "9bd7748254ce5bdb26d6b59fccbb15d7b563d8b9f56fa107a934049da3cdeb03",
-    "SHA256SUMS": "5a72e35d22a51218ac495e386a98c54fd98ffc50ad4ec657fe752325f29ec4f6",
     "boot_app0.bin": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
     "test-firmware.sh": "46d6a9f13eeaff474606f2df40b735931d958e0722995f4a8f98d115d9d31469"
   }

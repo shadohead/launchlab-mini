@@ -50,6 +50,14 @@ for entry in index['releases']:
 current = root/'firmware/releases'/catalog['release']
 assert (root/'site/public'/catalog['files'][3]['path']).read_bytes()==(current/'LaunchLabMini.ino.bin').read_bytes()
 assert catalog['runtime']==json.loads((current/'manifest.json').read_text())['runtime_version']
+# Verify the current release's metadata as well as its shipping application.
+manifest=json.loads((current/'manifest.json').read_text())
+for section,base in [('source_sha256',current/'source'),('artifact_sha256',current)]:
+    for name,digest in manifest[section].items():
+        assert hashlib.sha256((base/name).read_bytes()).hexdigest()==digest,(section,name)
+for line in (current/'SHA256SUMS').read_text().splitlines():
+    digest,name=line.split(maxsplit=1)
+    assert hashlib.sha256((current/name).read_bytes()).hexdigest()==digest,name
 for path in (root/'firmware/LaunchLabMini').rglob('*'):
     if path.is_file():
         # Working instructions can be corrected without changing a frozen
