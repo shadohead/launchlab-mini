@@ -2,10 +2,12 @@ import {ESPLoader, Transport} from 'esptool-js';
 import SparkMD5 from 'spark-md5';
 import {loadReleaseIndex, createReleaseSelection} from './releases.js';
 import {createInstaller} from './installer.js';
+import {useVerifiedFlashReads} from './flash-read.js';
 import './style.css';
 const $ = id => document.getElementById(id);
 let catalog, busy=false, selection;
 const supported=isSecureContext && 'serial' in navigator;
+const md5=data=>SparkMD5.ArrayBuffer.hash(data.buffer.slice(data.byteOffset,data.byteOffset+data.byteLength));
 function log(message) {$('log').textContent+=message+'\n';$('log').scrollTop=$('log').scrollHeight;}
 function status(message,state='') {$('status').textContent=message;$('status').dataset.state=state;}
 function resetConsent() {$('install-confirm').checked=false;$('recovery-confirm').checked=false;}
@@ -47,9 +49,10 @@ const installer=createInstaller({
   openConnection:async port=>{
     const transport=new Transport(port,true);
     const loader=new ESPLoader({transport,baudrate:115200,romBaudrate:115200,terminal:{clean(){},writeLine:log,write:log}});
+    useVerifiedFlashReads(loader,md5);
     return {transport,loader};
   },
-  md5:data=>SparkMD5.ArrayBuffer.hash(data.buffer.slice(data.byteOffset,data.byteOffset+data.byteLength)),
+  md5,
   onBusy:value=>{busy=value;if(!busy)resetConsent();updateControls();},
   onStatus:status,onLog:log,onProgress:value=>{$('progress').value=value;},
   onDevice:device=>{$('device').textContent=device.chip+' · '+device.flashSize+' detected. K150 model confirmation is still yours.';log($('device').textContent);},
