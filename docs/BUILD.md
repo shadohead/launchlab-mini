@@ -57,14 +57,14 @@ Use the [USB updater](https://shadohead.github.io/launchlab-mini/) in desktop Ch
 
 Update checks for the expected partition table and writes only `0x10000`. First install replaces bootloader `0x0`, partitions `0x8000`, OTA selection `0xe000`, and application `0x10000`, without erase-all. Back up factory firmware before first install if you need to restore it. A full 8 MB backup contains personal settings/data and should stay private.
 
-Short A recalls the latest recap. Short B opens history. In history, A cycles Recent/Pulls/Sessions/Battery/Settings and B returns to main. Hold A for one second to start a new session on the next accepted pull, except in Settings; see [the firmware guide](../firmware/LaunchLabMini/README.md). Automatic power-off uses a 3-minute default with saved 1–10 minute choices; measured pulls, buttons and interactive USB commands refresh it. A detected USB computer keeps it awake, including with no serial reader. Battery shake-wake at 80 MHz remains unverified.
+Short A recalls the latest recap. Short B opens the menu: History, New session, Battery, Settings and Tournament. In menus, A opens or applies, B moves to the next choice and hold B goes back or cancels; see [the firmware guide](../firmware/LaunchLabMini/README.md). After installing, choose your sensor under Settings → Sensor profile: QRE / Standard (default) or TCRT5000. Automatic power-off uses a 3-minute default with saved 1–10 minute choices; measured pulls, buttons and interactive USB commands refresh it. A detected USB computer keeps it awake, including with no serial reader. Battery shake-wake at 80 MHz remains unverified.
 
-Current 0.10.14 and the preserved 0.10.11/0.10.7/0.10.1 default to the peak of three-consecutive-turn elapsed-time
-averages. Settings offers a persistent 1-turn peak alternative. On Settings,
-hold B selects Sleep/RPM/Brightness; hold A changes/saves the selected row. Changing the
-metric starts the next accepted pull in a new session. The default sleep is
-3 minutes; saved 1–10 minute choices remain. Hold A on main toggles tournament;
-B cycles Recording Only/RPM. Auto-sleep restores the selected mode/view.
+Current 0.10.21 and the preserved 0.10.14/0.10.11/0.10.7/0.10.1 default to the peak of three-consecutive-turn elapsed-time
+averages. Settings offers a persistent 1-turn peak alternative. In Settings,
+A edits the highlighted row, B cycles its value, A applies and hold B cancels. Changing the
+metric or sensor profile starts the next accepted pull in a new session. The default sleep is
+3 minutes; saved 1–10 minute choices remain. Hold A on main enters tournament;
+B cycles Recording Only/RPM and hold A exits. Auto-sleep restores the selected mode/view.
 
 A fresh K150 needs **First install**, which writes bootloader, partition table,
 boot_app0 and application. Update writes the application only and requires a
@@ -77,4 +77,4 @@ If no USB port appears, try a known data cable, re-enter download mode, and clos
 
 ## Current qualification
 
-**0.10.14** is the user-checked prototype revision. Three consecutive QRE1113 pulls each produced valid tilt and prompt recaps, appearing 202–216 ms after the detected end. It includes IMU startup recovery, quieter checkpoint scheduling, shorter valid capture context and focused screen text. The 80 MHz default, 240 MHz startup fallback and 50 kS/s optical rate are unchanged. Battery endurance, long-session reliability, absolute RPM/angle calibration, MusRock digital-output behavior, physical browser first install/rollback and stock recovery remain separate checks.
+**0.10.21** is the user-checked prototype revision. One firmware now serves both sensors through a saved **Sensor profile** setting (QRE / Standard with an 80-count mark floor, TCRT5000 with 60), with simpler A/B controls, a saved 180-degree display flip and clearer setting editors. The frozen application was installed with complete readback verification; NVS, bootloader, partitions and all 128 history records were preserved, and the user reports it working. The 80 MHz default, 240 MHz startup fallback and 50 kS/s optical rate are unchanged. Battery endurance, long-session reliability, absolute RPM/angle calibration, physical browser first install/rollback and stock recovery remain separate checks.

@@ -1,0 +1,51 @@
+// Bounds checks for the actual compact renderers. Device fonts are inspected
+// after flashing; these deliberately conservative host metrics catch overflow.
+#include <algorithm>
+#include <cassert>
+#include <cstdio>
+#include <cstring>
+#include <cstdint>
+#include <iostream>
+#include <vector>
+static constexpr uint16_t TFT_BLACK=0,TFT_WHITE=1,TFT_DARKGREY=2,TFT_CYAN=3,TFT_ORANGE=4;
+static constexpr int top_center=0;
+namespace fonts {static int Font4=4,Font2=2;}
+namespace lgfx {
+struct LGFXBase {
+  unsigned strings=0,footers=0,cycleHints=0;
+  uint16_t ink=0;
+  std::vector<int> valueEdges;
+  int width(){return 135;}
+  void setTextDatum(int){}void setTextColor(uint16_t color,uint16_t){ink=color;}
+  void fillRect(int x,int y,int w,int h,uint16_t){assert(x>=0 && y>=0 && x+w<=135 && y+h<=240);}
+  void drawRoundRect(int x,int y,int w,int h,int,uint16_t){fillRect(x,y,w,h,0);}
+  int textWidth(const char *text,const int *font){return int(std::strlen(text))*(*font==4?18:8);}
+  void drawString(const char *text,int x,int y,int font) {
+    const int glyph=font==4?18:font==2?8:6,height=font==4?26:font==2?16:8;
+    const int width=int(std::strlen(text))*glyph;
+    assert(x-width/2>=0 && x+(width+1)/2<=135 && y>=0 && y+height<=240);
+    ++strings;if(y==231)++footers;
+    if(!std::strcmp(text,"B next option ->")){assert(y==139 && ink==0x39e7);++cycleHints;}
+    else if(y>=86 && y<=95){valueEdges.push_back(x-width/2);valueEdges.push_back(x+(width+1)/2);}
+  }
+};
+}
+#include "controls_ui.h"
+int main() {
+  using namespace Controls;unsigned renders=0;
+  for(unsigned row=0;row<6;++row){lgfx::LGFXBase g;ControlsUI::list(g,"Menu",ControlsUI::MENU,6,row);assert(g.footers==1);++renders;}
+  for(unsigned row=0;row<4;++row){lgfx::LGFXBase g;ControlsUI::list(g,"History",ControlsUI::HISTORY,4,row);assert(g.footers==1);++renders;}
+  const uint8_t values[]={10,0,100,1,0};
+  for(unsigned row=0;row<=SETTING_COUNT;++row){lgfx::LGFXBase g;State state;state.setting=row;ControlsUI::settings(g,state,values);assert(g.footers==1);++renders;}
+  for(unsigned row=0;row<SETTING_COUNT;++row)for(unsigned value:row==0?std::initializer_list<unsigned>{1,10}:row==2?std::initializer_list<unsigned>{10,100}:std::initializer_list<unsigned>{0,1}) {
+    lgfx::LGFXBase g;State state;state.setting=row;state.draft=value;
+    ControlsUI::editor(g,state,true,row==1 || row==4);
+    assert(g.footers==1 && g.cycleHints==1);
+    assert(g.valueEdges.size()==2 && g.valueEdges[0]>=8 && g.valueEdges[1]<=127);++renders;
+  }
+  for(bool start:{false,true}){lgfx::LGFXBase g;ControlsUI::session(g,start);assert(g.footers==1);++renders;}
+  for(const char *label:{"Enter tournament","Exit tournament","Cancel change","Back"})for(unsigned elapsed:{0u,999u,1000u,10000u}) {
+    lgfx::LGFXBase g;ControlsUI::hold(g,label,elapsed,1000);assert(g.footers==1);++renders;
+  }
+  std::cout<<"PASS: "<<renders<<" actual menu/editor/confirmation/hold renders fit135x240; one-line footers, conservative glyph bounds\n";
+}

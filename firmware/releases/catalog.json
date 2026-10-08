@@ -501,5 +501,14 @@
     "binary": "LaunchLabMini.ino.bin",
     "binary_bytes": 735456,
     "sha256": "54fe847cc82ac11b8f50669c424498267e079dfe967020271763e24ba5c808d2"
+  },
+  {
+    "release": "0.10.21-sticks3-qre1113-quiethint",
+    "runtime_version": "0.10.21-sticks3-quiethint",
+    "board": "M5StickS3 K150",
+    "status": "published-user-checked-prototype",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 734784,
+    "sha256": "dbf3c6e510564c9ae7a4d504737077491146d8501a0a6d1e7b25dca41a25cbea"
   }
 ]

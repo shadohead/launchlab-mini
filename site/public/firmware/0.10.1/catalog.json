@@ -294,6 +294,69 @@
       "md5": "afbc1197bd7c6bb8054058673444e7c7",
       "elfSha256": "6b459a52370d191e71a366f95bde6e0e2f064e5168ff59f9bc9f7476d7e693fb",
       "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.15",
+      "runtime": "0.10.15-sticks3-displayflip",
+      "size": 731072,
+      "sha256": "42a40cd837525a547d4e661feddf70a791d51f9324377c3bdd9660bccf05f3aa",
+      "md5": "8bf9068ddea589ec46c4e4d6e4e86a5c",
+      "elfSha256": "43a090f6b5f2f06c16d17308ebdee20b2fb58c7d8fc668403d4e13d0388d53ea",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.16",
+      "runtime": "0.10.16-sticks3-controls",
+      "size": 733552,
+      "sha256": "bfa40786cb4a5bde33ce43dc59c1a06843e1a60475d738dd807c92f788ee10b2",
+      "md5": "631d366d46df6939ed5c5bee6d27c436",
+      "elfSha256": "f569360d4e0bb96cd853ae253674dd16d61427c624e140d3913e01a39eb09c91",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.17",
+      "runtime": "0.10.17-sticks3-tcrt-sensitivity",
+      "size": 733600,
+      "sha256": "91cf4aa52fd9eb71c04af55b0bc132972a3292176f3c6945382a23a28b6ee991",
+      "md5": "7a235bf1bc634b38767d8bd2eaa464ce",
+      "elfSha256": "92f70a633ed69bd3c719610ea2ef9e3f652be8de66d24ade7a11caddff699f3c",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.18",
+      "runtime": "0.10.18-sticks3-sensorprofiles",
+      "size": 734560,
+      "sha256": "ff7807721b34a124e4ebfe59f13b75f1f496c570176d23167bac257ab52fccd0",
+      "md5": "cbe42de084390b401d4a6c2e28861d31",
+      "elfSha256": "b9fd729c91e55d850d159bd727cbe7ccdb75fcd5e9f26fd9cd746672f0d663b2",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.19",
+      "runtime": "0.10.19-sticks3-tiltflip",
+      "size": 734640,
+      "sha256": "325204d9b9c49b1f75f4bc77e3443199f3226abb3c43fad624aae17187a906d8",
+      "md5": "c43b7e9de40f4af6c33834cea0793cd2",
+      "elfSha256": "0fa4ff24997bf5d828a0eb1eeb28232f6e1472986a1096d9eee290d0f31df434",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.20",
+      "runtime": "0.10.20-sticks3-cyclehint",
+      "size": 734848,
+      "sha256": "60982db8fa7e1db5d2717858c188baa485bc68805bf790bf42ffc6e7a3b341fd",
+      "md5": "563a14c1dd26398674da10dfd55faac6",
+      "elfSha256": "8ed361ce992c6cfb7a5d5717d4174f0346bb4feff1cf9d10d86fe5d4edce9d15",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.21",
+      "runtime": "0.10.21-sticks3-quiethint",
+      "size": 734784,
+      "sha256": "dbf3c6e510564c9ae7a4d504737077491146d8501a0a6d1e7b25dca41a25cbea",
+      "md5": "15465f651d74dce68ea9a498774be3d7",
+      "elfSha256": "f2bb2d522b22c140b5cfde33ffd2d3b9eb6db0a78d9e5151489dccd64d1c7161",
+      "sensor": "qre1113"
     }
   ]
 }

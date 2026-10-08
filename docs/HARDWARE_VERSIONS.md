@@ -6,10 +6,10 @@ LaunchLab Mini is a removable Beyblade X launcher-shaft RPM meter. **QRE1113** i
 
 | Sensor | Mount | Firmware | Status |
 | --- | --- | --- | --- |
-| Small analog QRE1113 | v0.33 sensor geometry / v0.40 complete six-piece plate | [0.10.14 QRE firmware](../firmware/releases/0.10.14-sticks3-qre1113-cleanui/README.md) | User-checked prototype: 80 MHz, latest-launch tilt recap, history, trends and battery; endurance and recovery unverified. |
-| Old TCRT5000 / LM393 analog AO | Latest v0.43 separate sensor attachment; v0.19 historical integrated mount | [0.2.0 TCRT firmware](https://github.com/shadohead/launchlab-mini/releases/tag/firmware-tcrt5000-v0.2.0) | Frozen earlier RPM acquisition build; three confirmed pulls in the original trial. Not the current QRE UI. |
+| Small analog QRE1113 | v0.33 sensor geometry / v0.40 complete six-piece plate | [0.10.21 firmware](../firmware/releases/0.10.21-sticks3-qre1113-quiethint/README.md), QRE / Standard profile | User-checked prototype: 80 MHz, latest-launch tilt recap, history, trends, battery and display flip; endurance and recovery unverified. |
+| Old TCRT5000 / LM393 analog AO | Latest v0.43 separate sensor attachment; v0.19 historical integrated mount | [0.10.21 firmware](../firmware/releases/0.10.21-sticks3-qre1113-quiethint/README.md), TCRT5000 profile; frozen [0.2.0 TCRT firmware](https://github.com/shadohead/launchlab-mini/releases/tag/firmware-tcrt5000-v0.2.0) | 0.10.21 with the 60-count TCRT5000 profile is recommended; a TCRT5000 setup detected six of six pulls on that profile. 0.2.0 remains the earlier acquisition build. |
 
-The web updater selects **QRE 0.10.14**, with **0.10.11**, **0.10.7** and **0.10.1** retained for deliberate rollback. [Update and qualification details](UPDATER.md). Do not use it to replace the old TCRT firmware. Old firmware is an application-only restore at `0x10000` on an M5StickS3 already provisioned with the LaunchLab partition layout. Its exact binary retains runtime string `0.2.0-sticks3-acquisition`. See [TCRT wiring and restore guide](TCRT5000.md).
+The web updater selects **0.10.21** for either sensor, with **0.10.14**, **0.10.11**, **0.10.7** and **0.10.1** retained for deliberate rollback. [Update and qualification details](UPDATER.md). Choose the Sensor profile in Settings after installing. The updater does not restore the old TCRT 0.2.0 build. Old firmware is an application-only restore at `0x10000` on an M5StickS3 already provisioned with the LaunchLab partition layout. Its exact binary retains runtime string `0.2.0-sticks3-acquisition`. See [TCRT wiring and restore guide](TCRT5000.md).
 
 ## Current downloads
 
