@@ -1,6 +1,8 @@
-# Build a LaunchLab Mini — small QRE1113 sensor
+# Build a LaunchLab Mini Sidecar — small QRE1113 sensor
 
 [Parts list, quantities and purchase links](../README.md#parts-list--build-your-own) are at the top of the README.
+
+**Sidecar** is the LaunchLab form factor with the M5StickS3 mounted on its own carrier beside a separate optical sensor attachment. Sidecar supports either QRE1113 or TCRT5000; the name describes the mounting layout, not the sensor, firmware or hardware revision.
 
 Use M5StickS3 **K150**, which has ESP32-S3, 8 MB flash, integrated display and battery. M5StickC/C Plus/C Plus2 use different hardware and are not supported by these images. The small sensor is the **analog QRE1113 breakout**; a digital-output board is not interchangeable.
 
@@ -33,7 +35,7 @@ The saved profile targets a P1S, PLA, 0.4 mm nozzle, 0.2 mm layers, Arachne wall
 
 Use the included exploded CAD/assembly references and per-part STLs. Keep the attachment removable, preserve the factory M5 enclosure, and inspect cable strain relief, sensor alignment, button/USB access and screw engagement before use. Check the printed launcher retention by hand before any pull. Digital checks do not establish physical fit or launch-load strength.
 
-## Preferred M5 carrier and cable routing
+## Sidecar M5 carrier and cable routing
 
 The [v0.68 separate M5 carrier](../hardware/M5_cable_hook_v068/README.md) replaces
 the original M5 platform; reuse your sensor attachment. Print its supplied single
