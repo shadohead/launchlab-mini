@@ -2,6 +2,12 @@
 
 LaunchLab Mini is a removable Beyblade X launcher-shaft RPM meter. **QRE1113** is the small analog sensor; **TCRT5000 / LM393** is the older, larger analog module. Their mounts and detector thresholds differ. The M5StickS3 carrier is a separate part with its own version history.
 
+## Sidecar form factor
+
+**Sidecar** is the LaunchLab form factor with the M5StickS3 mounted on its own carrier beside a separate optical sensor attachment. Sidecar supports either QRE1113 or TCRT5000; the name describes the mounting layout, not the sensor, firmware or hardware revision.
+
+Pair the separate M5 carrier with the matching sensor attachment listed below. Follow each revision’s assembly instructions.
+
 ## Choose a sensor and firmware
 
 | Sensor | Mount | Firmware | Status |

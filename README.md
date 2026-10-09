@@ -8,6 +8,12 @@ Built around **M5StickS3 K150**, with separate printed mounts for the **small an
 
 **Prototype validation:** **0.10.21** is the user-checked prototype revision. One firmware now serves both sensors through a saved **Sensor profile** setting (QRE / Standard with an 80-count mark floor, TCRT5000 with 60), with simpler A/B controls, a saved 180-degree display flip and clearer setting editors. The frozen application was installed with complete readback verification; NVS, bootloader, partitions and all 128 history records were preserved, and the user reports it working. The 80 MHz default, 240 MHz startup fallback and 50 kS/s optical rate are unchanged. Battery endurance, long-session reliability, absolute RPM/angle calibration, physical browser first install/rollback and stock recovery remain separate checks.
 
+## Sidecar form factor
+
+**Sidecar** is the LaunchLab form factor with the M5StickS3 mounted on its own carrier beside a separate optical sensor attachment. Sidecar supports either QRE1113 or TCRT5000; the name describes the mounting layout, not the sensor, firmware or hardware revision.
+
+See the [Sidecar build guide](docs/BUILD.md) and [hardware downloads](docs/HARDWARE_VERSIONS.md#current-downloads).
+
 ## Parts list — build your own
 
 Start with **one M5StickS3 K150 + one analog sensor + three short wires + printed mounts and M2 screws**. The StickS3 already contains the display, processor, IMU and battery. Choose **QRE1113** for the current firmware/UI, or **TCRT5000 / LM393** for the preserved old-sensor firmware.
@@ -98,7 +104,7 @@ From the live screen, **A shows the last recap** and **B opens the menu** (Histo
 
 ## Exploded assemblies
 
-The Beyblade X attachment has **two independent assemblies**: the M5 display mount and your chosen optical sensor attachment (QRE1113 or TCRT5000). The views below use the exact published CAD meshes, separated for illustration. They do not assert a measured combined mounting position on a complete launcher. Electronics and screws are reference envelopes, not printed parts.
+The **Sidecar form factor** has **two independent assemblies**: the M5 display mount and your chosen optical sensor attachment (QRE1113 or TCRT5000). The views below use the exact published CAD meshes, separated for illustration. They do not assert a measured combined mounting position on a complete launcher. Electronics and screws are reference envelopes, not printed parts.
 
 ### Preferred M5StickS3 carrier — v0.68
 
