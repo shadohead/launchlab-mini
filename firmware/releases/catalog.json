@@ -519,5 +519,14 @@
     "binary": "LaunchLabMini.ino.bin",
     "binary_bytes": 734896,
     "sha256": "8ff2005fcee9d10456312b6e5e1837938e81054e9669c63bbede12e7763ed8a9"
+  },
+  {
+    "release": "0.11.1-sticks3-qre1113-themesbackup",
+    "runtime_version": "0.11.1-sticks3-themes-backup",
+    "board": "M5StickS3 K150",
+    "status": "published-user-checked-prototype",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 751056,
+    "sha256": "acba34e40d0832d8b46469443a824c3254a48af538004b0711c4d0a1bc5a4d5e"
   }
 ]
