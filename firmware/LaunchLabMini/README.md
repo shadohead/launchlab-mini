@@ -1,6 +1,8 @@
 # LaunchLab Mini for M5StickS3
 
-Current published revision: **0.10.21-sticks3-quiethint**, for **M5StickS3 K150 (ESP32-S3, 8 MB flash / 8 MB OPI PSRAM)** with an analog reflective sensor: **SparkFun QRE1113 analog** or a **TCRT5000** module. [Frozen release and validation](../releases/0.10.21-sticks3-qre1113-quiethint/README.md).
+Current published revision: **0.11.1-sticks3-themes-backup**, for **M5StickS3 K150 (ESP32-S3, 8 MB flash / 8 MB OPI PSRAM)** with an analog reflective sensor: **SparkFun QRE1113 analog** or a **TCRT5000** module. [Frozen release and validation](../releases/0.11.1-sticks3-qre1113-themesbackup/README.md).
+
+Settings › Theme (Classic, Mint, Amber, Violet) tints the UI, and Settings › Best effect plays an effect on the recap of a new personal best for the active sensor profile and RPM method. Over USB, `K` exports a backup of history, sessions, personal bests, appearance, the saved recap and user settings as one checksummed container, and `R` restores one; the device validates the whole backup before writing anything, then restarts. 0.11.0 was withdrawn: it overflowed the loop task's 8 KB stack and restarted after boot. 0.11.1 keeps large buffers off that stack, and the build fails if a frame exceeds its budget.
 
 ## Wiring
 
@@ -49,8 +51,8 @@ Measured launches, button use and interactive USB commands refresh the inactivit
 
 Run `bash scripts/build-firmware.sh` from the repo root with Arduino CLI installed. Dependencies: ESP32 3.3.0, M5Unified 0.2.23, M5GFX 0.2.30. Host/toolchain differences can change rebuilt bytes; use the frozen archive for exact binary restoration.
 
-Run `bash scripts/test-firmware.sh`: 24 sanitizer-enabled native suites and seven production harnesses, including controls, display flip and sensor-profile storage, with a synthetic playback fixture instead of personal practice records. These software checks do not establish physical battery, recovery or calibration acceptance.
+Run `bash scripts/test-firmware.sh`: 26 sanitizer-enabled native suites and seven production harnesses, including controls, display flip, sensor-profile storage, appearance and device backup, with a synthetic playback fixture instead of personal practice records. These software checks do not establish physical battery, recovery or calibration acceptance.
 
-The frozen 0.10.21 application was installed with complete native readback verification. NVS, bootloader and partitions were preserved, and all 128 history records matched before and after. Actual device frames of the Flip and Sensor editors were checked. The user reports the installed firmware working on their device. Earlier revisions in this line had three-pull QRE1113 checks (0.10.14) and a six-pull TCRT5000 check (0.10.17). This is qualitative device acceptance, not long-session or absolute RPM/angle calibration.
+The frozen 0.11.1 application was installed app-only on the owner's M5StickS3 K150: no restarts in a 120 s soak, all 128 history records kept, a backup and restore round trip identical, and the screen, themes and pulls confirmed. Earlier, the 0.10.21 application was installed with complete native readback verification, with NVS, bootloader and partitions preserved. Actual device frames of the Flip and Sensor editors were checked. The user reports the installed firmware working on their device. Earlier revisions in this line had three-pull QRE1113 checks (0.10.14) and a six-pull TCRT5000 check (0.10.17). This is qualitative device acceptance, not long-session or absolute RPM/angle calibration.
 
 [USB update and backup scope](../../docs/UPDATER.md) · [Recovery](../../docs/RECOVERY.md). Battery endurance, physical browser transfer, first install/rollback of this revision and stock recovery remain separate checks. Previous QRE and old TCRT binaries stay preserved.

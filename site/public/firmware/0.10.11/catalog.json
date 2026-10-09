@@ -366,6 +366,24 @@
       "md5": "1cb66f7801249327c20c8213ad402cc0",
       "elfSha256": "4e1bde3a738404ed736d87ab73f34fd14f24f377d88ae5e71716dd03f86877a7",
       "sensor": "qre1113"
+    },
+    {
+      "version": "0.11.0",
+      "runtime": "0.11.0-sticks3-themes-backup",
+      "size": 751888,
+      "sha256": "5af1d8aed6680a51938d1150f1e14564e3ff3cbe8236a3a017f26d7c28c5e7f8",
+      "md5": "cfbd2e3550a4a0d1fff759f479e7c9b8",
+      "elfSha256": "a3841d5eeae8e0507945f0930506e05e618fab28262ce357048ccebf8cec6bd4",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.11.1",
+      "runtime": "0.11.1-sticks3-themes-backup",
+      "size": 751056,
+      "sha256": "acba34e40d0832d8b46469443a824c3254a48af538004b0711c4d0a1bc5a4d5e",
+      "md5": "4cd825d0fa8c3c09fa350998da82ae5f",
+      "elfSha256": "9efa3ed7824598789ae8e9c38d209a8a0669e62cef2333546a7e6af24aff23a0",
+      "sensor": "qre1113"
     }
   ]
 }

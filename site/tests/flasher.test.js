@@ -4,10 +4,10 @@ import {createHash} from 'node:crypto';
 import {readFile} from 'node:fs/promises';
 import {APP_OFFSET, APP_IDENTITY_BYTES, compareVersions, validateCatalog, verifiedDownload, flashVerified, inspectInstalledApplication} from '../src/flasher.js';
 import {catalog,oldCatalog,base,localFetch,images,oldImages,fake,opts} from './helpers.js';
-test('default catalog is the frozen 0.10.21 application; old binary is preserved',()=>{
-  assert.equal(catalog.version,'0.10.21');assert.equal(images[3].data.length,734784);
+test('default catalog is the frozen 0.11.1 application; old binary is preserved',()=>{
+  assert.equal(catalog.version,'0.11.1');assert.equal(images[3].data.length,751056);
   assert.equal(oldCatalog.version,'0.10.1');assert.equal(oldImages[3].data.length,731728);
-  assert.equal(catalog.files[3].sha256,'dbf3c6e510564c9ae7a4d504737077491146d8501a0a6d1e7b25dca41a25cbea');
+  assert.equal(catalog.files[3].sha256,'acba34e40d0832d8b46469443a824c3254a48af538004b0711c4d0a1bc5a4d5e');
 });
 test('release downloads have exact sizes and SHA-256',()=>assert.equal(images.length,4));
 test('versions compare numerically, not lexically or as decimals',()=>{
@@ -22,7 +22,7 @@ test('older verified application updates app only and never erases all',async()=
 });
 test('known newer installed application blocks an older selected target',async()=>{
   const l=fake({app:images[3].data});
-  await assert.rejects(flashVerified({...opts(l),catalog:oldCatalog,images:oldImages}),/Downgrade blocked.*0.10.21.*0.10.1/);
+  await assert.rejects(flashVerified({...opts(l),catalog:oldCatalog,images:oldImages}),/Downgrade blocked.*0.11.1.*0.10.1/);
   assert.equal(l.writes.length,0);
 });
 test('already installed exact version is a no-op; repeated update stays a no-op',async()=>{
@@ -33,7 +33,7 @@ test('already installed exact version is a no-op; repeated update stays a no-op'
 test('Arduino descriptor build label is not interpreted as LaunchLab version',async()=>{
   const descriptor=images[3].data.slice(48,80);assert.equal(new TextDecoder().decode(descriptor).split('\0')[0],'afa5cdd');
   const l=fake({app:images[3].data});const found=await inspectInstalledApplication(l,catalog);
-  assert.equal(found.state,'verified');assert.equal(found.application.version,'0.10.21');
+  assert.equal(found.state,'verified');assert.equal(found.application.version,'0.11.1');
 });
 test('complete device image checksum is required beyond matching ELF descriptor',async()=>{
   const app=images[3].data.slice();app[10000]^=1;const l=fake({app});
@@ -173,12 +173,12 @@ test('checksummed bundles cannot move a partition, corrupt its embedded digest o
   }
 });
 
-test('every preserved selectable catalog recognizes 0.10.21 and blocks its downgrade',async()=>{
-  for(const version of ['0.10.1','0.10.7','0.10.11','0.10.14']){
+test('every preserved selectable catalog recognizes 0.11.1 and blocks its downgrade',async()=>{
+  for(const version of ['0.10.1','0.10.7','0.10.11','0.10.14','0.10.21','0.10.22']){
     const previous=JSON.parse(await readFile(new URL('../public/firmware/'+version+'/catalog.json',import.meta.url)));
     const previousImages=await Promise.all(previous.files.map(file=>verifiedDownload(file,base,localFetch)));
     const loader=fake({app:images[3].data});
-    await assert.rejects(flashVerified({...opts(loader),catalog:previous,images:previousImages}),/Downgrade blocked.*0.10.21/);
+    await assert.rejects(flashVerified({...opts(loader),catalog:previous,images:previousImages}),/Downgrade blocked.*0.11.1/);
     assert.equal(loader.writes.length,0);
   }
 });
