@@ -357,6 +357,15 @@
       "md5": "15465f651d74dce68ea9a498774be3d7",
       "elfSha256": "f2bb2d522b22c140b5cfde33ffd2d3b9eb6db0a78d9e5151489dccd64d1c7161",
       "sensor": "qre1113"
+    },
+    {
+      "version": "0.10.22",
+      "runtime": "0.10.22-sticks3-saverearm",
+      "size": 734896,
+      "sha256": "8ff2005fcee9d10456312b6e5e1837938e81054e9669c63bbede12e7763ed8a9",
+      "md5": "1cb66f7801249327c20c8213ad402cc0",
+      "elfSha256": "4e1bde3a738404ed736d87ab73f34fd14f24f377d88ae5e71716dd03f86877a7",
+      "sensor": "qre1113"
     }
   ]
 }
