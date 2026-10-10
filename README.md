@@ -53,15 +53,15 @@ Wire **AO/OUT → G1 / GPIO1**, **VCC → 3V3 / 3V3_L2**, **GND → GND**. DO is
 ![LaunchLab Mini M5StickS3 mount, rendered from the published CAD](site/public/images/m5-mount.png)
 
 
-The updater defaults to **0.11.1**. It checks the complete known installed application before an app-only update, blocks downgrades and unknown/incomplete images, and skips writing an identical version. **Repair / rollback** requires an explicit target/backup confirmation; both app-only paths require the matching partition layout and boot selection. All modes check the detected ESP32-S3 chip and 8 MB flash capacity. The previous 0.10.22, 0.10.21, 0.10.14, 0.10.11, 0.10.7 and 0.10.1 binaries are preserved. Physical browser transfer, four-image installation of this revision, stock recovery and rollback remain unverified. [Update details](docs/UPDATER.md) · [Recovery and vendor reinstall](docs/RECOVERY.md).
+The updater defaults to **0.11.2**. It checks the complete known installed application before an app-only update, blocks downgrades and unknown/incomplete images, and skips writing an identical version. **Repair / rollback** requires an explicit target/backup confirmation; both app-only paths require the matching partition layout and boot selection. All modes check the detected ESP32-S3 chip and 8 MB flash capacity. The previous 0.11.1, 0.10.22, 0.10.21, 0.10.14, 0.10.11, 0.10.7 and 0.10.1 binaries are preserved. Physical browser transfer, four-image installation of this revision, stock recovery and rollback remain unverified. [Update details](docs/UPDATER.md) · [Recovery and vendor reinstall](docs/RECOVERY.md).
 
-Current firmware: **0.11.1** (QRE1113 or TCRT5000 via Sensor profile). Old TCRT firmware: **0.2.0**. Preferred separate M5 carrier: **v0.68**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
+Current firmware: **0.11.2** (QRE1113 or TCRT5000 via Sensor profile). Old TCRT firmware: **0.2.0**. Preferred separate M5 carrier: **v0.68**; latest TCRT mount: **v0.43**. The original QRE **v0.40** complete plate is still available. Firmware, M5 carrier and sensor-mount versions are independent.
 
 **[Choose your sensor and see every revision](docs/HARDWARE_VERSIONS.md)** — includes the preferred v0.68 M5 carrier, earlier v0.41–v0.50 models, historical v0.19 TCRT, and current QRE files.
 
 ## What it does
 
-The current revision is **0.11.1**, running at 80 MHz with unchanged 50 kS/s optical sampling. It adds saved themes, a personal-best recap effect and USB backup/restore (`K`/`R`), and its build fails if any stack frame exceeds its budget. A saved Sensor profile selects QRE / Standard (80-count mark floor) or TCRT5000 (60-count floor). Controls are simpler: A opens or applies, B advances, hold B goes back or cancels. A saved 180-degree display flip and previewed brightness live in Settings. IMU startup recovery, prompt recaps, power diagnostics, tournament mode and USB keep-awake are retained; battery savings remain unmeasured. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
+The current revision is **0.11.2**, running at 80 MHz with unchanged 50 kS/s optical sampling. It adds saved themes, a personal-best recap effect and USB backup/restore (`K`/`R`), and its build fails if any stack frame exceeds its budget. A saved Sensor profile selects QRE / Standard (80-count mark floor) or TCRT5000 (60-count floor). Controls are simpler: A opens or applies, B advances, hold B goes back or cancels. A saved 180-degree display flip and previewed brightness live in Settings. IMU startup recovery, prompt recaps, power diagnostics, tournament mode and USB keep-awake are retained; battery savings remain unmeasured. The old TCRT 0.2.0 release is an earlier RPM acquisition build with its own detector thresholds.
 
 | Feature | What you see or do |
 | --- | --- |
@@ -241,3 +241,5 @@ The current firmware passed native tests and 13 saved optical waveform replays, 
 RPM measures launcher-shaft revolutions, not direct Beyblade release RPM. Tilt replay has no measured travel distance or compass heading. Digital CAD/slicing checks establish file consistency, not printed fit or safe launch-load retention.
 
 Software: MIT with upstream component licenses. Hardware: preserved Creative Commons Attribution Share Alike notices. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+Firmware 0.11.2 adds a same-page **High score effect** sample in Settings and its editor. The owner tested the local candidate successfully; the final versioned binary is software-validated and its physical device install is pending. [Release evidence](firmware/releases/0.11.2-sticks3-qre1113-scorepreview/README.md).

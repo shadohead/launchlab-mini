@@ -528,5 +528,14 @@
     "binary": "LaunchLabMini.ino.bin",
     "binary_bytes": 751056,
     "sha256": "acba34e40d0832d8b46469443a824c3254a48af538004b0711c4d0a1bc5a4d5e"
+  },
+  {
+    "release": "0.11.2-sticks3-qre1113-scorepreview",
+    "runtime_version": "0.11.2-sticks3-score-preview",
+    "board": "M5StickS3 K150",
+    "status": "published-software-validated; local candidate user-checked",
+    "binary": "LaunchLabMini.ino.bin",
+    "binary_bytes": 754688,
+    "sha256": "edaec5c245b8bc0e9e543e53896885e00d4c78df3eca17de57175beeff99c01e"
   }
 ]

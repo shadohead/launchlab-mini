@@ -48,13 +48,13 @@ export function validateCatalog(catalog) {
     if (offset + file.size > limit) throw new Error('Firmware exceeds its flash region.');
   });
   if (!Array.isArray(catalog.knownApplications) || !catalog.knownApplications.length || catalog.knownApplications.length > 100) throw new Error('Missing installed-application identities.');
-  const versions = new Set(), elves = new Set();
+  const applications = new Set(), elves = new Set();
   for (const app of catalog.knownApplications) {
     compareVersions(app.version, app.version);
-    if (app.sensor !== 'qre1113' || !hex(app.elfSha256, 64) || !hex(app.sha256, 64) || !hex(app.md5, 32) || !Number.isInteger(app.size) || app.size < APP_IDENTITY_BYTES || app.size > 0x330000 || versions.has(app.version) || elves.has(app.elfSha256)) throw new Error('Invalid installed-application identity.');
-    versions.add(app.version); elves.add(app.elfSha256);
+    if (app.sensor !== 'qre1113' || !hex(app.elfSha256, 64) || !hex(app.sha256, 64) || !hex(app.md5, 32) || !Number.isInteger(app.size) || app.size < APP_IDENTITY_BYTES || app.size > 0x330000 || applications.has(app.sha256) || elves.has(app.elfSha256)) throw new Error('Invalid installed-application identity.');
+    applications.add(app.sha256); elves.add(app.elfSha256);
   }
-  const target = catalog.knownApplications.find(app => app.version === catalog.version);
+  const target = catalog.knownApplications.find(app => app.version === catalog.version && app.sha256 === catalog.files[3].sha256);
   if (!target || target.sha256 !== catalog.files[3].sha256 || target.size !== catalog.files[3].size || target.runtime !== catalog.runtime) throw new Error('Target application identity mismatch.');
   return catalog;
 }
@@ -114,11 +114,15 @@ export async function flashVerified({loader, catalog, images, mode, recoveryConf
       if (installed.state !== 'verified') throw stop('application', 'Installed LaunchLab application is unknown or incomplete. Update stopped. Use Repair / rollback only after backup and an intentional version choice.');
       const comparison = compareVersions(catalog.version, installed.application.version);
       if (comparison < 0) throw new Error('Downgrade blocked: installed v' + installed.application.version + ', selected v' + catalog.version + '. Keep the newer release or deliberately use Repair / rollback.');
+      if (comparison === 0 && installed.application.sha256 !== catalog.files[3].sha256) throw stop('application', 'A different build of the same version requires deliberate Repair / rollback.');
       if (comparison === 0) return {status:'up-to-date', installed};
     }
   }
   const selected = mode === 'install' ? images : [images[3]];
   onWriteStart();
   await loader.writeFlash({fileArray: selected.map(image => ({data:image.data, address:image.offset})), flashSize:'8MB', flashMode:'dio', flashFreq:'80m', eraseAll:false, compress:true, calculateMD5Hash:md5, reportProgress});
+  const writtenDigest = await loader.flashMd5sum(APP_OFFSET, catalog.files[3].size);
+  const target = catalog.knownApplications.find(app => app.sha256 === catalog.files[3].sha256);
+  if (typeof writtenDigest !== 'string' || writtenDigest.toLowerCase() !== target.md5) throw stop('verification', 'Post-write device MD5 mismatch. Installation was not verified.');
   return {status:'verified', installed};
 }

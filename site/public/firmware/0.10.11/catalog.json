@@ -384,6 +384,24 @@
       "md5": "4cd825d0fa8c3c09fa350998da82ae5f",
       "elfSha256": "9efa3ed7824598789ae8e9c38d209a8a0669e62cef2333546a7e6af24aff23a0",
       "sensor": "qre1113"
+    },
+    {
+      "version": "0.11.2",
+      "runtime": "0.11.2-sticks3-score-preview",
+      "size": 754688,
+      "sha256": "edaec5c245b8bc0e9e543e53896885e00d4c78df3eca17de57175beeff99c01e",
+      "md5": "674703b8f462c2ddbd61948b8f792d9c",
+      "elfSha256": "f114565debffdb5173c5f7adef0a5fae799d12f4f17a072e5d709593c1f55231",
+      "sensor": "qre1113"
+    },
+    {
+      "version": "0.11.1",
+      "runtime": "0.11.1-sticks3-effectpreview-dev",
+      "sensor": "qre1113",
+      "size": 754688,
+      "sha256": "6ba3dfd7ce04824133ee770be77df66a40aadf2be1e1bde1f70dd06a1f078bd6",
+      "md5": "f94ef55fdb2832870a9a940d0460eab9",
+      "elfSha256": "b4acc7dc5abf71b1de675ee5e4fe72e9b0606374ca6ce91a1ec499bbbc93e39c"
     }
   ]
 }

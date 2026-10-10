@@ -21,5 +21,7 @@ cp LaunchLabMini/*.ino LaunchLabMini/*.h build-source/LaunchLabMini/
 cp -R LaunchLabMini/src build-source/LaunchLabMini/
 "$CLI" compile --config-file "$CACHE/config.yaml" \
   --fqbn 'esp32:esp32:esp32s3:CDCOnBoot=cdc,USBMode=hwcdc,FlashSize=8M,PartitionScheme=default_8MB,PSRAM=opi' \
-  --build-property 'compiler.cpp.extra_flags=-DVQF_SINGLE_PRECISION' \
+  --build-property 'compiler.cpp.extra_flags=-DVQF_SINGLE_PRECISION -fstack-usage' \
   --build-path "$PWD/build" build-source/LaunchLabMini
+
+python3 tools/check_stack_usage.py "$PWD/build"

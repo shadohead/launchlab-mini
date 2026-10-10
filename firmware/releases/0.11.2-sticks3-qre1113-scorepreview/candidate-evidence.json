@@ -1,0 +1,28 @@
+{
+  "tested_commit": "39ce90a7fbc81aaa8d4f78e5f0a69a216b63e998",
+  "public_base": "490fedec6f4b90776b55d7a53c801ce2401ec8fb",
+  "canonical_base": "232d1aaac269e78ab3a91f297d4283de981adac8",
+  "only_compiled_source_difference": "Runtime string: 0.11.1-sticks3-effectpreview-dev -> 0.11.2-sticks3-score-preview",
+  "final_device_check": "pending",
+  "user_test_evidence": {
+    "quote": "it works, lets get this updated on gh and our site",
+    "reported_at_utc": "2026-10-10T03:14:00Z",
+    "scope": "Local candidate, not the final versioned binary"
+  },
+  "candidate_application": {
+    "version": "0.11.1",
+    "runtime": "0.11.1-sticks3-effectpreview-dev",
+    "sensor": "qre1113",
+    "size": 754688,
+    "sha256": "6ba3dfd7ce04824133ee770be77df66a40aadf2be1e1bde1f70dd06a1f078bd6",
+    "md5": "f94ef55fdb2832870a9a940d0460eab9",
+    "elfSha256": "b4acc7dc5abf71b1de675ee5e4fe72e9b0606374ca6ce91a1ec499bbbc93e39c"
+  },
+  "final_application": {
+    "sha256": "edaec5c245b8bc0e9e543e53896885e00d4c78df3eca17de57175beeff99c01e",
+    "md5": "674703b8f462c2ddbd61948b8f792d9c",
+    "elfSha256": "f114565debffdb5173c5f7adef0a5fae799d12f4f17a072e5d709593c1f55231",
+    "size": 754688
+  },
+  "support_images_match_0_11_1": true
+}
